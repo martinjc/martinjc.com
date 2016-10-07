@@ -10,7 +10,7 @@ title: martin chorley
 email: martin.chorley@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   I am Dr Martin Chorley. I am a lecturer at the School of Computer Science & Informatics, Cardiff University.I'm programme leader for the MSc in Computational Journalism, and also senior personal tutor for all taught postgraduate students. I mainly do work that falls under the umbrella of the Mobile and Social Computing group.
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/" # the subpath of your site, e.g. /blog
 url: "http://martinchorley.co.uk" # the base hostname & protocol for your site
 
 # _config.build.yml sets future and show_drafts to false on `grunt build`
