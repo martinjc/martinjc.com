@@ -6,7 +6,7 @@ layout: page
 link: http://martinjc.com/contact/
 slug: contact
 title: contact
-wordpress_id: 835
+permalink: /contact/
 ---
 
 There are many ways to get in touch with me in the real world or digitally:
@@ -41,4 +41,3 @@ Queens Buildings
 Roath
 Cardiff
 CF24 3AA
-

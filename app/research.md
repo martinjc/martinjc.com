@@ -6,7 +6,7 @@ layout: page
 link: http://martinjc.com/research/
 slug: research
 title: research
-wordpress_id: 14
+permalink: /research/
 ---
 
 ## Current Research

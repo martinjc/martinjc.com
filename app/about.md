@@ -4,6 +4,8 @@ comments: false
 date: 2011-03-25 10:49:52+00:00
 layout: page
 link: http://martinjc.com/
+permalink: /about/
+title: about
 slug: about
 title: about
 wordpress_id: 297
@@ -20,5 +22,3 @@ I am a lecturer at the School of Computer Science & Informatics, Cardiff Univer
 
 
 I can be [contacted](http://martinjc.com/contact/) at m.j.chorley@cs.cardiff.ac.uk, or you can find me on many social networks, links below.
-
-
