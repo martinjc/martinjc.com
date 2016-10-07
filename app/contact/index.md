@@ -11,9 +11,6 @@ wordpress_id: 835
 
 There are many ways to get in touch with me in the real world or digitally:
 
-[wpcol_1half id="" class="" style=""]
-
-
 ### Email me!
 
 
@@ -31,7 +28,6 @@ m.j.chorley@cs.cardiff.ac.uk
 
 [https://www.facebook.com/martin.chorley](https://www.facebook.com/martin.chorley)
 
-[/wpcol_1half] [wpcol_1half_end id="" class="" style=""]
 
 
 ### Post me something! (I like cake).
@@ -46,4 +42,3 @@ Roath
 Cardiff
 CF24 3AA
 
-[/wpcol_1half_end]
