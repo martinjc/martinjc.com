@@ -20,6 +20,7 @@ h1, h2 {
 .headshot {
     width: 35%;
     float: right;
+    margin-left: $spacing-unit/4;
 }
 
 nav {
@@ -82,7 +83,6 @@ nav {
     }
 
     .headshot {
-        margin-left: $spacing-unit/4;
         width: 30%;
     }
 }
