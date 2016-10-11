@@ -13,7 +13,7 @@ I'm the MSc Programme Leader for the [MSc in Computational Journalism](http://ww
 
 
 
-# Autumn Semester
+## Autumn Semester
 
 
 
@@ -21,7 +21,7 @@ I am Module Leader for [Web Application Development (CMT112)](http://handbooks.d
 
 
 
-# Spring Semester
+## Spring Semester
 
 
 

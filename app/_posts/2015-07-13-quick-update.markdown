@@ -53,6 +53,6 @@ I've started on my teaching qualification ([PgCUTL](http://www.cardiff.ac.uk/pcu
 
 The reason I've not posted in a while:
 
-[caption id="attachment_1272" align="aligncenter" width="660"][![Arthur!](http://martinjc.com/wp-content/uploads/2015/07/11325423_448026158711440_20867902_n-1024x1024.jpg)](http://martinjc.com/wp-content/uploads/2015/07/11325423_448026158711440_20867902_n.jpg) Arthur![/caption]
+[![Arthur!](http://martinjc.com/wp-content/uploads/2015/07/11325423_448026158711440_20867902_n-1024x1024.jpg)](http://martinjc.com/wp-content/uploads/2015/07/11325423_448026158711440_20867902_n.jpg)
 
 My son, Arthur James Chorley-Jones was born on 13th May 2015. He's amazing, I think he's the best thing that has ever happened, and since he's been around there has not been a huge amount of time for blogging, side-projects, and other such things. Which is ace.

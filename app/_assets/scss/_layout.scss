@@ -14,7 +14,7 @@ h2 {
 }
 
 h1, h2 {
-    padding: $spacing-unit/4 0 $spacing-unit/8 $spacing-unit/2;
+    padding: $spacing-unit/4 0 $spacing-unit/8 $spacing-unit/4;
 }
 
 .headshot {
@@ -61,7 +61,7 @@ nav {
     background: $grey-color-light;
     color: $brand-color;
     fill: $brand-color;
-    transform: scale(1.5);
+    transform: scale(2);
     transition: background-color .5s, transform .5s ease-out
 }
 
@@ -82,6 +82,7 @@ nav {
     }
 
     .headshot {
+        margin-left: $spacing-unit/4;
         width: 30%;
     }
 }
@@ -92,7 +93,7 @@ nav {
     }
 
     h1, h2, h3 {
-        padding: $spacing-unit/4 0 $spacing-unit/8 $spacing-unit/1.5;
+        padding: $spacing-unit/4 0 $spacing-unit/8 $spacing-unit/4;
     }
 
     .headshot {

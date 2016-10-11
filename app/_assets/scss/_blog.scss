@@ -6,6 +6,11 @@
     h1 {
         font-size: $base-font-size*1.2;
         padding-right: $spacing-unit * 2;
+        margin-bottom: $spacing-unit/8;
+    }
+
+    header p {
+        padding-left: $spacing-unit/2;
     }
 
     h2, h3 {
@@ -37,4 +42,14 @@ hr{
     color: $brand-color;
     background-color: $brand-color;
     margin-bottom: $spacing-unit;
+}
+
+@include media-query($small-break) {
+    .blogpost{
+        h1 {
+            font-size: $base-font-size * 2;
+            line-height: $base-line-height * 1.5;
+        }
+    }
+
 }

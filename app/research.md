@@ -9,14 +9,15 @@ title: research
 permalink: /research/
 ---
 
+My research has a big cross-disciplinary aspect - I'm interested in doing research wherever computer science (and ICT systems/devices) brush up against the real world, as things are far more interesting when people are involved! My main research is therefore in the areas of human behaviour, looking at social, mobile and pervasive computing, ad-hoc and opportunistic networks and information dissemination - if there's a scenario where people and computers mix and interact, that's where I get involved. I'm also keen to investigate the use of computer science, social media, and data science within Journalism, as both a tool for improving communication and storytelling, and as an input and tool for data gathering, story creation and newsroom workflows.
+
+I have a background in high performance computing, and am keen on using the massive computational power available today to further social computing research.
 
 ## Current Research
 
 
 
-My research has a big cross-disciplinary aspect - I'm interested in doing research wherever computer science (and ICT systems/devices) brush up against the real world, as things are far more interesting when people are involved! My main research is therefore in the areas of human behaviour, looking at social, mobile and pervasive computing, ad-hoc and opportunistic networks and information dissemination - if there's a scenario where people and computers mix and interact, that's where I get involved. I'm also keen to investigate the use of computer science, social media, and data science within Journalism, as both a tool for improving communication and storytelling, and as an input and tool for data gathering, story creation and newsroom workflows.
 
-I have a background in high performance computing, and am keen on using the massive computational power available today to further social computing research.
 
 Recently I was working on a 12 month EPSRC Fellowship (2013 Doctoral Award Prize) examining the relationship between an individual's personality (in terms of the OCEAN five-factor personality model) and the places they visit or check in to. Some work on this has already been [published](http://martinjc.com/research/publications/), and more papers are in preparation. It is hoped that this work will lead to a novel place recommendation system which uses personality as a major signal to recommend new venues to users.
 
