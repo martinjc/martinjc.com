@@ -19,12 +19,19 @@ show_drafts: true
 
 twitter_username: martinjc
 github_username:  martinjc
+facebook_username: "martin.chorley"
+instagram_username: martinjam
+lastfm_username: takitomouse
+linkedin_username: martinchorley
 
 site.name: "martinjc.com"
 name: "martinjc.com"
 
+paginate: 5
+paginate_path: "/blog/page:num"
+
 github_repository_url: "martinjc/martinjc.com.git"
-github_repository_name: martinjc.com
+github_repository_name: "martinjc.com"
 
 # Build settings
 markdown: kramdown
@@ -32,3 +39,5 @@ markdown: kramdown
 # Grunt handles images and assets.
 exclude: ['img', 'css', 'js', 'fonts',
           '**.png', '**.jpg', '**.jpeg', '**.gif', '**.webp', '**.svg', '**.ico']
+
+gems: [jekyll-paginate]

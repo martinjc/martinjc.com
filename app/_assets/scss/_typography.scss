@@ -3,8 +3,11 @@ body {
     line-height: $base-line-height;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2 {
+    background-color: $grey-color-light;
     font-family: $head-font-family;
+    clip-path: polygon(2.5% 0%, 100% 0%, 97.5% 100%, 0% 100%);
+
 }
 
 h1 {
@@ -13,6 +16,11 @@ h1 {
 }
 
 h2 {
+    font-size: $medium-font-size;
+    color: $contrast-color;
+}
+
+h3 {
     font-size: $medium-font-size;
     color: $contrast-color;
 }

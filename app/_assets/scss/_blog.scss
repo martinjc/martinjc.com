@@ -1,0 +1,40 @@
+.blogpost {
+
+    margin-bottom: $spacing-unit;
+
+
+    h1 {
+        font-size: $base-font-size*1.2;
+        padding-right: $spacing-unit * 2;
+    }
+
+    h2, h3 {
+        font-size: $base-font-size*1.1;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    .content {
+        h1, h2, h3 {
+            background-color: $background-color;
+            margin-bottom: $spacing-unit/4;
+            padding-left: 2px;
+            clip-path: none;
+        }
+
+        p {
+            margin-bottom: $spacing-unit/2;
+        }
+    }
+
+}
+
+hr{
+    width: 80%;
+    margin: auto;
+    color: $brand-color;
+    background-color: $brand-color;
+    margin-bottom: $spacing-unit;
+}

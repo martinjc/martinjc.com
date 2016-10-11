@@ -22,11 +22,10 @@ $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);
 $grey-color-dark:  darken($grey-color, 25%);
 
-// Width of the content area
-$content-width:    1000px;
+$max-content-size: 900px;
 
-$small-size:          600px;
-$medium-size:        1000px;
+$small-break:          600px;
+$medium-break:        1000px;
 
 
 // Use media queries like this:
@@ -36,8 +35,8 @@ $medium-size:        1000px;
 //         padding-left: $spacing-unit / 2;
 //     }
 // }
-@mixin media-query($device) {
-    @media screen and (max-width: $device) {
+@mixin media-query($break) {
+    @media screen and (min-width: $break) {
         @content;
     }
 }
@@ -46,3 +45,4 @@ $medium-size:        1000px;
 @import "reset";
 @import "typography";
 @import "layout";
+@import "blog";
