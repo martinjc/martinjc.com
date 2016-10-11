@@ -6,7 +6,7 @@ layout: page
 link: http://martinjc.com/teaching/
 slug: teaching
 title: teaching
-wordpress_id: 40
+permalink: /teaching/
 ---
 
 I'm the MSc Programme Leader for the [MSc in Computational Journalism](http://www.cardiff.ac.uk/jomec/degreeprogrammes/pgmasters/msc_computational_journalism/index.html), a joint course between the [School of Computer Science & Informatics](http://www.cs.cf.ac.uk/) and the [School of Journalism, Media and Cultural Studies](http://www.cardiff.ac.uk/jomec/index.html) here at Cardiff University.

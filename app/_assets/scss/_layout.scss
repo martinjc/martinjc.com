@@ -1,0 +1,23 @@
+body {
+    margin-bottom: $spacing-unit;
+    margin-left: 5px;
+    margin-right: 5px;
+    background-color: $background-color;
+}
+
+h1, p {
+    margin-bottom: $spacing-unit;
+}
+
+h2, h3 {
+    margin-bottom: $spacing-unit / 2;
+}
+
+nav {
+    margin-bottom: $spacing-unit;
+    text-align: right;
+
+    li {
+        display: inline-block;
+    }
+}
