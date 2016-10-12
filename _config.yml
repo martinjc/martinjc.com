@@ -40,4 +40,33 @@ markdown: kramdown
 exclude: ['img', 'css', 'js', 'fonts',
           '**.png', '**.jpg', '**.jpeg', '**.gif', '**.webp', '**.svg', '**.ico']
 
-gems: [jekyll-paginate]
+gems: [jekyll-paginate, jekyll/scholar]
+
+
+scholar:
+  style: apa
+  locale: en
+
+  sort_by: year
+  order: descending
+
+  group_by: type
+  group_order: ascending
+
+  source: ./_bibliography
+  bibliography: pub.bib
+  bibliography_template: reference
+
+  replace_strings: true
+  join_strings:    true
+
+  use_raw_bibtex_entry: true
+  bibtex_filters:
+  - superscript
+  - latex
+
+  details_dir:    bibliography
+  details_layout: bibtex.html
+  details_link:   Details
+
+  query: "@*"

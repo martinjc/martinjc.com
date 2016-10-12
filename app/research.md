@@ -29,8 +29,6 @@ As well as this, I have served as reviewer and on committees for many [journals 
 
 ## Past Research
 
-
-
 Prior to my fellowship, I was [working](http://martinjc.com/research/past-research/recognition/) on the [Recognition](http://www.recognition-project.eu/) project, an EU FP7 project attempting to use relevance and human cognitive processes within IT systems to improve content dissemination and filtering. The work included areas such as how human decision making processes relate to twitter and micro-blogging, and examining the relationship between spatial places/venues and people in terms of both their personality and the expression they use towards the places they've been.
 
 Before the Recognition project, I spent a year and a half [working](http://martinjc.com/research/past-research/socialnets/) on the [SocialNets](http://www.social-nets.eu/) project, another EU FP7 project concerning pervasive adaptation looking to improve mobile and ad-hoc systems using social network information and adaptive strategies.

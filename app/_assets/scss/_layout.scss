@@ -14,13 +14,15 @@ h2 {
 }
 
 h1, h2 {
+    margin-left: -5px;
     padding: $spacing-unit/4 0 $spacing-unit/8 $spacing-unit/4;
 }
 
 .headshot {
     width: 35%;
     float: right;
-    margin-left: $spacing-unit/4;
+    margin-left: $spacing-unit/2;
+    margin-right: 5px;
 }
 
 nav {
@@ -99,6 +101,7 @@ nav {
     .headshot {
         width: 20%;
         float: left;
+        margin-left: 0;
         margin-right: $spacing-unit/4;
     }
 }
