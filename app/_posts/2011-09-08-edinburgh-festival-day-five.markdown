@@ -3,12 +3,9 @@ author: martin
 comments: true
 date: 2011-09-08 12:40:42+00:00
 layout: post
-link: http://martinjc.com/2011/09/08/edinburgh-festival-day-five/
+link: https://martinjc.com/2011/09/08/edinburgh-festival-day-five/
 slug: edinburgh-festival-day-five
 title: Edinburgh Festival... Day Five
-wordpress_id: 366
-categories:
-- Home
 tags:
 - edinburgh
 - holiday

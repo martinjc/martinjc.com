@@ -3,12 +3,9 @@ author: martin
 comments: true
 date: 2012-02-27 09:20:01+00:00
 layout: post
-link: http://martinjc.com/2012/02/27/django-last-fm-authentication/
+link: https://martinjc.com/2012/02/27/django-last-fm-authentication/
 slug: django-last-fm-authentication
 title: Django + Last.FM Authentication
-wordpress_id: 553
-categories:
-- Coding
 tags:
 - coding
 - django

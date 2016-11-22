@@ -3,12 +3,9 @@ author: martin
 comments: true
 date: 2015-01-27 11:00:12+00:00
 layout: post
-link: http://martinjc.com/2015/01/27/personality-and-places/
+link: https://martinjc.com/2015/01/27/personality-and-places/
 slug: personality-and-places
 title: Personality and Places
-wordpress_id: 1209
-categories:
-- Research
 tags:
 - foursquare
 - open access
@@ -19,7 +16,7 @@ tags:
 - research
 ---
 
-**[Our paper](http://www.sciencedirect.com/science/article/pii/S0747563214007559) examining the link between [individual personality and the places people visit](http://martinjc.com/2012/11/20/foursquare-personality-experiment/) has just been published in [Computers in Human Behavior](http://www.journals.elsevier.com/computers-in-human-behavior/). It's open access, so you can [go read it for free, now](http://dx.doi.org/10.1016/j.chb.2014.12.038)! **
+**[Our paper](http://www.sciencedirect.com/science/article/pii/S0747563214007559) examining the link between [individual personality and the places people visit]({{ site.url }}/2012/11/20/foursquare-personality-experiment/) has just been published in [Computers in Human Behavior](http://www.journals.elsevier.com/computers-in-human-behavior/). It's open access, so you can [go read it for free, now](http://dx.doi.org/10.1016/j.chb.2014.12.038)! **
 
 In an experiment we ran previously, we asked users of Foursquare to take a personality test and give us access to their checkin history. The personality test gives us a measure of how each person scores for five different factors: Openness, Conscientiousness, Extraversion, Agreeableness and Neuroticism. The checkin history lists all the places they've ever checked in to using Foursquare. Because a couple of hundred people took part in the experiment, we ended up with a large number of individual personalities that we could link to over a hundred thousand venues. In total, this represents a pretty staggering half a million Foursquare checkins that we have personality data associated with.
 
@@ -36,5 +33,3 @@ The personality factor of Openness is related to feelings of creativity and arti
 Ultimately, this data could be incredibly useful in improving venue recommendation systems. Current systems use many different information 'cues' to recommend to a user a place they might like to visit. These cues include things such as where they have been in the past, where their friends have been, or where is popular nearby. Perhaps by including aspects of an individual's personality (so including aspects of _why_ they might visit somewhere) we can increase the usefulness of these recommendations.
 
 There is still a lot of analysis to be done on this data, and both myself and [Nyala Noe](http://www.cs.cf.ac.uk/contactsandpeople/staffpage.php?emailname=NoeN) are busy churning through it to discover other links between personality and the places people visit. As we find more interesting connections, I'll post more here.
-
-

@@ -3,12 +3,9 @@ author: martin
 comments: true
 date: 2011-06-02 09:23:51+00:00
 layout: post
-link: http://martinjc.com/2011/06/02/paper-published/
+link: https://martinjc.com/2011/06/02/paper-published/
 slug: paper-published
 title: Paper published
-wordpress_id: 132
-categories:
-- Research
 tags:
 - Ad Hoc Networks
 ---

@@ -3,12 +3,9 @@ author: martin
 comments: true
 date: 2013-08-16 15:47:06+00:00
 layout: post
-link: http://martinjc.com/2013/08/16/epsrc-doctoral-award-fellowship/
+link: https://martinjc.com/2013/08/16/epsrc-doctoral-award-fellowship/
 slug: epsrc-doctoral-award-fellowship
 title: EPSRC Doctoral Award Fellowship
-wordpress_id: 881
-categories:
-- Research
 tags:
 - EPSRC
 - fellowship

@@ -3,12 +3,9 @@ author: martin
 comments: true
 date: 2011-06-07 08:01:20+00:00
 layout: post
-link: http://martinjc.com/2011/06/07/reviewmfp/
+link: https://martinjc.com/2011/06/07/reviewmfp/
 slug: reviewmfp
 title: Losing Weight in 2011 continued... My Fitness Pal
-wordpress_id: 167
-categories:
-- Home
 tags:
 - android
 - apps
@@ -21,9 +18,7 @@ One of the best apps/services I've found for general fitness and nutrition and w
 
 The main selling point of the service is that it allows you to track what you eat and what exercise you do, in order to monitor and help regulate your calorific intake. When you create an account you put in the usual details as well as your weight and height, tell it how much activity you do on a daily basis and how much weight you'd like to lose, and it works out how many calories you should eat each day to hit that target. All you have to do is enter the food you eat (by searching the food database) and the exercise you do (cardiovascular/strength training can be entered separately) and it calculates your net deficit/over spend each day.
 
-I'm a big sucker for life-logging, and logging each part of each meal takes this to the extreme. I now have almost 5 months of data on what I've been eating. Why I'd want this, I'm not sure, but it's there now! The service also handles logging stats such as weight, waist, neck and chest measurements, although the progress graphs for these leave a lot to be desired. Like most good services, this is a website with associated mobile app, with android, iPhone and blackberry versions available. Some screenshots of the android app and the website are below:
-
-[gallery link="file"]
+I'm a big sucker for life-logging, and logging each part of each meal takes this to the extreme. I now have almost 5 months of data on what I've been eating. Why I'd want this, I'm not sure, but it's there now! The service also handles logging stats such as weight, waist, neck and chest measurements, although the progress graphs for these leave a lot to be desired. Like most good services, this is a website with associated mobile app, with android, iPhone and blackberry versions available. 
 
 **Features:
 **Large database of foods with calorific and nutritional information

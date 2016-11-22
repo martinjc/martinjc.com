@@ -3,12 +3,9 @@ author: martin
 comments: true
 date: 2012-06-26 11:49:30+00:00
 layout: post
-link: http://martinjc.com/2012/06/26/summer-projects/
+link: https://martinjc.com/2012/06/26/summer-projects/
 slug: summer-projects
 title: Summer Projects
-wordpress_id: 651
-categories:
-- Research
 tags:
 - CUROP
 - research

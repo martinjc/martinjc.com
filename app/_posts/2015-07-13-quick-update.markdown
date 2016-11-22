@@ -3,12 +3,9 @@ author: martin
 comments: true
 date: 2015-07-13 20:17:40+00:00
 layout: post
-link: http://martinjc.com/2015/07/13/quick-update/
+link: https://martinjc.com/2015/07/13/quick-update/
 slug: quick-update
 title: Quick Update...
-wordpress_id: 1271
-categories:
-- Home
 ---
 
 Been a bit quiet here recently. It's been a very busy few months. I've got a few projects and thoughts that I'll be posting more on in the next couple of weeks, but I figured it was worth a quick update on what's been going on, and what I've been up to.
@@ -53,6 +50,6 @@ I've started on my teaching qualification ([PgCUTL](http://www.cardiff.ac.uk/pcu
 
 The reason I've not posted in a while:
 
-[![Arthur!](http://martinjc.com/wp-content/uploads/2015/07/11325423_448026158711440_20867902_n-1024x1024.jpg)](http://martinjc.com/wp-content/uploads/2015/07/11325423_448026158711440_20867902_n.jpg)
+![Arthur!]({{ site.url }}/img/{{ page.date | date: "%Y-%m-%d"}}-{{page.slug}}/11325423_448026158711440_20867902_n-1024x1024.jpg)
 
 My son, Arthur James Chorley-Jones was born on 13th May 2015. He's amazing, I think he's the best thing that has ever happened, and since he's been around there has not been a huge amount of time for blogging, side-projects, and other such things. Which is ace.

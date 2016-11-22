@@ -3,13 +3,9 @@ author: martin
 comments: true
 date: 2015-01-26 10:15:16+00:00
 layout: post
-link: http://martinjc.com/2015/01/26/nhs-hackday-2015/
+link: https://martinjc.com/2015/01/26/nhs-hackday-2015/
 slug: nhs-hackday-2015
 title: NHS Hackday 2015
-wordpress_id: 1212
-categories:
-- Coding
-- Teaching
 tags:
 - coding
 - compj
@@ -47,7 +43,6 @@ Progress was good, with Matthew and William quickly defining a schema for descri
 
 By the end of the weekend we established a fairly decent system. It's able to visualise a few different types of data, at different resolutions, is mostly mobile friendly, and most importantly is easily extensible and adaptable. It's online now on our [github pages](http://bit.ly/hewnhs), and all the code and documentation is also in the [github repository](https://github.com/compjcdf/nhs_hack).
 
-[gallery columns="2" ids="1217,1218,1219,1220"]
 
 We'll continue development for a while to improve the usability and code quality, and hopefully we'll find a community willing to take the code base on and keep improving what could be a fairly useful resource for understanding the health of Wales.
 
@@ -71,11 +66,7 @@ One thing that sadly did stand out was a lack of participation from Comsc underg
 
 
 
-There's some great photos from the event on Flickr, courtesy of [Paul Clarke](https://www.flickr.com/photos/paul_clarke/) ([Saturday](https://www.flickr.com/photos/paul_clarke/sets/72157650042039338/) and [Sunday](https://www.flickr.com/photos/paul_clarke/sets/72157650456182132/)). I've pulled out some of the best of Team CompJ and added them here. All photos are released under a [Creative Commons BY-NC 2.0](https://creativecommons.org/licenses/by-nc/2.0/) licence.
-
-[gallery columns="4" size="medium" ids="1235,1234,1236,1233,1224,1225,1227,1228,1229,1230,1231,1237,1232,1238,1226,1239"]
-
-
+There's some great photos from the event on Flickr, courtesy of [Paul Clarke](https://www.flickr.com/photos/paul_clarke/) ([Saturday](https://www.flickr.com/photos/paul_clarke/sets/72157650042039338/) and [Sunday](https://www.flickr.com/photos/paul_clarke/sets/72157650456182132/)).
 
 
 

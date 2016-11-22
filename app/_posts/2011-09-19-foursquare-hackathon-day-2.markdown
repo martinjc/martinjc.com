@@ -3,13 +3,9 @@ author: martin
 comments: true
 date: 2011-09-19 08:25:15+00:00
 layout: post
-link: http://martinjc.com/2011/09/19/foursquare-hackathon-day-2/
+link: https://martinjc.com/2011/09/19/foursquare-hackathon-day-2/
 slug: foursquare-hackathon-day-2
 title: Foursquare Hackathon Cardiff - Day 2
-wordpress_id: 440
-categories:
-- Coding
-- Research
 tags:
 - apps
 - coding

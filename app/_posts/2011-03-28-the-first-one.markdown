@@ -3,10 +3,9 @@ author: martin
 comments: true
 date: 2011-03-28 20:44:09+00:00
 layout: post
-link: http://martinjc.com/2011/03/28/the-first-one/
+link: https://martinjc.com/2011/03/28/the-first-one/
 slug: the-first-one
 title: the first one
-wordpress_id: 56
 ---
 
 I figure blogging is now so outdated and behind the times that it is safe for me to start.

@@ -3,13 +3,9 @@ author: martin
 comments: true
 date: 2012-11-05 11:44:39+00:00
 layout: post
-link: http://martinjc.com/2012/11/05/7-years-1-month-and-4-days-later/
+link: https://martinjc.com/2012/11/05/7-years-1-month-and-4-days-later/
 slug: 7-years-1-month-and-4-days-later
 title: 7 years, 1 month and 4 days later...
-wordpress_id: 718
-categories:
-- PhD
-- Research
 tags:
 - pass
 - phd

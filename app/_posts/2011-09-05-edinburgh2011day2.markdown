@@ -3,12 +3,9 @@ author: martin
 comments: true
 date: 2011-09-05 06:19:02+00:00
 layout: post
-link: http://martinjc.com/2011/09/05/edinburgh2011day2/
+link: https://martinjc.com/2011/09/05/edinburgh2011day2/
 slug: edinburgh2011day2
 title: Edinburgh Festival... Day Two
-wordpress_id: 354
-categories:
-- Home
 tags:
 - edinburgh
 - holiday

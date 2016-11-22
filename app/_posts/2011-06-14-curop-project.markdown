@@ -3,12 +3,9 @@ author: martin
 comments: true
 date: 2011-06-14 09:14:01+00:00
 layout: post
-link: http://martinjc.com/2011/06/14/curop-project/
+link: https://martinjc.com/2011/06/14/curop-project/
 slug: curop-project
 title: Curop Project
-wordpress_id: 280
-categories:
-- Research
 tags:
 - augmented conversation
 - CUROP

@@ -3,13 +3,9 @@ author: martin
 comments: true
 date: 2015-01-05 09:27:51+00:00
 layout: post
-link: http://martinjc.com/2015/01/05/compj-labs-postcodes/
+link: https://martinjc.com/2015/01/05/compj-labs-postcodes/
 slug: compj-labs-postcodes
 title: CompJ Labs - Postcodes
-wordpress_id: 1204
-categories:
-- Research
-- Teaching
 tags:
 - coding
 - compj

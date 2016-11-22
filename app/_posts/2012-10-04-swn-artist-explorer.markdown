@@ -3,14 +3,9 @@ author: martin
 comments: true
 date: 2012-10-04 09:48:18+00:00
 layout: post
-link: http://martinjc.com/2012/10/04/swn-artist-explorer/
+link: https://martinjc.com/2012/10/04/swn-artist-explorer/
 slug: swn-artist-explorer
 title: SWN Artist Explorer
-wordpress_id: 706
-categories:
-- Coding
-- Home
-- Music
 tags:
 - coding
 - development
@@ -26,10 +21,6 @@ The lineup this year is another cracking one, but as usual with four days of ban
 
 
 
-I decided this year that it would be nice to have an easy visual way to see what the bands are like, so decided to build myself a little [artist explorer](http://martinjc.com/swn/). This uses tags from [Last.FM](www.last.fm) and generates word clouds using a nice [javascript plugin](https://github.com/jasondavies/d3-cloud) for [d3](http://mbostock.github.com/d3/) written by [Jason Davies](http://www.jasondavies.com/). Most of the word cloud js was hacked together from Jason's [example](http://www.jasondavies.com/wordcloud/), with some mangling and modification from me. I downloaded the tags for artists offline and stuck them in a .json file so it doesn't hit the Last.FM servers on every page load. What we end up with is a fairly simple tag cloud example that allows you to see at a glance how Last.FM users have categorised the bands. Selecting a tag in the word cloud will show you the other bands in the lineup that have also had that tag applied to them. Screenshots of the site are below:
-
-[gallery link="file"]
-
-but of course it's also [online here](http://martinjc.com/swn)!
+I decided this year that it would be nice to have an easy visual way to see what the bands are like, so decided to build myself a little [artist explorer]({{ site.url }}/swn/). This uses tags from [Last.FM](www.last.fm) and generates word clouds using a nice [javascript plugin](https://github.com/jasondavies/d3-cloud) for [d3](http://mbostock.github.com/d3/) written by [Jason Davies](http://www.jasondavies.com/). Most of the word cloud js was hacked together from Jason's [example](http://www.jasondavies.com/wordcloud/), with some mangling and modification from me. I downloaded the tags for artists offline and stuck them in a .json file so it doesn't hit the Last.FM servers on every page load. What we end up with is a fairly simple tag cloud example that allows you to see at a glance how Last.FM users have categorised the bands. Selecting a tag in the word cloud will show you the other bands in the lineup that have also had that tag applied to them. Of course it's [online here]({{ site.url }}/swn)!
 
 Meanwhile, the code is available on [github](https://github.com/martinjc/swn_tagger), with no guarantees that any of it actually works.

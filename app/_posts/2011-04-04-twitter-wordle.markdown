@@ -3,12 +3,9 @@ author: martin
 comments: true
 date: 2011-04-04 13:36:44+00:00
 layout: post
-link: http://martinjc.com/2011/04/04/twitter-wordle/
+link: https://martinjc.com/2011/04/04/twitter-wordle/
 slug: twitter-wordle
 title: Twitter Wordle
-wordpress_id: 79
-categories:
-- Coding
 tags:
 - coding
 - development
@@ -24,7 +21,7 @@ I found a python library called [pyTagCloud](https://github.com/atizo/PyTagCloud
 
 For instance, here's the display running with one of today's trending topics: 'Alan Titchmarsh':
 
-[![](http://martinchorley.com/wp-content/uploads/2011/04/tweets12-300x182.png)](http://martinchorley.com/wp-content/uploads/2011/04/tweets12.png)
+[![](http://martinchorley.com/img/{{ page.date | date: "%Y-%m-%d"}}-{{page.slug}}/tweets12-300x182.png)](http://martinchorley.com/img/{{ page.date | date: "%Y-%m-%d"}}-{{page.slug}}/tweets12.png)
 
 It's not entirely perfect, I need to do some more filtering on the text to remove some words that aren't removed by the stop word filtering that pyTagCloud does such as 'rt', 'http', 'bit', 'ly' and so on. It would also be good to remove things that aren't words, like 'xxxxxx'. I've been looking at the [Natural Language Toolkit](http://www.nltk.org/) for a couple of days for the other project, so I'll probably re-use some of that code here too.
 

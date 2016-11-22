@@ -3,12 +3,9 @@ author: martin
 comments: true
 date: 2011-06-02 09:13:28+00:00
 layout: post
-link: http://martinjc.com/2011/06/02/unexpected/
+link: https://martinjc.com/2011/06/02/unexpected/
 slug: unexpected
 title: Unexpected
-wordpress_id: 73
-categories:
-- Research
 tags:
 - AOC 2011
 - WowMom 2011

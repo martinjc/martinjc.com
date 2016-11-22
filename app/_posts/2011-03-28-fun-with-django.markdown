@@ -3,12 +3,9 @@ author: martin
 comments: true
 date: 2011-03-28 21:12:15+00:00
 layout: post
-link: http://martinjc.com/2011/03/28/fun-with-django/
+link: https://martinjc.com/2011/03/28/fun-with-django/
 slug: fun-with-django
 title: fun with django...
-wordpress_id: 58
-categories:
-- Research
 tags:
 - coding
 - development
@@ -28,5 +25,3 @@ So, there. Django. Try it out, it's aces.
 
 
 p.s - the project will hopefully be open to the public at some point in the future, once it is, I'll post here.
-
-

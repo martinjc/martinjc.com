@@ -3,12 +3,9 @@ author: martin
 comments: true
 date: 2014-11-04 12:31:40+00:00
 layout: post
-link: http://martinjc.com/2014/11/04/how-do-people-decide-whether-or-not-to-read-a-tweet/
+link: https://martinjc.com/2014/11/04/how-do-people-decide-whether-or-not-to-read-a-tweet/
 slug: how-do-people-decide-whether-or-not-to-read-a-tweet
 title: 'How do people decide whether or not to read a tweet? '
-wordpress_id: 1163
-categories:
-- Research
 tags:
 - content
 - decision making
@@ -28,11 +25,9 @@ We looked at two different types of information:
 
 
 
-
-    
   1. Simple numbers that describe the tweet, such as the number of retweets it has, or numbers that describe the author, such as how many followers they have, or how many tweets they've written.
 
-    
+
   2. Whether a relationship between the reader and the author is important, and whether that relationship was best shown through subtle hints, or direct information.
 
 
@@ -43,6 +38,4 @@ When readers can see two pieces of information, one about their relationship wi
 
 This work offers an understanding of how the decision-making process works on Twitter when users are skimming their timelines for something to read, and has particular implications for the display and promotion of non-timeline content within content streams. For instance, readers may pay more attention to adverts and promoted content if the link between themselves and the author is highlighted.
 
-[Previous results](http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6406256)  from an early experiment were published at [SocialCom](http://martinjc.com/2012/09/07/socialcom-2012/). The results in [this new paper](http://www.sciencedirect.com/science/article/pii/S1071581914001268) are from a modified and expanded version of [this earlier experiment](http://martinjc.com/2012/05/18/tweetcues-twitter-experiment/).
-
-
+[Previous results](http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6406256)  from an early experiment were published at [SocialCom]({{ site.url }}/2012/09/07/socialcom-2012/). The results in [this new paper](http://www.sciencedirect.com/science/article/pii/S1071581914001268) are from a modified and expanded version of [this earlier experiment]({{ site.url }}/2012/05/18/tweetcues-twitter-experiment/).

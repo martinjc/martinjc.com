@@ -3,12 +3,9 @@ author: martin
 comments: true
 date: 2011-08-25 19:25:27+00:00
 layout: post
-link: http://martinjc.com/2011/08/25/edinburgh2011day1part1/
+link: https://martinjc.com/2011/08/25/edinburgh2011day1part1/
 slug: edinburgh2011day1part1
 title: Edinburgh 2011.... Day One (The Journey)
-wordpress_id: 341
-categories:
-- Home
 tags:
 - edinburgh
 - holiday

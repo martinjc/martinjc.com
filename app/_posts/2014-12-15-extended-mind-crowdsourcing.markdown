@@ -3,12 +3,9 @@ author: martin
 comments: true
 date: 2014-12-15 13:37:50+00:00
 layout: post
-link: http://martinjc.com/2014/12/15/extended-mind-crowdsourcing/
+link: https://martinjc.com/2014/12/15/extended-mind-crowdsourcing/
 slug: extended-mind-crowdsourcing
 title: Extended Mind Crowdsourcing
-wordpress_id: 1080
-categories:
-- Research
 tags:
 - crowdsourcing
 - extended mind
@@ -22,7 +19,7 @@ _**Update 13/01/15: the paper containing the research described below is current
 
 _This post is one I'm cross-posting both here and on the [MobiSoc](https://mobisoc.cs.cf.ac.uk/) blog. Here, because it's my personal translation of one of our latest research papers, and there because it's a very good paper mostly written and driven by Roger Whitaker, so deserves an 'official' blog post!_
 
-A lot of use is made of Crowdsourcing in both business and academia. Business likes it because it allows simple tasks to be outsourced for a small cost. Researchers like it because it allows the gathering of large amounts of data from participants, again for minimal cost. (For an example of this, see our [TweetCues](http://martinjc.com/2012/09/07/socialcom-2012/) work ([paper here](http://www.sciencedirect.com/science/article/pii/S1071581914001268)), where we paid Twitter users to take a simple survey and massively increased our sample size for a few dollars). As technology is developing, we can apply crowdsourcing to new problems; particularly those concerned with collective human behaviour and culture.
+A lot of use is made of Crowdsourcing in both business and academia. Business likes it because it allows simple tasks to be outsourced for a small cost. Researchers like it because it allows the gathering of large amounts of data from participants, again for minimal cost. (For an example of this, see our [TweetCues]({{ site.url }}/2012/09/07/socialcom-2012/) work ([paper here](http://www.sciencedirect.com/science/article/pii/S1071581914001268)), where we paid Twitter users to take a simple survey and massively increased our sample size for a few dollars). As technology is developing, we can apply crowdsourcing to new problems; particularly those concerned with collective human behaviour and culture.
 
 
 
@@ -35,19 +32,19 @@ The traditional [definition of crowdsourcing](http://ieeexplore.ieee.org/xpls/ab
 
 
 
-    
+
   1. a clearly defined crowd
 
-    
+
   2. a task with a clear goal
 
-    
+
   3. clear recompense received by the crowd
 
-    
+
   4. an identified owner of the task
 
-    
+
   5. an online process
 
 
@@ -56,8 +53,7 @@ The combination of all these things allows us to complete a large set of simple 
 
 
 
-### [![crowdsourcing_img](http://martinjc.com/wp-content/uploads/2014/09/crowdsourcing_img-1024x428.png)](http://martinjc.com/wp-content/uploads/2014/09/crowdsourcing_img.png) [
-](http://martinjc.com/wp-content/uploads/2014/09/emc_img.png)Participatory Computing
+### ![Participatory Computing]({{ site.url }}/img/{{ page.date | date: "%Y-%m-%d"}}-{{page.slug}}/crowdsourcing_img-1024x428.png)
 
 
 
@@ -65,7 +61,7 @@ Participatory computing is a related concept to crowdsourcing, based around the 
 
 
 
-[![participatory_img](http://martinjc.com/wp-content/uploads/2014/09/participatory_img-1024x585.png)](http://martinjc.com/wp-content/uploads/2014/09/participatory_img.png)
+![participatory_img]({{ site.url }}/img/{{ page.date | date: "%Y-%m-%d"}}-{{page.slug}}/participatory_img-1024x585.png)
 
 
 
@@ -79,8 +75,7 @@ Extended mind crowdsourcing takes crowdsourcing and participatory computing a st
 
 
 
-[![emc_img](http://martinjc.com/wp-content/uploads/2014/09/emc_img-1024x626.png)](http://martinjc.com/wp-content/uploads/2014/09/emc_img.png)
-
+![emc_img]({{ site.url }}/img/{{ page.date | date: "%Y-%m-%d"}}-{{page.slug}}/emc_img-1024x626.png)
 
 
 What this means is that we can crowdsource the collection of data and completion of tasks using both individual users, their devices, and the extended mind that the two items together represent. Thus by accessing the information stored within a smartphone or similar personal device, and the wider internet services that the device can connect to, we can access the extended mind of a participant and thus learn more about his or her behaviour and individual characteristics. In essence, extended mind crowdsourcing captures the way in which humans undertake and respond to daily activity. In this sense it supports observation of human life and our interpretation of and response to the environment. By including social networks and social media communication within the extended mind, it is clear that while an individual extended mind may represent a single individual human, it is also possible to represent a group, such as a network or a collective using extended mind crowdsourcing.

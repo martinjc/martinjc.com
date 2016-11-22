@@ -3,12 +3,9 @@ author: martin
 comments: true
 date: 2013-04-22 10:29:08+00:00
 layout: post
-link: http://martinjc.com/2013/04/22/social-lecture-experimen/
+link: https://martinjc.com/2013/04/22/social-lecture-experimen/
 slug: social-lecture-experimen
 title: Social Media Lecture Experiment
-wordpress_id: 855
-categories:
-- Teaching
 tags:
 - challenge
 - teaching

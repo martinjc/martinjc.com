@@ -3,14 +3,9 @@ author: martin
 comments: true
 date: 2011-09-14 15:57:16+00:00
 layout: post
-link: http://martinjc.com/2011/09/14/foursquare-hackathon/
+link: https://martinjc.com/2011/09/14/foursquare-hackathon/
 slug: foursquare-hackathon
 title: Foursquare Hackathon
-wordpress_id: 429
-categories:
-- Coding
-- Home
-- Research
 tags:
 - coding
 - foursquare

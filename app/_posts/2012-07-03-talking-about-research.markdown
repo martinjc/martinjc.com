@@ -3,12 +3,9 @@ author: martin
 comments: true
 date: 2012-07-03 15:08:21+00:00
 layout: post
-link: http://martinjc.com/2012/07/03/talking-about-research/
+link: https://martinjc.com/2012/07/03/talking-about-research/
 slug: talking-about-research
 title: Talking about research
-wordpress_id: 655
-categories:
-- Research
 tags:
 - dissemination
 - rambling

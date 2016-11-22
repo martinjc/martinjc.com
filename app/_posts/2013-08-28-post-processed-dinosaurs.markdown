@@ -3,13 +3,9 @@ author: martin
 comments: true
 date: 2013-08-28 10:45:45+00:00
 layout: post
-link: http://martinjc.com/2013/08/28/post-processed-dinosaurs/
+link: https://martinjc.com/2013/08/28/post-processed-dinosaurs/
 slug: post-processed-dinosaurs
 title: Post-Processed Dinosaurs
-wordpress_id: 927
-categories:
-- Cinema
-- Home
 tags:
 - cinema
 - dinosaurs

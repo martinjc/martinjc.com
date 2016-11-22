@@ -3,14 +3,9 @@ author: martin
 comments: true
 date: 2013-07-25 13:23:14+00:00
 layout: post
-link: http://martinjc.com/2013/07/25/summer-project-update/
+link: https://martinjc.com/2013/07/25/summer-project-update/
 slug: summer-project-update
 title: Summer Project update
-wordpress_id: 883
-categories:
-- Research
-- Teaching
-- WorkDiary
 tags:
 - android
 - coding
@@ -25,7 +20,7 @@ tags:
 - work
 ---
 
-We are storming along with [summer projects](http://martinjc.com/research/student-projects/) now, and starting to see some really good results.
+We are storming along with [summer projects]({{ site.url }}/research/student-projects/) now, and starting to see some really good results.
 
 Liam Turner (who is starting a PhD in the school in October) has been working hard to create a mobile version of the [4SQPersonality](http://www.cs.cf.ac.uk/recognition/foursqexp/) app. His work is coming along really well, with a great mobile HTML version now up and running, a native android wrapper working, and an iOS wrapper on its way. With any luck we'll have mobile apps for both major platforms ready to be released before the summer is over.
 

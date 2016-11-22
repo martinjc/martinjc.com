@@ -3,12 +3,9 @@ author: martin
 comments: true
 date: 2011-06-09 08:07:33+00:00
 layout: post
-link: http://martinjc.com/2011/06/09/scraping-myfitnesspal-dat/
+link: https://martinjc.com/2011/06/09/scraping-myfitnesspal-dat/
 slug: scraping-myfitnesspal-dat
 title: Scraping data from MyFitnessPal with python
-wordpress_id: 244
-categories:
-- Coding
 tags:
 - coding
 - diet

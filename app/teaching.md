@@ -3,7 +3,7 @@ author: martin
 comments: false
 date: 2011-03-25 20:22:40+00:00
 layout: page
-link: http://martinjc.com/teaching/
+link: https://martinjc.com/teaching/
 slug: teaching
 title: teaching
 permalink: /teaching/
@@ -35,4 +35,4 @@ I also co-teach the [Digital Investigation (MCT542)](http://handbooks.data.card
 
 
 
-Details of my previous teaching duties (including tutoring work carried out during my PhD) can be found under '[past teaching](http://martinjc.com/teaching/past-teaching/)'.
+Details of my previous teaching duties (including tutoring work carried out during my PhD) can be found under '[past teaching]({{ site.url }}/teaching/past-teaching/)'.

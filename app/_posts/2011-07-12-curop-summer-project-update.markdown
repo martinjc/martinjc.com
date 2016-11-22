@@ -3,12 +3,9 @@ author: martin
 comments: true
 date: 2011-07-12 14:04:10+00:00
 layout: post
-link: http://martinjc.com/2011/07/12/curop-summer-project-update/
+link: https://martinjc.com/2011/07/12/curop-summer-project-update/
 slug: curop-summer-project-update
 title: CUROP summer project update
-wordpress_id: 304
-categories:
-- Research
 tags:
 - CUROP
 - development

@@ -3,13 +3,9 @@ author: martin
 comments: true
 date: 2012-01-12 16:25:27+00:00
 layout: post
-link: http://martinjc.com/2012/01/12/520/
+link: https://martinjc.com/2012/01/12/520/
 slug: '520'
 title: matplotlib + mac os x 10.7 (Lion)
-wordpress_id: 520
-categories:
-- Coding
-- Research
 ---
 
 _Today I spent a good long chunk of my day shouting at my computer and trying to install matplotlib, a very handy python library. I finally solved it, so figured it was worth posting about here, in case anyone else has the same problem._
@@ -18,7 +14,7 @@ I recently updated my system python to version 2.7, so I've had to go through re
 
 I tried to install using pip, I tried to install using easy_install, and I tried to install by downloading the source and compiling it. None of these methods worked and I was often getting compiler errors like this:
 
-    
+
     llvm-g++-4.2: error trying to exec '/usr/bin/../llvm-gcc-4.2/bin/powerpc-apple-darwin11-llvm-g++-4.2': execvp: No such file or directory
 
 
@@ -26,16 +22,16 @@ Which is very annoying. So I spent some time googling, and it seemed that the re
 
 The answer lay with my version of python. Running
 
-    
+
     <code>file $(which python)</code>
 
 
 revealed that my version of python was also universal:
 
-    
+
     <code>
-    /usr/local/bin/python: Mach-O universal binary with 3 architectures 
-    /usr/local/bin/python (for architecture i386): Mach-O executable i386 
+    /usr/local/bin/python: Mach-O universal binary with 3 architectures
+    /usr/local/bin/python (for architecture i386): Mach-O executable i386
     /usr/local/bin/python (for architecture ppc): Mach-O executable ppc
     /usr/local/bin/python (for architecture x86_64): Mach-O 64-bit executable x86_64</code>
 

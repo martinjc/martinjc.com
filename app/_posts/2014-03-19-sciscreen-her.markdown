@@ -3,12 +3,9 @@ author: martin
 comments: true
 date: 2014-03-19 10:37:12+00:00
 layout: post
-link: http://martinjc.com/2014/03/19/sciscreen-her/
+link: https://martinjc.com/2014/03/19/sciscreen-her/
 slug: sciscreen-her
 title: SciSCREEN - 'Her'
-wordpress_id: 980
-categories:
-- Cinema
 tags:
 - ai
 - movies

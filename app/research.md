@@ -3,32 +3,56 @@ author: martin
 comments: false
 date: 2011-03-25 11:46:38+00:00
 layout: page
-link: http://martinjc.com/research/
+link: https://martinjc.com/research/
 slug: research
 title: research
 permalink: /research/
 ---
 
-My research has a big cross-disciplinary aspect - I'm interested in doing research wherever computer science (and ICT systems/devices) brush up against the real world, as things are far more interesting when people are involved! My main research is therefore in the areas of human behaviour, looking at social, mobile and pervasive computing, ad-hoc and opportunistic networks and information dissemination - if there's a scenario where people and computers mix and interact, that's where I get involved. I'm also keen to investigate the use of computer science, social media, and data science within Journalism, as both a tool for improving communication and storytelling, and as an input and tool for data gathering, story creation and newsroom workflows.
+I'm interested in doing research wherever computer science, IT systems and devices brush up against the real world, as things are far more interesting when people are involved. My main research is therefore very cross-disciplinary, mainly in the area of human behaviour, looking at social, mobile and pervasive computing and information dissemination - if there's a scenario where people and computers mix and interact, that's where I get involved. I'm very keen on investigating the use of computer science, social media, and data science within Journalism, as both a tool for improving communication and storytelling, and as an input and tool for data gathering, story creation and newsroom workflows. I have a background in high performance computing.
 
-I have a background in high performance computing, and am keen on using the massive computational power available today to further social computing research.
 
 ## Current Research
 
+My recent research has looked at issues of communication within and outside of the Journalism community. I have also been examining what social media can tell us about alcohol consumption.
+
+Recently I was working on a 12 month EPSRC Fellowship (2013 Doctoral Award Prize) examining the relationship between an individual's personality (in terms of the OCEAN five-factor personality model) and the places they visit or check in to. This work has been [published]({{ site.url }}/publications/)
+
+## Reviewing and Committees
+
+I have served as reviewer and on committees for many journals and conferences.
+
+### Journals
+
+I'm guest editor for a special issue of the International Journal of Human-Computer Interaction: "[Following User Pathways](http://explore.tandfonline.com/cfp/est/hihc-cfb-8.2016)".
+
+I have reviewed for the following journals:
+
+  * Concurrency and Computation: Practice and Experience
+  * Computer Communications
+  * Computer Physics Communications
+  * Journal of Computational Science
+  * International Journal of Human-Computer Studies
+  * ISPRS International Journal of Geo-Information
+
+### Conference/Workshop Committees
+
+I have served on various committees for conferences and workshops:
 
 
 
-
-Recently I was working on a 12 month EPSRC Fellowship (2013 Doctoral Award Prize) examining the relationship between an individual's personality (in terms of the OCEAN five-factor personality model) and the places they visit or check in to. Some work on this has already been [published](http://martinjc.com/research/publications/), and more papers are in preparation. It is hoped that this work will lead to a novel place recommendation system which uses personality as a major signal to recommend new venues to users.
-
-I'm also co-organiser (and majestic overlord) of the school's [Mobile and Social Computing Research](http://mobisoc.cs.cf.ac.uk) 'group'. We organise bi-monthly informal discussion sessions for all interested staff and PhD students, and monthly formal seminars/talks on topics of interest to the group. I used to be co-organiser with [Dr Matthew Williams](http://www.mattjw.net/), but he left.
-
-As well as this, I have served as reviewer and on committees for many [journals and conferences](http://martinjc.com/research/commembe/).
-
-
+  * I'm was a member of the Organising Committee for the "[Following User Pathways: Cross Platform and Mixed Methods Analysis in Social Media Studies](http://www.ksri.kit.edu/1516.php)" workshop, held at [CHI 2016](http://chi2016.acm.org/wp/)
+  * I've reviewed for[ CSCW 2016](http://cscw.acm.org/2016/index.php)
+  * I'm on the Technical Program Committee for some conferences and workshops:
+    * Work In Progress section of [CHI 2014](http://chi2014.acm.org/) & [CHI 2015](http://chi2015.acm.org/)
+    * Workshop on "Social Media World Sensors" (SIDEWAYS) at the International Conference on HyperText and Social Media (HT) 2015 & 2016
+    * Workshop on "Healthy and Secure People" (HSP) at the International Conference on Health and Social Care Information Systems and Technologies (HCist) 2015 & 2016
+  * Publicity Chair for [Social Computing and its Applications 2013](http://socialcloud.aifb.uni-karlsruhe.de/confs/SCA2013/)
+  * Publicity Chair for [Cloud and Green Computing 2013](http://socialcloud.aifb.uni-karlsruhe.de/confs/CGC2013/)
+  * Co-Organiser and Technical Program Committee for [Collective Social Awareness and Relevance workshop 2013](http://www.cs.cf.ac.uk/csar)
 
 ## Past Research
 
-Prior to my fellowship, I was [working](http://martinjc.com/research/past-research/recognition/) on the [Recognition](http://www.recognition-project.eu/) project, an EU FP7 project attempting to use relevance and human cognitive processes within IT systems to improve content dissemination and filtering. The work included areas such as how human decision making processes relate to twitter and micro-blogging, and examining the relationship between spatial places/venues and people in terms of both their personality and the expression they use towards the places they've been.
+Prior to my fellowship, I was working on the [Recognition](http://www.recognition-project.eu/) project, an EU FP7 project attempting to use relevance and human cognitive processes within IT systems to improve content dissemination and filtering. The work included areas such as how human decision making processes relate to twitter and micro-blogging, and examining the relationship between spatial places/venues and people in terms of both their personality and the expression they use towards the places they've been.
 
-Before the Recognition project, I spent a year and a half [working](http://martinjc.com/research/past-research/socialnets/) on the [SocialNets](http://www.social-nets.eu/) project, another EU FP7 project concerning pervasive adaptation looking to improve mobile and ad-hoc systems using social network information and adaptive strategies.
+Before the Recognition project, I spent a year and a half working on the [SocialNets](http://www.social-nets.eu/) project, another EU FP7 project concerning pervasive adaptation looking to improve mobile and ad-hoc systems using social network information and adaptive strategies.

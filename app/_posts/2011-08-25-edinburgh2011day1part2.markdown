@@ -3,12 +3,9 @@ author: martin
 comments: true
 date: 2011-08-25 20:23:30+00:00
 layout: post
-link: http://martinjc.com/2011/08/25/edinburgh2011day1part2/
+link: https://martinjc.com/2011/08/25/edinburgh2011day1part2/
 slug: edinburgh2011day1part2
 title: Edinburgh Festival... Day One (The Shows)
-wordpress_id: 345
-categories:
-- Home
 tags:
 - edinburgh
 - holiday
@@ -21,7 +18,7 @@ Down the street a little way some street entertainers were doing a show with tig
 
 While we hadn't planned on it, we found ourselves very close to the front of the queue for the show, so after queueing for a short while we headed in and were rewarded with really good seats very close to the front of the theatre.
 
-[caption id="attachment_350" align="alignright" width="150" caption="Ever wondered why all the clocks are set to 10:08? I hadn't, until Dave Gorman pointed it out in his show..."][![](http://martinchorley.com/wp-content/uploads/2011/08/HTC-Products2-150x150.jpg)](http://martinchorley.com/wp-content/uploads/2011/08/HTC-Products2.jpg)[/caption]
+![Ever wondered why all the clocks are set to 10:08? I hadn't, until Dave Gorman pointed it out in his show...](http://martinchorley.com/img/{{ page.date | date: "%Y-%m-%d"}}-{{page.slug}}/HTC-Products2-150x150.jpg)
 
 "**Dave Gorman's Powerpoint Presentation**" did exactly what it said on the tin: Dave Gorman stood up and did a powerpoint presentation. Of course, there was a bit more to it than that, it was basically an incredibly funny sequence of things that Dave had found interesting or amusing recently, all presented in brilliant fashion. The topic flowed from why people insist on calling him a jewish comedian, through mobile phone advertising and on to making a bit of trouble with Jim Davidson. Dave was energetic and amusing, in all it was a thoroughly brilliant hour of comedy and a great start to the festival. Also nice for it not to be 'Dave Gorman has a wacky adventure and then tells you about it', as he is sometimes accused of doing.
 

@@ -3,12 +3,9 @@ author: martin
 comments: true
 date: 2011-06-29 09:20:16+00:00
 layout: post
-link: http://martinjc.com/2011/06/29/wowmom-2011/
+link: https://martinjc.com/2011/06/29/wowmom-2011/
 slug: wowmom-2011
 title: WowMom 2011
-wordpress_id: 367
-categories:
-- Research
 tags:
 - AOC 2011
 - conference

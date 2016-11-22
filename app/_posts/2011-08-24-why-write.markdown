@@ -3,12 +3,9 @@ author: martin
 comments: true
 date: 2011-08-24 21:28:18+00:00
 layout: post
-link: http://martinjc.com/2011/08/24/why-write/
+link: https://martinjc.com/2011/08/24/why-write/
 slug: why-write
 title: Why write?
-wordpress_id: 336
-categories:
-- Home
 tags:
 - blog
 - work

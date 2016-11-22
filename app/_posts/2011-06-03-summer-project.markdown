@@ -3,12 +3,9 @@ author: martin
 comments: true
 date: 2011-06-03 09:52:48+00:00
 layout: post
-link: http://martinjc.com/2011/06/03/summer-project/
+link: https://martinjc.com/2011/06/03/summer-project/
 slug: summer-project
 title: Summer project
-wordpress_id: 201
-categories:
-- Research
 tags:
 - augmented conversation
 - research

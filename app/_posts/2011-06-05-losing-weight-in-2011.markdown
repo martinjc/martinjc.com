@@ -3,12 +3,9 @@ author: martin
 comments: true
 date: 2011-06-05 16:19:20+00:00
 layout: post
-link: http://martinjc.com/2011/06/05/losing-weight-in-2011/
+link: https://martinjc.com/2011/06/05/losing-weight-in-2011/
 slug: losing-weight-in-2011
 title: Losing weight in 2011
-wordpress_id: 72
-categories:
-- Home
 tags:
 - apps
 - diet

@@ -3,19 +3,14 @@ author: martin
 comments: true
 date: 2012-05-18 12:47:18+00:00
 layout: post
-link: http://martinjc.com/2012/05/18/tweetcues-twitter-experiment/
+link: https://martinjc.com/2012/05/18/tweetcues-twitter-experiment/
 slug: tweetcues-twitter-experiment
 title: TweetCues Twitter Experiment
-wordpress_id: 607
-categories:
-- Coding
-- Research
-- WorkDiary
 ---
 
 As I mentioned in the last post, our Twitter Experiment (called [TweetCues](http://www.cs.cf.ac.uk/recognition/twitterexp/)) is now live. Just this morning I updated it to version 2.0 to begin collection of data for a journal paper, assuming of course that our conference paper on the initial findings gets accepted somewhere.
 
-[caption id="attachment_611" align="alignright" width="300" caption="TweetCues Homepage"][![TweetCues Homepage](http://martinjc.com/wp-content/uploads/2012/05/exp11-300x199.png)](http://martinjc.com/wp-content/uploads/2012/05/exp11.png)[/caption]
+![TweetCues Homepage]({{ site.url }}/img/{{ page.date | date: "%Y-%m-%d"}}-{{page.slug}}/exp11-300x199.png)
 
 This has been an interesting project that has taken quite a long while to come to fruition. Stuart had the idea for the experiment way back at the beginning of the Recognition project - in fact the initial project document is dated from March 2011. We thought it would be a good quick easy win for the start of the project, and would get us a publication very quickly - how wrong we were.
 

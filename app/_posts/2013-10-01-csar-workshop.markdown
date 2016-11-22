@@ -3,13 +3,9 @@ author: martin
 comments: true
 date: 2013-10-01 10:22:49+00:00
 layout: post
-link: http://martinjc.com/2013/10/01/csar-workshop/
+link: https://martinjc.com/2013/10/01/csar-workshop/
 slug: csar-workshop
 title: CSAR Workshop
-wordpress_id: 936
-categories:
-- Research
-- WorkDiary
 tags:
 - chair
 - csar
