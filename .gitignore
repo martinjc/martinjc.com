@@ -9,7 +9,7 @@
 #
 .jekyll-metadata
 *.lock
-dist
+dist/*
 .tmp
 
 
