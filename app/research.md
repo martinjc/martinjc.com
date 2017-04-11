@@ -9,14 +9,14 @@ title: research
 permalink: /research/
 ---
 
-I'm interested in doing research wherever computer science, IT systems and devices brush up against the real world, as things are far more interesting when people are involved. My main research is therefore very cross-disciplinary, mainly in the area of human behaviour, looking at social, mobile and pervasive computing and information dissemination - if there's a scenario where people and computers mix and interact, that's where I get involved. I'm very keen on investigating the use of computer science, social media, and data science within Journalism, as both a tool for improving communication and storytelling, and as an input and tool for data gathering, story creation and newsroom workflows. I have a background in high performance computing.
+A large focus of my current research is in the area of Computational and Data Journalism, including studying Data Journalism education. I'm interested in doing research wherever computer science, IT systems and devices brush up against the real world, as things are far more interesting when people are involved. My research is therefore cross-disciplinary, mainly in the area of human behaviour, looking at social, mobile and pervasive computing and information dissemination - if there's a scenario where people and computers mix and interact, that's where I get involved. I'm very keen on investigating the use of computer science, social media, and data science within Journalism, as both a tool for improving communication and storytelling, and as an input and tool for data gathering, story creation and newsroom workflows. I have a background in high performance computing.
 
 
 ## Current Research
 
 My recent research has looked at issues of communication within and outside of the Journalism community. I have also been examining what social media can tell us about alcohol consumption.
 
-Recently I was working on a 12 month EPSRC Fellowship (2013 Doctoral Award Prize) examining the relationship between an individual's personality (in terms of the OCEAN five-factor personality model) and the places they visit or check in to. This work has been [published]({{ site.url }}/publications/)
+Before I began work as a Lecturer I was working on a 12 month EPSRC Fellowship (2013 Doctoral Award Prize) examining the relationship between an individual's personality (in terms of the OCEAN five-factor personality model) and the places they visit or check in to. This work has been [published]({{ site.url }}/publications/)
 
 ## Reviewing and Committees
 
@@ -40,9 +40,9 @@ I have reviewed for the following journals:
 I have served on various committees for conferences and workshops:
 
 
-
-  * I'm was a member of the Organising Committee for the "[Following User Pathways: Cross Platform and Mixed Methods Analysis in Social Media Studies](http://www.ksri.kit.edu/1516.php)" workshop, held at [CHI 2016](http://chi2016.acm.org/wp/)
-  * I've reviewed for[ CSCW 2016](http://cscw.acm.org/2016/index.php)
+  * I'm co-organising the [European Data and Computational Journalism Conference](http://datajconf.com/) in Dublin in July 2017.
+  * I was a member of the Organising Committee for the "[Following User Pathways: Cross Platform and Mixed Methods Analysis in Social Media Studies](http://www.ksri.kit.edu/1516.php)" workshop, held at [CHI 2016](http://chi2016.acm.org/wp/)
+  * I've reviewed for [CSCW 2016](http://cscw.acm.org/2016/index.php)
   * I'm on the Technical Program Committee for some conferences and workshops:
     * Work In Progress section of [CHI 2014](http://chi2014.acm.org/) & [CHI 2015](http://chi2015.acm.org/)
     * Workshop on "Social Media World Sensors" (SIDEWAYS) at the International Conference on HyperText and Social Media (HT) 2015 & 2016

@@ -15,7 +15,10 @@ h2 {
 
 h1, h2 {
     margin-left: -$gap-size;
-    padding: $spacing-unit/4 0 $spacing-unit/8 $spacing-unit/4;
+    padding-top: $spacing-unit/4;
+    padding-bottom: $spacing-unit/8;
+    padding-left: $spacing-unit/8;
+    //padding: $spacing-unit/4 $spacing-unit/4 $spacing-unit/8 $spacing-unit/4;
 }
 
 ul {
@@ -118,7 +121,10 @@ nav {
     }
 
     h1, h2, h3 {
-        padding: $spacing-unit/4 0 $spacing-unit/8 $spacing-unit/4;
+        padding-top: $spacing-unit/4;
+        padding-bottom: 0;
+        padding-left: $spacing-unit/8;
+        //padding: $spacing-unit/4 0 $spacing-unit/8 $spacing-unit/4;
     }
 
     .headshot {
