@@ -1,6 +1,6 @@
 /*
-* Gruntfile adapted from https://github.com/ozasadnyy/optimized-jekyll-grunt
-*/
+ * Gruntfile adapted from https://github.com/ozasadnyy/optimized-jekyll-grunt
+ */
 
 'use strict';
 
@@ -8,7 +8,9 @@ module.exports = function(grunt) {
     // Show elapsed time after tasks run
     require('time-grunt')(grunt);
     // Load all Grunt tasks
-    require('jit-grunt')(grunt, {buildcontrol: 'grunt-build-control'});
+    require('jit-grunt')(grunt, {
+        buildcontrol: 'grunt-build-control'
+    });
 
     grunt.initConfig({
         app: {
@@ -323,6 +325,7 @@ module.exports = function(grunt) {
         'sass:dist',
         'autoprefixer',
         'cssmin',
+        'critical',
         'uglify:dist',
         'htmlmin'
     ]);
