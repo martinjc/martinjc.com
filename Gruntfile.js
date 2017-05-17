@@ -326,7 +326,6 @@ module.exports = function(grunt) {
         'sass:dist',
         'autoprefixer',
         'cssmin',
-        'critical',
         'uglify:dist',
         'htmlmin'
     ]);
