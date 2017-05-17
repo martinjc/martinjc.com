@@ -217,6 +217,7 @@ module.exports = function(grunt) {
             dist: {
                 options: {
                     base: './',
+                    inline: true,
                     css: [
                         '<%= app.dist %>/<%= app.baseurl %>/css/main.css'
                     ],
