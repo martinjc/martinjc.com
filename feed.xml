@@ -6,9 +6,61 @@
 </description>
     <link>https://martinjc.com//</link>
     <atom:link href="https://martinjc.com//feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 12 Jun 2017 16:27:53 +0100</pubDate>
-    <lastBuildDate>Mon, 12 Jun 2017 16:27:53 +0100</lastBuildDate>
+    <pubDate>Mon, 12 Jun 2017 16:43:23 +0100</pubDate>
+    <lastBuildDate>Mon, 12 Jun 2017 16:43:23 +0100</lastBuildDate>
     <generator>Jekyll v3.4.0</generator>
+    
+      <item>
+        <title>Catching a Bug</title>
+        <description>&lt;p&gt;I’m doing some data analysis, and I just caught a showstopper of a bug. Want to see it? Here’s the code as it was before:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;n&quot;&gt;new_index&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;LIKERT&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;value&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;LIKERT&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;keys&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;value&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data_counts&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;index&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;and here’s a simple fix for the code:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;n&quot;&gt;new_index&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;LIKERT&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;value&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data_counts&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;index&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Both lines are creating a new index for a pandas dataframe. I have a dataframe that is indexed:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;0.0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;1.0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;2.0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;3.0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;4.0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;5.0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;and I want to replace the index with the correct names from a likert scale that these values refer to:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'N/A'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'Disagree Strongly'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'Disagree'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'Neither Agree nor Disagree'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'Agree'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'Agree Strongly'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;so I create a dictionary that maps from keys in the first index, to values for the new index:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;n&quot;&gt;LIKERT&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;mf&quot;&gt;0.0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'N/A'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;mf&quot;&gt;1.0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'Disagree Strongly'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;mf&quot;&gt;2.0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'Disagree'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;mf&quot;&gt;3.0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'Neither Agree nor Disagree'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;mf&quot;&gt;4.0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'Agree'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;mf&quot;&gt;5.0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'Agree Strongly'&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;I then do a little list comprehension that adds the correct new value to the new index, if it’s key is in the old index. If the key isn’t there, it gets skipped:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;n&quot;&gt;new_index&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;LIKERT&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;value&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;LIKERT&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;keys&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;value&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data_counts&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;index&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;All fine, right? Sure, if the index is always in numerical order. Which it isn’t. Using this code, if the index is in the wrong order, you can get ‘5’ being replaced with ‘Disagree Strongly’ (or any of the values other than ‘Agree Strongly’) and suddenly your analysis is completely wrong.&lt;/p&gt;
+
+&lt;p&gt;The second line fixes this by looping through the index, not the dictionary, and so creates the new index in the correct order.&lt;/p&gt;
+
+&lt;p&gt;A better fix is actually to use the &lt;a href=&quot;https://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.rename.html&quot;&gt;.rename()&lt;/a&gt; function, which can rename the index of a dataframe (or the column names) using a dictionary as a lookup, like so:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;n&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rename&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;index&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;LIKERT&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;inplace&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;True&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Any values present in the index but not in the lookup are left alone, and values in the lookup but not in the index are ignored, and the result is exactly what I need, all my ‘5s’ replaced with ‘Agree Strongly’ and so on.&lt;/p&gt;
+
+&lt;p&gt;So I guess the lesson learnt here is RTFM, and don’t try to be clever and re-invent functionality that already exists.&lt;/p&gt;
+</description>
+        <pubDate>Mon, 12 Jun 2017 13:45:00 +0100</pubDate>
+        <link>https://martinjc.com//2017/06/12/catching-a-bug.html</link>
+        <guid isPermaLink="true">https://martinjc.com//2017/06/12/catching-a-bug.html</guid>
+        
+        
+      </item>
     
       <item>
         <title>Weeknotes - 29th May 2017</title>
@@ -377,73 +429,6 @@
         <category>publication</category>
         
         <category>research</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>NHS Hackday 2015</title>
-        <description>&lt;p&gt;This weekend I took part in an incredibly successful &lt;a href=&quot;http://nhshackday.com/&quot;&gt;NHS hackday&lt;/a&gt;, hosted at Cardiff University and organised by &lt;a href=&quot;https://twitter.com/amcunningham&quot;&gt;Anne Marie Cunningham&lt;/a&gt; and James Morgan. We went as a team from the MSc in Computational Journalism, with myself and &lt;a href=&quot;https://twitter.com/egrommet&quot;&gt;Glyn&lt;/a&gt; attending along with &lt;a href=&quot;https://twitter.com/PoojaDante&quot;&gt;Pooja&lt;/a&gt;, &lt;a href=&quot;https://twitter.com/NikitaVashisth&quot;&gt;Nikita&lt;/a&gt;, &lt;a href=&quot;https://twitter.com/Idioteque90&quot;&gt;Annalisa&lt;/a&gt; and &lt;a href=&quot;https://twitter.com/cboutaud&quot;&gt;Charles&lt;/a&gt;. At the last-minute I recruited a couple of ringers as well, dragging along &lt;del&gt;Rhys Priestland&lt;/del&gt; &lt;a href=&quot;https://twitter.com/flyingSparx&quot;&gt;Dr William Wilberforce Webberley&lt;/a&gt; from Comsc and &lt;a href=&quot;https://twitter.com/voxmjw&quot;&gt;Dr Matthew Williams&lt;/a&gt;, previously of this parish. Annalisa also brought along Dan Hewitt, so in total we had a large and diverse team.&lt;/p&gt;
-
-&lt;h1 id=&quot;the-hackday&quot;&gt;The hackday&lt;/h1&gt;
-
-&lt;p&gt;This was the first NHS hackday I’d attended, but I believe it’s the second event held in Cardiff, so Anne Marie and the team have it down to a fine art. The whole weekend seemed to go pretty smoothly (barring a couple of misunderstandings on our part regarding the pitch sessions!). It was certainly one of the most well organised events that I’ve attended, with all the necessary ingredients for successful coding: much power, many wifi and plenty of food, snacks and coffee. Anne Marie and the team deserve much recognition and thanks for their hard work. I’m definitely in for next year.&lt;/p&gt;
-
-&lt;p&gt;The quality of the projects created at the hackday was incredibly high across the board, which was great to see. One of my favourites used an Oculus Rift virtual reality headset to create a zombie ‘game’ that could be used to test people’s peripheral vision. Another standout was a system for logging and visualising the ANGEL factors describing a patient’s health situation. It was really pleasing to see these rank highly with the judges too, coming in third and second in the overall rankings. Other great projects brought an old Open Source project back to life, created a system for managing groups walking the Wales Coast path, and created automatic notification systems for healthcare processes. Overall it was a really interesting mix of projects, many of which have clear potential to become useful products within or alongside the NHS. As Matt commented in the pub afterwards, it’s probably the first hackday we’ve been to where several of the projects have clear original IP with commercial potential.&lt;/p&gt;
-
-&lt;h1 id=&quot;ourproject&quot;&gt;Our project&lt;/h1&gt;
-
-&lt;p&gt;We had decided before the event that we wanted to build some visualisations of health data across Wales, something like &lt;a href=&quot;http://nhsmaps.co.uk/&quot;&gt;nhsmaps.co.uk&lt;/a&gt;, but working with local health boards and local authorities in Wales. We split into two teams for the implementation: ‘the data team’ who were responsible for sourcing, processing and inputting data, and the ‘interface team’ who built the front-end and the visualisations.&lt;/p&gt;
-
-&lt;p&gt;Progress was good, with Matthew and William quickly defining a schema for describing data so that the data team could add multiple data sets and have the front-end automatically pick them up and be able to visualise them. The CompJ students worked to find and extract data, adding them to the github repository with the correct metadata. Meanwhile, I pulled a bunch of D3 code together for some simple visualisations.&lt;/p&gt;
-
-&lt;p&gt;By the end of the weekend we established a fairly decent system. It’s able to visualise a few different types of data, at different resolutions, is mostly mobile friendly, and most importantly is easily extensible and adaptable. It’s online now on our &lt;a href=&quot;http://bit.ly/hewnhs&quot;&gt;github pages&lt;/a&gt;, and all the code and documentation is also in the &lt;a href=&quot;https://github.com/compjcdf/nhs_hack&quot;&gt;github repository&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;We’ll continue development for a while to improve the usability and code quality, and hopefully we’ll find a community willing to take the code base on and keep improving what could be a fairly useful resource for understanding the health of Wales.&lt;/p&gt;
-
-&lt;h1 id=&quot;debrief&quot;&gt;Debrief&lt;/h1&gt;
-
-&lt;p&gt;We didn’t win any of the prizes, which is understandable. Our project was really focused on the public understanding of the NHS and health, and not for solving a particular need within (or for users of) the NHS. We knew this going in to the weekend, and we’d taken the decision that it was more important to work on a project related to the course, so that the students could experience some of the tools and technologies they’ll be using as the course progresses than to do something more closely aligned with the brief that would have perhaps been less relevant to the students work.&lt;/p&gt;
-
-&lt;p&gt;I need to thank Will and Matt for coming and helping the team. Without Matt wrangling the data team and showing them how to create json metadata descriptors we probably wouldn’t have anywhere near as many example datasets as we do. Similarly, without Will’s hard work on the front end interface, the project wouldn’t look nearly as good as it does, or have anywhere near the functionality. His last-minute addition of localstorage for personal datasets was a triumph. (Sadly though he does lose some coder points for user agent sniffing to decide whether to show a mobile interface :-D.) They were both a massive help, and we couldn’t have done it without them.&lt;/p&gt;
-
-&lt;p&gt;Also, of course, I need to congratulate the CompJ students, who gave up their weekend to trawl through datasets, pull figures off websites and out of pdf’s, and create the lovely easy to process .csv files we needed. It was a great effort from them, and I’m looking forward to our next Team CompJ hackday outing.&lt;/p&gt;
-
-&lt;p&gt;One thing that sadly did stand out was a lack of participation from Comsc undergraduate students, with only one or two attending. &lt;a href=&quot;http://www.cs.cf.ac.uk/contactsandpeople/staffpage.php?emailname=Rob.Davies&quot;&gt;Rob Davies&lt;/a&gt; stopped by on Saturday, and both Will and I discussed with him what we can do to increase participation in these events. Hopefully we’ll make some progress on that front in time for the next hackday.&lt;/p&gt;
-
-&lt;h1 id=&quot;media&quot;&gt;Media&lt;/h1&gt;
-
-&lt;p&gt;There’s some great photos from the event on Flickr, courtesy of &lt;a href=&quot;https://www.flickr.com/photos/paul_clarke/&quot;&gt;Paul Clarke&lt;/a&gt; (&lt;a href=&quot;https://www.flickr.com/photos/paul_clarke/sets/72157650042039338/&quot;&gt;Saturday&lt;/a&gt; and &lt;a href=&quot;https://www.flickr.com/photos/paul_clarke/sets/72157650456182132/&quot;&gt;Sunday&lt;/a&gt;).&lt;/p&gt;
-
-&lt;h1 id=&quot;elsewhere&quot;&gt;Elsewhere…&lt;/h1&gt;
-
-&lt;p&gt;We got a lovely &lt;a href=&quot;https://goodpracticeexchange.wordpress.com/2015/01/24/nhs-hack-day-data-visualisation/&quot;&gt;write-up about out project&lt;/a&gt; from &lt;a href=&quot;https://twitter.com/DyfrigWilliams&quot;&gt;Dyfrig Williams&lt;/a&gt; of the Good Practice Exchange at the Wales Audit Office. Dyfrig also curated a great &lt;a href=&quot;https://storify.com/GoodPracticeWAO/nhs-hack-day-cardiff-2015&quot;&gt;storify of the weekend&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Hemavault labs have done a round up of the projects &lt;a href=&quot;http://blog.hemavault.com/2015/01/27/nhs-hack-day-cardiff-2015-projects/&quot;&gt;here&lt;/a&gt;&lt;/p&gt;
-</description>
-        <pubDate>Mon, 26 Jan 2015 10:15:16 +0000</pubDate>
-        <link>https://martinjc.com//2015/01/26/nhs-hackday-2015.html</link>
-        <guid isPermaLink="true">https://martinjc.com//2015/01/26/nhs-hackday-2015.html</guid>
-        
-        <category>coding</category>
-        
-        <category>compj</category>
-        
-        <category>data</category>
-        
-        <category>development</category>
-        
-        <category>github</category>
-        
-        <category>hackathon</category>
-        
-        <category>javascript</category>
-        
-        <category>opensource</category>
-        
-        <category>visualisation</category>
-        
-        <category>web</category>
         
         
       </item>
