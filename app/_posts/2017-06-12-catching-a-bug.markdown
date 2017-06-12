@@ -7,11 +7,7 @@ link: https://martinjc.com/2017/06/12/catching-a-bug/
 slug: catching-a-bug
 title: Catching a Bug
 tags:
- - teaching
- - weeknotes
 ---
-
-# Catching a Bug
 
 I'm doing some data analysis, and I just caught a showstopper of a bug. Want to see it? Here's the code as it was before:
 
