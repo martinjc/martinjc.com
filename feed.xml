@@ -6,9 +6,36 @@
 </description>
     <link>https://martinjc.com//</link>
     <atom:link href="https://martinjc.com//feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 12 Jun 2017 16:45:05 +0100</pubDate>
-    <lastBuildDate>Mon, 12 Jun 2017 16:45:05 +0100</lastBuildDate>
+    <pubDate>Sat, 05 Aug 2017 12:04:06 +0100</pubDate>
+    <lastBuildDate>Sat, 05 Aug 2017 12:04:06 +0100</lastBuildDate>
     <generator>Jekyll v3.4.0</generator>
+    
+      <item>
+        <title>DataJConf Debrief</title>
+        <description>&lt;p&gt;&lt;img src=&quot;https://martinjc.com/img/2017-08-05-datajconf-debrief/poster.jpg&quot; alt=&quot;DataJConf at UCD&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;A month ago we held the first &lt;a href=&quot;http://datajconf.com/&quot;&gt;European Data and Computational Journalism Conference&lt;/a&gt; in Dublin, Ireland. This is a long overdue post about that event.&lt;/p&gt;
+
+&lt;p&gt;The conference idea started as all good ideas do, in the pub and with a tweet. It was at a social event during &lt;a href=&quot;http://www.icwsm.org/2016/&quot;&gt;ICWSM ‘16&lt;/a&gt; where I was first introduced to &lt;a href=&quot;http://bahareh.net/&quot;&gt;Bahareh Heravi&lt;/a&gt;, a data journalism lecturer from UCD. We talked briefly about the things we’re doing in Cardiff with the &lt;a href=&quot;http://compj.cs.cf.ac.uk/&quot;&gt;CompDJ MSc&lt;/a&gt;, and she spoke about her plans to introduce something similar in Dublin. A long time passed, and she got in touch over Twitter to ask if I was interested in organising a conference with her, to cover Data and Computational Journalism. Always keen to say yes to things that aren’t technically part of my day-to-day job and that will cause me a lot of work, I jumped straight in, dragging m’colleague Glyn along for the ride.&lt;/p&gt;
+
+&lt;p&gt;We spent several weeks having Skype calls to discuss and plan the conference, getting a website together, releasing the call for papers, organising the programme committee, managing the reviews, selecting talks, creating the programme, and then getting tickets on sale for the conference. It was a bit of a mad rush, but by June we were starting to see tickets sold, and had an excellent &lt;a href=&quot;http://datajconf.com/#schedule&quot;&gt;line up of speakers&lt;/a&gt; for the day. All I had to do then was sit back and wait to see if people turned up. Bahareh had less of an easy time, as she was hosting the thing, so spent many hundreds of hours organising the logistics of the event, the catering, lanyards, bags, souvenirs and all the other things that go into making a successful conference - a huge amount of work for which we are truly grateful!&lt;/p&gt;
+
+&lt;p&gt;When we initially spoke about the conference, we wanted to make sure we had a mix of industry and academia, and that it really was a mix. Bahareh had had a disappointing time at another DataJ conference where an academic track was included, but kept totally separate from the industry track, which resulted in a lack of discussion between the two groups of participants. This was something we were determined to avoid at all costs. We were also unsure about whether there was an appetite for this sort of conference. Our initial aim was that if we had about 50 people turn up, we’d count it as a success. In the end, we had just over 100 people through the doors, which was amazing, and there was a real mix of people from academia and industry. There was a diverse set of talks, on a range of topics, and it was really nice to see industry types asking questions of the academics, and vice versa. We also avoided the dreaded ‘all-male’ lineup, with a majority of talks being given by females. The &lt;a href=&quot;http://hdl.handle.net/10197/8634&quot;&gt;proceedings from the conference&lt;/a&gt; are now available, if you’re interested.&lt;/p&gt;
+
+&lt;p&gt;The conference was followed by a couple of half-day workshops: an introduction to Data Journalism, and an &lt;a href=&quot;https://github.com/martinjc/compj-and-dataj-unconf&quot;&gt;Unconference&lt;/a&gt;, both of which were received very well.&lt;/p&gt;
+
+&lt;p&gt;All in all, a really successful event. I met a lot of interesting people and made some good contacts for the future. There were a lot of interesting discussions and I came home full of ideas for things to introduce within our teaching and research.&lt;/p&gt;
+
+&lt;p&gt;It was such a good time, we’re doing it all over again. DataJConf 2018 will be held here in Cardiff. So I guess this time it’ll be Glyn’s turn to do all the running around organising things…&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://martinjc.com/img/2017-08-05-datajconf-debrief/glyn_and_martin.jpg&quot; alt=&quot;CompDJ Team Selfie!&quot; /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Sat, 05 Aug 2017 12:15:00 +0100</pubDate>
+        <link>https://martinjc.com//2017/08/05/datajconf-debrief.html</link>
+        <guid isPermaLink="true">https://martinjc.com//2017/08/05/datajconf-debrief.html</guid>
+        
+        
+      </item>
     
       <item>
         <title>Catching a Bug</title>
@@ -388,47 +415,6 @@
         <category>mfp</category>
         
         <category>python</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>Personality and Places</title>
-        <description>&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;http://www.sciencedirect.com/science/article/pii/S0747563214007559&quot;&gt;Our paper&lt;/a&gt; examining the link between &lt;a href=&quot;https://martinjc.com/2012/11/20/foursquare-personality-experiment/&quot;&gt;individual personality and the places people visit&lt;/a&gt; has just been published in &lt;a href=&quot;http://www.journals.elsevier.com/computers-in-human-behavior/&quot;&gt;Computers in Human Behavior&lt;/a&gt;. It’s open access, so you can &lt;a href=&quot;http://dx.doi.org/10.1016/j.chb.2014.12.038&quot;&gt;go read it for free, now&lt;/a&gt;! &lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;In an experiment we ran previously, we asked users of Foursquare to take a personality test and give us access to their checkin history. The personality test gives us a measure of how each person scores for five different factors: Openness, Conscientiousness, Extraversion, Agreeableness and Neuroticism. The checkin history lists all the places they’ve ever checked in to using Foursquare. Because a couple of hundred people took part in the experiment, we ended up with a large number of individual personalities that we could link to over a hundred thousand venues. In total, this represents a pretty staggering half a million Foursquare checkins that we have personality data associated with.&lt;/p&gt;
-
-&lt;p&gt;Our first step with this data has been to see if there are any links between personality factors and the places people choose to visit, and we found some interesting connections.&lt;/p&gt;
-
-&lt;p&gt;One of our main finding shows that the use of Foursquare for recording checkins seems to correlate well with Conscientiousness. &lt;strong&gt;The more conscientious a user is, the more likely they are to have checked in at more places and to have visited more venues.&lt;/strong&gt; This could be because people with a high Conscientiousness score tend to be quite organised and disciplined, and so are more likely to remember to check in at every place they visit.&lt;/p&gt;
-
-&lt;p&gt;The opposite is true for Neuroticism: &lt;strong&gt;the more neurotic an individual is, the fewer places they have visited&lt;/strong&gt;. Neuroticism is associated with negative feelings, and a tendency to be less social, which could then translate into people going to fewer places, and so checking in less. This is expressed again when we look at only those venues classed as ‘social’ (i.e. - somewhere you would go to hang out with friends). &lt;strong&gt;The more neurotic someone is, the fewer ‘social’ venues they have been to.&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Surprisingly, we have found no link between Extraversion and the number of social venues visited. It may be expected that extraverts (who are very social in their nature) may go to more social venues. However, the data does not support this. In fact, &lt;strong&gt;we find no link between Extraversion and any aspect of Foursquare checkins&lt;/strong&gt; that we have examined so far.&lt;/p&gt;
-
-&lt;p&gt;The personality factor of Openness is related to feelings of creativity and artistic expression, and a willingness to experience new things. It is interesting to find that there is a link between Openness and the average distance travelled between checkins -** the more Open an individual is, the further they tend to have travelled**. This could be an expression of an Open individual’s desire to experience new things exposing itself through wider travel, and a larger geographic spread of checkins. However, we do not find any link between Openness and the number of different categories visited by a user. We do not see a desire for new experiences express itself in the range and diversity of places visited.&lt;/p&gt;
-
-&lt;p&gt;Ultimately, this data could be incredibly useful in improving venue recommendation systems. Current systems use many different information ‘cues’ to recommend to a user a place they might like to visit. These cues include things such as where they have been in the past, where their friends have been, or where is popular nearby. Perhaps by including aspects of an individual’s personality (so including aspects of &lt;em&gt;why&lt;/em&gt; they might visit somewhere) we can increase the usefulness of these recommendations.&lt;/p&gt;
-
-&lt;p&gt;There is still a lot of analysis to be done on this data, and both myself and &lt;a href=&quot;http://www.cs.cf.ac.uk/contactsandpeople/staffpage.php?emailname=NoeN&quot;&gt;Nyala Noe&lt;/a&gt; are busy churning through it to discover other links between personality and the places people visit. As we find more interesting connections, I’ll post more here.&lt;/p&gt;
-</description>
-        <pubDate>Tue, 27 Jan 2015 11:00:12 +0000</pubDate>
-        <link>https://martinjc.com//2015/01/27/personality-and-places.html</link>
-        <guid isPermaLink="true">https://martinjc.com//2015/01/27/personality-and-places.html</guid>
-        
-        <category>foursquare</category>
-        
-        <category>open access</category>
-        
-        <category>paper</category>
-        
-        <category>personality</category>
-        
-        <category>psychology</category>
-        
-        <category>publication</category>
-        
-        <category>research</category>
         
         
       </item>
