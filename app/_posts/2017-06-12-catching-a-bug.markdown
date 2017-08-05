@@ -1,7 +1,7 @@
 ---
 author: martin
 comments: true
-date: 2017-06-12 15:45:00+00:00
+date: 2017-06-12 12:45:00+00:00
 layout: post
 link: https://martinjc.com/2017/06/12/catching-a-bug/
 slug: catching-a-bug
@@ -22,7 +22,7 @@ and here's a simple fix for the code:
 new_index = [LIKERT[value] for value in data_counts.index]
 {% endhighlight %}
 
-Both lines are creating a new index for a pandas dataframe. I have a dataframe that is indexed:
+Doesn't look like much of a problem, but it completely changed the way my data was analysed. Both lines are creating a new index for a pandas dataframe. I have a dataframe that is indexed:
 
 {% highlight python %}
 [0.0, 1.0, 2.0, 3.0, 4.0, 5.0]
