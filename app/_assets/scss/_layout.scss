@@ -122,7 +122,7 @@ nav {
 
     h1, h2, h3 {
         padding-top: $spacing-unit/4;
-        padding-bottom: 0;
+        padding-bottom: $spacing-unit/8;
         padding-left: $spacing-unit/8;
         //padding: $spacing-unit/4 0 $spacing-unit/8 $spacing-unit/4;
     }
