@@ -6,8 +6,8 @@
 </description>
     <link>https://martinjc.com//</link>
     <atom:link href="https://martinjc.com//feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 05 Aug 2017 14:34:46 +0100</pubDate>
-    <lastBuildDate>Sat, 05 Aug 2017 14:34:46 +0100</lastBuildDate>
+    <pubDate>Sat, 05 Aug 2017 15:08:03 +0100</pubDate>
+    <lastBuildDate>Sat, 05 Aug 2017 15:08:03 +0100</lastBuildDate>
     <generator>Jekyll v3.4.0</generator>
     
       <item>
@@ -33,6 +33,25 @@
         <pubDate>Sat, 05 Aug 2017 12:15:00 +0100</pubDate>
         <link>https://martinjc.com//2017/08/05/datajconf-debrief.html</link>
         <guid isPermaLink="true">https://martinjc.com//2017/08/05/datajconf-debrief.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Post-Graduation Thoughts</title>
+        <description>&lt;p&gt;Last month I took part in my first graduation ceremony as part of the academic procession. This is the bit where staff members from the school(s) that are graduating get dressed up in their silly robes, ‘process’ into the graduation ceremony, and sit on stage for an hour or so clapping as all their students stride across the stage to shake the VC’s hand and graduate from their degree.&lt;/p&gt;
+
+&lt;p&gt;It’s a lot of fun, because who doesn’t like dressing up in silly robes and a hat? But its also good for the students, I think it shows them that we genuinely care about the fact they’re graduating, and it’s nice for them to see familiar faces up there on the stage celebrating their hard work. I know I enjoyed that part of my own graduation, so I’m happy now to be able to take part myself. I actually went to two ceremonies this year; the ceremony for the School of Computer Science &amp;amp; Informatics, and the ceremony for the School of Journalism, Media and Cultural Studies.&lt;/p&gt;
+
+&lt;p&gt;In both ceremonies I was really happy to see a number of students that I know and have taught. In the COMSC ceremony there were a lot of MSc students from the various programmes from my second year of lecturing the Web Apps and the Visualisation modules. There were also a couple of students whose dissertation projects I supervised, and a few undergraduates who I’ve worked with on summer projects. Then in the JOMEC ceremony this was the first year that we’ve had students from the MSc in Computational Journalism attend the graduation ceremony, which was really nice. I had a nice feeling of pride as they read out the name of the degree programme I helped create, then more as the students strode across the stage.&lt;/p&gt;
+
+&lt;p&gt;It’s really pleasing to see students you’ve taught start making their way in the world. Even more so when you see them creating great work and doing interesting things in ‘the Industry’. Take one of our first students &lt;a href=&quot;https://www.thebureauinvestigates.com/profile/charlesboutaud&quot;&gt;Charles&lt;/a&gt;, who’s followed a &lt;a href=&quot;https://muckrack.com/charles-boutaud/articles&quot;&gt;successful stint at Trinity Mirror&lt;/a&gt; with a move to go push things forward at &lt;a href=&quot;https://www.thebureauinvestigates.com/projects/the-bureau-local&quot;&gt;The Bureau Local&lt;/a&gt;. Or one of his colleagues Nikita, who’s &lt;a href=&quot;http://www.indiaspend.com/viznomics/early-breast-feeding-improves-indias-infant-mortality-rate-over-23-years-43607&quot;&gt;working at one of the first data journalism outfits in India&lt;/a&gt;. Or last year’s grad Niko, who after a &lt;a href=&quot;https://www.theguardian.com/sport/ng-interactive/2016/aug/14/how-nafissatou-thiam-beat-the-odds-to-claim-the-heptathlon-gold-in-rio&quot;&gt;successful Google News Lab fellowship at The Guardian&lt;/a&gt; last year is now working on &lt;a href=&quot;https://www.theguardian.com/profile/niko-kommenda&quot;&gt;their vis team&lt;/a&gt;. Even this year’s students are at it before they’ve even finished: Jess is busy on a &lt;a href=&quot;http://www.birminghammail.co.uk/news/midlands-news/how-female-genital-mutilation-cases-13280175&quot;&gt;GNL fellowship for Trinity Mirror&lt;/a&gt;, &lt;a href=&quot;http://www.telegraph.co.uk/authors/laura-harding/&quot;&gt;Laura&lt;/a&gt; is on an internship at The Telegraph and Haluka is doing the same at The Financial Times. Four of this year’s students have job offers already, with Rae having left for the US to go run the Springfield bureau of &lt;a href=&quot;http://thedailyline.net/springfield/&quot;&gt;The Daily Line&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;It’s a bit weird, knowing that a few years ago we had an idea that we needed a course to train people to do a thing, and now there are people out there doing just that thing. It’s exciting, and I’m looking forward to seeing more of it.&lt;/p&gt;
+</description>
+        <pubDate>Fri, 04 Aug 2017 15:35:00 +0100</pubDate>
+        <link>https://martinjc.com//2017/08/04/post-grad.html</link>
+        <guid isPermaLink="true">https://martinjc.com//2017/08/04/post-grad.html</guid>
         
         
       </item>
@@ -392,41 +411,6 @@
         <category>visualisation</category>
         
         <category>workshop</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>Quick Update...</title>
-        <description>&lt;p&gt;Been a bit quiet here recently. It’s been a very busy few months. I’ve got a few projects and thoughts that I’ll be posting more on in the next couple of weeks, but I figured it was worth a quick update on what’s been going on, and what I’ve been up to.&lt;/p&gt;
-
-&lt;h3 id=&quot;msc-computational-journalism&quot;&gt;MSc Computational Journalism&lt;/h3&gt;
-
-&lt;p&gt;We have finished the taught part of the MSc, and we’re getting well into the dissertation phase for the first cohort of our students. It’s been a really good first year, and I’ll be posting a debrief and some thoughts on the next year sometime over summer.&lt;/p&gt;
-
-&lt;h3 id=&quot;bardiff&quot;&gt;BarDiff&lt;/h3&gt;
-
-&lt;p&gt;I’ve launched a &lt;a href=&quot;http://bardiff.martinjc.com&quot;&gt;data dashboard thing for beer drinking in Cardiff&lt;/a&gt;. Powered by &lt;a href=&quot;http://www.untappd.com&quot;&gt;Untappd&lt;/a&gt; checkins, it’s providing (I think) a fairly interesting overview of the city. I’ve got some ideas for some better visualisations, but for now it’s nicely ticking over. Plus it’s getting some decent interaction on the social medias&lt;/p&gt;
-
-&lt;h3 id=&quot;academia&quot;&gt;Academia&lt;/h3&gt;
-
-&lt;p&gt;The usual ticking over of academia continues - journal reviews, conference reviews,  a book chapter to write, paper deadlines coming and going. It’s the same old same old….&lt;/p&gt;
-
-&lt;h3 id=&quot;teaching&quot;&gt;Teaching&lt;/h3&gt;
-
-&lt;p&gt;I’ve started on my teaching qualification (&lt;a href=&quot;http://www.cardiff.ac.uk/pcutl/&quot;&gt;PgCUTL&lt;/a&gt;). The first module portfolio was submitted a couple of weeks ago, and results are due any day now (fingers crossed). I’ve also got a few thoughts on the recently announced TEF that I’ll be putting up soon, and some things on employability…&lt;/p&gt;
-
-&lt;h3 id=&quot;and-finally&quot;&gt;and finally…&lt;/h3&gt;
-
-&lt;p&gt;The reason I’ve not posted in a while:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://martinjc.com/img/2015-07-13-quick-update/11325423_448026158711440_20867902_n-1024x1024.jpg&quot; alt=&quot;Arthur!&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;My son, Arthur James Chorley-Jones was born on 13th May 2015. He’s amazing, I think he’s the best thing that has ever happened, and since he’s been around there has not been a huge amount of time for blogging, side-projects, and other such things. Which is ace.&lt;/p&gt;
-</description>
-        <pubDate>Mon, 13 Jul 2015 21:17:40 +0100</pubDate>
-        <link>https://martinjc.com//2015/07/13/quick-update.html</link>
-        <guid isPermaLink="true">https://martinjc.com//2015/07/13/quick-update.html</guid>
         
         
       </item>
