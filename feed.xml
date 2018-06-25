@@ -6,9 +6,34 @@
 </description>
     <link>https://martinjc.com//</link>
     <atom:link href="https://martinjc.com//feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 05 Aug 2017 15:08:03 +0100</pubDate>
-    <lastBuildDate>Sat, 05 Aug 2017 15:08:03 +0100</lastBuildDate>
-    <generator>Jekyll v3.4.0</generator>
+    <pubDate>Mon, 25 Jun 2018 21:03:27 +0100</pubDate>
+    <lastBuildDate>Mon, 25 Jun 2018 21:03:27 +0100</lastBuildDate>
+    <generator>Jekyll v3.8.3</generator>
+    
+      <item>
+        <title>Academic Parent</title>
+        <description>&lt;p&gt;I, like many others, made note of a recent tweet by Nathan Hall discussing the attitude of his colleagues when he prioritises family over career:&lt;/p&gt;
+
+&lt;blockquote class=&quot;twitter-tweet&quot; data-lang=&quot;en&quot;&gt;&lt;p lang=&quot;en&quot; dir=&quot;ltr&quot;&gt;I still find it interesting the puzzled expressions I get from colleagues when mentioning how childcare impacts my academic work; when explaining why I try to minimize conference travel, leave the office by 4 PM, or sometimes cancel meetings due to dad responsibilities.&lt;/p&gt;&amp;mdash; Nathan C. Hall (@prof_nch) &lt;a href=&quot;https://twitter.com/prof_nch/status/935188753123086336?ref_src=twsrc%5Etfw&quot;&gt;November 27, 2017&lt;/a&gt;&lt;/blockquote&gt;
+
+&lt;p&gt;The ensuing thread revealed plenty of people who felt the same way or who had experienced the same reactions and attitudes in their own place of work.&lt;/p&gt;
+
+&lt;p&gt;It made me reflect upon the level of privilege I have to work somewhere where I can genuinely say that this is not my personal experience. Since my son was born I have been working from home one day a week in order to both save on childcare costs and to get some quality time with him. When he was a small baby, this really was working from home, punctuated by periods of playing with/feeding a small baby whenever he woke up from one of his many, many naps. As he’s got older the amount of work I do on a Friday has decreased massively, but thankfully my job is flexible enough that I can take up the slack by working longer days, or committing some time in the evenings and weekends. The important thing is that I’ve never felt the need or pressure to work more than a ‘usual’ working week. I’m not one of these academics who feels they must work 60+ hour weeks, and I never will be. I love my work and enjoy what I do, but ultimately my family and home are far more important and far more enjoyable.&lt;/p&gt;
+
+&lt;p&gt;After my daughter was born we (my wife and I) rearranged our work schedules, as she was missing out on the time I had with the children on Fridays. As a result, we both now work a half day on Friday, swapping over at lunchtime. This allows us both a few hours alone time with the children, and by each working slightly longer hours the other four days of the week neither of us struggle to get our hours in and get the job done.&lt;/p&gt;
+
+&lt;p&gt;This has always been an informal arrangement; although my employer offers formal flexible working which I could apply for and am fairly sure I would get, I’ve never bothered. Despite this, my colleagues are supportive of my working arrangements, and I’ve never been pushed into attending a Friday meeting or been questioned on why I’m not in the office five days a week.&lt;/p&gt;
+
+&lt;p&gt;The message has also been given by those higher up in the University. During a training course recently, one of the Pro-Vice Chancellors of the University made the point that at the end of the day this is only a job, and other things are more important. It’s nice to know your own view is held by (at least some of) the levels of upper management too.&lt;/p&gt;
+
+&lt;p&gt;From the comments and discussion around Nathan’s tweet, and from speaking to colleagues around the world it seems like sadly some of my experiences of life in academia are atypical, and this is a real shame. Whether it’s a systemic structural issue to do with workloads in academia or a form of societal pressure, I do feel we can improve as a profession in supporting those colleagues for whom work is not the sole driving force.&lt;/p&gt;
+</description>
+        <pubDate>Wed, 29 Nov 2017 11:15:00 +0000</pubDate>
+        <link>https://martinjc.com//2017/11/29/academic-parent.html</link>
+        <guid isPermaLink="true">https://martinjc.com//2017/11/29/academic-parent.html</guid>
+        
+        
+      </item>
     
       <item>
         <title>DataJConf Debrief</title>
@@ -374,35 +399,6 @@
         <pubDate>Wed, 05 Oct 2016 21:17:40 +0100</pubDate>
         <link>https://martinjc.com//2016/10/05/atom-plugins-for-web-development.html</link>
         <guid isPermaLink="true">https://martinjc.com//2016/10/05/atom-plugins-for-web-development.html</guid>
-        
-        <category>coding</category>
-        
-        <category>d3</category>
-        
-        <category>visualisation</category>
-        
-        <category>workshop</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>Sustainable Software Institute – Research Data Visualisation Workshop</title>
-        <description>&lt;p&gt;Last week I  gave a talk and delivered a hands on session at the Sustainable Software Institute’s ‘&lt;a href=&quot;https://www.software.ac.uk/rdvw&quot;&gt;Research Data Visualisation Workshop&lt;/a&gt;‘ which was held at Manchester University. It was a really engaging event, with a lot of good discussion on the issues surrounding data visualisation.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://www.iidi.napier.ac.uk/c/people/peopleid/41&quot;&gt;Professor Jessie Kennedy&lt;/a&gt; from Edinburgh Napier University gave a great keynote looking at a some key design principles in visualisation, including a number of studies I hadn’t seen before but will definitely be including in my teaching in future.&lt;/p&gt;
-
-&lt;p&gt;I gave a talk on ‘Human Science Visualisation’ which really focused on a couple of key issues. Firstly, I tried to illustrate the importance of interactivity in complex visualisations. I then talked about how we as academic researchers need publish our interactive visualisations in posterity, and how we should press academic publishers to help us communicate our data to readers. Finally, I wanted to point people towards the excellent visualisation work being done by data journalists, and that the newsrooms are an excellent source of ideas and tips for data visualisation. The slides for my talk are here. It’s the first time I’ve spoken about visualisation outside of the classroom, and it was a really fun talk to give.&lt;/p&gt;
-
-&lt;p&gt;We also had two great talks from &lt;a href=&quot;https://sites.google.com/site/chbergma/&quot;&gt;Dr Christina Bergmann&lt;/a&gt; and &lt;a href=&quot;http://andysouth.co.uk/&quot;&gt;Dr Andy South&lt;/a&gt;, focusing on issues of biological visualisation and mapping respectively. All the talks generated some good discussion both in the room and online, which was fantastic to see.&lt;/p&gt;
-
-&lt;p&gt;In the afternoon I lead a hands on session looking at visualising data using d3. This was the first time I’d taught a session using d3 v4, which made things slightly interesting. I’m not fully up to speed with all the areas of the API that have changed, so getting the live coding right first time was a bit tricky, but I think I managed. Interestingly, I feel that the changes made to the .data(), .exit(), .enter(), update cycle as discussed in Mike’s “&lt;a href=&quot;https://medium.com/@mbostock/what-makes-software-good-943557f8a488&quot;&gt;What Makes Software Good&lt;/a&gt;” make a lot more sense from a teaching perspective. The addition of .merge() in particular helps a great deal. As you might expect from a d3 workshop that lasted a mere three hours, I’m not entirely convinced that everybody ‘got’ it, but I think a most went away satisfied.&lt;/p&gt;
-
-&lt;p&gt;Overall it was a very successful workshop. &lt;a href=&quot;http://rgaiacs.com/&quot;&gt;Raniere Silva&lt;/a&gt; did an excellent job putting it together and running the day, and I really enjoyed it. I’m looking forward to seeing what other people thought about it too.&lt;/p&gt;
-</description>
-        <pubDate>Mon, 01 Aug 2016 21:17:40 +0100</pubDate>
-        <link>https://martinjc.com//2016/08/01/sustainable-software-institute-research-data-visualisation-workshop.html</link>
-        <guid isPermaLink="true">https://martinjc.com//2016/08/01/sustainable-software-institute-research-data-visualisation-workshop.html</guid>
         
         <category>coding</category>
         

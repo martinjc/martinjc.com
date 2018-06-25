@@ -6,7 +6,7 @@
 <span class=c># login action we want to post data to       </span>
 <span class=n>login_action</span> <span class=o>=</span> <span class=s>'/account/login'</span><span class=err> </span> <span class=err> </span> <span class=err> </span> <span class=err> </span>
 <span class=c># file for storing cookies       </span>
-<span class=n>cookie_file</span> <span class=o>=</span> <span class=s>'mfp.cookies'</span></code></pre></figure><p>Then we need to setup our cookie storage, and url opener. We want the opener to be able to handle cookies and redirects:</p><figure class=highlight><pre><code class=language-python data-lang=python><span class=kn>import</span> <span class=nn>urllib</span><span class=o>,</span> <span class=nn>urllib2</span>
+<span class=n>cookie_file</span> <span class=o>=</span> <span class=s>'mfp.cookies'</span></code></pre></figure><p>Then we need to setup our cookie storage, and url opener. We want the opener to be able to handle cookies and redirects:</p><figure class=highlight><pre><code class=language-python data-lang=python><span class=kn>import</span> <span class=nn>urllib</span><span class=p>,</span> <span class=n>urllib2</span>
 <span class=kn>import</span> <span class=nn>cookielib</span>
 
 <span class=c># set up a cookie jar to store cookies</span>
