@@ -1,5 +1,5 @@
-future: true
-show_drafts: true
+future: false
+show_drafts: false
 
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://martinjc.com" # the base hostname & protocol for your site
