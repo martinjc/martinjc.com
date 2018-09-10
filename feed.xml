@@ -2,13 +2,36 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>martin chorley</title>
-    <description>I am Dr Martin Chorley, a lecturer at the School of Computer Science &amp; Informatics, Cardiff University, programme leader for the MSc in Computational and Data Journalism.
+    <description>I am Dr Martin Chorley, a Senior Lecturer at the School of Computer Science &amp; Informatics, Cardiff University, programme leader for the MSc in Computational and Data Journalism.
 </description>
     <link>https://martinjc.com//</link>
     <atom:link href="https://martinjc.com//feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 25 Jun 2018 21:03:27 +0100</pubDate>
-    <lastBuildDate>Mon, 25 Jun 2018 21:03:27 +0100</lastBuildDate>
+    <pubDate>Mon, 10 Sep 2018 20:48:11 +0100</pubDate>
+    <lastBuildDate>Mon, 10 Sep 2018 20:48:11 +0100</lastBuildDate>
     <generator>Jekyll v3.8.3</generator>
+    
+      <item>
+        <title>Academic Parent</title>
+        <description>&lt;p&gt;I, like many others, made note of a recent tweet by Nathan Hall, discussing the attitude of his colleagues when he prioritises family over career:&lt;/p&gt;
+
+&lt;blockquote class=&quot;twitter-tweet&quot; data-lang=&quot;en&quot;&gt;&lt;p lang=&quot;en&quot; dir=&quot;ltr&quot;&gt;I still find it interesting the puzzled expressions I get from colleagues when mentioning how childcare impacts my academic work; when explaining why I try to minimize conference travel, leave the office by 4 PM, or sometimes cancel meetings due to dad responsibilities.&lt;/p&gt;&amp;mdash; Nathan C. Hall (@prof_nch) &lt;a href=&quot;https://twitter.com/prof_nch/status/935188753123086336?ref_src=twsrc%5Etfw&quot;&gt;November 27, 2017&lt;/a&gt;&lt;/blockquote&gt;
+
+&lt;p&gt;The ensuing thread revealed plenty of people who felt the same way or who had experienced the same reactions and attitudes in their own place of work.&lt;/p&gt;
+
+&lt;p&gt;It made me reflect upon the level of privilege I have to work somewhere where I can genuinely say that this is not my personal experience. Since my son was born, I have been working from home one day a week, in order to both save on childcare costs and to get some quality time with him. When he was a small baby, this really was working from home, punctuated by periods of playing with/feeding a small baby whenever he woke up from one of his many, many naps. As he’s got older the amount of work I do on a Friday has decreased massively, but thankfully my job is flexible enough that I can take up the slack by working longer days, or committing some time in the evenings and weekends. I now tend to spend Saturday mornings working while my wife has some time with the children, which has a double benefit of allowing me to do all the things I have missed on the Friday while also allowing my wife to get some time alone with the terrorists who rule our lives.&lt;/p&gt;
+
+&lt;p&gt;This has always been an informal arrangement; although my employer offers formal flexible working which I could apply for and am fairly sure I would get, I’ve never bothered. Despite this, my colleagues are supportive of my working arrangements, and I’ve never been pushed into attending a Friday meeting or been questioned on why I’m not in the office five days a week.&lt;/p&gt;
+
+&lt;p&gt;The message has also been given by those higher up in the University. During a training course recently, one of the pro-vice chancellors of the University made the point that at the end of the day this is only a job, and other things are more important. It’s nice to know your own view is held by the levels of upper management too.&lt;/p&gt;
+
+&lt;p&gt;Other people have written about the ridiculous arms race within academia to work more and work harder, and how it’s destructive for our industry, so I’m not going to go into that here&lt;/p&gt;
+</description>
+        <pubDate>Wed, 29 Nov 2017 11:15:00 +0000</pubDate>
+        <link>https://martinjc.com//2017/11/29/academic-parent.html</link>
+        <guid isPermaLink="true">https://martinjc.com//2017/11/29/academic-parent.html</guid>
+        
+        
+      </item>
     
       <item>
         <title>Academic Parent</title>
@@ -348,65 +371,6 @@
         <category>python</category>
         
         <category>selenium</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>Atom Plugins for Web Development</title>
-        <description>&lt;p&gt;I’ve had a number of students in my web-dev module asking me what plugins I’m using in my text editor, so I thought I’d dash off a quick blog post on the plugins I find useful day-to-day. (Actually, most people are normally asking me ‘how did you do that thing where you typed one word and suddenly you had a whole HTML page? The answer is I used a plugin, so ‘what plugins do you use?’ is really the question they should be asking…)&lt;/p&gt;
-
-&lt;p&gt;I’m using &lt;a href=&quot;https://atom.io/&quot;&gt;Atom&lt;/a&gt; as my text editor. It’s free, open source, and generally reliable. If you’re a student on my web-dev course you’re stuck using &lt;a href=&quot;https://www.sublimetext.com/&quot;&gt;Sublime Text&lt;/a&gt; in the lab for now. I’m pretty sure most of the Atom plugins I use have either direct Sublime equivalents, or similarly functioning alternatives.&lt;/p&gt;
-
-&lt;p&gt;There’s a guide to Atom packages &lt;a href=&quot;here&quot;&gt;here&lt;/a&gt; and one for Sublime Text &lt;a href=&quot;https://www.sublimetext.com/docs/3/packages.html&quot;&gt;here&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;A quick google for ‘best atom packages web developer’ will probably get you to a far more comprehensive list than this, but here’s my current pick of useful plugins anyway:&lt;/p&gt;
-
-&lt;h2 id=&quot;emmet&quot;&gt;&lt;a href=&quot;https://atom.io/packages/emmet&quot;&gt;emmet&lt;/a&gt;&lt;/h2&gt;
-
-&lt;p&gt;This is essential for anyone writing any amount of HTML. This is the magic package that allows me to write ‘html:5’ in a blank document, hit the shortcut keys (CTRL + E in my setup), and suddenly have a simple boilerplate HTML page.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://martinjc.com/img/2016-10-05-atom-plugins-for-web-development/out.gif&quot; alt=&quot;emmet auto-completion&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;It’s ace. Not only that, but it can write loads of HTML for you, and all you have to do is write a CSS selector for that HTML:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://martinjc.com/img/2016-10-05-atom-plugins-for-web-development/out-1.gif&quot; alt=&quot;html css Selector expansion&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Great stuff. The documentation is here.&lt;/p&gt;
-
-&lt;h2 id=&quot;atom-beautify&quot;&gt;&lt;a href=&quot;https://atom.io/packages/atom-beautify&quot;&gt;atom-beautify&lt;/a&gt;&lt;/h2&gt;
-
-&lt;p&gt;This will tidy up your code automatically, fixing the indentation and spacing etc. It can even be set to automatically tidy your code every time you save a file. Awesome huh? Imagine being set a coursework where some of the marks were dependent on not writing code that looks like it was written by a five-year old child who’s addicted to hitting the tab key, then finding out that there’s software to strap that five-year olds thumbs to his hands so he can’t hit that tab key. Awesome.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://martinjc.com/img/2016-10-05-atom-plugins-for-web-development/out-2.gif&quot; alt=&quot;Beautiful tidy code&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;color-picker&quot;&gt;&lt;a href=&quot;https://atom.io/packages/color-picker&quot;&gt;color-picker&lt;/a&gt;&lt;/h2&gt;
-
-&lt;p&gt;This one adds a colour picker right into atom. Just CMD-SHIFT-C and choose your colours!&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://martinjc.com/img/2016-10-05-atom-plugins-for-web-development/out-3.gif&quot; alt=&quot;Colour picker&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Another useful colour related plugin you may want to look at is Pigments, which can highlight colours in your projects, and gather them all together so you can see your palette.&lt;/p&gt;
-
-&lt;h2 id=&quot;linter&quot;&gt;&lt;a href=&quot;https://atom.io/packages/linter&quot;&gt;linter&lt;/a&gt;&lt;/h2&gt;
-
-&lt;p&gt;My last recommendation is linter. This plugin will automatically check your code for errors. You’ll need to install linters for whatever language you want to check, like linter-tidy, linter-csslint, linter-pylint and linter-jshint.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://martinjc.com/img/2016-10-05-atom-plugins-for-web-development/Screenshot.png&quot; alt=&quot;Linter finds errors in your code&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;So there we go – a few recommendations to get you started. Found anything else interesting? Let me know!&lt;/p&gt;
-</description>
-        <pubDate>Wed, 05 Oct 2016 21:17:40 +0100</pubDate>
-        <link>https://martinjc.com//2016/10/05/atom-plugins-for-web-development.html</link>
-        <guid isPermaLink="true">https://martinjc.com//2016/10/05/atom-plugins-for-web-development.html</guid>
-        
-        <category>coding</category>
-        
-        <category>d3</category>
-        
-        <category>visualisation</category>
-        
-        <category>workshop</category>
         
         
       </item>
