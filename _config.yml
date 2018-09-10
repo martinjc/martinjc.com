@@ -9,7 +9,7 @@
 title: martin chorley
 email: martin.chorley@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  I am Dr Martin Chorley, a lecturer at the School of Computer Science & Informatics, Cardiff University, programme leader for the MSc in Computational and Data Journalism.
+  I am Dr Martin Chorley, a Senior Lecturer at the School of Computer Science & Informatics, Cardiff University, programme leader for the MSc in Computational and Data Journalism.
 
 url: "http://localhost:9000" # the base hostname & protocol for your site
 # _config.build.yml sets future and show_drafts to false on `grunt build`
@@ -39,7 +39,7 @@ markdown: kramdown
 exclude: ['img', 'css', 'js', 'fonts',
           '**.png', '**.jpg', '**.jpeg', '**.gif', '**.webp', '**.svg', '**.ico']
 
-gems: [jekyll-paginate, jekyll/scholar]
+plugins: [jekyll-paginate, jekyll/scholar]
 
 
 scholar:
