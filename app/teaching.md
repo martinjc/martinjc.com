@@ -9,9 +9,9 @@ title: teaching
 permalink: /teaching/
 ---
 
-I'm the MSc Programme Leader for the [MSc in Computational and Data Journalism](http://www.cardiff.ac.uk/study/postgraduate/taught/courses/course/computational-and-data-journalism-msc), a joint course between the [School of Computer Science & Informatics](http://www.cardiff.ac.uk/computer-science/) and the [School of Journalism, Media and Cultural Studies](http://www.cardiff.ac.uk/journalism-media-cultural-studies) here at Cardiff University.
+I am the Director of Learning and Teaching (DLT) for the School of Computer Science and Informatics. For the last few years I've been the Deputy DLT, and have spent a lot of time focused on Postgraduate students, working as the chair of the Postgraduate Operations Team, Senior Personal Tutor for Taught Postgraduate students, and the Student Rep Coordinator for the postgrad Student-Staff Panel.
 
-I am also Deputy Director of Learning and Teaching for the School of Computer Science & Informatics, chair of the Taught Postgraduate Operations Team, Senior Personal Tutor for Taught Postgraduate students, and the Student Rep Coordinator for the Taught Postgraduate Student Staff Panel.
+I'm the MSc Programme Leader for the [MSc in Computational and Data Journalism](http://www.cardiff.ac.uk/study/postgraduate/taught/courses/course/computational-and-data-journalism-msc), a joint course between the [School of Computer Science & Informatics](http://www.cardiff.ac.uk/computer-science/) and the [School of Journalism, Media and Cultural Studies](http://www.cardiff.ac.uk/journalism-media-cultural-studies) here at Cardiff University.
 
 
 ## Autumn Semester
