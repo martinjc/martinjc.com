@@ -4,11 +4,11 @@
     <title>martin chorley</title>
     <description>I am Dr Martin Chorley, a Senior Lecturer at the School of Computer Science &amp; Informatics, Cardiff University, programme leader for the MSc in Computational and Data Journalism.
 </description>
-    <link>https://martinjc.com//</link>
-    <atom:link href="https://martinjc.com//feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 04 Oct 2018 22:04:04 +0100</pubDate>
-    <lastBuildDate>Thu, 04 Oct 2018 22:04:04 +0100</lastBuildDate>
-    <generator>Jekyll v3.8.3</generator>
+    <link>http://localhost:9000/</link>
+    <atom:link href="http://localhost:9000/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Wed, 28 Nov 2018 21:26:35 +0000</pubDate>
+    <lastBuildDate>Wed, 28 Nov 2018 21:26:35 +0000</lastBuildDate>
+    <generator>Jekyll v3.8.5</generator>
     
       <item>
         <title>Academic Parent</title>
@@ -29,15 +29,15 @@
 &lt;p&gt;From the comments and discussion around Nathan’s tweet, and from speaking to colleagues around the world it seems like sadly some of my experiences of life in academia are atypical, and this is a real shame. Whether it’s a systemic structural issue to do with workloads in academia or a form of societal pressure, I do feel we can improve as a profession in supporting those colleagues for whom work is not the sole driving force.&lt;/p&gt;
 </description>
         <pubDate>Wed, 29 Nov 2017 11:15:00 +0000</pubDate>
-        <link>https://martinjc.com//2017/11/29/academic-parent.html</link>
-        <guid isPermaLink="true">https://martinjc.com//2017/11/29/academic-parent.html</guid>
+        <link>http://localhost:9000/2017/11/29/academic-parent.html</link>
+        <guid isPermaLink="true">http://localhost:9000/2017/11/29/academic-parent.html</guid>
         
         
       </item>
     
       <item>
         <title>DataJConf Debrief</title>
-        <description>&lt;p&gt;&lt;img src=&quot;https://martinjc.com/img/2017-08-05-datajconf-debrief/poster.jpg&quot; alt=&quot;DataJConf at UCD&quot; /&gt;&lt;/p&gt;
+        <description>&lt;p&gt;&lt;img src=&quot;http://localhost:9000/img/2017-08-05-datajconf-debrief/poster.jpg&quot; alt=&quot;DataJConf at UCD&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;A month ago we held the first &lt;a href=&quot;http://datajconf.com/2016/&quot;&gt;European Data and Computational Journalism Conference&lt;/a&gt; in Dublin, Ireland. This is a long overdue post about that event.&lt;/p&gt;
 
@@ -53,11 +53,11 @@
 
 &lt;p&gt;It was such a good time, we’re doing it all over again. DataJConf 2018 will be held here in Cardiff. So I guess this time it’ll be Glyn’s turn to do all the running around organising things…&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://martinjc.com/img/2017-08-05-datajconf-debrief/glyn_and_martin.jpg&quot; alt=&quot;CompDJ Team Selfie!&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://localhost:9000/img/2017-08-05-datajconf-debrief/glyn_and_martin.jpg&quot; alt=&quot;CompDJ Team Selfie!&quot; /&gt;&lt;/p&gt;
 </description>
         <pubDate>Sat, 05 Aug 2017 12:15:00 +0100</pubDate>
-        <link>https://martinjc.com//2017/08/05/datajconf-debrief.html</link>
-        <guid isPermaLink="true">https://martinjc.com//2017/08/05/datajconf-debrief.html</guid>
+        <link>http://localhost:9000/2017/08/05/datajconf-debrief.html</link>
+        <guid isPermaLink="true">http://localhost:9000/2017/08/05/datajconf-debrief.html</guid>
         
         
       </item>
@@ -75,8 +75,8 @@
 &lt;p&gt;It’s a bit weird, knowing that a few years ago we had an idea that we needed a course to train people to do a thing, and now there are people out there doing just that thing. It’s exciting, and I’m looking forward to seeing more of it.&lt;/p&gt;
 </description>
         <pubDate>Fri, 04 Aug 2017 15:35:00 +0100</pubDate>
-        <link>https://martinjc.com//2017/08/04/post-grad.html</link>
-        <guid isPermaLink="true">https://martinjc.com//2017/08/04/post-grad.html</guid>
+        <link>http://localhost:9000/2017/08/04/post-grad.html</link>
+        <guid isPermaLink="true">http://localhost:9000/2017/08/04/post-grad.html</guid>
         
         
       </item>
@@ -91,7 +91,7 @@
 
 &lt;p&gt;The keynote was an interesting look at how technology can be embraced by a whole institution, but I think what really caught my attention during this talk (with one eye on our new building with MATHS) was the lecture theatres that are arranged for group work:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://martinjc.com/img/2017-07-05-cucei17/learning_spaces.jpg&quot; alt=&quot;Learning Spaces&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://localhost:9000/img/2017-07-05-cucei17/learning_spaces.jpg&quot; alt=&quot;Learning Spaces&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;How fantastic would it be able to teach in that space - you could do so many activities beyond just standing at the front ‘lecturing’. I’m becoming more and more vehement in my belief that a traditional ‘didactic’ lecture is the wrong way to teach most topics in Computer Science, and is actually harmful to our student’s ability to learn and think independently. Breaking the link between the idea of a ‘lecture theatre’ and a ‘lecture’ would be a good start towards changing the way both staff and students think about these things we call ‘lectures’. One of the frequent comments I’ve heard (and apologies to whoever said it as I can’t remember who it was - possibly Vince or Dafydd) is “wouldn’t it be great to have lecture theatres that don’t have a ‘front’”. I can’t agree more.&lt;/p&gt;
 
@@ -116,8 +116,8 @@
 &lt;p&gt;Those are the questions I want answered next.&lt;/p&gt;
 </description>
         <pubDate>Wed, 05 Jul 2017 12:15:00 +0100</pubDate>
-        <link>https://martinjc.com//2017/07/05/cucei17.html</link>
-        <guid isPermaLink="true">https://martinjc.com//2017/07/05/cucei17.html</guid>
+        <link>http://localhost:9000/2017/07/05/cucei17.html</link>
+        <guid isPermaLink="true">http://localhost:9000/2017/07/05/cucei17.html</guid>
         
         
       </item>
@@ -168,8 +168,8 @@
 &lt;p&gt;So I guess the lesson learnt here is RTFM, and don’t try to be clever and re-invent functionality that already exists.&lt;/p&gt;
 </description>
         <pubDate>Mon, 12 Jun 2017 13:45:00 +0100</pubDate>
-        <link>https://martinjc.com//2017/06/12/catching-a-bug.html</link>
-        <guid isPermaLink="true">https://martinjc.com//2017/06/12/catching-a-bug.html</guid>
+        <link>http://localhost:9000/2017/06/12/catching-a-bug.html</link>
+        <guid isPermaLink="true">http://localhost:9000/2017/06/12/catching-a-bug.html</guid>
         
         
       </item>
@@ -214,13 +214,13 @@
 
 &lt;p&gt;My ‘Friday’ was spent working on some analysis of module evaluation feedback. As I mentioned in Tuesday’s notes, we need to do more and better with the feedback given to us by students. I’ve been working for a while on creating some simple dashboards that transform the quite poor output of the module evaluation system into something that is firstly a little more usable by module leaders, but that also looks more like the survey dashboards (NSS, PTES, etc) that we are used to dealing with.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://martinjc.com/img/2017-06-04-weeknotes-290517/dashboard.png&quot; alt=&quot;Module Evaluation Dashboards - WiP&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://localhost:9000/img/2017-06-04-weeknotes-290517/dashboard.png&quot; alt=&quot;Module Evaluation Dashboards - WiP&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;The idea is that consistency between the types of visualisations and analysis used will reduce the cognitive burden when trying to assess the feedback and compare across surveys. I’m now starting to put together a system that will create individual dashboards for lecturers and module leaders, and that will also allow comparison between modules on the various programmes and years of our degree schemes, and allow comparison to the school as a whole. With any luck I’ll be able to present this at the next TLAQC and we can start to deliver these to lecturers and operations teams to help them understand what the students are telling them. Today was mostly refactoring my existing analysis code that takes the raw survey data and converts it into percent agree/disagree scores as per the NSS dashboards, and collects the data across the different groupings (years/programmes) of modules.&lt;/p&gt;
 </description>
         <pubDate>Sun, 04 Jun 2017 21:00:40 +0100</pubDate>
-        <link>https://martinjc.com//2017/06/04/weeknotes-290517.html</link>
-        <guid isPermaLink="true">https://martinjc.com//2017/06/04/weeknotes-290517.html</guid>
+        <link>http://localhost:9000/2017/06/04/weeknotes-290517.html</link>
+        <guid isPermaLink="true">http://localhost:9000/2017/06/04/weeknotes-290517.html</guid>
         
         <category>teaching</category>
         
@@ -262,8 +262,8 @@
 &lt;p&gt;As with many of these training courses, one of the added benefits was being able to spend time with colleagues from across the University. It’s always fascinating to find out how others work and to hear about common problems or issues across different schools and colleges, and how they’ve been solved (or not!) in different ways. It’s also nice to get an opportunity to discuss things and to hear that others feel the same way. There was a lot of discussion and dissatisfaction expressed over the 2 days about the increased corporatisation and commodification of Higher Education. I’d love to tell you that we’ve solved that particular issue, but sadly not. Many did get righteously angry about it though. I suspect a higher societal change is needed to fix it, and all we can do at this level is to keep pushing for that change.&lt;/p&gt;
 </description>
         <pubDate>Sun, 28 May 2017 21:00:40 +0100</pubDate>
-        <link>https://martinjc.com//2017/05/28/weeknotes-220517.html</link>
-        <guid isPermaLink="true">https://martinjc.com//2017/05/28/weeknotes-220517.html</guid>
+        <link>http://localhost:9000/2017/05/28/weeknotes-220517.html</link>
+        <guid isPermaLink="true">http://localhost:9000/2017/05/28/weeknotes-220517.html</guid>
         
         <category>teaching</category>
         
@@ -307,8 +307,8 @@
 &lt;p&gt;Nada. Day off again (2 in 1 week!) packing and preparing for the week off. Mad day rushing around with Arthur collecting parcels, packing bags, and trying to optimise the fitting of bags into the car boot so that we could get both ourselves and the luggage in the car at the same time.&lt;/p&gt;
 </description>
         <pubDate>Mon, 15 May 2017 21:13:40 +0100</pubDate>
-        <link>https://martinjc.com//2017/05/15/weeknotes-140517.html</link>
-        <guid isPermaLink="true">https://martinjc.com//2017/05/15/weeknotes-140517.html</guid>
+        <link>http://localhost:9000/2017/05/15/weeknotes-140517.html</link>
+        <guid isPermaLink="true">http://localhost:9000/2017/05/15/weeknotes-140517.html</guid>
         
         <category>teaching</category>
         
@@ -325,15 +325,15 @@
 
 &lt;p&gt;To me, this seems quite stupid. The information is all online and freely accessible. You’ve admitted you’re willing to give it out to anyone who submits an FOI. So why not just make the raw data available to download? This does not sound like a helpful &lt;a href=&quot;http://www.opengovernment.org.uk/about/&quot;&gt;Open Government&lt;/a&gt; to me. Anyway, for whatever reason, they’ve chosen not to, and we can’t be bothered to wait around for an FOI to come back. It’s much quicker and easier to build a scraper! We’ll just use selenium to drive a web browser, submit a search, page through all the results collecting the details, then dump it all out to csv. Simple.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://martinjc.com/img/2016-11-02-scraping-the-assembly/out.gif&quot; alt=&quot;Scraping AM expenses&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://localhost:9000/img/2016-11-02-scraping-the-assembly/out.gif&quot; alt=&quot;Scraping AM expenses&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;I built this as a quick hack this morning. It took about an hour or so, and it shows. The code is not robust in any way, but it works. You can ask it for data from any year (or a number of years) and it’ll happily sit there churning its way through the results and spitting them out as both .csv and .json.&lt;/p&gt;
 
 &lt;p&gt;All the code is &lt;a href=&quot;https://github.com/martinjc/assembly-expenses-scraper&quot;&gt;available on Github&lt;/a&gt; and it’s under an MIT Licence. Have fun 😉&lt;/p&gt;
 </description>
         <pubDate>Wed, 02 Nov 2016 20:17:40 +0000</pubDate>
-        <link>https://martinjc.com//2016/11/02/scraping-the-assembly.html</link>
-        <guid isPermaLink="true">https://martinjc.com//2016/11/02/scraping-the-assembly.html</guid>
+        <link>http://localhost:9000/2016/11/02/scraping-the-assembly.html</link>
+        <guid isPermaLink="true">http://localhost:9000/2016/11/02/scraping-the-assembly.html</guid>
         
         <category>coding</category>
         
@@ -366,11 +366,11 @@
 
 &lt;p&gt;This is essential for anyone writing any amount of HTML. This is the magic package that allows me to write ‘html:5’ in a blank document, hit the shortcut keys (CTRL + E in my setup), and suddenly have a simple boilerplate HTML page.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://martinjc.com/img/2016-10-05-atom-plugins-for-web-development/out.gif&quot; alt=&quot;emmet auto-completion&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://localhost:9000/img/2016-10-05-atom-plugins-for-web-development/out.gif&quot; alt=&quot;emmet auto-completion&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;It’s ace. Not only that, but it can write loads of HTML for you, and all you have to do is write a CSS selector for that HTML:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://martinjc.com/img/2016-10-05-atom-plugins-for-web-development/out-1.gif&quot; alt=&quot;html css Selector expansion&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://localhost:9000/img/2016-10-05-atom-plugins-for-web-development/out-1.gif&quot; alt=&quot;html css Selector expansion&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Great stuff. The documentation is here.&lt;/p&gt;
 
@@ -378,13 +378,13 @@
 
 &lt;p&gt;This will tidy up your code automatically, fixing the indentation and spacing etc. It can even be set to automatically tidy your code every time you save a file. Awesome huh? Imagine being set a coursework where some of the marks were dependent on not writing code that looks like it was written by a five-year old child who’s addicted to hitting the tab key, then finding out that there’s software to strap that five-year olds thumbs to his hands so he can’t hit that tab key. Awesome.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://martinjc.com/img/2016-10-05-atom-plugins-for-web-development/out-2.gif&quot; alt=&quot;Beautiful tidy code&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://localhost:9000/img/2016-10-05-atom-plugins-for-web-development/out-2.gif&quot; alt=&quot;Beautiful tidy code&quot; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;color-picker&quot;&gt;&lt;a href=&quot;https://atom.io/packages/color-picker&quot;&gt;color-picker&lt;/a&gt;&lt;/h2&gt;
 
 &lt;p&gt;This one adds a colour picker right into atom. Just CMD-SHIFT-C and choose your colours!&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://martinjc.com/img/2016-10-05-atom-plugins-for-web-development/out-3.gif&quot; alt=&quot;Colour picker&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://localhost:9000/img/2016-10-05-atom-plugins-for-web-development/out-3.gif&quot; alt=&quot;Colour picker&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Another useful colour related plugin you may want to look at is Pigments, which can highlight colours in your projects, and gather them all together so you can see your palette.&lt;/p&gt;
 
@@ -392,13 +392,13 @@
 
 &lt;p&gt;My last recommendation is linter. This plugin will automatically check your code for errors. You’ll need to install linters for whatever language you want to check, like linter-tidy, linter-csslint, linter-pylint and linter-jshint.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://martinjc.com/img/2016-10-05-atom-plugins-for-web-development/Screenshot.png&quot; alt=&quot;Linter finds errors in your code&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://localhost:9000/img/2016-10-05-atom-plugins-for-web-development/Screenshot.png&quot; alt=&quot;Linter finds errors in your code&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;So there we go – a few recommendations to get you started. Found anything else interesting? Let me know!&lt;/p&gt;
 </description>
         <pubDate>Wed, 05 Oct 2016 21:17:40 +0100</pubDate>
-        <link>https://martinjc.com//2016/10/05/atom-plugins-for-web-development.html</link>
-        <guid isPermaLink="true">https://martinjc.com//2016/10/05/atom-plugins-for-web-development.html</guid>
+        <link>http://localhost:9000/2016/10/05/atom-plugins-for-web-development.html</link>
+        <guid isPermaLink="true">http://localhost:9000/2016/10/05/atom-plugins-for-web-development.html</guid>
         
         <category>coding</category>
         

@@ -1,5 +1,64 @@
-<!DOCTYPE html><html lang=en><head><title>dionysus</title><meta charset=utf-8><meta name=author content="Martin Chorley"><meta name=description content=HTML5><meta name=viewport content="width=device-width,initial-scale=1maximum-scale=1,user-scalable=no"><link rel=stylesheet href=css/style.css><link rel=stylesheet href="http://fonts.googleapis.com/css?family=Noto+Serif" type=text/css><link rel=stylesheet href=http://cdn.leafletjs.com/leaflet-0.5/leaflet.css><!--[if lt IE 9]>
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>dionysus</title>
+
+        <meta charset="utf-8">
+        <meta name="author" content="Martin Chorley">
+        <meta name="description" content="HTML5">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0  maximum-scale=1.0, user-scalable=no">
+        
+        <!-- styles -->
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Noto+Serif' type='text/css'>
+        <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.5/leaflet.css" />
+        <!--[if lt IE 9]>
             <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.5/leaflet.ie.css" />
-        <![endif]--><link rel="shortcut icon" href=favicon.ico><!--[if lt IE 9]>
+        <![endif]-->
+
+        <!-- favicons -->
+        <link rel="shortcut icon" href="favicon.ico">
+
+        <!-- microsoft :-( -->
+        <!--[if lt IE 9]>
             <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-        <![endif]--></head><body><div id=login><p>Login with <a href="http://www.last.fm/api/auth/?api_key=5806b1d8c748cdfca007cc76bd14dcff">last.fm</a> and/or <a href="https://foursquare.com/oauth2/authenticate?client_id=3QUP23AID2MSLC405MPXUZZAWY3B0TZNX4JTZ50HXZTR43XQ&response_type=token&redirect_uri=http://martinjc.com/dionysus/">foursquare</a></p><small>beer = pub, note = gig, star = recommended for you</small></div><div id=map></div><script src=http://cdn.leafletjs.com/leaflet-0.5/leaflet.js></script><script src="http://www.mapquestapi.com/sdk/leaflet/v1.0/mq-map.js?key=Fmjtd%7Cluur2g01n9%2Crg%3Do5-9at5du"></script><script src=http://code.jquery.com/jquery.js></script><script src=js/lastfm.api.md5.min.js></script><script src=js/lastfm.api.min.js></script><script src=js/consts.min.js></script><script src=js/_credentials.js></script><script src=js/map.js></script><script>!function(e,a,n,t,c,o,s){e.GoogleAnalyticsObject=c,e[c]=e[c]||function(){(e[c].q=e[c].q||[]).push(arguments)},e[c].l=1*new Date,o=a.createElement(n),s=a.getElementsByTagName(n)[0],o.async=1,o.src=t,s.parentNode.insertBefore(o,s)}(window,document,"script","//www.google-analytics.com/analytics.js","ga"),ga("create","UA-40324585-1","martinjc.com"),ga("send","pageview")</script></body></html>
+        <![endif]-->
+
+    </head>
+    <body>
+
+        <div id="login">
+            <p>
+            Login with <a href="http://www.last.fm/api/auth/?api_key=5806b1d8c748cdfca007cc76bd14dcff">last.fm</a> and/or <a href="https://foursquare.com/oauth2/authenticate?client_id=3QUP23AID2MSLC405MPXUZZAWY3B0TZNX4JTZ50HXZTR43XQ&response_type=token&redirect_uri=http://martinjc.com/dionysus/">foursquare</a>
+            </p>
+            <small>beer = pub, note = gig, star = recommended for you</small>
+        </div>
+
+        <div id="map"></div>
+
+        <!-- scripts -->
+        <script src="http://cdn.leafletjs.com/leaflet-0.5/leaflet.js"></script>
+        <script src="http://www.mapquestapi.com/sdk/leaflet/v1.0/mq-map.js?key=Fmjtd%7Cluur2g01n9%2Crg%3Do5-9at5du"></script>
+        <script src="http://code.jquery.com/jquery.js"></script>
+        <!-- lastfm api javascript available from https://github.com/fxb/javascript-last.fm-api -->
+        <script src="js/lastfm.api.md5.min.js"></script>
+        <script src="js/lastfm.api.min.js"></script>
+
+        <script src="js/consts.min.js"></script>
+        <script src="js/_credentials.js"></script>
+        <script src="js/map.js"></script>
+
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-40324585-1', 'martinjc.com');
+            ga('send', 'pageview');
+        </script>
+
+    </body>
+</html>
