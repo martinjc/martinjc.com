@@ -1,6 +1,6 @@
-+++
-title= "Martin Chorley"
-+++
+---
+title: "Martin Chorley"
+---
 
 
 <h1>hello.</h1>

@@ -1,10 +1,10 @@
-+++
-author: martin
-comments: false
-date: 2011-03-25 20:22:40+00:00
-layout: page
-link: https://martinjc.com/teaching/
-+++
+---
+author: "martin"
+comments:  "false"
+date: "2011-03-25 20:22:40+00:00"
+layout: "page"
+link: "https://martinjc.com/teaching/"
+---
 
 I am the Director of Learning and Teaching (DLT) for the School of Computer Science and Informatics. For the last few years I've been the Deputy DLT, and have spent a lot of time focused on Postgraduate students, working as the chair of the Postgraduate Operations Team, Senior Personal Tutor for Taught Postgraduate students, and the Student Rep Coordinator for the postgrad Student-Staff Panel.
 
@@ -33,4 +33,4 @@ I also co-teach the [Digital Investigation (MCT542)](http://handbooks.data.card
 
 
 
-Details of my previous teaching duties (including tutoring work carried out during my PhD) can be found under '[past teaching]({{ site.url }}/teaching/past-teaching/)'.
+Details of my previous teaching duties (including tutoring work carried out during my PhD) can be found under '[past teaching](/teaching/past-teaching/)'.

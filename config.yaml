@@ -1,0 +1,6 @@
+baseURL: "/"
+languageCode: "en-gb"
+title: "Martin Chorley"
+theme: "mjc"
+permalinks:
+  blog: /:year/:month/:day/:title/

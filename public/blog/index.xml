@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Martin Chorley</title>
-    <link>/</link>
-    <description>Recent content on Martin Chorley</description>
+    <title>Blogs on Martin Chorley</title>
+    <link>/blog/</link>
+    <description>Recent content in Blogs on Martin Chorley</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
     <lastBuildDate>Wed, 29 Nov 2017 11:15:00 +0000</lastBuildDate>
     
-	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/blog/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -40,41 +40,6 @@ The conference idea started as all good ideas do, in the pub and with a tweet. I
       <guid>/2017/08/04/post-graduation-thoughts/</guid>
       <description>Last month I took part in my first graduation ceremony as part of the academic procession. This is the bit where staff members from the school(s) that are graduating get dressed up in their silly robes, &amp;lsquo;process&amp;rsquo; into the graduation ceremony, and sit on stage for an hour or so clapping as all their students stride across the stage to shake the VC&amp;rsquo;s hand and graduate from their degree.
 It&amp;rsquo;s a lot of fun, because who doesn&amp;rsquo;t like dressing up in silly robes and a hat?</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>/teaching/</link>
-      <pubDate>Fri, 25 Mar 2011 20:22:40 +0000</pubDate>
-      
-      <guid>/teaching/</guid>
-      <description>I am the Director of Learning and Teaching (DLT) for the School of Computer Science and Informatics. For the last few years I&amp;rsquo;ve been the Deputy DLT, and have spent a lot of time focused on Postgraduate students, working as the chair of the Postgraduate Operations Team, Senior Personal Tutor for Taught Postgraduate students, and the Student Rep Coordinator for the postgrad Student-Staff Panel.
-I&amp;rsquo;m the MSc Programme Leader for the MSc in Computational and Data Journalism, a joint course between the School of Computer Science &amp;amp; Informatics and the School of Journalism, Media and Culture here at Cardiff University.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>/research/</link>
-      <pubDate>Fri, 25 Mar 2011 11:46:38 +0000</pubDate>
-      
-      <guid>/research/</guid>
-      <description>A large focus of my current research is in the area of Computational and Data Journalism, including studying Data Journalism and Computer Science education. I&amp;rsquo;m interested in the understanding of educational methods (including the use of innovative teaching and assessment) particularly within STEM subjects, but also at the cross-disciplinary boundary.
-I like doing research wherever computer science, IT systems and devices brush up against the real world, as things are far more interesting when people are involved.</description>
-    </item>
-    
-    <item>
-      <title>publications</title>
-      <link>/publications/publications/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/publications/publications/</guid>
-      <description>A list of my publications is given below, it&amp;rsquo;s usually fairly up to date. Alternatively, you can take a look at my Google Scholar profile, or my profile on any number of useless &amp;ldquo;academic profile&amp;rdquo; websites (listed at the end of the page).
-{% bibliography %}
-Other &amp;ldquo;Academic Profile&amp;rdquo; Pages: ORCiD
-ResearchGate
-Mendeley
-ResearcherID
-academia.edu</description>
     </item>
     
   </channel>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Publications on Martin Chorley</title>
+    <link>/publications/</link>
+    <description>Recent content in Publications on Martin Chorley</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    
+	<atom:link href="/publications/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>publications</title>
+      <link>/publications/publications/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/publications/publications/</guid>
+      <description>A list of my publications is given below, it&amp;rsquo;s usually fairly up to date. Alternatively, you can take a look at my Google Scholar profile, or my profile on any number of useless &amp;ldquo;academic profile&amp;rdquo; websites (listed at the end of the page).
+{% bibliography %}
+Other &amp;ldquo;Academic Profile&amp;rdquo; Pages: ORCiD
+ResearchGate
+Mendeley
+ResearcherID
+academia.edu</description>
+    </item>
+    
+  </channel>
+</rss>
