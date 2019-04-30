@@ -7,7 +7,7 @@ slug: datajconf-debrief
 tags:
 ---
 
-![DataJConf at UCD](/img/{{ .date.Format "2006-01-02" }}-{{ .slug }}/poster.jpg)
+{{< bundleimg "*poster*" "DataJConf at UCD" >}}
 
 A month ago we held the first [European Data and Computational Journalism Conference](http://datajconf.com/2016/) in Dublin, Ireland. This is a long overdue post about that event.
 
