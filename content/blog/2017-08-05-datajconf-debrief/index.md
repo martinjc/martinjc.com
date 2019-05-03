@@ -7,7 +7,7 @@ slug: datajconf-debrief
 tags:
 ---
 
-{{< bundleimg "*poster*" "DataJConf at UCD" >}}
+{{< bundleimg "poster" "DataJConf at UCD" "DataJConf at UCD" >}}
 
 A month ago we held the first [European Data and Computational Journalism Conference](http://datajconf.com/2016/) in Dublin, Ireland. This is a long overdue post about that event.
 
@@ -23,4 +23,5 @@ All in all, a really successful event. I met a lot of interesting people and mad
 
 It was such a good time, we're doing it all over again. DataJConf 2018 will be held here in Cardiff. So I guess this time it'll be Glyn's turn to do all the running around organising things...
 
-![CompDJ Team Selfie!]({{ site.url }}/img/{{ page.date | date: "%Y-%m-%d"}}-{{page.slug}}/glyn_and_martin.jpg)
+
+{{< bundleimg "glyn_and_martin" "CompDJ Team Selfie" "CompDJ Team Selfie" >}}

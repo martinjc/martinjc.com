@@ -3,14 +3,12 @@ author: martin
 comments: false
 layout: page
 link: https://martinjc.com/publications/
-slug: publications
 title: publications
-permalink: /publications/
 ---
 
 A list of my publications is given below, it's usually fairly up to date. Alternatively, you can take a look at my [Google Scholar](http://scholar.google.com/citations?user=t3R1ZLgAAAAJ) profile, or my profile on any number of useless "academic profile" websites (listed at the end of the page).
 
-{% bibliography %}
+{{< bibliography >}}
 
 ## Other "Academic Profile" Pages:
 

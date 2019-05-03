@@ -1,6 +1,6 @@
 .blogpost {
 
-    margin-bottom: $spacing-unit;
+    margin-bottom: $spacing-unit*2;
 
 
     h1 {
@@ -58,6 +58,17 @@ hr{
     color: $brand-color;
     background-color: $brand-color;
     margin-bottom: $spacing-unit;
+}
+
+figure {
+    padding: $spacing-unit/4; 
+    margin: $spacing-unit 0; 
+    background-color: #cccc;
+
+    img {
+        max-width: 100%; 
+        height: auto;
+    }
 }
 
 @include media-query($small-break) {

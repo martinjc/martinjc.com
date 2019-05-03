@@ -3,6 +3,7 @@ author: martin
 comments: false
 date: 2011-03-25 11:46:38+00:00
 layout: page
+title: "Research"
 link: https://martinjc.com/research/
 ---
 
@@ -15,7 +16,7 @@ I like doing research wherever computer science, IT systems and devices brush up
 
 My recent research has looked at issues of communication within and outside of the Journalism community. I have also been examining what social media can tell us about alcohol consumption.
 
-Before I began work as a Lecturer I was working on a 12 month EPSRC Fellowship (2013 Doctoral Award Prize) examining the relationship between an individual's personality (in terms of the OCEAN five-factor personality model) and the places they visit or check in to. This work has been [published]({{ site.url }}/publications/)
+Before I began work as a Lecturer I was working on a 12 month EPSRC Fellowship (2013 Doctoral Award Prize) examining the relationship between an individual's personality (in terms of the OCEAN five-factor personality model) and the places they visit or check in to. This work has been [published](/publications/)
 
 ## Reviewing and Committees
 

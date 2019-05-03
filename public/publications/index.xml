@@ -16,13 +16,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/publications/publications/</guid>
-      <description>A list of my publications is given below, it&amp;rsquo;s usually fairly up to date. Alternatively, you can take a look at my Google Scholar profile, or my profile on any number of useless &amp;ldquo;academic profile&amp;rdquo; websites (listed at the end of the page).
-{% bibliography %}
-Other &amp;ldquo;Academic Profile&amp;rdquo; Pages: ORCiD
-ResearchGate
-Mendeley
-ResearcherID
-academia.edu</description>
+      <description>A list of my publications is given below, it&amp;rsquo;s usually fairly up to date. Alternatively, you can take a look at my Google Scholar profile, or my profile on any number of useless &amp;ldquo;academic profile&amp;rdquo; websites (listed at the end of the page).  {%for author in entry.author_array%} {%assign f_names = author.first | split: &amp;lsquo; &amp;lsquo;%} {%assign end_count = forloop.length | minus:1%} {%for f_name in f_names%}{{f_name | slice: 0 | strip}}.</description>
     </item>
     
   </channel>

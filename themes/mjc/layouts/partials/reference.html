@@ -1,0 +1,16 @@
+<p>
+    <span class="ref-authors">
+        {{ range .author  }}
+        {{ .given }} {{ .family }},
+        {{ end }}
+    </span>
+    <span class="ref-year">
+        ({{ .issued }}).
+    </span>
+    <span class="ref-title">
+        "{{ .title }}"
+    </span>
+    <span class="ref-journal">
+        {{ ".container-title" }}
+    </span>
+</p>

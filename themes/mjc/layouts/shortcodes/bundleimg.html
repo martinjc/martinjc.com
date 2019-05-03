@@ -1,5 +1,23 @@
-{{ $img := $.Page.Resources.GetMatch (.Get 0)}}
+{{ $original := $.Page.Resources.GetMatch (printf "*%s*" (.Get 0)) }}
+{{ $alttext := .Get 1 }}
+{{ $caption := .Get 2 }}
+{{ $command := .Get 3 }}
+{{ $options := .Get 4 }}
+{{ if eq $command "Fit"}}
+{{ .Scratch.Set "image" ($original.Fit $options) }}
+{{ else if eq $command "Resize"}}
+{{ .Scratch.Set "image" ($original.Resize $options) }}
+{{ else if eq $command "Fill"}}
+{{ .Scratch.Set "image" ($original.Fill $options) }}
+{{ else }}
+{{ .Scratch.Set "image" $original }}
+{{ end }}
+{{ $image := .Scratch.Get "image" }}
 <figure>
-    <img src="{{ $img.RelPermalink }}" alt="(.Get 1)" />
-    <figcaption>(.Get 1)</figcaption>
+    <img src="{{ $image.RelPermalink }}" width="{{ $image.Width }}" height="{{ $image.Height }}" alt="{{ $alttext }}">
+    <figcaption>
+        <small>
+            {{ $caption }}
+        </small>
+    </figcaption>
 </figure>
