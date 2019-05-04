@@ -5,12 +5,24 @@
         {{ end }}
     </span>
     <span class="ref-year">
-        ({{ .issued }}).
+        {{ range first 1 .issued }}
+        {{ .year }}
+        {{ end }}
     </span>
     <span class="ref-title">
         "{{ .title }}"
     </span>
     <span class="ref-journal">
-        {{ ".container-title" }}
+        {{ index . "container-title" }}
     </span>
+    {{ if .DOI }}
+    <br><span class="ref-doi">
+        DOI: <a href="https://doi.org/{{ .DOI }}">{{ .DOI }}</a>
+    </span>
+    {{ end }}
+    {{ if .URL }}
+    <br><span class="ref-url">
+        <a href="{{ .URL }}">View at Publisher</a>
+    </span>
+    {{ end }}
 </p>

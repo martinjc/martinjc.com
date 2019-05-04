@@ -1,3 +1,12 @@
-{{ range $.Site.Data.pub.references }}
+<h2>Journal Articles</h2>
+{{ range where $.Site.Data.pub.references "type" "article-journal" }}
+{{- partial "reference.html" . -}}
+{{ end }}
+<h2>Conference Publications</h2>
+{{ range where $.Site.Data.pub.references "type" "paper-conference"}}
+{{- partial "reference.html" . -}}
+{{ end }}
+<h2>Book Chapters</h2>
+{{ range where $.Site.Data.pub.references "type" "chapter"}}
 {{- partial "reference.html" . -}}
 {{ end }}

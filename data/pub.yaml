@@ -16,7 +16,10 @@ references:
   title: 'Editorial of the special issue on following user pathways: Key contributions
     and future directions in cross-platform social media research'
   title-short: Editorial of the special issue on following user pathways
+  container-title: International Journal of Human-Computer Interaction
   publisher: Taylor & Francis
+  URL: https://www.tandfonline.com/doi/full/10.1080/10447318.2018.1471575
+  DOI: 10.1080/10447318.2018.1471575
 
 - id: Chorley2017
   type: paper-conference
@@ -27,10 +30,9 @@ references:
     given: Glyn G
   issued:
   - year: 2017
-  title: '<span class="nocase">Now we are Three: A Perspective on Computational Journalism
-    Education</span>'
-  container-title: European data and computational journalism conference (datajconf)
-    2016
+  title: 'Now we are Three: A Perspective on Computational Journalism
+    Education'
+  container-title: European Data and Computational Journalism Conference (datajconf) 2017
 
 - id: Chorley2017b
   type: chapter
@@ -42,7 +44,8 @@ references:
   issued:
   - year: 2017
   title: Foursquare
-  container-title: The sage handbook of social media research methods
+  container-title: The Sage Handbook of Social Media Research Methods
+  URL: https://uk.sagepub.com/en-gb/eur/the-sage-handbook-of-social-media-research-methods/book245370
 
 - id: Chorley2016b
   type: article-journal
@@ -53,7 +56,7 @@ references:
     given: Glyn
   issued:
   - year: 2016
-  title: <span class="nocase">Are you Talking to Me?</span>
+  title: Are you Talking to Me?
   container-title: Journalism Practice
   page: 1-12
   volume: '2786'
@@ -107,8 +110,8 @@ references:
     given: Karl
   issued:
   - year: 2016
-  title: <span class="nocase">An Open Framework for the Reproducible Study of the
-    Iterated Prisoner’s Dilemma</span>
+  title: An Open Framework for the Reproducible Study of the
+    Iterated Prisoner’s Dilemma
   container-title: Journal of Open Research Software
   page: e35
   volume: '4'
@@ -127,8 +130,8 @@ references:
     given: Martin
   issued:
   - year: 2015
-  title: <span class="nocase">Tweet if you will ? the real question is, who do you
-    influence?</span>
+  title: Tweet if you will ? the real question is, who do you
+    influence?
   container-title: WebSci 15
   keyword: facebook,foursquare,investment,online marketing,return on,social media,twitter
   DOI: http://dx.doi.org/10.1145/2786451.2786923
@@ -147,8 +150,8 @@ references:
     given: Matthew J
   issued:
   - year: 2016
-  title: '<span class="nocase">Pub Crawling at Scale : Tapping Untappd to Explore
-    Social Drinking</span>'
+  title: 'Pub Crawling at Scale : Tapping Untappd to Explore
+    Social Drinking'
   container-title: ICWSM 2016
 
 - id: Hall2016
@@ -170,8 +173,8 @@ references:
     given: Markus
   issued:
   - year: 2016
-  title: '<span class="nocase">Following User Pathways : Cross Platform and Mixed
-    Methods Analysis</span>'
+  title: 'Following User Pathways : Cross Platform and Mixed
+    Methods Analysis'
   container-title: CHI’16 extended abstracts
   collection-number: May
   DOI: http://dx.doi.org/10.1145/2851581.2856500
@@ -307,7 +310,7 @@ references:
   issued:
   - year: 2012
     month: 11
-  title: <span class="nocase">Opportunistic Social Dissemination of Micro-Blogs</span>
+  title: Opportunistic Social Dissemination of Micro-Blogs
   container-title: Ad Hoc Networks
   page: 1570-1585
   volume: '10'
@@ -358,8 +361,8 @@ references:
     given: Roger. M.
   issued:
   - year: 2011
-  title: <span class="nocase">Exploiting user interest similarity and social links
-    for micro-blog forwarding in mobile opportunistic networks</span>
+  title: Exploiting user interest similarity and social links
+    for micro-blog forwarding in mobile opportunistic networks
   container-title: Pervasive and Mobile Computing
   URL: '{http://www.sciencedirect.com/science/article/pii/S1574119211001544}'
   DOI: 10.1016/j.pmcj.2011.12.003
@@ -375,8 +378,8 @@ references:
   issued:
   - year: 2010
     month: 8
-  title: <span class="nocase">Performance analysis of a hybrid MPI/OpenMP application
-    on multi-core clusters</span>
+  title: Performance analysis of a hybrid MPI/OpenMP application
+    on multi-core clusters
   container-title: Journal of Computational Science
   page: 168-174
   volume: '1'
@@ -398,8 +401,8 @@ references:
   issued:
   - year: 2009
     month: 6
-  title: <span class="nocase">Hybrid Message-Passing and Shared-Memory Programming
-    in a Molecular Dynamics Application On Multicore Clusters</span>
+  title: Hybrid Message-Passing and Shared-Memory Programming
+    in a Molecular Dynamics Application On Multicore Clusters
   container-title: International Journal of High Performance Computing Applications
   page: 196-211
   volume: '23'
@@ -488,8 +491,8 @@ references:
     given: R M
   issued:
   - year: 2013
-  title: <span class="nocase">Will You Like this Place? A Tag-Based Place Representation
-    Approach</span>
+  title: Will You Like this Place? A Tag-Based Place Representation
+    Approach
   container-title: International workshop on the impact of human mobility in pervasive
     systems and applications (permoby)
   publisher-place: San Diego, California, USA
@@ -599,8 +602,8 @@ references:
   issued:
   - year: 2010
     month: 9
-  title: <span class="nocase">Self Adaptation of Cooperation in Multi-agent Content
-    Sharing Systems</span>
+  title: Self Adaptation of Cooperation in Multi-agent Content
+    Sharing Systems
   container-title: 2010 fourth ieee international conference on self-adaptive and
     self-organizing systems
   publisher: IEEE
@@ -624,8 +627,8 @@ references:
   issued:
   - year: 2010
     month: 8
-  title: <span class="nocase">Incentivising Cooperation between Agents for Content
-    Sharing</span>
+  title: Incentivising Cooperation between Agents for Content
+    Sharing
   container-title: 2010 ieee/wic/acm international conference on web intelligence
     and intelligent agent technology
   publisher: IEEE
@@ -651,8 +654,8 @@ references:
   issued:
   - year: 2012
     month: 3
-  title: '<span class="nocase">You are where you eat: Foursquare checkins as indicators
-    of human mobility and behaviour</span>'
+  title: 'You are where you eat: Foursquare checkins as indicators
+    of human mobility and behaviour'
   container-title: 2012 ieee international conference on pervasive computing and communications
     workshops (percom workshops)
   publisher-place: Lugano, Switzerland
@@ -675,8 +678,8 @@ references:
   issued:
   - year: 2011
     month: 9
-  title: '<span class="nocase">Checking out checking in: observations on Foursquare
-    usage patterns</span>'
+  title: 'Checking out checking in: observations on Foursquare
+    usage patterns'
   container-title: ’Finding patterns of human behaviours in network and mobility data’
     (nemo) workshop at ecmlpkdd 2011
   publisher-place: Athens, Greece
@@ -695,7 +698,7 @@ references:
   issued:
   - year: 2011
     month: 6
-  title: <span class="nocase">Adaptive Data Exchange Model for Opportunistic Systems</span>
+  title: Adaptive Data Exchange Model for Opportunistic Systems
   container-title: Fifth ieee wowmom workshop on autonomic and opportunistic communications
   publisher-place: Lucca, Italy
   URL: http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=5986140
