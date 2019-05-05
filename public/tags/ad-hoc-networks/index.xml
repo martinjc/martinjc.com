@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ad Hoc Networks on Martin Chorley</title>
+    <link>/tags/ad-hoc-networks/</link>
+    <description>Recent content in Ad Hoc Networks on Martin Chorley</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Thu, 02 Jun 2011 09:23:51 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/ad-hoc-networks/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Paper published</title>
+      <link>/2011/06/02/paper-published/</link>
+      <pubDate>Thu, 02 Jun 2011 09:23:51 +0000</pubDate>
+      
+      <guid>/2011/06/02/paper-published/</guid>
+      <description>Our latest paper (&amp;ldquo;Opportunistic social dissemination of micro-blogs&amp;rdquo;) on some of the last work we did for the Socialnets project has finally been published, and can be viewed online here, or in preprint form from my publications page.</description>
+    </item>
+    
+  </channel>
+</rss>

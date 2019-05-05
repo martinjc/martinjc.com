@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Development on Martin Chorley</title>
+    <link>/tags/development/</link>
+    <description>Recent content in Development on Martin Chorley</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Wed, 02 Nov 2016 20:17:40 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/development/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Scraping the Assembly</title>
+      <link>/2016/11/02/scraping-the-assembly/</link>
+      <pubDate>Wed, 02 Nov 2016 20:17:40 +0000</pubDate>
+      
+      <guid>/2016/11/02/scraping-the-assembly/</guid>
+      <description>M’colleague is currently teaching a first-semester module on Data Journalism to the students on our MSc in Computational and Data Journalism. As part of this, they need to do some sort of data project. One of the students is looking at the expenses of Welsh Assembly Members. These are all freely available online, but not in an easy to manipulate form. According to the Assembly they’d be happy to give the data out as a spreadsheet, if we submitted an FOI.</description>
+    </item>
+    
+    <item>
+      <title>NHS Hackday 2015</title>
+      <link>/2015/01/26/nhs-hackday-2015/</link>
+      <pubDate>Mon, 26 Jan 2015 10:15:16 +0000</pubDate>
+      
+      <guid>/2015/01/26/nhs-hackday-2015/</guid>
+      <description>This weekend I took part in an incredibly successful NHS hackday, hosted at Cardiff University and organised by Anne Marie Cunningham and James Morgan. We went as a team from the MSc in Computational Journalism, with myself and Glyn attending along with Pooja, Nikita, Annalisa and Charles. At the last-minute I recruited a couple of ringers as well, dragging along Rhys Priestland Dr William Wilberforce Webberley from Comsc and Dr Matthew Williams, previously of this parish.</description>
+    </item>
+    
+    <item>
+      <title>Computational Journalism - &#39;a Manifesto&#39;</title>
+      <link>/2014/10/03/computational-journalism-a-manifesto/</link>
+      <pubDate>Fri, 03 Oct 2014 08:00:04 +0000</pubDate>
+      
+      <guid>/2014/10/03/computational-journalism-a-manifesto/</guid>
+      <description>While Glyn and I have been discussing the new MSc course between ourselves and with others, we have repeatedly come up with the same issues and themes, again and again. As a planning exercise earlier in the summer, we gathered some of these together into a &amp;lsquo;manifesto&amp;rsquo;.
+The manifesto is online on our main &amp;lsquo;Computational Journalism&amp;rsquo; website with a bit of extra commentary.</description>
+    </item>
+    
+    <item>
+      <title>MSc Computational Journalism about to launch</title>
+      <link>/2014/04/15/msc-computational-journalism-about-to-launch/</link>
+      <pubDate>Tue, 15 Apr 2014 15:35:35 +0000</pubDate>
+      
+      <guid>/2014/04/15/msc-computational-journalism-about-to-launch/</guid>
+      <description>For the last two years I&amp;rsquo;ve been working on a project with some colleagues in the school of Journalism, Media and Cultural Studies (JOMEC) here at Cardiff University and it&amp;rsquo;s finally all coming together. This week we&amp;rsquo;ve been able to announce that (subject to some final internal paperwork wrangling) we&amp;rsquo;ll be launching an MSc in Computational Journalism this September. The story of how the course came about is fairly long, but starts simply with a tweet (unfortunately missing the context, but you get the drift):</description>
+    </item>
+    
+    <item>
+      <title>KSRI Services Summer School - Social Computing Theory and Hackathon</title>
+      <link>/2013/09/24/ksri-services-summer-school-social-computing-theory-and-hackathon/</link>
+      <pubDate>Tue, 24 Sep 2013 11:19:20 +0000</pubDate>
+      
+      <guid>/2013/09/24/ksri-services-summer-school-social-computing-theory-and-hackathon/</guid>
+      <description>I was invited by Simon Caton to come to the KSRI Services Summer School, held at KIT in Germany, to help him run a workshop session on Social Computing. We decided to use the session as a crash course in retrieving and manipulating data from Social Media APIs - showing the students the basics, then running a mini &amp;lsquo;hackathon&amp;rsquo; for the students to gain some practical experience.
+I think the session went really well, the students seemed to enjoy it and the feedback was very positive.</description>
+    </item>
+    
+    <item>
+      <title>SWN Festival 2013 - plans</title>
+      <link>/2013/08/11/swn-festival-2013-plans/</link>
+      <pubDate>Sun, 11 Aug 2013 17:15:53 +0000</pubDate>
+      
+      <guid>/2013/08/11/swn-festival-2013-plans/</guid>
+      <description>Last year I had a go at creating a couple of web apps based around the bands playing the SWN Festival here in Cardiff. I love SWN with all my heart, it&amp;rsquo;s a permanent fixture in my calendar and even if (when) I leave Cardiff it&amp;rsquo;ll be the one thing I come back for every year. It&amp;rsquo;s a great way to see and discover new bands, but sometimes the sheer volume of music on offer can be overwhelming.</description>
+    </item>
+    
+    <item>
+      <title>Open Sauce Hackathon - Post Mortem</title>
+      <link>/2013/04/22/open-sauce-hackathon-post-mortem/</link>
+      <pubDate>Mon, 22 Apr 2013 10:51:12 +0000</pubDate>
+      
+      <guid>/2013/04/22/open-sauce-hackathon-post-mortem/</guid>
+      <description>This weekend saw the second &amp;lsquo;Open Sauce Hackathon&amp;rsquo; run by undergraduate students here in the school. Last years was pretty successful, and they improved upon it this year, pulling in many more sponsors and offering more prizes.
+Unlike last year, when I turned up having already decided with Jon Quinn what we were doing, I went along this year with no real ideas. I had a desire to do something with a map, as I&amp;rsquo;m pretty sure building stuff connected to maps is going to play a big part in work over the next couple of months.</description>
+    </item>
+    
+    <item>
+      <title>Advanced LaTeX Course</title>
+      <link>/2013/03/15/advanced-latex-course/</link>
+      <pubDate>Fri, 15 Mar 2013 15:22:36 +0000</pubDate>
+      
+      <guid>/2013/03/15/advanced-latex-course/</guid>
+      <description>Here are the slides and source code for the UGC Advanced LaTeX course, 15th March 2013
+Introduction (Beginners Recap, Graphics &amp;amp; Figures) - handouts and source BibTeX and Referencing - handouts &amp;amp; source Custom Commands &amp;amp; Environments, Source Code Listings, Tips &amp;amp; Tricks - handouts &amp;amp; source Exercise Sheets - handouts &amp;amp; source</description>
+    </item>
+    
+    <item>
+      <title>LaTeX beamer handouts (with frames and borders)</title>
+      <link>/2013/01/29/latex-beamer-handouts-with-frames-and-borders/</link>
+      <pubDate>Tue, 29 Jan 2013 09:46:45 +0000</pubDate>
+      
+      <guid>/2013/01/29/latex-beamer-handouts-with-frames-and-borders/</guid>
+      <description>I&amp;rsquo;m working on some notes for a beginners LaTeX course that I&amp;rsquo;m giving for the University Graduate College this week. In a temporary fit of insanity I decided it would be nice to write all the slides in LaTeX, so that I can distribute the source to the students so they get some real world LaTeX examples to go along with the course notes.
+I was attempting to make handouts for the students using the great handoutWithNotes package.</description>
+    </item>
+    
+    <item>
+      <title>Foursquare Personality Experiment</title>
+      <link>/2012/11/20/foursquare-personality-experiment/</link>
+      <pubDate>Tue, 20 Nov 2012 09:20:32 +0000</pubDate>
+      
+      <guid>/2012/11/20/foursquare-personality-experiment/</guid>
+      <description>Today we are finally starting to promote our latest experiment. It&amp;rsquo;s been online for about a month, but we haven&amp;rsquo;t told anyone about it while we&amp;rsquo;ve been finishing up the Year 2 deliverables for Recognition (the review is in a couple of weeks - fingers crossed!) Now however I can start publicly talking about it and encouraging people to take part and get involved!
+We&amp;rsquo;re calling it the Foursquare Personality Experiment, and it&amp;rsquo;s available on the School of Computer Science &amp;amp; Informatics&amp;rsquo; website here:</description>
+    </item>
+    
+    <item>
+      <title>SWN Artist Explorer</title>
+      <link>/2012/10/04/swn-artist-explorer/</link>
+      <pubDate>Thu, 04 Oct 2012 09:48:18 +0000</pubDate>
+      
+      <guid>/2012/10/04/swn-artist-explorer/</guid>
+      <description>It&amp;rsquo;s that time of year again: SWN Festival is once more upon us. It&amp;rsquo;s the highlight of the musical year in Cardiff, and probably the one thing I&amp;rsquo;ll miss about the city when (if?) I leave. In fact, I&amp;rsquo;m pretty certain that even if I left the city I&amp;rsquo;d make the pilgrimage back once a year for SWN because it&amp;rsquo;s just too much fun to miss.
+The lineup this year is another cracking one, but as usual with four days of bands spread across so many venues there are a whole bunch of names that I don&amp;rsquo;t recognise.</description>
+    </item>
+    
+    <item>
+      <title>Foursquare Category Icon Downloader (2)</title>
+      <link>/2012/01/31/foursquare-category-icon-downloader-2/</link>
+      <pubDate>Tue, 31 Jan 2012 08:50:10 +0000</pubDate>
+      
+      <guid>/2012/01/31/foursquare-category-icon-downloader-2/</guid>
+      <description>UPDATE [01 August 2014]: Even more breaking! More recent version of the script here
+Someone commented recently that the script I&amp;rsquo;d written to download the Foursquare category icons was broken. downloader.py is an update that works as of today (notice the URL param with today&amp;rsquo;s date) that will fetch all available sizes of all the category icons and store them in folders by size.</description>
+    </item>
+    
+    <item>
+      <title>BoxUK &#34;For the Social Good&#34; Hackday</title>
+      <link>/2011/11/22/boxuk-for-the-social-good-hackday/</link>
+      <pubDate>Tue, 22 Nov 2011 10:51:04 +0000</pubDate>
+      
+      <guid>/2011/11/22/boxuk-for-the-social-good-hackday/</guid>
+      <description>Yesterday I attended the &amp;ldquo;For the Social Good&amp;rdquo; hackday, organised by BoxUK and held at the Students Union at Cardiff University. As you may have gathered from the title, it was a hackday themed around creating apps that had some benefit to society. The event ran from 10am to 10pm, so it was a fairly short hack event compared to some, which had a big influence on what could be done during the time available.</description>
+    </item>
+    
+    <item>
+      <title>Foursquare Hackathon Post Mortem</title>
+      <link>/2011/11/22/foursquare-hackathon-post-mortem/</link>
+      <pubDate>Tue, 22 Nov 2011 10:24:13 +0000</pubDate>
+      
+      <guid>/2011/11/22/foursquare-hackathon-post-mortem/</guid>
+      <description>Note: I wrote this post just after the hackathon, but then forgot to actually publish it! 
+There&amp;rsquo;s a fair amount I learnt from taking part in and helping to organise the foursquare hackathon here at the university that probably deserves its own post. I&amp;rsquo;ll split it into two parts, the taking part and the organisation.
+Organising a hack event There were a couple of things I learnt from helping to organise the event that perhaps weren&amp;rsquo;t clear to begin with:</description>
+    </item>
+    
+    <item>
+      <title>CUROP summer project update</title>
+      <link>/2011/07/12/curop-summer-project-update/</link>
+      <pubDate>Tue, 12 Jul 2011 14:04:10 +0000</pubDate>
+      
+      <guid>/2011/07/12/curop-summer-project-update/</guid>
+      <description>I figure it&amp;rsquo;s about time I posted an update on the summer project that myself and Ian are supervising. Our summer student Nick is now two weeks into the project and seems to be getting to grips nicely with the problem. He also seems to be coping pretty well with two novice supervisors babbling away at him whenever we meet up! If he leaves the office without being completely overwhelmed with information I think it&amp;rsquo;s been a successful meeting.</description>
+    </item>
+    
+    <item>
+      <title>Django &#43; Tweepy &#43; OAuth</title>
+      <link>/2011/04/04/django-tweepy-oauth/</link>
+      <pubDate>Mon, 04 Apr 2011 18:27:24 +0000</pubDate>
+      
+      <guid>/2011/04/04/django-tweepy-oauth/</guid>
+      <description>There is a lot of information out there that talks about putting Django and Tweepy together to make a Twitter web app. I read a lot of it recently, and although a lot of it is helpful some of it can be quite complicated or out of date.
+To make things simple, I thought I&amp;rsquo;d create an example Django project that just contains the basics needed to get up and running.</description>
+    </item>
+    
+    <item>
+      <title>Twitter Wordle</title>
+      <link>/2011/04/04/twitter-wordle/</link>
+      <pubDate>Mon, 04 Apr 2011 13:36:44 +0000</pubDate>
+      
+      <guid>/2011/04/04/twitter-wordle/</guid>
+      <description>Next week we have the project partners coming over to Cardiff for a workshop. Stu and myself were discussing that we should have some way to display information throughout the day, something that makes it easy to pick out the main themes of talks etc. I&amp;rsquo;m a big fan of the Wordle as a way of displaying text, so we thought it would be nice if we could have a dynamic Wordle displayed that people could add to throughout the workshop.</description>
+    </item>
+    
+    <item>
+      <title>fun with django...</title>
+      <link>/2011/03/28/fun-with-django.../</link>
+      <pubDate>Mon, 28 Mar 2011 21:12:15 +0000</pubDate>
+      
+      <guid>/2011/03/28/fun-with-django.../</guid>
+      <description>One of the latest ideas we are working on for the new project is looking at how providing different amounts of information affects our perception of content. Even in pure implementation terms this is interestingly unlike any of the work I&amp;rsquo;ve done in the last few years, most of which was simulation based. &amp;ldquo;Code a simulation, run the simulation, analyse the results&amp;rdquo; has been a pattern of work since the beginning of my PhD and beyond.</description>
+    </item>
+    
+  </channel>
+</rss>

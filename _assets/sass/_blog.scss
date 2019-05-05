@@ -1,3 +1,14 @@
+
+.pagination {
+    display: block;
+    width: 100%;
+    list-style: none;
+
+    li {
+        display: inline;
+    }
+}
+
 .blogpost {
 
     margin-bottom: $spacing-unit*2;

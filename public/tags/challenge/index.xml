@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Challenge on Martin Chorley</title>
+    <link>/tags/challenge/</link>
+    <description>Recent content in Challenge on Martin Chorley</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Mon, 22 Apr 2013 10:29:08 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/challenge/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Social Media Lecture Experiment</title>
+      <link>/2013/04/22/social-media-lecture-experiment/</link>
+      <pubDate>Mon, 22 Apr 2013 10:29:08 +0000</pubDate>
+      
+      <guid>/2013/04/22/social-media-lecture-experiment/</guid>
+      <description>I&amp;rsquo;ve very recently had the opportunity to be involved in a different kind of lecture here at the School of Computer Science and Informatics. For his final year project one of our third year students (Samuel Boyes) is assessing the use of modern technology, social networking and video conferencing as part of the traditional lecture. As I had already been asked a few weeks ago to give a guest lecture in Matt Williams&amp;rsquo; module Fundamentals of Computing with Java, on the topic of code maintainability/readability, we were presented with a nice opportunity to test out Sam&amp;rsquo;s theories in an actual lecture.</description>
+    </item>
+    
+    <item>
+      <title>Cinema 2012 - the review</title>
+      <link>/2013/02/06/cinema-2012-the-review/</link>
+      <pubDate>Wed, 06 Feb 2013 14:15:41 +0000</pubDate>
+      
+      <guid>/2013/02/06/cinema-2012-the-review/</guid>
+      <description>At the beginning of the year I embarked upon a challenge: watch 100 movies in the cinema in 1 year. I thought it would be fun, but difficult.
+It was fun.
+It was difficult.
+This is a not very brief account of that year, starting with the best movies that were released this year and that I saw in the cinema. In no particular order, I think the best movies released this year that I saw in the cinema were:</description>
+    </item>
+    
+    <item>
+      <title>100 Movies in the Cinema in 1 Year</title>
+      <link>/2012/03/04/100-movies-in-the-cinema-in-1-year/</link>
+      <pubDate>Sun, 04 Mar 2012 22:10:37 +0000</pubDate>
+      
+      <guid>/2012/03/04/100-movies-in-the-cinema-in-1-year/</guid>
+      <description>After reading this blog post at the end of January I decided that watching at least 100 movies in the cinema in a year was the kind of challenge I could get behind. Last year&amp;rsquo;s challenge to get fit and healthy was fairly successful and seemed like much harder work than going to the cinema a few times could ever be. After all, 100 movies a year is less than 2 a week, so it must be easy, right?</description>
+    </item>
+    
+  </channel>
+</rss>
