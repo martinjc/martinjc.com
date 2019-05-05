@@ -69,182 +69,25 @@
         </ul>
     </nav>
 </header><div id="content">
-<main>
+<ul>
     
-
+    <li><a href="/2013/08/14/swn-festival-2013-plans-part-1-the-data/">
+            SWN Festival 2013 plans -  part 1: the data
+        </a></li>
     
-    <article class="blogpost">
-        <header>
-            <h1> <a href="/2013/08/14/swn-festival-2013-plans-part-1-the-data/">
-                    SWN Festival 2013 plans -  part 1: the data
-                </a></h1>
-            <p class="author">
-                <span class="date">Wednesday, Aug 14, 2013</span>
-            </p>
-        </header>
-        <div class="content">
-            <p>As <a href="/2013/08/11/swn-festival-2013-plans/">I mentioned</a>, I&rsquo;m planning on doing a bit more development work this year connected to the <a href="http://www.swnfest.com">SWN Festival</a>. The first stage is to get hold of the data associated with the festival in an accessible and machine readable form so it can be used in other apps.</p>
-
-<p>Unfortunately (but unsurprisingly), being a smallish local festival, there is no API for any of the data. So, getting a list of the bands and their info means we need to resort to web scraping. Fortunately, with a couple of lines of python and the BeautifulSoup library, getting the list of artists playing the festival is pretty straightforward:</p>
-
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> urllib2
-<span style="color:#f92672">import</span> json
-
-<span style="color:#f92672">from</span> bs4 <span style="color:#f92672">import</span> BeautifulSoup
-root_page <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;http://swnfest.com/&#34;</span>
-lineup_page <span style="color:#f92672">=</span> root_page <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;lineup/&#34;</span>
-
-<span style="color:#66d9ef">try</span>:
-    response <span style="color:#f92672">=</span> urllib2<span style="color:#f92672">.</span>urlopen(lineup_page)
-<span style="color:#66d9ef">except</span> urllib2<span style="color:#f92672">.</span>HTTPError, e:
-    <span style="color:#66d9ef">raise</span> e
-<span style="color:#66d9ef">except</span> urllib2<span style="color:#f92672">.</span>URLError, e:
-    <span style="color:#66d9ef">raise</span> e
-
-raw_data <span style="color:#f92672">=</span> response<span style="color:#f92672">.</span>read()
-
-soup <span style="color:#f92672">=</span> BeautifulSoup(raw_data)
-
-links <span style="color:#f92672">=</span> soup<span style="color:#f92672">.</span>select(<span style="color:#e6db74">&#34;.artist-listing h5 a&#34;</span>)
-
-artists <span style="color:#f92672">=</span> {}
-
-<span style="color:#66d9ef">for</span> link <span style="color:#f92672">in</span> links:
-    url <span style="color:#f92672">=</span> link<span style="color:#f92672">.</span>attrs[<span style="color:#e6db74">&#34;href&#34;</span>]
-    artist <span style="color:#f92672">=</span> link<span style="color:#f92672">.</span>contents[<span style="color:#ae81ff">0</span>]
-
-    artists[artist] <span style="color:#f92672">=</span> {}
-    artists[artist][<span style="color:#e6db74">&#34;swn_url&#34;</span>] <span style="color:#f92672">=</span> url</code></pre></div>
-
-<p>All we&rsquo;re doing here is loading the <a href="http://swnfest.com/lineup/">lineup</a> page for the main festival website, using BeautifulSoup to find all the links to individual artist pages (which are in a div with a class of &ldquo;artist-listing&rdquo;, each one in a h5 tag), then parsing these links to extract the artist name, and the url of their page on the festival website.</p>
-
-<p>Each artist page on the website includes handy links to soundcloud, twitter, youtube etc (where these exist), and since I&rsquo;m going to want to include these kinds of things in the apps I&rsquo;m working on, I&rsquo;ll grab those too:</p>
-
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">for</span> artist, data <span style="color:#f92672">in</span> artists<span style="color:#f92672">.</span>iteritems():
-    <span style="color:#66d9ef">try</span>:
-        response <span style="color:#f92672">=</span> urllib2<span style="color:#f92672">.</span>urlopen(data[<span style="color:#e6db74">&#34;swn_url&#34;</span>])
-    <span style="color:#66d9ef">except</span> urllib2<span style="color:#f92672">.</span>HTTPError, e:
-        <span style="color:#66d9ef">raise</span> e
-    <span style="color:#66d9ef">except</span> urllib2<span style="color:#f92672">.</span>URLError, e:
-        <span style="color:#66d9ef">raise</span> e
-
-    raw_data <span style="color:#f92672">=</span> response<span style="color:#f92672">.</span>read()
-
-    soup <span style="color:#f92672">=</span> BeautifulSoup(raw_data)
-
-    links <span style="color:#f92672">=</span> soup<span style="color:#f92672">.</span>select(<span style="color:#e6db74">&#34;.outlinks li&#34;</span>)
-
-    <span style="color:#66d9ef">for</span> link <span style="color:#f92672">in</span> links:
-         source_name <span style="color:#f92672">=</span> link<span style="color:#f92672">.</span>attrs[<span style="color:#e6db74">&#34;class&#34;</span>][<span style="color:#ae81ff">0</span>]
-         source_url <span style="color:#f92672">=</span> link<span style="color:#f92672">.</span>findChild(<span style="color:#e6db74">&#34;a&#34;</span>)<span style="color:#f92672">.</span>attrs[<span style="color:#e6db74">&#34;href&#34;</span>]
-         data[source_name] <span style="color:#f92672">=</span> source_url</code></pre></div>
-
-<p>This code iterates through the list of artists we just extracted from the lineup page, retrieves the relevant artist page, and parses it for the outgoing links, stored in list items in an unordered list with a class of &lsquo;outlinks&rsquo;. Fortunately each link in this list has a class describing what type of link it is (facebook/twitter/soundcloud etc) so we can use the class as a key in our dictionary, with the link itself as an item. Later on once schedule information is included in the artist page we can add some code to parse stage-times and venues, but at the moment that data isn&rsquo;t present on the pages, so we can&rsquo;t extract it yet.</p>
-
-<p>Finally we can just dump our artist data to json, and we have the information we need in an easily accessible format:</p>
-
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">with</span> open(<span style="color:#e6db74">&#34;bands.json&#34;</span>, <span style="color:#e6db74">&#34;w&#34;</span>) <span style="color:#66d9ef">as</span> outfile:
-    json<span style="color:#f92672">.</span>dump(artists, outfile)</code></pre></div>
-
-<p>Now we have the basic data for each artist, we can go on to search for more information on other music sites. The nice thing about this script is that when the lineup gets updated, we can just re-run the code and capture all the new artists that have been added. I should also mention that all the code I&rsquo;m using for this is available on <a href="https://github.com/martinjc/swnScraper2013">github</a>.</p>
-
-        </div>
-    </article>
+    <li><a href="/2013/08/11/swn-festival-2013-plans/">
+            SWN Festival 2013 - plans
+        </a></li>
     
-    <article class="blogpost">
-        <header>
-            <h1> <a href="/2013/08/11/swn-festival-2013-plans/">
-                    SWN Festival 2013 - plans
-                </a></h1>
-            <p class="author">
-                <span class="date">Sunday, Aug 11, 2013</span>
-            </p>
-        </header>
-        <div class="content">
-            <p>Last year I had a go at creating a couple of web apps based around the bands playing the <a href="http://www.swnfest.com">SWN Festival</a> here in Cardiff. I love SWN with all my heart, it&rsquo;s a permanent fixture in my calendar and even if (when) I leave Cardiff it&rsquo;ll be the one thing I come back for every year. It&rsquo;s a great way to see and discover new bands, but sometimes the sheer volume of music on offer can be overwhelming. So I wanted to see if I could create some web apps that would help to navigate your way through all the bands, and find the ones that you should go and see.</p>
-
-<p>The <a href="/swn/2012/tags/">first</a> was a simple app that gathered artist tags from Last.FM, allowing you to see which artists playing the festival had similar tags - so if you knew you liked one artist you could find other artists tagged with the same terms. The <a href="/swn/2012/rec/">second</a> (which technically wasn&rsquo;t ever really finished) would allow you to login with a last.fm account and find the artists whose tags best matched the tags for your top artists in your last.fm profile.</p>
-
-<p>I liked both these apps and found them both useful - but I don&rsquo;t think they went far enough. I only started development late in the year, about a month before the festival, so didn&rsquo;t have a lot of time to really get into it. This year I&rsquo;m starting a lot earlier, so I&rsquo;ve got time to do a lot more.</p>
-
-<p>Firstly I&rsquo;d like to repeat the apps from last year, but perhaps combining them in some way. I&rsquo;d like to include more links to the actual music, making it easy to get from an artist to their songs by including embeds from soundcloud, spotify, youtube etc. I&rsquo;d also like to try making a mobile app guide to the festival (probably as an android app as the official app is iOS only). I&rsquo;m hopeful that given enough free time I should be able to get some genuinely useful stuff done, and I&rsquo;ll be blogging about it here as I work on it.</p>
-
-        </div>
-    </article>
+    <li><a href="/2012/10/04/swn-artist-explorer/">
+            SWN Artist Explorer
+        </a></li>
     
-    <article class="blogpost">
-        <header>
-            <h1> <a href="/2012/10/04/swn-artist-explorer/">
-                    SWN Artist Explorer
-                </a></h1>
-            <p class="author">
-                <span class="date">Thursday, Oct 4, 2012</span>
-            </p>
-        </header>
-        <div class="content">
-            <p>It&rsquo;s that time of year again: <a href="http://swnfest.com/">SWN Festival</a> is once more upon us. It&rsquo;s the highlight of the musical year in Cardiff, and probably the one thing I&rsquo;ll miss about the city when (if?) I leave. In fact, I&rsquo;m pretty certain that even if I left the city I&rsquo;d make the pilgrimage back once a year for SWN because it&rsquo;s just too much fun to miss.</p>
-
-<p>The lineup this year is another cracking one, but as usual with four days of bands spread across so many venues there are a whole bunch of names that I don&rsquo;t recognise. As per usual I&rsquo;ve cooked up a <a href="http://open.spotify.com/user/martinjc/playlist/4O56MWAi1qIO6XfCDXEtjG">Spotify playlist</a>, but even sorting through that takes some time:</p>
-
-<p>I decided this year that it would be nice to have an easy visual way to see what the bands are like, so decided to build myself a little <a href="/swn/">artist explorer</a>. This uses tags from <a href="www.last.fm">Last.FM</a> and generates word clouds using a nice <a href="https://github.com/jasondavies/d3-cloud">javascript plugin</a> for <a href="http://mbostock.github.com/d3/">d3</a> written by <a href="http://www.jasondavies.com/">Jason Davies</a>. Most of the word cloud js was hacked together from Jason&rsquo;s <a href="http://www.jasondavies.com/wordcloud/">example</a>, with some mangling and modification from me. I downloaded the tags for artists offline and stuck them in a .json file so it doesn&rsquo;t hit the Last.FM servers on every page load. What we end up with is a fairly simple tag cloud example that allows you to see at a glance how Last.FM users have categorised the bands. Selecting a tag in the word cloud will show you the other bands in the lineup that have also had that tag applied to them. Of course it&rsquo;s <a href="/swn">online here</a>!</p>
-
-<p>Meanwhile, the code is available on <a href="https://github.com/martinjc/swn_tagger">github</a>, with no guarantees that any of it actually works.</p>
-
-        </div>
-    </article>
+    <li><a href="/2012/03/10/truckers-of-husk-gallops-kutosis-review/">
+            Truckers of Husk &#43; Gallops &#43; Kutosis Review
+        </a></li>
     
-    <article class="blogpost">
-        <header>
-            <h1> <a href="/2012/03/10/truckers-of-husk-gallops-kutosis-review/">
-                    Truckers of Husk &#43; Gallops &#43; Kutosis Review
-                </a></h1>
-            <p class="author">
-                <span class="date">Saturday, Mar 10, 2012</span>
-            </p>
-        </header>
-        <div class="content">
-            
-
-<p>Last Saturday I went along to The Globe in Roath, accompanied by my excellent musical companion Ms. Jones (and joined later on by our token northener Mark) to watch a number of bands that we&rsquo;d seen before, but in a new setting. This is a review of that what happened there.</p>
-
-<p>Let&rsquo;s start with the venue, The Globe. The Globe is not the worst venue in Cardiff (Bogiez/Barfly, The SU Great Hall). It&rsquo;s tucked out of the way in the corner of Roath, so anyone going to a gig there is <em>meant</em> to be there, which is nice. It&rsquo;s an old cinema and has a lovely balcony, meaning a great view of the bands, and most importantly the sound in the place is not terrible. The only bad thing about the venue this week was that they&rsquo;d sold out of tolerable ale, which is no great problem. We arrived about twenty minutes after doors were due to open, and unsurprisingly the doors were not open yet. For some reason The Globe exists in a timezone that is about 45 minutes behind the rest of Cardiff, so don&rsquo;t ever bother getting there on time, it&rsquo;s just not going to happen. Rubbish timekeeping and crappy beer selection aside, it&rsquo;s a decent venue in which to watch a band and on this night there were three on offer.</p>
-
-<h1 id="kutosis">KUTOSIS</h1>
-
-<p>I&rsquo;m fairly sure I&rsquo;ve seen these guys a number of times before, at least once or twice at the SWN festival, maybe somewhere else as well. They&rsquo;re a decent band rocking a mid-late 90&rsquo;s vibe that marks them out as guys that grew up with grunge and late 90&rsquo;s indie and decided the best thing to do when they started a band was to emulate that. Unfortunately you sometimes feel that they forgot to really add anything to that era, and haven&rsquo;t quite managed to push things on. Don&rsquo;t get me wrong, it&rsquo;s not a totally bad thing - they play well, they put effort into what they do, and their songs have a catchy uptempo feel. I enjoyed watching them, they were having fun and playing well, with some good riffs, tight playing and a good overall feel to the music. There are some interesting things going on with their songs, but it just feels like they need to push things a little bit further out of a safe zone and do something a bit more interesting. That all being said, they&rsquo;re well worth a watch, especially if you&rsquo;re like me and you grew up with grunge and late 90&rsquo;s indie and enjoy that kind of thing.</p>
-
-<p>This is a recent track that seems in parts to show more development, it&rsquo;s got more going on:</p>
-
-<iframe src="http://www.youtube.com/embed/bnSFv5qRioM" frameborder="0" width="560" height="315"></iframe>
-
-<p>Overall they were enjoyable, played well, and I&rsquo;ll give them 4 out of some.</p>
-
-<h1 id="gallops">Gallops</h1>
-
-<p>Again, I&rsquo;ve seen Gallops a number of times before, mainly at SWN. On paper they&rsquo;re not my thing, focusing fairly heavily on electronic sounds, but in reality I really love them. They&rsquo;re an awesome live act and every time I see them they have something new to show. The main driving force behind them is the thundering and perfect drums; their drummer is an absolute animal, arrogant and agressive and with every right to sit behind the drumkit with the knowledge that he&rsquo;s almost certainly the most talented guy with a set of drumsticks in the room. He almost imbalances the band, as with his drumming there&rsquo;s not a lot the other band members can do to match his talent, which is probably one of their only weak points. The only other glaring weak point would be the guy with the mac. I&rsquo;ve said it before and I&rsquo;ll say it again, a laptop is not an instrument. If your job could be replaced with someone pressing play on a tape deck you&rsquo;re superfluous, get the fuck off the stage. That aside, this band have grown massively in the two/three years I&rsquo;ve been watching them, and I&rsquo;m looking forward to their album in the next couple of months to see where they&rsquo;re going next.</p>
-
-<iframe src="http://www.youtube.com/embed/f2Wa491-YN0" frameborder="0" width="560" height="315"></iframe>
-
-<iframe src="http://www.youtube.com/embed/GV7CMZKgHbQ" frameborder="0" width="420" height="315"></iframe>
-
-<p>Once again these guys were great live. They clearly spend a lot of time practising getting it right, and it pays off. I&rsquo;ll give them six out of some.</p>
-
-<h1 id="truckers-of-husk">Truckers of Husk</h1>
-
-<p>Ah, the main event. A band that I first saw at the 2nd SWN Festival, in whatever Y Fuwch Goch was before it was that (and then failed to be that and became the Moon Bar). A band that have swiftly become one of my favourite live acts in Cardiff, a band who I love going to see. Their post-rock math vibes are great, and they are another band (like Gallops) who continue to grow and push stuff forward. Their first album, (released last year) is on permanent rotation in my Spotify playlist, and I still can&rsquo;t get enough of it. In case you didn&rsquo;t get it, I love this band.</p>
-
-<p>Today&rsquo;s gig was exceptional, the band presenting themselves along with the 1924 documentary &lsquo;The Great White Silence&rsquo;, the fairly harrowing documentary about Scott&rsquo;s ill fated voyage to the South Pole. Dressed all in white the band played their songs along with the film, fitting the tracks to the projection behind them, timing things beautifully to coincide with the action. I&rsquo;m fairly certain they&rsquo;d put the effort in to trim songs here and there to make them fit, cutting some noise here, adding some there and it all paid off. They presented themselves on stage as a band having fun and doing well doing it, but you could tell that they recognised this was (one of?) their biggest gig to date and had put the effort in to make it something special. The songs flew by and by the time the movie drew to a close, with our intrepid arctic explorers dead in the arctic wasteland and the band themselves moving the drumkit down into the crowd for the last flour covered intense burst, we were all thoroughly sated. Plus the saxophonist kept his shirt on.</p>
-
-<p>I give them 8 out of some.</p>
-
-<p>All in all, a thoroughly excellent night of entertainment. Top marks.</p>
-
-        </div>
-    </article>
-    
-    
-
-</main>
+</ul>
 
     </div><script>
     (function (i, s, o, g, r, a, m) {

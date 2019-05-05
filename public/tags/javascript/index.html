@@ -69,66 +69,13 @@
         </ul>
     </nav>
 </header><div id="content">
-<main>
+<ul>
     
-
+    <li><a href="/2015/01/26/nhs-hackday-2015/">
+            NHS Hackday 2015
+        </a></li>
     
-    <article class="blogpost">
-        <header>
-            <h1> <a href="/2015/01/26/nhs-hackday-2015/">
-                    NHS Hackday 2015
-                </a></h1>
-            <p class="author">
-                <span class="date">Monday, Jan 26, 2015</span>
-            </p>
-        </header>
-        <div class="content">
-            
-
-<p>This weekend I took part in an incredibly successful <a href="http://nhshackday.com/">NHS hackday</a>, hosted at Cardiff University and organised by <a href="https://twitter.com/amcunningham">Anne Marie Cunningham</a> and James Morgan. We went as a team from the MSc in Computational Journalism, with myself and <a href="https://twitter.com/egrommet">Glyn</a> attending along with <a href="https://twitter.com/PoojaDante">Pooja</a>, <a href="https://twitter.com/NikitaVashisth">Nikita</a>, <a href="https://twitter.com/Idioteque90">Annalisa</a> and <a href="https://twitter.com/cboutaud">Charles</a>. At the last-minute I recruited a couple of ringers as well, dragging along <del>Rhys Priestland</del> <a href="https://twitter.com/flyingSparx">Dr William Wilberforce Webberley</a> from Comsc and <a href="https://twitter.com/voxmjw">Dr Matthew Williams</a>, previously of this parish. Annalisa also brought along Dan Hewitt, so in total we had a large and diverse team.</p>
-
-<h1 id="the-hackday">The hackday</h1>
-
-<p>This was the first NHS hackday I&rsquo;d attended, but I believe it&rsquo;s the second event held in Cardiff, so Anne Marie and the team have it down to a fine art. The whole weekend seemed to go pretty smoothly (barring a couple of misunderstandings on our part regarding the pitch sessions!). It was certainly one of the most well organised events that I&rsquo;ve attended, with all the necessary ingredients for successful coding: much power, many wifi and plenty of food, snacks and coffee. Anne Marie and the team deserve much recognition and thanks for their hard work. I&rsquo;m definitely in for next year.</p>
-
-<p>The quality of the projects created at the hackday was incredibly high across the board, which was great to see. One of my favourites used an Oculus Rift virtual reality headset to create a zombie &lsquo;game&rsquo; that could be used to test people&rsquo;s peripheral vision. Another standout was a system for logging and visualising the ANGEL factors describing a patient&rsquo;s health situation. It was really pleasing to see these rank highly with the judges too, coming in third and second in the overall rankings. Other great projects brought an old Open Source project back to life, created a system for managing groups walking the Wales Coast path, and created automatic notification systems for healthcare processes. Overall it was a really interesting mix of projects, many of which have clear potential to become useful products within or alongside the NHS. As Matt commented in the pub afterwards, it&rsquo;s probably the first hackday we&rsquo;ve been to where several of the projects have clear original IP with commercial potential.</p>
-
-<h1 id="our-project">Our project</h1>
-
-<p>We had decided before the event that we wanted to build some visualisations of health data across Wales, something like <a href="http://nhsmaps.co.uk/">nhsmaps.co.uk</a>, but working with local health boards and local authorities in Wales. We split into two teams for the implementation: &lsquo;the data team&rsquo; who were responsible for sourcing, processing and inputting data, and the &lsquo;interface team&rsquo; who built the front-end and the visualisations.</p>
-
-<p>Progress was good, with Matthew and William quickly defining a schema for describing data so that the data team could add multiple data sets and have the front-end automatically pick them up and be able to visualise them. The CompJ students worked to find and extract data, adding them to the github repository with the correct metadata. Meanwhile, I pulled a bunch of D3 code together for some simple visualisations.</p>
-
-<p>By the end of the weekend we established a fairly decent system. It&rsquo;s able to visualise a few different types of data, at different resolutions, is mostly mobile friendly, and most importantly is easily extensible and adaptable. It&rsquo;s online now on our <a href="http://bit.ly/hewnhs">github pages</a>, and all the code and documentation is also in the <a href="https://github.com/compjcdf/nhs_hack">github repository</a>.</p>
-
-<p>We&rsquo;ll continue development for a while to improve the usability and code quality, and hopefully we&rsquo;ll find a community willing to take the code base on and keep improving what could be a fairly useful resource for understanding the health of Wales.</p>
-
-<h1 id="debrief">Debrief</h1>
-
-<p>We didn&rsquo;t win any of the prizes, which is understandable. Our project was really focused on the public understanding of the NHS and health, and not for solving a particular need within (or for users of) the NHS. We knew this going in to the weekend, and we&rsquo;d taken the decision that it was more important to work on a project related to the course, so that the students could experience some of the tools and technologies they&rsquo;ll be using as the course progresses than to do something more closely aligned with the brief that would have perhaps been less relevant to the students work.</p>
-
-<p>I need to thank Will and Matt for coming and helping the team. Without Matt wrangling the data team and showing them how to create json metadata descriptors we probably wouldn&rsquo;t have anywhere near as many example datasets as we do. Similarly, without Will&rsquo;s hard work on the front end interface, the project wouldn&rsquo;t look nearly as good as it does, or have anywhere near the functionality. His last-minute addition of localstorage for personal datasets was a triumph. (Sadly though he does lose some coder points for user agent sniffing to decide whether to show a mobile interface :-D.) They were both a massive help, and we couldn&rsquo;t have done it without them.</p>
-
-<p>Also, of course, I need to congratulate the CompJ students, who gave up their weekend to trawl through datasets, pull figures off websites and out of pdf&rsquo;s, and create the lovely easy to process .csv files we needed. It was a great effort from them, and I&rsquo;m looking forward to our next Team CompJ hackday outing.</p>
-
-<p>One thing that sadly did stand out was a lack of participation from Comsc undergraduate students, with only one or two attending. <a href="http://www.cs.cf.ac.uk/contactsandpeople/staffpage.php?emailname=Rob.Davies">Rob Davies</a> stopped by on Saturday, and both Will and I discussed with him what we can do to increase participation in these events. Hopefully we&rsquo;ll make some progress on that front in time for the next hackday.</p>
-
-<h1 id="media">Media</h1>
-
-<p>There&rsquo;s some great photos from the event on Flickr, courtesy of <a href="https://www.flickr.com/photos/paul_clarke/">Paul Clarke</a> (<a href="https://www.flickr.com/photos/paul_clarke/sets/72157650042039338/">Saturday</a> and <a href="https://www.flickr.com/photos/paul_clarke/sets/72157650456182132/">Sunday</a>).</p>
-
-<h1 id="elsewhere">Elsewhere&hellip;</h1>
-
-<p>We got a lovely <a href="https://goodpracticeexchange.wordpress.com/2015/01/24/nhs-hack-day-data-visualisation/">write-up about out project</a> from <a href="https://twitter.com/DyfrigWilliams">Dyfrig Williams</a> of the Good Practice Exchange at the Wales Audit Office. Dyfrig also curated a great <a href="https://storify.com/GoodPracticeWAO/nhs-hack-day-cardiff-2015">storify of the weekend</a>.</p>
-
-<p>Hemavault labs have done a round up of the projects <a href="http://blog.hemavault.com/2015/01/27/nhs-hack-day-cardiff-2015-projects/">here</a></p>
-
-        </div>
-    </article>
-    
-    
-
-</main>
+</ul>
 
     </div><script>
     (function (i, s, o, g, r, a, m) {

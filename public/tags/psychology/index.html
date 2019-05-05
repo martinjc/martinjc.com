@@ -69,163 +69,25 @@
         </ul>
     </nav>
 </header><div id="content">
-<main>
+<ul>
     
-
+    <li><a href="/2015/01/27/personality-and-places/">
+            Personality and Places
+        </a></li>
     
-    <article class="blogpost">
-        <header>
-            <h1> <a href="/2015/01/27/personality-and-places/">
-                    Personality and Places
-                </a></h1>
-            <p class="author">
-                <span class="date">Tuesday, Jan 27, 2015</span>
-            </p>
-        </header>
-        <div class="content">
-            <p><strong><a href="http://www.sciencedirect.com/science/article/pii/S0747563214007559">Our paper</a> examining the link between <a href="/2012/11/20/foursquare-personality-experiment/">individual personality and the places people visit</a> has just been published in <a href="http://www.journals.elsevier.com/computers-in-human-behavior/">Computers in Human Behavior</a>. It&rsquo;s open access, so you can <a href="http://dx.doi.org/10.1016/j.chb.2014.12.038">go read it for free, now</a>! </strong></p>
-
-<p>In an experiment we ran previously, we asked users of Foursquare to take a personality test and give us access to their checkin history. The personality test gives us a measure of how each person scores for five different factors: Openness, Conscientiousness, Extraversion, Agreeableness and Neuroticism. The checkin history lists all the places they&rsquo;ve ever checked in to using Foursquare. Because a couple of hundred people took part in the experiment, we ended up with a large number of individual personalities that we could link to over a hundred thousand venues. In total, this represents a pretty staggering half a million Foursquare checkins that we have personality data associated with.</p>
-
-<p>Our first step with this data has been to see if there are any links between personality factors and the places people choose to visit, and we found some interesting connections.</p>
-
-<p>One of our main finding shows that the use of Foursquare for recording checkins seems to correlate well with Conscientiousness. <strong>The more conscientious a user is, the more likely they are to have checked in at more places and to have visited more venues.</strong> This could be because people with a high Conscientiousness score tend to be quite organised and disciplined, and so are more likely to remember to check in at every place they visit.</p>
-
-<p>The opposite is true for Neuroticism: <strong>the more neurotic an individual is, the fewer places they have visited</strong>. Neuroticism is associated with negative feelings, and a tendency to be less social, which could then translate into people going to fewer places, and so checking in less. This is expressed again when we look at only those venues classed as &lsquo;social&rsquo; (i.e. - somewhere you would go to hang out with friends). <strong>The more neurotic someone is, the fewer &lsquo;social&rsquo; venues they have been to.</strong></p>
-
-<p>Surprisingly, we have found no link between Extraversion and the number of social venues visited. It may be expected that extraverts (who are very social in their nature) may go to more social venues. However, the data does not support this. In fact, <strong>we find no link between Extraversion and any aspect of Foursquare checkins</strong> that we have examined so far.</p>
-
-<p>The personality factor of Openness is related to feelings of creativity and artistic expression, and a willingness to experience new things. It is interesting to find that there is a link between Openness and the average distance travelled between checkins -** the more Open an individual is, the further they tend to have travelled**. This could be an expression of an Open individual&rsquo;s desire to experience new things exposing itself through wider travel, and a larger geographic spread of checkins. However, we do not find any link between Openness and the number of different categories visited by a user. We do not see a desire for new experiences express itself in the range and diversity of places visited.</p>
-
-<p>Ultimately, this data could be incredibly useful in improving venue recommendation systems. Current systems use many different information &lsquo;cues&rsquo; to recommend to a user a place they might like to visit. These cues include things such as where they have been in the past, where their friends have been, or where is popular nearby. Perhaps by including aspects of an individual&rsquo;s personality (so including aspects of <em>why</em> they might visit somewhere) we can increase the usefulness of these recommendations.</p>
-
-<p>There is still a lot of analysis to be done on this data, and both myself and <a href="http://www.cs.cf.ac.uk/contactsandpeople/staffpage.php?emailname=NoeN">Nyala Noe</a> are busy churning through it to discover other links between personality and the places people visit. As we find more interesting connections, I&rsquo;ll post more here.</p>
-
-        </div>
-    </article>
+    <li><a href="/2014/12/15/extended-mind-crowdsourcing/">
+            Extended Mind Crowdsourcing
+        </a></li>
     
-    <article class="blogpost">
-        <header>
-            <h1> <a href="/2014/12/15/extended-mind-crowdsourcing/">
-                    Extended Mind Crowdsourcing
-                </a></h1>
-            <p class="author">
-                <span class="date">Monday, Dec 15, 2014</span>
-            </p>
-        </header>
-        <div class="content">
-            
-
-<p><em><strong>Update 13/01/15: the paper containing the research described below is currently available from the <a href="http://conferences.computer.org/hicss/2015/papers/7367b635.pdf">HICSS website</a></strong></em></p>
-
-<p><em>This post is one I&rsquo;m cross-posting both here and on the <a href="https://mobisoc.cs.cf.ac.uk/">MobiSoc</a> blog. Here, because it&rsquo;s my personal translation of one of our latest research papers, and there because it&rsquo;s a very good paper mostly written and driven by Roger Whitaker, so deserves an &lsquo;official&rsquo; blog post!</em></p>
-
-<p>A lot of use is made of Crowdsourcing in both business and academia. Business likes it because it allows simple tasks to be outsourced for a small cost. Researchers like it because it allows the gathering of large amounts of data from participants, again for minimal cost. (For an example of this, see our <a href="/2012/09/07/socialcom-2012/">TweetCues</a> work (<a href="http://www.sciencedirect.com/science/article/pii/S1071581914001268">paper here</a>), where we paid Twitter users to take a simple survey and massively increased our sample size for a few dollars). As technology is developing, we can apply crowdsourcing to new problems; particularly those concerned with collective human behaviour and culture.</p>
-
-<h3 id="crowdsourcing">Crowdsourcing</h3>
-
-<p>The traditional <a href="http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=5227025&amp;tag=1">definition of crowdsourcing</a> involves several things:</p>
-
-<ol>
-<li><p>a clearly defined crowd</p></li>
-
-<li><p>a task with a clear goal</p></li>
-
-<li><p>clear recompense received by the crowd</p></li>
-
-<li><p>an identified owner of the task</p></li>
-
-<li><p>an online process</p></li>
-</ol>
-
-<p>The combination of all these things allows us to complete a large set of simple tasks in a short time and often for a reduced cost. It also provides access to global labour markets for users who may not previously have been able to access these resources.</p>
-
-<h3 id="participatory-computing-img-page-date-date-y-m-d-page-slug-crowdsourcing-img-1024x428-png"><img src="/img/{{ page.date | date: &quot;%Y-%m-%d&quot;}}-{{page.slug}}/crowdsourcing_img-1024x428.png" alt="Participatory Computing" /></h3>
-
-<p>Participatory computing is a related concept to crowdsourcing, based around the idea that the resources and data of computing devices can be shared and used to complete tasks. As with crowdsourcing, these tasks are often large, complex and data-driven, but capable of being broken down into smaller chunks that can be distributed to separate computing devices in order to complete the larger task. <a href="http://boinc.berkeley.edu/">BOINC</a> is a clear example of this class of participatory computing.</p>
-
-<p><img src="/img/{{ page.date | date: &quot;%Y-%m-%d&quot;}}-{{page.slug}}/participatory_img-1024x585.png" alt="participatory_img" /></p>
-
-<h3 id="extended-mind-crowdsourcing">Extended Mind Crowdsourcing</h3>
-
-<p>The <a href="http://www.jstor.org/stable/3328150">extended mind hypothesis</a> describes the way that humans extend their thinking beyond the internal mind, to use external objects. For instance, a person using a notebook to record a memory uses the &lsquo;extended mind&rsquo; to record the memory; the internal mind simply recalls that the memory is located in the notebook, an object that is external to the individual.</p>
-
-<p>Extended mind crowdsourcing takes crowdsourcing and participatory computing a step further by including the extended mind hypothesis, to allow us to describe systems that use the extended mind of participants, as represented by their devices and objects, in order to add implicit as well as explicit human computation for collective discovery.</p>
-
-<p><img src="/img/{{ page.date | date: &quot;%Y-%m-%d&quot;}}-{{page.slug}}/emc_img-1024x626.png" alt="emc_img" /></p>
-
-<p>What this means is that we can crowdsource the collection of data and completion of tasks using both individual users, their devices, and the extended mind that the two items together represent. Thus by accessing the information stored within a smartphone or similar personal device, and the wider internet services that the device can connect to, we can access the extended mind of a participant and thus learn more about his or her behaviour and individual characteristics. In essence, extended mind crowdsourcing captures the way in which humans undertake and respond to daily activity. In this sense it supports observation of human life and our interpretation of and response to the environment. By including social networks and social media communication within the extended mind, it is clear that while an individual extended mind may represent a single individual human, it is also possible to represent a group, such as a network or a collective using extended mind crowdsourcing.</p>
-
-<p>By combining the ideas of social computing, crowdsourcing, and the extended mind, we are able to access and aggregate the data that is created through our use of technology. This allows us to extend ideas of human cognition into the physical world, in a less formal and structured way than when using other forms of human computational systems. The reduced focus on task driven systems allows EMC to be directed at the solving of loosely defined problems, and those problems where we have no initial expectations of solutions or findings.</p>
-
-<p>This is a new way of thinking about the systems we create in order to solve problems using computational systems focused on humans, but it has the potential to be a powerful tool in our research toolbox. We are presenting this new Extended Mind Crowdsourcing idea this week at <a href="http://kholden7.wix.com/hicss">HICSS</a>.</p>
-
-        </div>
-    </article>
+    <li><a href="/2014/11/04/how-do-people-decide-whether-or-not-to-read-a-tweet/">
+            How do people decide whether or not to read a tweet? 
+        </a></li>
     
-    <article class="blogpost">
-        <header>
-            <h1> <a href="/2014/11/04/how-do-people-decide-whether-or-not-to-read-a-tweet/">
-                    How do people decide whether or not to read a tweet? 
-                </a></h1>
-            <p class="author">
-                <span class="date">Tuesday, Nov 4, 2014</span>
-            </p>
-        </header>
-        <div class="content">
-            <p>It turns out that an existing relationship with the author of the tweet is one of the main factors influencing how someone decides whether or not to read a tweet. At the same time,  a large number associated with a tweet can also make the tweet more attractive to readers.</p>
-
-<p>Our <a href="http://www.sciencedirect.com/science/article/pii/S1071581914001268">latest Open Access research</a> has discovered how much effect the information about a tweet has on whether people decide to read it or not.</p>
-
-<p>By showing hundreds of Twitter users the information about two tweets but not the tweets themselves, and then asking the users which tweet they would like to read, we have been able to look at which information is more important when users are deciding to read a tweet.</p>
-
-<p>We looked at two different types of information:</p>
-
-<ol>
-<li><p>Simple numbers that describe the tweet, such as the number of retweets it has, or numbers that describe the author, such as how many followers they have, or how many tweets they&rsquo;ve written.</p></li>
-
-<li><p>Whether a relationship between the reader and the author is important, and whether that relationship was best shown through subtle hints, or direct information.</p></li>
-</ol>
-
-<p>When readers can see only one piece of information, the case is clear: they&rsquo;d <strong>rather read the tweet written by someone they are following</strong>. Readers can easily recognise the usernames, names, and profile images of people they already follow, and are likely to choose to read content written by someone they follow (instead of content written by a stranger) around 75% of the time. If all they can see is a piece of numerical information, they would <strong>rather read the tweet with the highest number</strong>, no matter what that number is. The effect is strongest with the number of retweets, followed by the number of followers, but even for the number of following and number of tweets written the effect is significant.</p>
-
-<p>When readers can see two pieces of information, one about their relationship with the author, and one numerical, there are two cases to look at. When the author they follow also has a high numerical value, readers will choose that tweet in around 80% of the cases. When the author they already follow has a lower numerical value, it is still the existing relationship that is more of a draw. <strong>Readers would rather read a tweet from someone they know that has a low number of retweets, than one from a stranger with a high number of retweets.</strong></p>
-
-<p>This work offers an understanding of how the decision-making process works on Twitter when users are skimming their timelines for something to read, and has particular implications for the display and promotion of non-timeline content within content streams. For instance, readers may pay more attention to adverts and promoted content if the link between themselves and the author is highlighted.</p>
-
-<p><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6406256">Previous results</a>  from an early experiment were published at <a href="/2012/09/07/socialcom-2012/">SocialCom</a>. The results in <a href="http://www.sciencedirect.com/science/article/pii/S1071581914001268">this new paper</a> are from a modified and expanded version of <a href="/2012/05/18/tweetcues-twitter-experiment/">this earlier experiment</a>.</p>
-
-        </div>
-    </article>
+    <li><a href="/2012/11/20/foursquare-personality-experiment/">
+            Foursquare Personality Experiment
+        </a></li>
     
-    <article class="blogpost">
-        <header>
-            <h1> <a href="/2012/11/20/foursquare-personality-experiment/">
-                    Foursquare Personality Experiment
-                </a></h1>
-            <p class="author">
-                <span class="date">Tuesday, Nov 20, 2012</span>
-            </p>
-        </header>
-        <div class="content">
-            <p>Today we are finally starting to promote our latest experiment. It&rsquo;s been online for about a month, but we haven&rsquo;t told anyone about it while we&rsquo;ve been finishing up the Year 2 deliverables for <a href="http://www.recognition-project.eu/">Recognition</a> (the review is in a couple of weeks - fingers crossed!) Now however I can start publicly talking about it and encouraging people to take part and get involved!</p>
-
-<p>We&rsquo;re calling it the Foursquare Personality Experiment, and it&rsquo;s available on the <a href="http://www.cs.cf.ac.uk/">School of Computer Science &amp; Informatics</a>&rsquo; website <a href="http://www.cs.cf.ac.uk/recognition/foursqexp">here</a>:</p>
-
-<p><a href="http://www.cs.cf.ac.uk/recognition/foursqexp">http://www.cs.cf.ac.uk/recognition/foursqexp</a></p>
-
-<p>It&rsquo;s basically looking at comparing people&rsquo;s <a href="http://en.wikipedia.org/wiki/OCEAN_model_of_personality">five-factor OCEAN personality profiles</a> to the places that they check in to on <a href="http://www.foursquare.com">Foursquare</a>. So, you go along to the site, sign in with your Foursquare account and take a really <a href="http://www.ocf.berkeley.edu/~johnlab/bfi.htm">short 44-question personality test</a>. While you&rsquo;re doing that, we retrieve the list of places you&rsquo;ve been to from Foursquare. When it&rsquo;s all done, we show you your personality, and how it compares to the average personality of people in your area (average personality comes from the <a href="http://mypersonality.org/research/">mypersonality.org</a> data, thanks guys!). All the venues you&rsquo;ve checked into on Foursquare are simultaneously displayed on a map, and selecting one of them will show you the average personality profile for that venue. This allows you to compare yourself to all the other people who go to the same places as you.</p>
-
-<p>Meanwhile, we get a bunch of (anonymised) personality profiles that are linked to venues, so we can see if there are any correlations between places/categories of places and personality profiles. For instance, one of the things we may find is that the average personality profiles of &ldquo;non-places&rdquo; (those places frequented by everybody: the supermarket, the train station etc.) are different from the average personality profiles of &ldquo;places&rdquo; (the places visited by a subset of people: independent coffee shops, your local pub etc). We may also expect people with different visiting patterns to have different personalities. For instance, maybe I mainly check-in to pubs and bars on Foursquare, while someone else mainly checks in to shops. Is there a difference between the personality profiles of people who check into more pubs and people who mainly check in to shops?</p>
-
-<p>Obviously we&rsquo;ve only just started collecting data, but hopefully we&rsquo;ll start to see some answers to some of these questions soon.</p>
-
-        </div>
-    </article>
-    
-    
-
-</main>
+</ul>
 
     </div><script>
     (function (i, s, o, g, r, a, m) {

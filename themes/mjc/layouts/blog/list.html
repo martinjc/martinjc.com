@@ -1,0 +1,21 @@
+{{ define "main" }}
+<main>
+    {{ template "_internal/pagination.html" . }}
+    {{ range .Paginator.Pages.ByDate.Reverse }}
+    <article class="blogpost">
+        <header>
+            <h1> <a href="{{.Permalink}}">
+                    {{.Title}}
+                </a></h1>
+            <p class="author">
+                <span class="date">{{dateFormat "Monday, Jan 2, 2006" .Date }}</span>
+            </p>
+        </header>
+        <div class="content">
+            {{.Content}}
+        </div>
+    </article>
+    {{ end }}
+    {{ template "_internal/pagination.html" . }}
+</main>
+{{ end }}

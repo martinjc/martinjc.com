@@ -69,91 +69,13 @@
         </ul>
     </nav>
 </header><div id="content">
-<main>
+<ul>
     
-
+    <li><a href="/2014/09/15/ccgs-and-wpcs-via-the-medium-of-oas/">
+            CCGs and WPCs via the medium of OAs
+        </a></li>
     
-    <article class="blogpost">
-        <header>
-            <h1> <a href="/2014/09/15/ccgs-and-wpcs-via-the-medium-of-oas/">
-                    CCGs and WPCs via the medium of OAs
-                </a></h1>
-            <p class="author">
-                <span class="date">Monday, Sep 15, 2014</span>
-            </p>
-        </header>
-        <div class="content">
-            <p>As I was eating lunch this afternoon, I spotted a conversation between <a href="https://twitter.com/joereddington">@JoeReddington</a> and <a href="https://twitter.com/mysociety">@MySociety</a> whizz past in Tweetdeck. I traced the conversation back to the beginning and found this request for data:</p>
-
-<p><blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">I&#39;m looking for a dataset that shows which UK constituencies are in which NHS trust areas.  Anyone?</p>&mdash; retired account (@retired10072015) <a href="https://twitter.com/retired10072015/status/511105946710716416">September 14, 2014</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script></p>
-
-<p>I&rsquo;ve been doing a lot of playing with geographic data recently while preparing to release a site making it easier to get GeoJSON boundaries of various areas in the UK. As a result, I&rsquo;ve become pretty familiar with the <a href="https://geoportal.statistics.gov.uk/geoportal/catalog/search/browse/browse.page">Office of National Statistics Geography portal</a>, and the data available there. I figured it must be pretty simple to hack something together to provide the data Joseph was looking for, so I took a few minutes out of lunch to see if I could help.</p>
-
-<p>Checking the lookup tables at the ONS, it was clear that unfortunately there was no simple &lsquo;NHS Trust to Parliamentary Constituency&rsquo; lookup table. However, there were two separate lookups involving Output Areas (OAs). One allows you to lookup <a href="https://geoportal.statistics.gov.uk/geoportal/catalog/search/resource/details.page?uuid=%7B441E0CBF-1421-4BF5-BBC9-5B7C0EA0FE44%7D">which Parliamentary Constituency (WPC) an OA belongs to</a>. The other allows you to lookup <a href="https://geoportal.statistics.gov.uk/geoportal/catalog/search/resource/details.page?uuid=%7B15C3A07F-F5E1-4CE8-9CFD-24B3589C725B%7D">which NHS Clinical Commissioning Group (CCG) an OA belongs to</a>. Clearly, all that&rsquo;s required to link the two together is a bit of quick scripting to tie them both together via the Output Areas.</p>
-
-<p>First, let&rsquo;s create a dictionary with an entry for each CCG. For each CCG we&rsquo;ll store it&rsquo;s ID, name, and a set of OAs contained within. We&rsquo;ll also add  an empty set for the WPCs contained within the CCG:</p>
-
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> csv
-<span style="color:#f92672">from</span> collections <span style="color:#f92672">import</span> defaultdict
-
-data <span style="color:#f92672">=</span> {}
-
-<span style="color:#75715e"># extract information about clinical commissioning groups</span>
-<span style="color:#66d9ef">with</span> open(<span style="color:#e6db74">&#39;OA11_CCG13_NHSAT_NHSCR_EN_LU.csv&#39;</span>, <span style="color:#e6db74">&#39;r&#39;</span>) <span style="color:#66d9ef">as</span> oa_to_cgc_file:
-  reader <span style="color:#f92672">=</span> csv<span style="color:#f92672">.</span>DictReader(oa_to_cgc_file)
-  <span style="color:#66d9ef">for</span> row <span style="color:#f92672">in</span> reader:
-    <span style="color:#66d9ef">if</span> <span style="color:#f92672">not</span> data<span style="color:#f92672">.</span>get(row[<span style="color:#e6db74">&#39;CCG13CD&#39;</span>]):
-      data[row[<span style="color:#e6db74">&#39;CCG13CD&#39;</span>]] <span style="color:#f92672">=</span> {<span style="color:#e6db74">&#39;CCG13CD&#39;</span>: row[<span style="color:#e6db74">&#39;CCG13CD&#39;</span>], <span style="color:#e6db74">&#39;CCG13NM&#39;</span>: row[<span style="color:#e6db74">&#39;CCG13NM&#39;</span>], <span style="color:#e6db74">&#39;PCON11CD list&#39;</span>: set(), <span style="color:#e6db74">&#39;PCON11NM list&#39;</span>: set(), <span style="color:#e6db74">&#39;OA11CD list&#39;</span>: set(),}
-    data[row[<span style="color:#e6db74">&#39;CCG13CD&#39;</span>]][<span style="color:#e6db74">&#39;OA11CD list&#39;</span>]<span style="color:#f92672">.</span>add(row[<span style="color:#e6db74">&#39;OA11CD&#39;</span>])</code></pre></div>
-
-<p>Next we create a lookup table that allows us to convert from OA to WPC:</p>
-
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># extract information for output area to constituency lookup</span>
-oas <span style="color:#f92672">=</span> {}
-pcon_nm <span style="color:#f92672">=</span> {}
-
-<span style="color:#66d9ef">with</span> open(<span style="color:#e6db74">&#39;OA11_PCON11_EER11_EW_LU.csv&#39;</span>, <span style="color:#e6db74">&#39;r&#39;</span>) <span style="color:#66d9ef">as</span> oa_to_pcon_file:
-  reader <span style="color:#f92672">=</span> csv<span style="color:#f92672">.</span>DictReader(oa_to_pcon_file)
-  <span style="color:#66d9ef">for</span> row <span style="color:#f92672">in</span> reader:
-    oas[row[<span style="color:#e6db74">&#39;OA11CD&#39;</span>]] <span style="color:#f92672">=</span> row[<span style="color:#e6db74">&#39;PCON11CD&#39;</span>]
-    pcon_nm[row[<span style="color:#e6db74">&#39;PCON11CD&#39;</span>]] <span style="color:#f92672">=</span> row[<span style="color:#e6db74">&#39;PCON11NM&#39;</span>]</code></pre></div>
-
-<p>As the almost last step we go through the CCGs, and for each one we go through the list of OAs it covers, and lookup the WPC each OA belongs to:</p>
-
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># go through all the ccgs and lookup pcons from oas</span>
-<span style="color:#66d9ef">for</span> ccg, d <span style="color:#f92672">in</span> data<span style="color:#f92672">.</span>iteritems():
-
- <span style="color:#66d9ef">for</span> oa <span style="color:#f92672">in</span> d[<span style="color:#e6db74">&#39;OA11CD list&#39;</span>]:
-   d[<span style="color:#e6db74">&#39;PCON11CD list&#39;</span>]<span style="color:#f92672">.</span>add(oas[oa])
-   d[<span style="color:#e6db74">&#39;PCON11NM list&#39;</span>]<span style="color:#f92672">.</span>add(pcon_nm[oas[oa]])
-
-<span style="color:#66d9ef">del</span> d[<span style="color:#e6db74">&#39;OA11CD list&#39;</span>]</code></pre></div>
-
-<p>Finally we just need to output the data:</p>
-
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">    <span style="color:#66d9ef">for</span> d <span style="color:#f92672">in</span> data<span style="color:#f92672">.</span>values():
-
-     d[<span style="color:#e6db74">&#39;PCON11CD list&#39;</span>] <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;;&#39;</span><span style="color:#f92672">.</span>join(d[<span style="color:#e6db74">&#39;PCON11CD list&#39;</span>])
-     d[<span style="color:#e6db74">&#39;PCON11NM list&#39;</span>] <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;;&#39;</span><span style="color:#f92672">.</span>join(d[<span style="color:#e6db74">&#39;PCON11NM list&#39;</span>])
-
-    <span style="color:#66d9ef">with</span> open(<span style="color:#e6db74">&#39;output.csv&#39;</span>, <span style="color:#e6db74">&#39;w&#39;</span>) <span style="color:#66d9ef">as</span> out_file:
-      writer <span style="color:#f92672">=</span> csv<span style="color:#f92672">.</span>DictWriter(out_file, [<span style="color:#e6db74">&#39;CCG13CD&#39;</span>, <span style="color:#e6db74">&#39;CCG13NM&#39;</span>, <span style="color:#e6db74">&#39;PCON11CD list&#39;</span>, <span style="color:#e6db74">&#39;PCON11NM list&#39;</span>])
-      writer<span style="color:#f92672">.</span>writeheader()
-      writer<span style="color:#f92672">.</span>writerows(data<span style="color:#f92672">.</span>values())</code></pre></div>
-
-<p>Run the script, and we get a nice CSV with one row for each CCG, each row containing a list of the WPC ids and names the CCG covers.</p>
-
-<p>Of course, this data only covers England (as CCGs are a division in NHS England). Although there don&rsquo;t seem to be lookups for OAs to Health Boards in Scotland, or from OAs to Local Health Boards in Wales, it should still be possible to do something similar for these countries using Parliamentary Wards as the intermediate geography, as lookups for Wards to Health Boards and Local Health Boards are available. It&rsquo;s also not immediately clear how well the boundaries for CCGs and WPCs match up, that would require further investigation, depending on what the lookup is to be used for.</p>
-
-<p>All the code, input and output for this task is available on <a href="https://github.com/martinjc/CCG--Constituencies">my github page</a>.</p>
-
-        </div>
-    </article>
-    
-    
-
-</main>
+</ul>
 
     </div><script>
     (function (i, s, o, g, r, a, m) {

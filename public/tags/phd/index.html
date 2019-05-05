@@ -69,109 +69,21 @@
         </ul>
     </nav>
 </header><div id="content">
-<main>
+<ul>
     
-
+    <li><a href="/2013/08/20/not-another-bloody-wordle/">
+            not another bloody wordle?!?!
+        </a></li>
     
-    <article class="blogpost">
-        <header>
-            <h1> <a href="/2013/08/20/not-another-bloody-wordle/">
-                    not another bloody wordle?!?!
-                </a></h1>
-            <p class="author">
-                <span class="date">Tuesday, Aug 20, 2013</span>
-            </p>
-        </header>
-        <div class="content">
-            <p>(UPDATE: an earlier version of this was totally wrong. It&rsquo;s better now.)</p>
-
-<p>Inspired by a Facebook post from a colleague, I decided to waste ten minutes this week knocking together a word cloud from the text of my thesis. The process was pretty straightforward.</p>
-
-<p>First up - extracting the text from the thesis. Like all good scienticians, my thesis was written in LaTeX. I thought I could have used a couple of different tools to extract the plain text from the raw .tex input files, but actually none of the tools available from a quick googling seemed to work properly, so I went with extracting the text from the pdf file instead. Fortunately on Mac OS X this is pretty simple, as you can create a straightforward Automator application to extract the text from any pdf file, as documented in step 2 <a href="http://craiccomputing.blogspot.co.uk/2010/11/extracting-text-from-pdf-documents-on.html">here</a>.</p>
-
-<p>Once I had the plain text contents of my thesis in a text file it was just a simple few lines of python (using the excellent <a href="http://nltk.org/">NLTK</a>) to get a frequency distribution of the words in my thesis:</p>
-
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">from</span> nltk.probability <span style="color:#f92672">import</span> FreqDist
-<span style="color:#f92672">from</span> nltk.tokenize <span style="color:#f92672">import</span> word_tokenize, sent_tokenize
-
-fdist <span style="color:#f92672">=</span> FreqDist()
-<span style="color:#66d9ef">with</span> open(<span style="color:#e6db74">&#34;2012chorleymjphd.txt&#34;</span>, <span style="color:#e6db74">&#34;r&#34;</span>) <span style="color:#66d9ef">as</span> inputfile:
-    <span style="color:#66d9ef">for</span> sentence <span style="color:#f92672">in</span> sent_tokenize(inputfile<span style="color:#f92672">.</span>read()):
-        <span style="color:#66d9ef">for</span> word <span style="color:#f92672">in</span> word_tokenize(sentence):
-            fdist<span style="color:#f92672">.</span>inc(word<span style="color:#f92672">.</span>lower())
-
-    <span style="color:#66d9ef">for</span> word, count <span style="color:#f92672">in</span> fdist<span style="color:#f92672">.</span>iteritems():
-        <span style="color:#66d9ef">if</span> count <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">10</span>:
-            <span style="color:#66d9ef">print</span> <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">%s</span><span style="color:#e6db74">: </span><span style="color:#e6db74">%d</span><span style="color:#e6db74">&#34;</span> <span style="color:#f92672">%</span> (word, count)</code></pre></div>
-
-<p>Then it was just a matter of copying and pasting the word frequency distribution into <a href="http://www.wordle.net/">wordle</a>:</p>
-
-<p><img src="/img/{{ page.date | date: &quot;%Y-%m-%d&quot;}}-{{page.slug}}/thesis-wordle-2.png" alt="Thesis Wordle" /></p>
-
-<p>And there we have it. A not particularly informative but quite nice looking representation of my thesis. As you can guess from the cloud, it&rsquo;s not the most exciting thesis in the world. Interestingly, the word error doesn&rsquo;t seem to be there ;-).</p>
-
-        </div>
-    </article>
+    <li><a href="/2012/11/16/phd-post-mortem-the-summary/">
+            PhD Post-mortem - The Summary
+        </a></li>
     
-    <article class="blogpost">
-        <header>
-            <h1> <a href="/2012/11/16/phd-post-mortem-the-summary/">
-                    PhD Post-mortem - The Summary
-                </a></h1>
-            <p class="author">
-                <span class="date">Friday, Nov 16, 2012</span>
-            </p>
-        </header>
-        <div class="content">
-            <p>I originally wrote a whole bunch of posts (6!) about my PhD, what went wrong, how I felt about it,  and so on. Then I read it all back and it was a bunch of hugely self-indulgent poorly written bollocks (what&rsquo;s new?), so I decided not to publish it. Maybe sometime later I&rsquo;ll get round to it, but for now, the tl-dr; is:</p>
-
-<p><strong>My viva was a car crash, my examiners hated my work, I got too depressed over the result to engage with the corrections process, had another viva, it was terrible but not as bad, I pulled it together and corrected it all in the end, thanks to some excellent support from everyone else.</strong></p>
-
-<p>This summary that I&rsquo;d also written might be useful to others in the same or similar position however, so I figure it&rsquo;s worth putting online.</p>
-
-<p>So, what have we learned from the car crash that was my PhD?</p>
-
-<ol>
-<li><p><strong>Make sure you pick the right examiners. </strong>My examiners were heavy-weight examiners, both of whom had a very similar statistical view on things. Let&rsquo;s get it straight up front: they were right about my thesis in the first viva. It was definitely poor to average, and now it&rsquo;s good. But other examiners would probably have passed it first time, or at least not have been quite as negative about the whole situation. The fact that they were both external and both didn&rsquo;t like it basically caused a negative feedback loop, which ended very badly for me.
-I originally thought that had my supervisor chosen better, I would have passed earlier and that would have been good. But actually, having harsh examiners has done me a favour. Firstly, I&rsquo;ve survived this entire process intact, going from crushing disappointment to ultimate success and that&rsquo;s made me a much stronger person. But also, as I&rsquo;ve said, they were right about my thesis. My thesis is far better now than it was when it was first submitted, and is something I can now be rightly proud of. It stood up to harsher scrutiny than most theses are subjected to, and came out well in the end.
-Had you asked me 16 months ago whether we&rsquo;d picked the right examiners, I would have said &lsquo;No&rsquo;. Ask me now, and I&rsquo;d probably still say &lsquo;No&rsquo;. But I&rsquo;d take one of them. A harsher scrutiny leads to a better thesis.</p></li>
-
-<li><p><strong>Progress monitoring does not work. </strong>I passed every single yearly review during my PhD. I attended and participated in every single poster session and research retreat during my PhD (when I wasn&rsquo;t up in Edinburgh). I even won best presentation on two separate occasions. At no point did anyone in the school pick up on the problems that my examiners felt were major enough to prevent me passing. Not one member of my yearly review panel. Not my supervisor. Not any of the audience or staff members I talked to during progress review events. In my case, progress monitoring was useless. Yes, it will catch those people who are failing anyway and clearly haven&rsquo;t done enough work, but my case, the case of the person who is doing the work but has just missed something, can slip through the cracks.</p></li>
-
-<li><p><strong>Get a second opinion. </strong>Would another set of eyes reading my thesis have caught the problems? Possibly. I lost contact with my second supervisor after a couple of years (one of the perils of having a supervisor in a different academic school when the cross-discipline project you&rsquo;re working on falls apart). Had I had another, maybe they would have caught some of the more minor things which the examiners caught. Fewer minor errors or problems may have decreased some of the negativity of the examiners.
-Interestingly, I did get a couple of friends to read it (just proof reading for typo&rsquo;s etc) and one of them did make a point that was similar to the examiners major problem with the work. If only I&rsquo;d listened&hellip;</p></li>
-
-<li><p><strong>A bad viva outcome is not the end of the world. </strong>It&rsquo;s devastating, but you can get through it. And basically, the easiest way to do it is to do the exact opposite of what I did. Engage with your examiners. Get them to clarify corrections. Send them drafts of things. Communicate with them. Ultimately, they don&rsquo;t want to fail you, it causes too much paperwork.
-Had I done this, I would have been done far sooner. Ultimately in total I spent about a month and a half working full-time to correct everything, from after the first viva to final acceptance. Had I engaged with the examiners that would have been a month&rsquo;s full-time work. I could have proven them wrong, shown them their decision was wrong, but I ignored it, ran away, and caused myself more problems than I needed to.</p></li>
-
-<li><p><strong>It&rsquo;s totally worth it. </strong>My thesis is now safe in the university digital repository, and I&rsquo;ll get my PhD rubber stamped at the next awards committee. That is amazing. When I got the email about having passed, I was leaving work for a run. I ran down to the bay, out onto the barrage to meet Lisa from work, and sat staring out at the sea. It was over at long last. I worked harder for it, and I suffered more to get there, and that makes it all the sweeter.</p></li>
-</ol>
-
-        </div>
-    </article>
+    <li><a href="/2012/11/05/7-years-1-month-and-4-days-later.../">
+            7 years, 1 month and 4 days later...
+        </a></li>
     
-    <article class="blogpost">
-        <header>
-            <h1> <a href="/2012/11/05/7-years-1-month-and-4-days-later.../">
-                    7 years, 1 month and 4 days later...
-                </a></h1>
-            <p class="author">
-                <span class="date">Monday, Nov 5, 2012</span>
-            </p>
-        </header>
-        <div class="content">
-            <p>This is a post I&rsquo;ve been waiting to write for a very long time. A very, very, long time. As I&rsquo;ve been waiting so long I&rsquo;m going to start with the good news: on the 30th October 2012 I finally received confirmation that my examiners had accepted my PhD corrections and I should be approved for my degree. I&rsquo;m Dr Martin Chorley.</p>
-
-<p>Exactly how long I&rsquo;ve been waiting to write this depends on your point of view. I&rsquo;ve definitely been waiting eagerly for 1 month and 2 days, pretty certain that this day was coming. I&rsquo;ve been waiting pretty expectantly for 3 months and 21 days, fairly sure that the day is coming soon. I&rsquo;ve been <em>really desperate</em> to be able to write this for 1 year, 6 months and 10 days, unsure whether I&rsquo;d ever be able to. But ultimately, I guess as it&rsquo;s been exactly 7 years, 1 month and 4 days since I started my PhD, I&rsquo;ve been waiting for this moment for at least that long (even though I wasn&rsquo;t blogging back then, and certainly didn&rsquo;t expect to be writing a bunch of posts like these!).</p>
-
-<p>So, why did it take so long, and why was I waiting for so many different lengths of time? It&rsquo;s a long story, so I&rsquo;ll split it over several posts, but the basic facts are that I did badly, tried to fix it, didn&rsquo;t fix it well enough, so had to fix it again. It&rsquo;s finally done now, and I can move on with all the rest of the stuff I&rsquo;ve got to do.</p>
-
-        </div>
-    </article>
-    
-    
-
-</main>
+</ul>
 
     </div><script>
     (function (i, s, o, g, r, a, m) {

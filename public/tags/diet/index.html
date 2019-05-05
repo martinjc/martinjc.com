@@ -69,126 +69,25 @@
         </ul>
     </nav>
 </header><div id="content">
-<main>
+<ul>
     
-
+    <li><a href="/2011/06/09/scraping-data-from-myfitnesspal-with-python/">
+            Scraping data from MyFitnessPal with python
+        </a></li>
     
-    <article class="blogpost">
-        <header>
-            <h1> <a href="/2011/06/09/scraping-data-from-myfitnesspal-with-python/">
-                    Scraping data from MyFitnessPal with python
-                </a></h1>
-            <p class="author">
-                <span class="date">Thursday, Jun 9, 2011</span>
-            </p>
-        </header>
-        <div class="content">
-            <p>Following my <a href="http://users.cs.cf.ac.uk/M.J.Chorley/2011/06/07/web-search-wordle/">success</a> with <a href="http://users.cs.cf.ac.uk/M.J.Chorley/2011/06/05/google-web-history/">extracting</a> my Google Search History in a simple manner, I&rsquo;ve decided that I should do something similar to extract all the data I&rsquo;ve been feeding into <a href="http://www.myfitnesspal.com">myfitnesspal</a> for the last 5 months. As I briefly mentioned in the <a href="http://users.cs.cf.ac.uk/M.J.Chorley/2011/06/07/reviewmfp/">review of the app + website</a>, the progress graphs leave a lot to be desired and there&rsquo;s very little in the way of analysis of the data. I have a lot of questions about my progress and there is no easy way to answer all of them using just the website. For instance, what is my average sugar intake? Is this more or less than my target intake? How does my weekend nutrition compare to my weekday nutrition? How much beer have I drunk since starting to log all my food?</p>
-
-<p>Unfortunately there isn&rsquo;t an API for the website yet, so I&rsquo;m going to need to resort to screen scraping to extract it all. This should be pretty easy using the <a href="http://www.crummy.com/software/BeautifulSoup/">BeautifulSoup</a> python library, but first I need to get access to the data. My food diary isn&rsquo;t public, so I need to be logged in to get access to it. This means my scraping script needs to pretend to be a web browser and log me in to the website in order to access the pages I need.</p>
-
-<p>I initially toyed with the idea of reading cookies from the web browser sqlite cookie database, but this is overly complex. It&rsquo;s actually much easier just using python to do the login as a POST request and to store any cookies received back from that. Fortunately I&rsquo;m not the first person to try and do this, so there&rsquo;s <a href="http://stackoverflow.com/questions/2954381/python-form-post-using-urllib2-also-question-on-saving-using-cookies">plenty</a> of <a href="http://stackoverflow.com/questions/301924/python-urllib-urllib2-httplib-confusion">examples</a> on <a href="http://www.stackoverflow.com">StackOverflow</a> of how to do it. I&rsquo;ll post my own solution once it&rsquo;s done.</p>
-
-        </div>
-    </article>
+    <li><a href="/2011/06/08/losing-weight-in-2011-continued...-libra/">
+            Losing Weight in 2011 continued... Libra
+        </a></li>
     
-    <article class="blogpost">
-        <header>
-            <h1> <a href="/2011/06/08/losing-weight-in-2011-continued...-libra/">
-                    Losing Weight in 2011 continued... Libra
-                </a></h1>
-            <p class="author">
-                <span class="date">Wednesday, Jun 8, 2011</span>
-            </p>
-        </header>
-        <div class="content">
-            <p>Another of the very useful apps I&rsquo;ve been using since the start of the &ldquo;New Regime&rdquo; is Libra. It totally makes up for the crappy progress graphs on the MyFitnessPal website or in the mobile app.</p>
-
-<p>It&rsquo;s an app that has a singular purpose: it&rsquo;s just for tracking weight. But it does it very well. You enter a weight for every day, it works out statistics based on those weights, calculates the trend value for your weight, (so smoothes out daily fluctuations caused by water intake etc), and predicts when you&rsquo;ll hit your target. It performs a weekly backup of data to the SD card, and will export data in csv format too.</p>
-
-<p>The Libra app is available on the android market for <a href="https://market.android.com/details?id=net.cachapa.libra&amp;feature=search_result">free</a>, with a <a href="https://market.android.com/details?id=net.cachapa.libra.plugin.pro&amp;feature=search_result">paid ad-free version</a> also available.</p>
-
-        </div>
-    </article>
+    <li><a href="/2011/06/07/losing-weight-in-2011-continued...-my-fitness-pal/">
+            Losing Weight in 2011 continued... My Fitness Pal
+        </a></li>
     
-    <article class="blogpost">
-        <header>
-            <h1> <a href="/2011/06/07/losing-weight-in-2011-continued...-my-fitness-pal/">
-                    Losing Weight in 2011 continued... My Fitness Pal
-                </a></h1>
-            <p class="author">
-                <span class="date">Tuesday, Jun 7, 2011</span>
-            </p>
-        </header>
-        <div class="content">
-            
-
-<p>(The first in a series of posts on apps I&rsquo;ve found useful under &lsquo;the new regime&rsquo;)</p>
-
-<p>One of the best apps/services I&rsquo;ve found for general fitness and nutrition and weight loss is <a href="http://www.myfitnesspal.com/">MyFitnessPal</a>. I&rsquo;m fairly sure I wouldn&rsquo;t have made quite as good progress without it.</p>
-
-<p>The main selling point of the service is that it allows you to track what you eat and what exercise you do, in order to monitor and help regulate your calorific intake. When you create an account you put in the usual details as well as your weight and height, tell it how much activity you do on a daily basis and how much weight you&rsquo;d like to lose, and it works out how many calories you should eat each day to hit that target. All you have to do is enter the food you eat (by searching the food database) and the exercise you do (cardiovascular/strength training can be entered separately) and it calculates your net deficit/over spend each day.</p>
-
-<p>I&rsquo;m a big sucker for life-logging, and logging each part of each meal takes this to the extreme. I now have almost 5 months of data on what I&rsquo;ve been eating. Why I&rsquo;d want this, I&rsquo;m not sure, but it&rsquo;s there now! The service also handles logging stats such as weight, waist, neck and chest measurements, although the progress graphs for these leave a lot to be desired. Like most good services, this is a website with associated mobile app, with android, iPhone and blackberry versions available.</p>
-
-<p>**Features:
-**Large database of foods with calorific and nutritional information
-Easy logging of food and exercise, weight and measurements
-Adjusts calorie allowance as weight changes
-Social features - friends, forums etc</p>
-
-<p>**Pros:
-**Free!
-Mobile app makes it easy to log food or exercise while out and about
-Easy to stay on top of calorific intake - actually helps with weight loss
-Lots of support, encouragement and advice on forums
-Can contribute to database if food is missing
-Can report inaccurate data, up-vote correct data</p>
-
-<p><strong>Cons:</strong>
-Users can contribute to database and some users are stupid
-Progress graphs are pretty useless
-Mobile app and website sometimes disagree on calories burnt from exercise</p>
-
-<p>The MyFitnessPal website is at <a href="http://www.myfitnesspal.com">http://www.myfitnesspal.com </a>and the mobile apps are available <a href="http://www.myfitnesspal.com/mobile">here</a>.</p>
-
-<h5 id="thanks-to-my-good-friend-christopher-http-twitter-com-myfavouritecake-for-the-initial-heads-up-on-this-site">(thanks to my good friend <a href="http://twitter.com/#!/myfavouritecake">Christopher</a> for the initial heads up on this site!)</h5>
-
-        </div>
-    </article>
+    <li><a href="/2011/06/05/losing-weight-in-2011/">
+            Losing weight in 2011
+        </a></li>
     
-    <article class="blogpost">
-        <header>
-            <h1> <a href="/2011/06/05/losing-weight-in-2011/">
-                    Losing weight in 2011
-                </a></h1>
-            <p class="author">
-                <span class="date">Sunday, Jun 5, 2011</span>
-            </p>
-        </header>
-        <div class="content">
-            <p>Since the beginning of the year I&rsquo;ve been living under what we&rsquo;ve been calling &lsquo;the new regime&rsquo;. This &lsquo;new regime&rsquo; basically involves not living like a fat useless slob, so I&rsquo;ve been getting fit, eating healthily and losing weight. So far I&rsquo;ve lost over 10kg and can now run around the park a few times without collapsing to the floor clutching at my chest and screaming about ambulances, so I&rsquo;d say its going pretty well. The basic concept behind the new regime is:</p>
-
-<p><em>Eat less + do more = lose weight.</em></p>
-
-<p>This will be followed once some weight has been lost by:</p>
-
-<p>_Eat a normal amount + do more = stay the same. _</p>
-
-<p>About a month ago, I came across someone somewhere on the internet recommending &ldquo;<strong><a href="http://www.fourmilab.ch/hackdiet/www/hackdiet.html">The Hacker&rsquo;s Diet</a></strong>&rdquo; as a guide for weight loss. Not having read such a guide before I started on &lsquo;the new regime&rsquo; I skimmed it a bit; the tl;dr version is:</p>
-
-<p><em>Eat less + do more = lose weight.</em></p>
-
-<p>This doesn&rsquo;t exactly seem like rocket science to me, but lots of people seem to have a problem grasping this concept. <strong>The Hacker&rsquo;s Diet</strong> does a pretty decent job of describing the human body as a simple system with inputs and outputs and manages to explain that if you limit your input and increase your output, you get a deficit and lose weight. So if you find anyone that says &lsquo;Oh, I really struggle to lose weight&rsquo;, slap them round the back of the head and point them in that direction.</p>
-
-<p>The whole point of this post is that the last couple of chapters of the book contain a lot of information about tracking the calories you eat, the calories you burn, analysing trend from daily weight figures and so on. There&rsquo;s a lot of detail on how to create spreadsheets to calculate weight trends, how to keep a daily log of calorie intake, and pages and pages of calorific information for food. The thing is, it&rsquo;s 2011 now so none of those chapters are necessary, because as with anything that&rsquo;s a pain in the rear end there are now loads of apps available to make life easier. As I&rsquo;ve been using a number of them for 5 months I figure I&rsquo;ll share the knowledge and review some of them over the next few days.</p>
-
-        </div>
-    </article>
-    
-    
-
-</main>
+</ul>
 
     </div><script>
     (function (i, s, o, g, r, a, m) {

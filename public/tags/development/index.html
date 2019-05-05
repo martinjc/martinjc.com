@@ -69,398 +69,81 @@
         </ul>
     </nav>
 </header><div id="content">
-<main>
+<ul>
     
-
-<ul class="pagination">
+    <li><a href="/2016/11/02/scraping-the-assembly/">
+            Scraping the Assembly
+        </a></li>
     
-    <li class="page-item">
-        <a href="/tags/development/" class="page-link" aria-label="First"><span aria-hidden="true">&laquo;&laquo;</span></a>
-    </li>
+    <li><a href="/2015/01/26/nhs-hackday-2015/">
+            NHS Hackday 2015
+        </a></li>
     
-    <li class="page-item disabled">
-    <a href="" class="page-link" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a>
-    </li>
+    <li><a href="/2014/10/03/computational-journalism-a-manifesto/">
+            Computational Journalism - &#39;a Manifesto&#39;
+        </a></li>
     
+    <li><a href="/2014/04/15/msc-computational-journalism-about-to-launch/">
+            MSc Computational Journalism about to launch
+        </a></li>
     
+    <li><a href="/2013/09/24/ksri-services-summer-school-social-computing-theory-and-hackathon/">
+            KSRI Services Summer School - Social Computing Theory and Hackathon
+        </a></li>
     
+    <li><a href="/2013/08/11/swn-festival-2013-plans/">
+            SWN Festival 2013 - plans
+        </a></li>
     
+    <li><a href="/2013/04/22/open-sauce-hackathon-post-mortem/">
+            Open Sauce Hackathon - Post Mortem
+        </a></li>
     
+    <li><a href="/2013/03/15/advanced-latex-course/">
+            Advanced LaTeX Course
+        </a></li>
     
-        
-        
+    <li><a href="/2013/01/29/latex-beamer-handouts-with-frames-and-borders/">
+            LaTeX beamer handouts (with frames and borders)
+        </a></li>
     
+    <li><a href="/2012/11/20/foursquare-personality-experiment/">
+            Foursquare Personality Experiment
+        </a></li>
     
-    <li class="page-item active"><a class="page-link" href="/tags/development/">1</a></li>
+    <li><a href="/2012/10/04/swn-artist-explorer/">
+            SWN Artist Explorer
+        </a></li>
     
+    <li><a href="/2012/01/31/foursquare-category-icon-downloader-2/">
+            Foursquare Category Icon Downloader (2)
+        </a></li>
     
+    <li><a href="/2011/11/22/boxuk-for-the-social-good-hackday/">
+            BoxUK &#34;For the Social Good&#34; Hackday
+        </a></li>
     
+    <li><a href="/2011/11/22/foursquare-hackathon-post-mortem/">
+            Foursquare Hackathon Post Mortem
+        </a></li>
     
+    <li><a href="/2011/07/12/curop-summer-project-update/">
+            CUROP summer project update
+        </a></li>
     
+    <li><a href="/2011/04/04/django-tweepy-oauth/">
+            Django &#43; Tweepy &#43; OAuth
+        </a></li>
     
-        
-        
+    <li><a href="/2011/04/04/twitter-wordle/">
+            Twitter Wordle
+        </a></li>
     
-    
-    <li class="page-item"><a class="page-link" href="/tags/development/page/2/">2</a></li>
-    
-    
-    <li class="page-item">
-    <a href="/tags/development/page/2/" class="page-link" aria-label="Next"><span aria-hidden="true">&raquo;</span></a>
-    </li>
-    
-    <li class="page-item">
-        <a href="/tags/development/page/2/" class="page-link" aria-label="Last"><span aria-hidden="true">&raquo;&raquo;</span></a>
-    </li>
-    
-</ul>
-
-    
-    <article class="blogpost">
-        <header>
-            <h1> <a href="/2016/11/02/scraping-the-assembly/">
-                    Scraping the Assembly
-                </a></h1>
-            <p class="author">
-                <span class="date">Wednesday, Nov 2, 2016</span>
-            </p>
-        </header>
-        <div class="content">
-            <p>M’colleague is currently teaching a first-semester module on Data Journalism to the students on our MSc in Computational and Data Journalism. As part of this, they need to do some sort of data project. One of the students is looking at the <a href="http://allowances.assembly.wales/Default.aspx?Option=switch">expenses of Welsh Assembly Members</a>. These are all freely available online, but not in an easy to manipulate form. According to the Assembly they’d be happy to give the data out as a spreadsheet, if we submitted an FOI.</p>
-
-<p>To me, this seems quite stupid. The information is all online and freely accessible. You’ve admitted you’re willing to give it out to anyone who submits an FOI. So why not just make the raw data available to download? This does not sound like a helpful <a href="http://www.opengovernment.org.uk/about/">Open Government</a> to me. Anyway, for whatever reason, they’ve chosen not to, and we can’t be bothered to wait around for an FOI to come back. It’s much quicker and easier to build a scraper! We’ll just use selenium to drive a web browser, submit a search, page through all the results collecting the details, then dump it all out to csv. Simple.</p>
-
-
-
-
-
-
-
-
-
-
-<figure>
-    <img src="/2016/11/02/scraping-the-assembly/out.gif" width="679" height="510" alt="Scraping AM expenses">
-    <figcaption>
-        <small>
-            Scraping AM expenses
-        </small>
-    </figcaption>
-</figure>
-
-<p>I built this as a quick hack this morning. It took about an hour or so, and it shows. The code is not robust in any way, but it works. You can ask it for data from any year (or a number of years) and it’ll happily sit there churning its way through the results and spitting them out as both .csv and .json.</p>
-
-<p>All the code is <a href="https://github.com/martinjc/assembly-expenses-scraper">available on Github</a> and it’s under an MIT Licence. Have fun 😉</p>
-
-        </div>
-    </article>
-    
-    <article class="blogpost">
-        <header>
-            <h1> <a href="/2015/01/26/nhs-hackday-2015/">
-                    NHS Hackday 2015
-                </a></h1>
-            <p class="author">
-                <span class="date">Monday, Jan 26, 2015</span>
-            </p>
-        </header>
-        <div class="content">
-            
-
-<p>This weekend I took part in an incredibly successful <a href="http://nhshackday.com/">NHS hackday</a>, hosted at Cardiff University and organised by <a href="https://twitter.com/amcunningham">Anne Marie Cunningham</a> and James Morgan. We went as a team from the MSc in Computational Journalism, with myself and <a href="https://twitter.com/egrommet">Glyn</a> attending along with <a href="https://twitter.com/PoojaDante">Pooja</a>, <a href="https://twitter.com/NikitaVashisth">Nikita</a>, <a href="https://twitter.com/Idioteque90">Annalisa</a> and <a href="https://twitter.com/cboutaud">Charles</a>. At the last-minute I recruited a couple of ringers as well, dragging along <del>Rhys Priestland</del> <a href="https://twitter.com/flyingSparx">Dr William Wilberforce Webberley</a> from Comsc and <a href="https://twitter.com/voxmjw">Dr Matthew Williams</a>, previously of this parish. Annalisa also brought along Dan Hewitt, so in total we had a large and diverse team.</p>
-
-<h1 id="the-hackday">The hackday</h1>
-
-<p>This was the first NHS hackday I&rsquo;d attended, but I believe it&rsquo;s the second event held in Cardiff, so Anne Marie and the team have it down to a fine art. The whole weekend seemed to go pretty smoothly (barring a couple of misunderstandings on our part regarding the pitch sessions!). It was certainly one of the most well organised events that I&rsquo;ve attended, with all the necessary ingredients for successful coding: much power, many wifi and plenty of food, snacks and coffee. Anne Marie and the team deserve much recognition and thanks for their hard work. I&rsquo;m definitely in for next year.</p>
-
-<p>The quality of the projects created at the hackday was incredibly high across the board, which was great to see. One of my favourites used an Oculus Rift virtual reality headset to create a zombie &lsquo;game&rsquo; that could be used to test people&rsquo;s peripheral vision. Another standout was a system for logging and visualising the ANGEL factors describing a patient&rsquo;s health situation. It was really pleasing to see these rank highly with the judges too, coming in third and second in the overall rankings. Other great projects brought an old Open Source project back to life, created a system for managing groups walking the Wales Coast path, and created automatic notification systems for healthcare processes. Overall it was a really interesting mix of projects, many of which have clear potential to become useful products within or alongside the NHS. As Matt commented in the pub afterwards, it&rsquo;s probably the first hackday we&rsquo;ve been to where several of the projects have clear original IP with commercial potential.</p>
-
-<h1 id="our-project">Our project</h1>
-
-<p>We had decided before the event that we wanted to build some visualisations of health data across Wales, something like <a href="http://nhsmaps.co.uk/">nhsmaps.co.uk</a>, but working with local health boards and local authorities in Wales. We split into two teams for the implementation: &lsquo;the data team&rsquo; who were responsible for sourcing, processing and inputting data, and the &lsquo;interface team&rsquo; who built the front-end and the visualisations.</p>
-
-<p>Progress was good, with Matthew and William quickly defining a schema for describing data so that the data team could add multiple data sets and have the front-end automatically pick them up and be able to visualise them. The CompJ students worked to find and extract data, adding them to the github repository with the correct metadata. Meanwhile, I pulled a bunch of D3 code together for some simple visualisations.</p>
-
-<p>By the end of the weekend we established a fairly decent system. It&rsquo;s able to visualise a few different types of data, at different resolutions, is mostly mobile friendly, and most importantly is easily extensible and adaptable. It&rsquo;s online now on our <a href="http://bit.ly/hewnhs">github pages</a>, and all the code and documentation is also in the <a href="https://github.com/compjcdf/nhs_hack">github repository</a>.</p>
-
-<p>We&rsquo;ll continue development for a while to improve the usability and code quality, and hopefully we&rsquo;ll find a community willing to take the code base on and keep improving what could be a fairly useful resource for understanding the health of Wales.</p>
-
-<h1 id="debrief">Debrief</h1>
-
-<p>We didn&rsquo;t win any of the prizes, which is understandable. Our project was really focused on the public understanding of the NHS and health, and not for solving a particular need within (or for users of) the NHS. We knew this going in to the weekend, and we&rsquo;d taken the decision that it was more important to work on a project related to the course, so that the students could experience some of the tools and technologies they&rsquo;ll be using as the course progresses than to do something more closely aligned with the brief that would have perhaps been less relevant to the students work.</p>
-
-<p>I need to thank Will and Matt for coming and helping the team. Without Matt wrangling the data team and showing them how to create json metadata descriptors we probably wouldn&rsquo;t have anywhere near as many example datasets as we do. Similarly, without Will&rsquo;s hard work on the front end interface, the project wouldn&rsquo;t look nearly as good as it does, or have anywhere near the functionality. His last-minute addition of localstorage for personal datasets was a triumph. (Sadly though he does lose some coder points for user agent sniffing to decide whether to show a mobile interface :-D.) They were both a massive help, and we couldn&rsquo;t have done it without them.</p>
-
-<p>Also, of course, I need to congratulate the CompJ students, who gave up their weekend to trawl through datasets, pull figures off websites and out of pdf&rsquo;s, and create the lovely easy to process .csv files we needed. It was a great effort from them, and I&rsquo;m looking forward to our next Team CompJ hackday outing.</p>
-
-<p>One thing that sadly did stand out was a lack of participation from Comsc undergraduate students, with only one or two attending. <a href="http://www.cs.cf.ac.uk/contactsandpeople/staffpage.php?emailname=Rob.Davies">Rob Davies</a> stopped by on Saturday, and both Will and I discussed with him what we can do to increase participation in these events. Hopefully we&rsquo;ll make some progress on that front in time for the next hackday.</p>
-
-<h1 id="media">Media</h1>
-
-<p>There&rsquo;s some great photos from the event on Flickr, courtesy of <a href="https://www.flickr.com/photos/paul_clarke/">Paul Clarke</a> (<a href="https://www.flickr.com/photos/paul_clarke/sets/72157650042039338/">Saturday</a> and <a href="https://www.flickr.com/photos/paul_clarke/sets/72157650456182132/">Sunday</a>).</p>
-
-<h1 id="elsewhere">Elsewhere&hellip;</h1>
-
-<p>We got a lovely <a href="https://goodpracticeexchange.wordpress.com/2015/01/24/nhs-hack-day-data-visualisation/">write-up about out project</a> from <a href="https://twitter.com/DyfrigWilliams">Dyfrig Williams</a> of the Good Practice Exchange at the Wales Audit Office. Dyfrig also curated a great <a href="https://storify.com/GoodPracticeWAO/nhs-hack-day-cardiff-2015">storify of the weekend</a>.</p>
-
-<p>Hemavault labs have done a round up of the projects <a href="http://blog.hemavault.com/2015/01/27/nhs-hack-day-cardiff-2015-projects/">here</a></p>
-
-        </div>
-    </article>
-    
-    <article class="blogpost">
-        <header>
-            <h1> <a href="/2014/10/03/computational-journalism-a-manifesto/">
-                    Computational Journalism - &#39;a Manifesto&#39;
-                </a></h1>
-            <p class="author">
-                <span class="date">Friday, Oct 3, 2014</span>
-            </p>
-        </header>
-        <div class="content">
-            <p>While Glyn and I have been discussing the new MSc course between ourselves and with others, we have repeatedly come up with the same issues and themes, again and again. As a planning exercise earlier in the summer, we gathered some of these together into a &lsquo;manifesto&rsquo;.</p>
-
-<p>The manifesto is online on our main &lsquo;<a href="http://compj.cs.cf.ac.uk">Computational Journalism</a>&rsquo; website with a <a href="http://compj.cs.cf.ac.uk/2014/09/26/computational-journalism-the-manifesto/">bit of extra commentary</a>.</p>
-
-        </div>
-    </article>
-    
-    <article class="blogpost">
-        <header>
-            <h1> <a href="/2014/04/15/msc-computational-journalism-about-to-launch/">
-                    MSc Computational Journalism about to launch
-                </a></h1>
-            <p class="author">
-                <span class="date">Tuesday, Apr 15, 2014</span>
-            </p>
-        </header>
-        <div class="content">
-            <p>For the last two years I&rsquo;ve been working on a project with some colleagues in the school of Journalism, Media and Cultural Studies (JOMEC) here at Cardiff University and it&rsquo;s finally all coming together. This week we&rsquo;ve been able to <a href="http://www.jomec.co.uk/blog/what-is-computational-journalism/">announce</a> that (subject to some final internal paperwork wrangling) we&rsquo;ll be launching an MSc in Computational Journalism this September. The story of how the course came about is fairly long, but starts simply with a tweet (unfortunately missing the context, but you get the drift):</p>
-
-<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr"><a href="https://twitter.com/martinjc">@martinjc</a> Just avoided that *shudders* you in work next week. Want to pick your brains on something</p>&mdash; Glyn Mottershead (@egrommet) <a href="https://twitter.com/egrommet/status/226323512086904832">July 20, 2012</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-An offer via social media from someone I'd never met, asking to pick my brains  about an unknown topic. Of course, I jumped at the invite:
-
-<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr"><a href="https://twitter.com/egrommet">@egrommet</a> worst freebie ever! Yeah, I&#39;m in all week and pretty free (except thurs). When/where?</p>&mdash; Martin Chorley (@martinjc) <a href="https://twitter.com/martinjc/status/226331942407241729">July 20, 2012</a></blockquote>
-
-<p>That &lsquo;brain picking&rsquo; became an interesting chat over coffee in one of the <a href="https://www.facebook.com/pages/Coffee-Barker/147298511987541">excellent coffee shops in Cardiff</a>, where <a href="http://www.cardiff.ac.uk/jomec/contactsandpeople/profiles/mottershead-glyn.html">Glyn</a> and I discussed many things of interest, and many potential areas for collaboration - including the increased use of data and coding within modern journalism. At one point during this chat, m&rsquo;colleague <a href="http://www.cardiff.ac.uk/jomec/contactsandpeople/profiles/mottershead-glyn.html">Glyn</a> said something like &ldquo;do you know, I think we should run a masters course on this.&rdquo; I replied with something along the lines of &ldquo;yes, I think that&rsquo;s a very good idea.&rdquo; That short conversation became us taking the idea of a MSc in Computational Journalism to our respective heads of schools, which became us sat around the table discussing what should be in such a course, which then became us (I say us, it was mainly all <a href="http://www.cardiff.ac.uk/jomec/contactsandpeople/profiles/sambrook-richard.html">Richard</a>) writing pages of documentation explaining what the course would be and arguing the case for it to the University.  Last week we held the final approval panel for the course, where both internal and external panel members all agreed that we pretty much knew what we were doing, that the course was a good idea and had the right content, and that we should go ahead and launch it. From 25th July 2012 to 1st April 2014 is a long time to get an MSc up and running, but we&rsquo;ve finally done it. Over that time I&rsquo;ve discovered many things about the University and its processes, drunk many pints of fine ale as we try to hammer out a course structure in various pubs around the city, and have come close on at least one occasion to screaming at a table full of people, but now it&rsquo;s done. As I write, draft press releases are being written, budgets are being sorted, and details are being uploaded to coursefinder. With any luck, September will see us with a batch of students ready and willing to step onto the course for the first time. It&rsquo;s exciting, and I can&rsquo;t wait.</p>
-
-<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">New MSc in Computational Journalism from <a href="https://twitter.com/CardiffJomec">@CardiffJomec</a> and @csicardiff going ahead. Details to follow full approval - launch in the autumn</p>&mdash; Richard Sambrook (@sambrook) <a href="https://twitter.com/sambrook/status/451713389556154368">April 3, 2014</a></blockquote>
-
-<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Journalism and computer science, you say? In Cardiff? With <a href="https://twitter.com/sambrook">@sambrook</a>, me and <a href="https://twitter.com/martinjc">@martinjc</a>? <a href="http://t.co/IBnovbafWK">http://t.co/IBnovbafWK</a></p>&mdash; Glyn Mottershead (@egrommet) <a href="https://twitter.com/egrommet/status/456091706983997441">April 15, 2014</a></blockquote>
-
-        </div>
-    </article>
-    
-    <article class="blogpost">
-        <header>
-            <h1> <a href="/2013/09/24/ksri-services-summer-school-social-computing-theory-and-hackathon/">
-                    KSRI Services Summer School - Social Computing Theory and Hackathon
-                </a></h1>
-            <p class="author">
-                <span class="date">Tuesday, Sep 24, 2013</span>
-            </p>
-        </header>
-        <div class="content">
-            <p>I was invited by <a href="http://www.ksri.kit.edu/Default.aspx?PageId=691&amp;lang=en">Simon Caton</a> to come to the <a href="http://www.ksri.kit.edu/Default.aspx?lang=en">KSRI</a> <a href="http://service-summer.ksri.kit.edu/62.php">Services Summer School</a>, held at <a href="http://www.kit.edu/index.php">KIT</a> in Germany, to help him run a workshop session on <a href="http://service-summer.ksri.kit.edu/104.php">Social Computing</a>.  We decided to use the session as a crash course in retrieving and manipulating data from Social Media APIs - showing the students the basics, then running a mini &lsquo;hackathon&rsquo; for the students to gain some practical experience.</p>
-
-<p>I think the session went really well, the students seemed to enjoy it and the feedback was very positive. We spent about 90 minutes talking about APIs, JSON, Twitter, Facebook and Foursquare, then set the students off on forming teams and brainstorming ideas. Very quickly they managed to get set up grabbing Twitter data from the streaming API, and coming up with ways of analysing it for interesting facts and statistics.  A number of the students were not coders, and had never done anything like this before, so it was great to see them diving in, setting up servers and running php scripts to grab the data. It was also good to see the level of team work on display; everyone was communicating, dividing the work, and getting on well. Fuelled by a combination of pizza, beer, red bull and haribo they coded into the night, until we drew things to a close at about 10pm and retired to the nearest bar for a pint of debrief.</p>
-
-
-
-
-
-
-
-
-
-
-<figure>
-    <img src="/2013/09/24/ksri-services-summer-school-social-computing-theory-and-hackathon/2013-09-23-18.03.23-1024x768.jpg" width="1024" height="768" alt="Hackathon Students">
-    <figcaption>
-        <small>
-            Hackathon Students
-        </small>
-    </figcaption>
-</figure>
-
-<p>It was a really good experience, and I think everyone got something useful out of it. I&rsquo;m looking forward to the presentations later on today to see what everyone came up with.</p>
-
-<p>Our slides from the talk are available on <a href="http://www.slideshare.net/karlsruheserviceresearchinstitute/social-computing-analysing-social-media-theory-and-hackathon">slideshare</a>. As usual they&rsquo;re information light and picture heavy, so their usefulness is probably limited!</p>
-
-        </div>
-    </article>
-    
-    <article class="blogpost">
-        <header>
-            <h1> <a href="/2013/08/11/swn-festival-2013-plans/">
-                    SWN Festival 2013 - plans
-                </a></h1>
-            <p class="author">
-                <span class="date">Sunday, Aug 11, 2013</span>
-            </p>
-        </header>
-        <div class="content">
-            <p>Last year I had a go at creating a couple of web apps based around the bands playing the <a href="http://www.swnfest.com">SWN Festival</a> here in Cardiff. I love SWN with all my heart, it&rsquo;s a permanent fixture in my calendar and even if (when) I leave Cardiff it&rsquo;ll be the one thing I come back for every year. It&rsquo;s a great way to see and discover new bands, but sometimes the sheer volume of music on offer can be overwhelming. So I wanted to see if I could create some web apps that would help to navigate your way through all the bands, and find the ones that you should go and see.</p>
-
-<p>The <a href="/swn/2012/tags/">first</a> was a simple app that gathered artist tags from Last.FM, allowing you to see which artists playing the festival had similar tags - so if you knew you liked one artist you could find other artists tagged with the same terms. The <a href="/swn/2012/rec/">second</a> (which technically wasn&rsquo;t ever really finished) would allow you to login with a last.fm account and find the artists whose tags best matched the tags for your top artists in your last.fm profile.</p>
-
-<p>I liked both these apps and found them both useful - but I don&rsquo;t think they went far enough. I only started development late in the year, about a month before the festival, so didn&rsquo;t have a lot of time to really get into it. This year I&rsquo;m starting a lot earlier, so I&rsquo;ve got time to do a lot more.</p>
-
-<p>Firstly I&rsquo;d like to repeat the apps from last year, but perhaps combining them in some way. I&rsquo;d like to include more links to the actual music, making it easy to get from an artist to their songs by including embeds from soundcloud, spotify, youtube etc. I&rsquo;d also like to try making a mobile app guide to the festival (probably as an android app as the official app is iOS only). I&rsquo;m hopeful that given enough free time I should be able to get some genuinely useful stuff done, and I&rsquo;ll be blogging about it here as I work on it.</p>
-
-        </div>
-    </article>
-    
-    <article class="blogpost">
-        <header>
-            <h1> <a href="/2013/04/22/open-sauce-hackathon-post-mortem/">
-                    Open Sauce Hackathon - Post Mortem
-                </a></h1>
-            <p class="author">
-                <span class="date">Monday, Apr 22, 2013</span>
-            </p>
-        </header>
-        <div class="content">
-            <p>This weekend saw the second &lsquo;<a href="http://www.cs.cf.ac.uk/hackathon/">Open Sauce Hackathon</a>&rsquo; run by undergraduate students here in the school. Last years was pretty successful, and they improved upon it this year, pulling in many more sponsors and offering more prizes.</p>
-
-<p>Unlike last year, when I turned up having already decided with Jon Quinn what we were doing, I went along this year with no real ideas. I had a desire to do something with a map, as I&rsquo;m pretty sure building stuff connected to maps is going to play a big part in work over the next couple of months. Other than that though, I was at a bit of a loss. After playing around with some ideas and APIs I finally came up with my app: <a href="/dionysus/">dionysus</a>.</p>
-
-<p><img src="/img/{{ page.date | date: &quot;%Y-%m-%d&quot;}}-{{page.slug}}/Screen-Shot-2013-04-22-at-11.37.57.png" alt="Dionysus Screenshot" /></p>
-
-<p>It&rsquo;s a mobile friendly mapping app that shows you two important things: Where the pubs are (using venue data from <a href="http://www.foursquare.com">Foursquare</a>) and where the gigs are at (using event data from <a href="http://www.last.fm">last.fm</a>). If you sign in to either last.fm or Foursquare it will also pull in recommended bars and recommended gigs and highlight these for you.</p>
-
-<p>The mapping is done using <a href="http://leafletjs.com/">leaflet.js</a>, which I found to be nicer and easier to use than Google Maps. The map tiles are based on <a href="http://www.openstreetmap.org/">OpenStreetMap</a> data and come from <a href="http://cloudmade.com/">CloudMade</a>, while the (devastatingly beautiful) icons were rushed together by me over the weekend. The entire app is just client side Javascript and HTML, with HTML5 persistent localStorage used to maintain login authentication between sessions. It&rsquo;s a simple app, but I&rsquo;m pretty pleased with it. In the end I even won a prize for it (£50), so it can&rsquo;t be too bad.</p>
-
-<p>The app is hosted <a href="/dionysus/">here</a>, and the source code is available <a href="https://github.com/martinjc/dionysus">here</a>. Obviously though the code is not very pretty and quite hacky, but it does the job!</p>
-
-        </div>
-    </article>
-    
-    <article class="blogpost">
-        <header>
-            <h1> <a href="/2013/03/15/advanced-latex-course/">
-                    Advanced LaTeX Course
-                </a></h1>
-            <p class="author">
-                <span class="date">Friday, Mar 15, 2013</span>
-            </p>
-        </header>
-        <div class="content">
-            <p>Here are the slides and source code for the UGC Advanced LaTeX course, 15th March 2013</p>
-
-<p>Introduction (Beginners Recap, Graphics &amp; Figures) - <a href="/img/{{ page.date | date: &quot;%Y-%m-%d&quot;}}-{{page.slug}}/introduction.pdf">handouts</a> and <a href="/img/{{ page.date | date: &quot;%Y-%m-%d&quot;}}-{{page.slug}}/introduction.zip">source
-</a>BibTeX and Referencing - <a href="/img/{{ page.date | date: &quot;%Y-%m-%d&quot;}}-{{page.slug}}/bibtex.pdf">handouts</a> &amp; <a href="/img/{{ page.date | date: &quot;%Y-%m-%d&quot;}}-{{page.slug}}/bibtex.zip">source
-</a>Custom Commands &amp; Environments, Source Code Listings, Tips &amp; Tricks - <a href="/img/{{ page.date | date: &quot;%Y-%m-%d&quot;}}-{{page.slug}}/custom.pdf">handouts</a> &amp; <a href="/img/{{ page.date | date: &quot;%Y-%m-%d&quot;}}-{{page.slug}}/custom.zip">source
-</a>Exercise Sheets - <a href="/img/{{ page.date | date: &quot;%Y-%m-%d&quot;}}-{{page.slug}}/exercise_handouts.zip">handouts</a> &amp; <a href="/img/{{ page.date | date: &quot;%Y-%m-%d&quot;}}-{{page.slug}}/exercises.zip">source</a></p>
-
-        </div>
-    </article>
-    
-    <article class="blogpost">
-        <header>
-            <h1> <a href="/2013/01/29/latex-beamer-handouts-with-frames-and-borders/">
-                    LaTeX beamer handouts (with frames and borders)
-                </a></h1>
-            <p class="author">
-                <span class="date">Tuesday, Jan 29, 2013</span>
-            </p>
-        </header>
-        <div class="content">
-            <p>I&rsquo;m working on some notes for a beginners LaTeX course that I&rsquo;m giving for the University Graduate College this week. In a temporary fit of insanity I decided it would be nice to write all the slides in LaTeX, so that I can distribute the source to the students so they get some real world LaTeX examples to go along with the course notes.</p>
-
-<p>I was attempting to make handouts for the students using the great <a href="http://www.guidodiepen.nl/2009/07/creating-latex-beamer-handouts-with-notes/">handoutWithNotes</a> package. However, as my slides are white, they looked a bit odd on a page without a frame around them:</p>
-
-<p><img src="/img/{{ page.date | date: &quot;%Y-%m-%d&quot;}}-{{page.slug}}/Screen-Shot-2013-01-29-at-09.40.18.png" alt="Slides without border" /></p>
-
-<p>I wanted to add a border to make the handouts look better, but there were no suggestions at the <a href="http://www.guidodiepen.nl/2009/07/creating-latex-beamer-handouts-with-notes/">site I got the package from</a> as to how to add a frame, and I&rsquo;m too lazy to go digging in CTAN to see if there&rsquo;s any documentation.</p>
-
-<p>Instead, a little bit of googling (thank you<a href="http://tex.stackexchange.com/"> tex.stackexchange</a>!) revealed <a href="http://tex.stackexchange.com/questions/74637/problem-with-drawing-borders-around-slides-in-latex-beamer-handouts-with-adobe-r">the answer</a>:</p>
-
-<pre><code>\pgfpageslogicalpageoptions{1}{border code=\pgfusepath{stroke}}
-\pgfpageslogicalpageoptions{2}{border code=\pgfusepath{stroke}}
-\pgfpageslogicalpageoptions{3}{border code=\pgfusepath{stroke}}
-</code></pre>
-
-<p>You&rsquo;ll need one command for each slide on a page, and you get simple frames around the slides:</p>
-
-<p><img src="/img/{{ page.date | date: &quot;%Y-%m-%d&quot;}}-{{page.slug}}/Screen-Shot-2013-01-29-at-09.43.19.png" alt="Handouts with Frames" /> Easy!</p>
-
-        </div>
-    </article>
-    
-    <article class="blogpost">
-        <header>
-            <h1> <a href="/2012/11/20/foursquare-personality-experiment/">
-                    Foursquare Personality Experiment
-                </a></h1>
-            <p class="author">
-                <span class="date">Tuesday, Nov 20, 2012</span>
-            </p>
-        </header>
-        <div class="content">
-            <p>Today we are finally starting to promote our latest experiment. It&rsquo;s been online for about a month, but we haven&rsquo;t told anyone about it while we&rsquo;ve been finishing up the Year 2 deliverables for <a href="http://www.recognition-project.eu/">Recognition</a> (the review is in a couple of weeks - fingers crossed!) Now however I can start publicly talking about it and encouraging people to take part and get involved!</p>
-
-<p>We&rsquo;re calling it the Foursquare Personality Experiment, and it&rsquo;s available on the <a href="http://www.cs.cf.ac.uk/">School of Computer Science &amp; Informatics</a>&rsquo; website <a href="http://www.cs.cf.ac.uk/recognition/foursqexp">here</a>:</p>
-
-<p><a href="http://www.cs.cf.ac.uk/recognition/foursqexp">http://www.cs.cf.ac.uk/recognition/foursqexp</a></p>
-
-<p>It&rsquo;s basically looking at comparing people&rsquo;s <a href="http://en.wikipedia.org/wiki/OCEAN_model_of_personality">five-factor OCEAN personality profiles</a> to the places that they check in to on <a href="http://www.foursquare.com">Foursquare</a>. So, you go along to the site, sign in with your Foursquare account and take a really <a href="http://www.ocf.berkeley.edu/~johnlab/bfi.htm">short 44-question personality test</a>. While you&rsquo;re doing that, we retrieve the list of places you&rsquo;ve been to from Foursquare. When it&rsquo;s all done, we show you your personality, and how it compares to the average personality of people in your area (average personality comes from the <a href="http://mypersonality.org/research/">mypersonality.org</a> data, thanks guys!). All the venues you&rsquo;ve checked into on Foursquare are simultaneously displayed on a map, and selecting one of them will show you the average personality profile for that venue. This allows you to compare yourself to all the other people who go to the same places as you.</p>
-
-<p>Meanwhile, we get a bunch of (anonymised) personality profiles that are linked to venues, so we can see if there are any correlations between places/categories of places and personality profiles. For instance, one of the things we may find is that the average personality profiles of &ldquo;non-places&rdquo; (those places frequented by everybody: the supermarket, the train station etc.) are different from the average personality profiles of &ldquo;places&rdquo; (the places visited by a subset of people: independent coffee shops, your local pub etc). We may also expect people with different visiting patterns to have different personalities. For instance, maybe I mainly check-in to pubs and bars on Foursquare, while someone else mainly checks in to shops. Is there a difference between the personality profiles of people who check into more pubs and people who mainly check in to shops?</p>
-
-<p>Obviously we&rsquo;ve only just started collecting data, but hopefully we&rsquo;ll start to see some answers to some of these questions soon.</p>
-
-        </div>
-    </article>
-    
-    
-
-<ul class="pagination">
-    
-    <li class="page-item">
-        <a href="/tags/development/" class="page-link" aria-label="First"><span aria-hidden="true">&laquo;&laquo;</span></a>
-    </li>
-    
-    <li class="page-item disabled">
-    <a href="" class="page-link" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a>
-    </li>
-    
-    
-    
-    
-    
-    
-        
-        
-    
-    
-    <li class="page-item active"><a class="page-link" href="/tags/development/">1</a></li>
-    
-    
-    
-    
-    
-    
-        
-        
-    
-    
-    <li class="page-item"><a class="page-link" href="/tags/development/page/2/">2</a></li>
-    
-    
-    <li class="page-item">
-    <a href="/tags/development/page/2/" class="page-link" aria-label="Next"><span aria-hidden="true">&raquo;</span></a>
-    </li>
-    
-    <li class="page-item">
-        <a href="/tags/development/page/2/" class="page-link" aria-label="Last"><span aria-hidden="true">&raquo;&raquo;</span></a>
-    </li>
+    <li><a href="/2011/03/28/fun-with-django.../">
+            fun with django...
+        </a></li>
     
 </ul>
-
-</main>
 
     </div><script>
     (function (i, s, o, g, r, a, m) {

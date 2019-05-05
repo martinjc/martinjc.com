@@ -3,7 +3,7 @@ author: martin
 comments: false
 date: 2011-03-25 20:24:45+00:00
 layout: page
-title: past teaching
+title: "Past Teaching"
 ---
 
 

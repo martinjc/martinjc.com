@@ -69,52 +69,13 @@
         </ul>
     </nav>
 </header><div id="content">
-<main>
+<ul>
     
-
+    <li><a href="/2016/11/02/scraping-the-assembly/">
+            Scraping the Assembly
+        </a></li>
     
-    <article class="blogpost">
-        <header>
-            <h1> <a href="/2016/11/02/scraping-the-assembly/">
-                    Scraping the Assembly
-                </a></h1>
-            <p class="author">
-                <span class="date">Wednesday, Nov 2, 2016</span>
-            </p>
-        </header>
-        <div class="content">
-            <p>M’colleague is currently teaching a first-semester module on Data Journalism to the students on our MSc in Computational and Data Journalism. As part of this, they need to do some sort of data project. One of the students is looking at the <a href="http://allowances.assembly.wales/Default.aspx?Option=switch">expenses of Welsh Assembly Members</a>. These are all freely available online, but not in an easy to manipulate form. According to the Assembly they’d be happy to give the data out as a spreadsheet, if we submitted an FOI.</p>
-
-<p>To me, this seems quite stupid. The information is all online and freely accessible. You’ve admitted you’re willing to give it out to anyone who submits an FOI. So why not just make the raw data available to download? This does not sound like a helpful <a href="http://www.opengovernment.org.uk/about/">Open Government</a> to me. Anyway, for whatever reason, they’ve chosen not to, and we can’t be bothered to wait around for an FOI to come back. It’s much quicker and easier to build a scraper! We’ll just use selenium to drive a web browser, submit a search, page through all the results collecting the details, then dump it all out to csv. Simple.</p>
-
-
-
-
-
-
-
-
-
-
-<figure>
-    <img src="/2016/11/02/scraping-the-assembly/out.gif" width="679" height="510" alt="Scraping AM expenses">
-    <figcaption>
-        <small>
-            Scraping AM expenses
-        </small>
-    </figcaption>
-</figure>
-
-<p>I built this as a quick hack this morning. It took about an hour or so, and it shows. The code is not robust in any way, but it works. You can ask it for data from any year (or a number of years) and it’ll happily sit there churning its way through the results and spitting them out as both .csv and .json.</p>
-
-<p>All the code is <a href="https://github.com/martinjc/assembly-expenses-scraper">available on Github</a> and it’s under an MIT Licence. Have fun 😉</p>
-
-        </div>
-    </article>
-    
-    
-
-</main>
+</ul>
 
     </div><script>
     (function (i, s, o, g, r, a, m) {

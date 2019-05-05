@@ -69,242 +69,25 @@
         </ul>
     </nav>
 </header><div id="content">
-<main>
+<ul>
     
-
+    <li><a href="/2013/08/18/swn-festival-2013-plans-part-1-the-data-2/">
+            SWN Festival 2013 plans – part 1: the data (2!)
+        </a></li>
     
-    <article class="blogpost">
-        <header>
-            <h1> <a href="/2013/08/18/swn-festival-2013-plans-part-1-the-data-2/">
-                    SWN Festival 2013 plans – part 1: the data (2!)
-                </a></h1>
-            <p class="author">
-                <span class="date">Sunday, Aug 18, 2013</span>
-            </p>
-        </header>
-        <div class="content">
-            <p>In the previous post, I used python and BeautifulSoup to grab the list of artists appearing at <a href="http://www.swnfest.com">SWN Festival 2013</a>, and to scrape their associated soundcloud/twitter/facebook/youtube links (where available).</p>
-
-<p>However, there are more places to find music online than just those listed on the festival site, and some of those extra sources include additional data that I want to collect, so now we need to search these other sources for the artists. Firstly, we need to load the artist data we previously extracted from the festival website, and iterate through the list of artists one by one:</p>
-
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">artists <span style="color:#f92672">=</span> {}
-<span style="color:#66d9ef">with</span> open(<span style="color:#e6db74">&#34;bands.json&#34;</span>) <span style="color:#66d9ef">as</span> infile:
-    artists <span style="color:#f92672">=</span> json<span style="color:#f92672">.</span>load(infile)
-
-<span style="color:#66d9ef">for</span> artist, artist_data <span style="color:#f92672">in</span> artists<span style="color:#f92672">.</span>iteritems():</code></pre></div>
-
-<p>The first thing I want to do for each artist it to search Spotify to see if they have any music available there. Spotify has a simple web <a href="https://developer.spotify.com/technologies/web-api/">API</a> for searching which is pretty straightforward to use:</p>
-
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">params <span style="color:#f92672">=</span> {
-    <span style="color:#e6db74">&#34;q&#34;</span> : <span style="color:#e6db74">&#34;artist:&#34;</span> <span style="color:#f92672">+</span> artist<span style="color:#f92672">.</span>encode(<span style="color:#e6db74">&#34;utf-8&#34;</span>)
-}
-
-spotify_root_url <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;http://ws.spotify.com/search/1/artist.json&#34;</span>
-spotify_url <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">%s</span><span style="color:#e6db74">?</span><span style="color:#e6db74">%s</span><span style="color:#e6db74">&#34;</span> <span style="color:#f92672">%</span> (spotify_root_url, urllib<span style="color:#f92672">.</span>urlencode(params))
-
-data <span style="color:#f92672">=</span> retrieve_json_data(spotify_url)
-
-<span style="color:#66d9ef">if</span> data<span style="color:#f92672">.</span>get(<span style="color:#e6db74">&#34;artists&#34;</span>, None) <span style="color:#f92672">is</span> <span style="color:#f92672">not</span> None:
-    <span style="color:#66d9ef">if</span> len(data[<span style="color:#e6db74">&#34;artists&#34;</span>]) <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0</span>:
-        artist_id <span style="color:#f92672">=</span> data[<span style="color:#e6db74">&#34;artists&#34;</span>][<span style="color:#ae81ff">0</span>][<span style="color:#e6db74">&#34;href&#34;</span>]<span style="color:#f92672">.</span>lstrip(<span style="color:#e6db74">&#34;spotify:artist:&#34;</span>)
-        artist_data[<span style="color:#e6db74">&#34;spotify_id&#34;</span>] <span style="color:#f92672">=</span> data[<span style="color:#e6db74">&#34;artists&#34;</span>][<span style="color:#ae81ff">0</span>][<span style="color:#e6db74">&#34;href&#34;</span>]
-        artist_data[<span style="color:#e6db74">&#34;spotify_url&#34;</span>] <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;http://open.spotify.com/artist/&#34;</span> <span style="color:#f92672">+</span> artist_id</code></pre></div>
-
-<p>The &lsquo;retrieve_json_data&rsquo; function is just a wrapper to call a URL and parse the returned JSON data:</p>
-
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">retrieve_json_data</span>(url):
-
-    <span style="color:#66d9ef">try</span>:
-        response <span style="color:#f92672">=</span> urllib2<span style="color:#f92672">.</span>urlopen(url)
-    <span style="color:#66d9ef">except</span> urllib2<span style="color:#f92672">.</span>HTTPError, e:
-        <span style="color:#66d9ef">raise</span> e
-    <span style="color:#66d9ef">except</span> urllib2<span style="color:#f92672">.</span>URLError, e:
-        <span style="color:#66d9ef">raise</span> e
-
-    raw_data <span style="color:#f92672">=</span> response<span style="color:#f92672">.</span>read()
-    data <span style="color:#f92672">=</span> json<span style="color:#f92672">.</span>loads(raw_data)
-
-    <span style="color:#66d9ef">return</span> data</code></pre></div>
-
-<p>Once I&rsquo;ve searched Spotify, I then want to see if the artist has a page on Last.FM. If they do, I also want to extract and store their top-tags from the site. Again, the Last.FM API makes this straightforward. Firstly, searching for the artist page:</p>
-
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">params <span style="color:#f92672">=</span> {
-    <span style="color:#e6db74">&#34;artist&#34;</span>: artist<span style="color:#f92672">.</span>encode(<span style="color:#e6db74">&#34;utf-8&#34;</span>),
-    <span style="color:#e6db74">&#34;api_key&#34;</span>: last_fm_api_key,
-    <span style="color:#e6db74">&#34;method&#34;</span>: <span style="color:#e6db74">&#34;artist.getinfo&#34;</span>,
-    <span style="color:#e6db74">&#34;format&#34;</span>: <span style="color:#e6db74">&#34;json&#34;</span>
-}
-
-last_fm_url <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;http://ws.audioscrobbler.com/2.0/?&#34;</span> <span style="color:#f92672">+</span> urllib<span style="color:#f92672">.</span>urlencode(params)
-
-data <span style="color:#f92672">=</span> retrieve_json_data(last_fm_url)
-
-<span style="color:#66d9ef">if</span> data<span style="color:#f92672">.</span>get(<span style="color:#e6db74">&#34;artist&#34;</span>, None) <span style="color:#f92672">is</span> <span style="color:#f92672">not</span> None:
-    <span style="color:#66d9ef">if</span> data[<span style="color:#e6db74">&#34;artist&#34;</span>]<span style="color:#f92672">.</span>get(<span style="color:#e6db74">&#34;url&#34;</span>, None) <span style="color:#f92672">is</span> <span style="color:#f92672">not</span> None:
-        artist_data[<span style="color:#e6db74">&#34;last_fm_url&#34;</span>] <span style="color:#f92672">=</span> data[<span style="color:#e6db74">&#34;artist&#34;</span>][<span style="color:#e6db74">&#34;url&#34;</span>]</code></pre></div>
-
-<p>Then, searching for the artist&rsquo;s top tags:</p>
-
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">params <span style="color:#f92672">=</span> {
-    <span style="color:#e6db74">&#34;artist&#34;</span>: artist<span style="color:#f92672">.</span>encode(<span style="color:#e6db74">&#34;utf-8&#34;</span>),
-    <span style="color:#e6db74">&#34;api_key&#34;</span>: last_fm_api_key,
-    <span style="color:#e6db74">&#34;method&#34;</span>: <span style="color:#e6db74">&#34;artist.gettoptags&#34;</span>,
-    <span style="color:#e6db74">&#34;format&#34;</span>: <span style="color:#e6db74">&#34;json&#34;</span>
-}
-
-last_fm_url <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;http://ws.audioscrobbler.com/2.0/?&#34;</span> <span style="color:#f92672">+</span> urllib<span style="color:#f92672">.</span>urlencode(params)
-
-data <span style="color:#f92672">=</span> retrieve_json_data(last_fm_url)
-
-<span style="color:#66d9ef">if</span> data<span style="color:#f92672">.</span>get(<span style="color:#e6db74">&#34;toptags&#34;</span>, None) <span style="color:#f92672">is</span> <span style="color:#f92672">not</span> None:
-
-    artist_data[<span style="color:#e6db74">&#34;tags&#34;</span>] <span style="color:#f92672">=</span> {}
-
-    <span style="color:#66d9ef">if</span> data[<span style="color:#e6db74">&#34;toptags&#34;</span>]<span style="color:#f92672">.</span>get(<span style="color:#e6db74">&#34;tag&#34;</span>, None) <span style="color:#f92672">is</span> <span style="color:#f92672">not</span> None:
-        tags <span style="color:#f92672">=</span> data[<span style="color:#e6db74">&#34;toptags&#34;</span>][<span style="color:#e6db74">&#34;tag&#34;</span>]
-        <span style="color:#66d9ef">if</span> type(tags) <span style="color:#f92672">==</span> type([]):
-            <span style="color:#66d9ef">for</span> tag <span style="color:#f92672">in</span> tags:
-                name <span style="color:#f92672">=</span> tag[<span style="color:#e6db74">&#34;name&#34;</span>]<span style="color:#f92672">.</span>encode(<span style="color:#e6db74">&#39;utf-8&#39;</span>)
-                count <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span> <span style="color:#66d9ef">if</span> int(tag[<span style="color:#e6db74">&#34;count&#34;</span>]) <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span> <span style="color:#66d9ef">else</span> int(tag[<span style="color:#e6db74">&#34;count&#34;</span>])
-                artist_data[<span style="color:#e6db74">&#34;tags&#34;</span>][name] <span style="color:#f92672">=</span> count
-            <span style="color:#66d9ef">else</span>:
-                name <span style="color:#f92672">=</span> tags[<span style="color:#e6db74">&#34;name&#34;</span>]<span style="color:#f92672">.</span>encode(<span style="color:#e6db74">&#39;utf-8&#39;</span>)
-                count <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span> <span style="color:#66d9ef">if</span> int(tags[<span style="color:#e6db74">&#34;count&#34;</span>]) <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span> <span style="color:#66d9ef">else</span> int(tags[<span style="color:#e6db74">&#34;count&#34;</span>])
-                artist_data[<span style="color:#e6db74">&#34;tags&#34;</span>][name] <span style="color:#f92672">=</span> count</code></pre></div>
-
-<p>Again, once we&rsquo;ve retrieved all the extra artist data, we can dump it to file:</p>
-
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">with</span> open(<span style="color:#e6db74">&#34;bands.json&#34;</span>, <span style="color:#e6db74">&#34;w&#34;</span>) <span style="color:#66d9ef">as</span> outfile:
-    json<span style="color:#f92672">.</span>dump(artists, outfile)</code></pre></div>
-
-<p>So, I now have 2 scripts that I can run regularly to capture any updates to the festival website (including lineup additions) and to search for artist data on Spotify and Last.FM. Now I&rsquo;ve got all this data captured and stored, it&rsquo;s time to start doing something interesting with it&hellip;</p>
-
-        </div>
-    </article>
+    <li><a href="/2013/08/14/swn-festival-2013-plans-part-1-the-data/">
+            SWN Festival 2013 plans -  part 1: the data
+        </a></li>
     
-    <article class="blogpost">
-        <header>
-            <h1> <a href="/2013/08/14/swn-festival-2013-plans-part-1-the-data/">
-                    SWN Festival 2013 plans -  part 1: the data
-                </a></h1>
-            <p class="author">
-                <span class="date">Wednesday, Aug 14, 2013</span>
-            </p>
-        </header>
-        <div class="content">
-            <p>As <a href="/2013/08/11/swn-festival-2013-plans/">I mentioned</a>, I&rsquo;m planning on doing a bit more development work this year connected to the <a href="http://www.swnfest.com">SWN Festival</a>. The first stage is to get hold of the data associated with the festival in an accessible and machine readable form so it can be used in other apps.</p>
-
-<p>Unfortunately (but unsurprisingly), being a smallish local festival, there is no API for any of the data. So, getting a list of the bands and their info means we need to resort to web scraping. Fortunately, with a couple of lines of python and the BeautifulSoup library, getting the list of artists playing the festival is pretty straightforward:</p>
-
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> urllib2
-<span style="color:#f92672">import</span> json
-
-<span style="color:#f92672">from</span> bs4 <span style="color:#f92672">import</span> BeautifulSoup
-root_page <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;http://swnfest.com/&#34;</span>
-lineup_page <span style="color:#f92672">=</span> root_page <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;lineup/&#34;</span>
-
-<span style="color:#66d9ef">try</span>:
-    response <span style="color:#f92672">=</span> urllib2<span style="color:#f92672">.</span>urlopen(lineup_page)
-<span style="color:#66d9ef">except</span> urllib2<span style="color:#f92672">.</span>HTTPError, e:
-    <span style="color:#66d9ef">raise</span> e
-<span style="color:#66d9ef">except</span> urllib2<span style="color:#f92672">.</span>URLError, e:
-    <span style="color:#66d9ef">raise</span> e
-
-raw_data <span style="color:#f92672">=</span> response<span style="color:#f92672">.</span>read()
-
-soup <span style="color:#f92672">=</span> BeautifulSoup(raw_data)
-
-links <span style="color:#f92672">=</span> soup<span style="color:#f92672">.</span>select(<span style="color:#e6db74">&#34;.artist-listing h5 a&#34;</span>)
-
-artists <span style="color:#f92672">=</span> {}
-
-<span style="color:#66d9ef">for</span> link <span style="color:#f92672">in</span> links:
-    url <span style="color:#f92672">=</span> link<span style="color:#f92672">.</span>attrs[<span style="color:#e6db74">&#34;href&#34;</span>]
-    artist <span style="color:#f92672">=</span> link<span style="color:#f92672">.</span>contents[<span style="color:#ae81ff">0</span>]
-
-    artists[artist] <span style="color:#f92672">=</span> {}
-    artists[artist][<span style="color:#e6db74">&#34;swn_url&#34;</span>] <span style="color:#f92672">=</span> url</code></pre></div>
-
-<p>All we&rsquo;re doing here is loading the <a href="http://swnfest.com/lineup/">lineup</a> page for the main festival website, using BeautifulSoup to find all the links to individual artist pages (which are in a div with a class of &ldquo;artist-listing&rdquo;, each one in a h5 tag), then parsing these links to extract the artist name, and the url of their page on the festival website.</p>
-
-<p>Each artist page on the website includes handy links to soundcloud, twitter, youtube etc (where these exist), and since I&rsquo;m going to want to include these kinds of things in the apps I&rsquo;m working on, I&rsquo;ll grab those too:</p>
-
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">for</span> artist, data <span style="color:#f92672">in</span> artists<span style="color:#f92672">.</span>iteritems():
-    <span style="color:#66d9ef">try</span>:
-        response <span style="color:#f92672">=</span> urllib2<span style="color:#f92672">.</span>urlopen(data[<span style="color:#e6db74">&#34;swn_url&#34;</span>])
-    <span style="color:#66d9ef">except</span> urllib2<span style="color:#f92672">.</span>HTTPError, e:
-        <span style="color:#66d9ef">raise</span> e
-    <span style="color:#66d9ef">except</span> urllib2<span style="color:#f92672">.</span>URLError, e:
-        <span style="color:#66d9ef">raise</span> e
-
-    raw_data <span style="color:#f92672">=</span> response<span style="color:#f92672">.</span>read()
-
-    soup <span style="color:#f92672">=</span> BeautifulSoup(raw_data)
-
-    links <span style="color:#f92672">=</span> soup<span style="color:#f92672">.</span>select(<span style="color:#e6db74">&#34;.outlinks li&#34;</span>)
-
-    <span style="color:#66d9ef">for</span> link <span style="color:#f92672">in</span> links:
-         source_name <span style="color:#f92672">=</span> link<span style="color:#f92672">.</span>attrs[<span style="color:#e6db74">&#34;class&#34;</span>][<span style="color:#ae81ff">0</span>]
-         source_url <span style="color:#f92672">=</span> link<span style="color:#f92672">.</span>findChild(<span style="color:#e6db74">&#34;a&#34;</span>)<span style="color:#f92672">.</span>attrs[<span style="color:#e6db74">&#34;href&#34;</span>]
-         data[source_name] <span style="color:#f92672">=</span> source_url</code></pre></div>
-
-<p>This code iterates through the list of artists we just extracted from the lineup page, retrieves the relevant artist page, and parses it for the outgoing links, stored in list items in an unordered list with a class of &lsquo;outlinks&rsquo;. Fortunately each link in this list has a class describing what type of link it is (facebook/twitter/soundcloud etc) so we can use the class as a key in our dictionary, with the link itself as an item. Later on once schedule information is included in the artist page we can add some code to parse stage-times and venues, but at the moment that data isn&rsquo;t present on the pages, so we can&rsquo;t extract it yet.</p>
-
-<p>Finally we can just dump our artist data to json, and we have the information we need in an easily accessible format:</p>
-
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">with</span> open(<span style="color:#e6db74">&#34;bands.json&#34;</span>, <span style="color:#e6db74">&#34;w&#34;</span>) <span style="color:#66d9ef">as</span> outfile:
-    json<span style="color:#f92672">.</span>dump(artists, outfile)</code></pre></div>
-
-<p>Now we have the basic data for each artist, we can go on to search for more information on other music sites. The nice thing about this script is that when the lineup gets updated, we can just re-run the code and capture all the new artists that have been added. I should also mention that all the code I&rsquo;m using for this is available on <a href="https://github.com/martinjc/swnScraper2013">github</a>.</p>
-
-        </div>
-    </article>
+    <li><a href="/2013/08/11/swn-festival-2013-plans/">
+            SWN Festival 2013 - plans
+        </a></li>
     
-    <article class="blogpost">
-        <header>
-            <h1> <a href="/2013/08/11/swn-festival-2013-plans/">
-                    SWN Festival 2013 - plans
-                </a></h1>
-            <p class="author">
-                <span class="date">Sunday, Aug 11, 2013</span>
-            </p>
-        </header>
-        <div class="content">
-            <p>Last year I had a go at creating a couple of web apps based around the bands playing the <a href="http://www.swnfest.com">SWN Festival</a> here in Cardiff. I love SWN with all my heart, it&rsquo;s a permanent fixture in my calendar and even if (when) I leave Cardiff it&rsquo;ll be the one thing I come back for every year. It&rsquo;s a great way to see and discover new bands, but sometimes the sheer volume of music on offer can be overwhelming. So I wanted to see if I could create some web apps that would help to navigate your way through all the bands, and find the ones that you should go and see.</p>
-
-<p>The <a href="/swn/2012/tags/">first</a> was a simple app that gathered artist tags from Last.FM, allowing you to see which artists playing the festival had similar tags - so if you knew you liked one artist you could find other artists tagged with the same terms. The <a href="/swn/2012/rec/">second</a> (which technically wasn&rsquo;t ever really finished) would allow you to login with a last.fm account and find the artists whose tags best matched the tags for your top artists in your last.fm profile.</p>
-
-<p>I liked both these apps and found them both useful - but I don&rsquo;t think they went far enough. I only started development late in the year, about a month before the festival, so didn&rsquo;t have a lot of time to really get into it. This year I&rsquo;m starting a lot earlier, so I&rsquo;ve got time to do a lot more.</p>
-
-<p>Firstly I&rsquo;d like to repeat the apps from last year, but perhaps combining them in some way. I&rsquo;d like to include more links to the actual music, making it easy to get from an artist to their songs by including embeds from soundcloud, spotify, youtube etc. I&rsquo;d also like to try making a mobile app guide to the festival (probably as an android app as the official app is iOS only). I&rsquo;m hopeful that given enough free time I should be able to get some genuinely useful stuff done, and I&rsquo;ll be blogging about it here as I work on it.</p>
-
-        </div>
-    </article>
+    <li><a href="/2012/10/04/swn-artist-explorer/">
+            SWN Artist Explorer
+        </a></li>
     
-    <article class="blogpost">
-        <header>
-            <h1> <a href="/2012/10/04/swn-artist-explorer/">
-                    SWN Artist Explorer
-                </a></h1>
-            <p class="author">
-                <span class="date">Thursday, Oct 4, 2012</span>
-            </p>
-        </header>
-        <div class="content">
-            <p>It&rsquo;s that time of year again: <a href="http://swnfest.com/">SWN Festival</a> is once more upon us. It&rsquo;s the highlight of the musical year in Cardiff, and probably the one thing I&rsquo;ll miss about the city when (if?) I leave. In fact, I&rsquo;m pretty certain that even if I left the city I&rsquo;d make the pilgrimage back once a year for SWN because it&rsquo;s just too much fun to miss.</p>
-
-<p>The lineup this year is another cracking one, but as usual with four days of bands spread across so many venues there are a whole bunch of names that I don&rsquo;t recognise. As per usual I&rsquo;ve cooked up a <a href="http://open.spotify.com/user/martinjc/playlist/4O56MWAi1qIO6XfCDXEtjG">Spotify playlist</a>, but even sorting through that takes some time:</p>
-
-<p>I decided this year that it would be nice to have an easy visual way to see what the bands are like, so decided to build myself a little <a href="/swn/">artist explorer</a>. This uses tags from <a href="www.last.fm">Last.FM</a> and generates word clouds using a nice <a href="https://github.com/jasondavies/d3-cloud">javascript plugin</a> for <a href="http://mbostock.github.com/d3/">d3</a> written by <a href="http://www.jasondavies.com/">Jason Davies</a>. Most of the word cloud js was hacked together from Jason&rsquo;s <a href="http://www.jasondavies.com/wordcloud/">example</a>, with some mangling and modification from me. I downloaded the tags for artists offline and stuck them in a .json file so it doesn&rsquo;t hit the Last.FM servers on every page load. What we end up with is a fairly simple tag cloud example that allows you to see at a glance how Last.FM users have categorised the bands. Selecting a tag in the word cloud will show you the other bands in the lineup that have also had that tag applied to them. Of course it&rsquo;s <a href="/swn">online here</a>!</p>
-
-<p>Meanwhile, the code is available on <a href="https://github.com/martinjc/swn_tagger">github</a>, with no guarantees that any of it actually works.</p>
-
-        </div>
-    </article>
-    
-    
-
-</main>
+</ul>
 
     </div><script>
     (function (i, s, o, g, r, a, m) {

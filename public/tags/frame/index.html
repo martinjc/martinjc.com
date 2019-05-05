@@ -69,45 +69,13 @@
         </ul>
     </nav>
 </header><div id="content">
-<main>
+<ul>
     
-
+    <li><a href="/2013/01/29/latex-beamer-handouts-with-frames-and-borders/">
+            LaTeX beamer handouts (with frames and borders)
+        </a></li>
     
-    <article class="blogpost">
-        <header>
-            <h1> <a href="/2013/01/29/latex-beamer-handouts-with-frames-and-borders/">
-                    LaTeX beamer handouts (with frames and borders)
-                </a></h1>
-            <p class="author">
-                <span class="date">Tuesday, Jan 29, 2013</span>
-            </p>
-        </header>
-        <div class="content">
-            <p>I&rsquo;m working on some notes for a beginners LaTeX course that I&rsquo;m giving for the University Graduate College this week. In a temporary fit of insanity I decided it would be nice to write all the slides in LaTeX, so that I can distribute the source to the students so they get some real world LaTeX examples to go along with the course notes.</p>
-
-<p>I was attempting to make handouts for the students using the great <a href="http://www.guidodiepen.nl/2009/07/creating-latex-beamer-handouts-with-notes/">handoutWithNotes</a> package. However, as my slides are white, they looked a bit odd on a page without a frame around them:</p>
-
-<p><img src="/img/{{ page.date | date: &quot;%Y-%m-%d&quot;}}-{{page.slug}}/Screen-Shot-2013-01-29-at-09.40.18.png" alt="Slides without border" /></p>
-
-<p>I wanted to add a border to make the handouts look better, but there were no suggestions at the <a href="http://www.guidodiepen.nl/2009/07/creating-latex-beamer-handouts-with-notes/">site I got the package from</a> as to how to add a frame, and I&rsquo;m too lazy to go digging in CTAN to see if there&rsquo;s any documentation.</p>
-
-<p>Instead, a little bit of googling (thank you<a href="http://tex.stackexchange.com/"> tex.stackexchange</a>!) revealed <a href="http://tex.stackexchange.com/questions/74637/problem-with-drawing-borders-around-slides-in-latex-beamer-handouts-with-adobe-r">the answer</a>:</p>
-
-<pre><code>\pgfpageslogicalpageoptions{1}{border code=\pgfusepath{stroke}}
-\pgfpageslogicalpageoptions{2}{border code=\pgfusepath{stroke}}
-\pgfpageslogicalpageoptions{3}{border code=\pgfusepath{stroke}}
-</code></pre>
-
-<p>You&rsquo;ll need one command for each slide on a page, and you get simple frames around the slides:</p>
-
-<p><img src="/img/{{ page.date | date: &quot;%Y-%m-%d&quot;}}-{{page.slug}}/Screen-Shot-2013-01-29-at-09.43.19.png" alt="Handouts with Frames" /> Easy!</p>
-
-        </div>
-    </article>
-    
-    
-
-</main>
+</ul>
 
     </div><script>
     (function (i, s, o, g, r, a, m) {
