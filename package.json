@@ -30,7 +30,7 @@
     "watch:js": "onchange '_assets/**/*.js' -- npm run build:js:dev && npm run build:hugo:dev",
     "watch:img": "onchange '_assets/img/**/*.*' -- npm run copy:images && npm run build:hugo:dev",
     "watch": "parallelshell 'npm run watch:css' 'npm run watch:js' 'npm run watch:hugo' 'npm run watch:img' ",
-    "deploy": "npm run build:prod && gh-pages -d dist"
+    "deploy": "npm run build:prod && gh-pages -d public"
   },
   "repository": {
     "type": "git",
