@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Talks on Martin Chorley</title>
+    <link>/tags/talks/</link>
+    <description>Recent content in Talks on Martin Chorley</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Wed, 23 Jul 2014 11:55:21 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/talks/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Unified Diff and recruiting Guest Lecturers</title>
+      <link>/2014/07/23/unified-diff-and-recruiting-guest-lecturers/</link>
+      <pubDate>Wed, 23 Jul 2014 11:55:21 +0000</pubDate>
+      
+      <guid>/2014/07/23/unified-diff-and-recruiting-guest-lecturers/</guid>
+      <description>Last week I gave a quick lightning talk at UnifiedDiff - a local tech meetup here in Cardiff. The main point of the talk was to try and recruit more industry involvement for our new MSc in Computational Journalism - preferably by getting some web developers and software engineers in to give guest lectures on the tools, languages and processes they use.
+The talk went well, and I&amp;rsquo;ve had several offers from people wanting to get involved and add some real value to the course, which is brilliant.</description>
+    </item>
+    
+  </channel>
+</rss>

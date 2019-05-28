@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Frame on Martin Chorley</title>
+    <link>/tags/frame/</link>
+    <description>Recent content in Frame on Martin Chorley</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Tue, 29 Jan 2013 09:46:45 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/frame/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>LaTeX beamer handouts (with frames and borders)</title>
+      <link>/2013/01/29/latex-beamer-handouts-with-frames-and-borders/</link>
+      <pubDate>Tue, 29 Jan 2013 09:46:45 +0000</pubDate>
+      
+      <guid>/2013/01/29/latex-beamer-handouts-with-frames-and-borders/</guid>
+      <description>I&amp;rsquo;m working on some notes for a beginners LaTeX course that I&amp;rsquo;m giving for the University Graduate College this week. In a temporary fit of insanity I decided it would be nice to write all the slides in LaTeX, so that I can distribute the source to the students so they get some real world LaTeX examples to go along with the course notes.
+I was attempting to make handouts for the students using the great handoutWithNotes package.</description>
+    </item>
+    
+  </channel>
+</rss>

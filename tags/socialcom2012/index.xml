@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Socialcom2012 on Martin Chorley</title>
+    <link>/tags/socialcom2012/</link>
+    <description>Recent content in Socialcom2012 on Martin Chorley</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Fri, 07 Sep 2012 13:37:48 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/socialcom2012/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>SocialCom 2012</title>
+      <link>/2012/09/07/socialcom-2012/</link>
+      <pubDate>Fri, 07 Sep 2012 13:37:48 +0000</pubDate>
+      
+      <guid>/2012/09/07/socialcom-2012/</guid>
+      <description>I&amp;rsquo;ve just returned from SocialCom 2012 and figured it was worth a post to round it all up. This is not that post however; that will take a little longer to write as there were quite a few really interesting and relevant talks to round up. I also had some good discussions about the work we&amp;rsquo;ve been doing, the work we&amp;rsquo;re planning to do and some of the work that others are doing.</description>
+    </item>
+    
+  </channel>
+</rss>

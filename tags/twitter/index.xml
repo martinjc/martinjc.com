@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Twitter on Martin Chorley</title>
+    <link>/tags/twitter/</link>
+    <description>Recent content in Twitter on Martin Chorley</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Wed, 19 Nov 2014 12:13:11 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/twitter/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Quick and Dirty Twitter API in Python</title>
+      <link>/2014/11/19/quick-and-dirty-twitter-api-in-python/</link>
+      <pubDate>Wed, 19 Nov 2014 12:13:11 +0000</pubDate>
+      
+      <guid>/2014/11/19/quick-and-dirty-twitter-api-in-python/</guid>
+      <description>QUICK DISCLAIMER: this is a quick and dirty solution to a problem, so may not represent best coding practice, and has absolutely no error checking or handling. Use with caution&amp;hellip;
+A recent project has needed me to scrape some data from Twitter. I considered using Tweepy, but as it was a project for the MSc in Computational Journalism, I thought it would be more interesting to write our own simple Twitter API wrapper in Python.</description>
+    </item>
+    
+    <item>
+      <title>How do people decide whether or not to read a tweet? </title>
+      <link>/2014/11/04/how-do-people-decide-whether-or-not-to-read-a-tweet/</link>
+      <pubDate>Tue, 04 Nov 2014 12:31:40 +0000</pubDate>
+      
+      <guid>/2014/11/04/how-do-people-decide-whether-or-not-to-read-a-tweet/</guid>
+      <description>It turns out that an existing relationship with the author of the tweet is one of the main factors influencing how someone decides whether or not to read a tweet. At the same time, a large number associated with a tweet can also make the tweet more attractive to readers.
+Our latest Open Access research has discovered how much effect the information about a tweet has on whether people decide to read it or not.</description>
+    </item>
+    
+    <item>
+      <title>KSRI Services Summer School - Social Computing Theory and Hackathon</title>
+      <link>/2013/09/24/ksri-services-summer-school-social-computing-theory-and-hackathon/</link>
+      <pubDate>Tue, 24 Sep 2013 11:19:20 +0000</pubDate>
+      
+      <guid>/2013/09/24/ksri-services-summer-school-social-computing-theory-and-hackathon/</guid>
+      <description>I was invited by Simon Caton to come to the KSRI Services Summer School, held at KIT in Germany, to help him run a workshop session on Social Computing. We decided to use the session as a crash course in retrieving and manipulating data from Social Media APIs - showing the students the basics, then running a mini &amp;lsquo;hackathon&amp;rsquo; for the students to gain some practical experience.
+I think the session went really well, the students seemed to enjoy it and the feedback was very positive.</description>
+    </item>
+    
+    <item>
+      <title>Summer Projects</title>
+      <link>/2012/06/26/summer-projects/</link>
+      <pubDate>Tue, 26 Jun 2012 11:49:30 +0000</pubDate>
+      
+      <guid>/2012/06/26/summer-projects/</guid>
+      <description>Both of the summer projects that I&amp;rsquo;m supervising with Walter Colombo have now started, with two students joining us for 8 weeks over summer to gain some experience of the research environment and work on some (hopefully) interesting projects.
+One of our students (James) is investigating the ranking of content on Twitter by pairwise comparison. He&amp;rsquo;s currently building a website to allow comparison of tweets and hopefully we&amp;rsquo;ll be able to get enough people to have a go at it that we can gather a large number of ratings of tweets.</description>
+    </item>
+    
+  </channel>
+</rss>

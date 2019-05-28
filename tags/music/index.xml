@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Music on Martin Chorley</title>
+    <link>/tags/music/</link>
+    <description>Recent content in Music on Martin Chorley</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Wed, 14 Aug 2013 12:38:53 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/music/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>SWN Festival 2013 plans -  part 1: the data</title>
+      <link>/2013/08/14/swn-festival-2013-plans-part-1-the-data/</link>
+      <pubDate>Wed, 14 Aug 2013 12:38:53 +0000</pubDate>
+      
+      <guid>/2013/08/14/swn-festival-2013-plans-part-1-the-data/</guid>
+      <description>As I mentioned, I&amp;rsquo;m planning on doing a bit more development work this year connected to the SWN Festival. The first stage is to get hold of the data associated with the festival in an accessible and machine readable form so it can be used in other apps.
+Unfortunately (but unsurprisingly), being a smallish local festival, there is no API for any of the data. So, getting a list of the bands and their info means we need to resort to web scraping.</description>
+    </item>
+    
+    <item>
+      <title>SWN Festival 2013 - plans</title>
+      <link>/2013/08/11/swn-festival-2013-plans/</link>
+      <pubDate>Sun, 11 Aug 2013 17:15:53 +0000</pubDate>
+      
+      <guid>/2013/08/11/swn-festival-2013-plans/</guid>
+      <description>Last year I had a go at creating a couple of web apps based around the bands playing the SWN Festival here in Cardiff. I love SWN with all my heart, it&amp;rsquo;s a permanent fixture in my calendar and even if (when) I leave Cardiff it&amp;rsquo;ll be the one thing I come back for every year. It&amp;rsquo;s a great way to see and discover new bands, but sometimes the sheer volume of music on offer can be overwhelming.</description>
+    </item>
+    
+    <item>
+      <title>SWN Artist Explorer</title>
+      <link>/2012/10/04/swn-artist-explorer/</link>
+      <pubDate>Thu, 04 Oct 2012 09:48:18 +0000</pubDate>
+      
+      <guid>/2012/10/04/swn-artist-explorer/</guid>
+      <description>It&amp;rsquo;s that time of year again: SWN Festival is once more upon us. It&amp;rsquo;s the highlight of the musical year in Cardiff, and probably the one thing I&amp;rsquo;ll miss about the city when (if?) I leave. In fact, I&amp;rsquo;m pretty certain that even if I left the city I&amp;rsquo;d make the pilgrimage back once a year for SWN because it&amp;rsquo;s just too much fun to miss.
+The lineup this year is another cracking one, but as usual with four days of bands spread across so many venues there are a whole bunch of names that I don&amp;rsquo;t recognise.</description>
+    </item>
+    
+    <item>
+      <title>Truckers of Husk &#43; Gallops &#43; Kutosis Review</title>
+      <link>/2012/03/10/truckers-of-husk-gallops-kutosis-review/</link>
+      <pubDate>Sat, 10 Mar 2012 11:42:44 +0000</pubDate>
+      
+      <guid>/2012/03/10/truckers-of-husk-gallops-kutosis-review/</guid>
+      <description>Last Saturday I went along to The Globe in Roath, accompanied by my excellent musical companion Ms. Jones (and joined later on by our token northener Mark) to watch a number of bands that we&amp;rsquo;d seen before, but in a new setting. This is a review of that what happened there.
+Let&amp;rsquo;s start with the venue, The Globe. The Globe is not the worst venue in Cardiff (Bogiez/Barfly, The SU Great Hall).</description>
+    </item>
+    
+  </channel>
+</rss>

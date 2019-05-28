@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hackathon on Martin Chorley</title>
+    <link>/tags/hackathon/</link>
+    <description>Recent content in Hackathon on Martin Chorley</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Mon, 26 Jan 2015 10:15:16 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/hackathon/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>NHS Hackday 2015</title>
+      <link>/2015/01/26/nhs-hackday-2015/</link>
+      <pubDate>Mon, 26 Jan 2015 10:15:16 +0000</pubDate>
+      
+      <guid>/2015/01/26/nhs-hackday-2015/</guid>
+      <description>This weekend I took part in an incredibly successful NHS hackday, hosted at Cardiff University and organised by Anne Marie Cunningham and James Morgan. We went as a team from the MSc in Computational Journalism, with myself and Glyn attending along with Pooja, Nikita, Annalisa and Charles. At the last-minute I recruited a couple of ringers as well, dragging along Rhys Priestland Dr William Wilberforce Webberley from Comsc and Dr Matthew Williams, previously of this parish.</description>
+    </item>
+    
+    <item>
+      <title>KSRI Services Summer School - Social Computing Theory and Hackathon</title>
+      <link>/2013/09/24/ksri-services-summer-school-social-computing-theory-and-hackathon/</link>
+      <pubDate>Tue, 24 Sep 2013 11:19:20 +0000</pubDate>
+      
+      <guid>/2013/09/24/ksri-services-summer-school-social-computing-theory-and-hackathon/</guid>
+      <description>I was invited by Simon Caton to come to the KSRI Services Summer School, held at KIT in Germany, to help him run a workshop session on Social Computing. We decided to use the session as a crash course in retrieving and manipulating data from Social Media APIs - showing the students the basics, then running a mini &amp;lsquo;hackathon&amp;rsquo; for the students to gain some practical experience.
+I think the session went really well, the students seemed to enjoy it and the feedback was very positive.</description>
+    </item>
+    
+    <item>
+      <title>Open Sauce Hackathon - Post Mortem</title>
+      <link>/2013/04/22/open-sauce-hackathon-post-mortem/</link>
+      <pubDate>Mon, 22 Apr 2013 10:51:12 +0000</pubDate>
+      
+      <guid>/2013/04/22/open-sauce-hackathon-post-mortem/</guid>
+      <description>This weekend saw the second &amp;lsquo;Open Sauce Hackathon&amp;rsquo; run by undergraduate students here in the school. Last years was pretty successful, and they improved upon it this year, pulling in many more sponsors and offering more prizes.
+Unlike last year, when I turned up having already decided with Jon Quinn what we were doing, I went along this year with no real ideas. I had a desire to do something with a map, as I&amp;rsquo;m pretty sure building stuff connected to maps is going to play a big part in work over the next couple of months.</description>
+    </item>
+    
+    <item>
+      <title>Foursquare Hackathon Post Mortem</title>
+      <link>/2011/11/22/foursquare-hackathon-post-mortem/</link>
+      <pubDate>Tue, 22 Nov 2011 10:24:13 +0000</pubDate>
+      
+      <guid>/2011/11/22/foursquare-hackathon-post-mortem/</guid>
+      <description>Note: I wrote this post just after the hackathon, but then forgot to actually publish it! 
+There&amp;rsquo;s a fair amount I learnt from taking part in and helping to organise the foursquare hackathon here at the university that probably deserves its own post. I&amp;rsquo;ll split it into two parts, the taking part and the organisation.
+Organising a hack event There were a couple of things I learnt from helping to organise the event that perhaps weren&amp;rsquo;t clear to begin with:</description>
+    </item>
+    
+    <item>
+      <title>Foursquare Hackathon Cardiff - Day 2</title>
+      <link>/2011/09/19/foursquare-hackathon-cardiff-day-2/</link>
+      <pubDate>Mon, 19 Sep 2011 08:25:15 +0000</pubDate>
+      
+      <guid>/2011/09/19/foursquare-hackathon-cardiff-day-2/</guid>
+      <description>Wow. I thought Saturday was busy, but I was wrong. Saturday was a cake walk compared to the crazy nightmare that was Sunday. The challenge of trying to get something (anything) working before the app submission deadline was incredible. Coding was fast and intense, and required a lot of good communication and fast thinking. Unfortunately we hit a few roadblocks that slowed us down (2 hours debugging problems with django&amp;rsquo;s static file serving really didn&amp;rsquo;t help, neither did jQuery mobile being an absolute pain in the rear end), but by the end of the day we had a nice looking site with some actual working functionality.</description>
+    </item>
+    
+    <item>
+      <title>Foursquare Hackathon Cardiff - Day 1</title>
+      <link>/2011/09/17/foursquare-hackathon-cardiff-day-1/</link>
+      <pubDate>Sat, 17 Sep 2011 19:07:04 +0000</pubDate>
+      
+      <guid>/2011/09/17/foursquare-hackathon-cardiff-day-1/</guid>
+      <description>I was fully intending to try and live-blog the progress of the foursquare hackathon today, even going as far as to install a live blog plugin, but things have been going very quickly and we&amp;rsquo;ve been hitting the coding hard so I just haven&amp;rsquo;t had time!
+We&amp;rsquo;ve managed to get a decent crowd in, a roughly 50:50 split of people we already knew from the School and other people from elsewhere.</description>
+    </item>
+    
+    <item>
+      <title>Foursquare Hackathon</title>
+      <link>/2011/09/14/foursquare-hackathon/</link>
+      <pubDate>Wed, 14 Sep 2011 15:57:16 +0000</pubDate>
+      
+      <guid>/2011/09/14/foursquare-hackathon/</guid>
+      <description>Along with Matthew Williams and Chris Gwilliams I&amp;rsquo;m helping to organise the Cardiff edition of the Foursquare global hackathon this weekend. I&amp;rsquo;m hoping it&amp;rsquo;ll be a pretty good event. Signup&amp;rsquo;s are looking pretty positive and I&amp;rsquo;m hopeful that we&amp;rsquo;ll get some decent apps being created.
+The organising is actually quite fun, but it is remarkable how much there is to do and remember. Thankfully the School of Computer Science &amp;amp; Informatics are being very supportive and allowing us to host it there, which makes things easier.</description>
+    </item>
+    
+  </channel>
+</rss>

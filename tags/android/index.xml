@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Android on Martin Chorley</title>
+    <link>/tags/android/</link>
+    <description>Recent content in Android on Martin Chorley</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Thu, 25 Jul 2013 13:23:14 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/android/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Summer Project update</title>
+      <link>/2013/07/25/summer-project-update/</link>
+      <pubDate>Thu, 25 Jul 2013 13:23:14 +0000</pubDate>
+      
+      <guid>/2013/07/25/summer-project-update/</guid>
+      <description>We are storming along with summer projects now, and starting to see some really good results.
+Liam Turner (who is starting a PhD in the school in October) has been working hard to create a mobile version of the 4SQPersonality app. His work is coming along really well, with a great mobile HTML version now up and running, a native android wrapper working, and an iOS wrapper on its way. With any luck we&amp;rsquo;ll have mobile apps for both major platforms ready to be released before the summer is over.</description>
+    </item>
+    
+    <item>
+      <title>Losing Weight in 2011 continued... Libra</title>
+      <link>/2011/06/08/losing-weight-in-2011-continued...-libra/</link>
+      <pubDate>Wed, 08 Jun 2011 21:41:16 +0000</pubDate>
+      
+      <guid>/2011/06/08/losing-weight-in-2011-continued...-libra/</guid>
+      <description>Another of the very useful apps I&amp;rsquo;ve been using since the start of the &amp;ldquo;New Regime&amp;rdquo; is Libra. It totally makes up for the crappy progress graphs on the MyFitnessPal website or in the mobile app.
+It&amp;rsquo;s an app that has a singular purpose: it&amp;rsquo;s just for tracking weight. But it does it very well. You enter a weight for every day, it works out statistics based on those weights, calculates the trend value for your weight, (so smoothes out daily fluctuations caused by water intake etc), and predicts when you&amp;rsquo;ll hit your target.</description>
+    </item>
+    
+    <item>
+      <title>Losing Weight in 2011 continued... My Fitness Pal</title>
+      <link>/2011/06/07/losing-weight-in-2011-continued...-my-fitness-pal/</link>
+      <pubDate>Tue, 07 Jun 2011 08:01:20 +0000</pubDate>
+      
+      <guid>/2011/06/07/losing-weight-in-2011-continued...-my-fitness-pal/</guid>
+      <description>(The first in a series of posts on apps I&amp;rsquo;ve found useful under &amp;lsquo;the new regime&amp;rsquo;)
+One of the best apps/services I&amp;rsquo;ve found for general fitness and nutrition and weight loss is MyFitnessPal. I&amp;rsquo;m fairly sure I wouldn&amp;rsquo;t have made quite as good progress without it.
+The main selling point of the service is that it allows you to track what you eat and what exercise you do, in order to monitor and help regulate your calorific intake.</description>
+    </item>
+    
+  </channel>
+</rss>

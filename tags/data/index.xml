@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Data on Martin Chorley</title>
+    <link>/tags/data/</link>
+    <description>Recent content in Data on Martin Chorley</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Wed, 02 Nov 2016 20:17:40 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/data/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Scraping the Assembly</title>
+      <link>/2016/11/02/scraping-the-assembly/</link>
+      <pubDate>Wed, 02 Nov 2016 20:17:40 +0000</pubDate>
+      
+      <guid>/2016/11/02/scraping-the-assembly/</guid>
+      <description>M’colleague is currently teaching a first-semester module on Data Journalism to the students on our MSc in Computational and Data Journalism. As part of this, they need to do some sort of data project. One of the students is looking at the expenses of Welsh Assembly Members. These are all freely available online, but not in an easy to manipulate form. According to the Assembly they’d be happy to give the data out as a spreadsheet, if we submitted an FOI.</description>
+    </item>
+    
+    <item>
+      <title>Accessing and Scraping MyFitnessPal Data with Python</title>
+      <link>/2015/02/05/accessing-and-scraping-myfitnesspal-data-with-python/</link>
+      <pubDate>Thu, 05 Feb 2015 11:02:36 +0000</pubDate>
+      
+      <guid>/2015/02/05/accessing-and-scraping-myfitnesspal-data-with-python/</guid>
+      <description>Interesting news this morning that MyFitnessPal has been bought by Under Armour for $475 million. I&amp;rsquo;ve used MFP for many years now, and it was pretty helpful in helping me lose all the excess PhD weight that I&amp;rsquo;d put on, and then maintaining a healthy(ish) lifestyle since 2010.
+News of an acquisition always has me slightly worried though - not for someone else having access to my data, as I&amp;rsquo;ve made my peace with the fact that using a free service generally means that it&amp;rsquo;s me that&amp;rsquo;s being sold.</description>
+    </item>
+    
+    <item>
+      <title>NHS Hackday 2015</title>
+      <link>/2015/01/26/nhs-hackday-2015/</link>
+      <pubDate>Mon, 26 Jan 2015 10:15:16 +0000</pubDate>
+      
+      <guid>/2015/01/26/nhs-hackday-2015/</guid>
+      <description>This weekend I took part in an incredibly successful NHS hackday, hosted at Cardiff University and organised by Anne Marie Cunningham and James Morgan. We went as a team from the MSc in Computational Journalism, with myself and Glyn attending along with Pooja, Nikita, Annalisa and Charles. At the last-minute I recruited a couple of ringers as well, dragging along Rhys Priestland Dr William Wilberforce Webberley from Comsc and Dr Matthew Williams, previously of this parish.</description>
+    </item>
+    
+    <item>
+      <title>CompJ Labs - Postcodes</title>
+      <link>/2015/01/05/compj-labs-postcodes/</link>
+      <pubDate>Mon, 05 Jan 2015 09:27:51 +0000</pubDate>
+      
+      <guid>/2015/01/05/compj-labs-postcodes/</guid>
+      <description>I&amp;rsquo;ve thrown up a post on compj.cs.cf.ac.uk about some work we&amp;rsquo;ve done looking at empty properties in Cardiff. I&amp;rsquo;ll add further posts over the coming weeks about other data analysis we&amp;rsquo;ve done on this topic, and new work looking at the Welsh Assembly.</description>
+    </item>
+    
+    <item>
+      <title>Computational Journalism - &#39;a Manifesto&#39;</title>
+      <link>/2014/10/03/computational-journalism-a-manifesto/</link>
+      <pubDate>Fri, 03 Oct 2014 08:00:04 +0000</pubDate>
+      
+      <guid>/2014/10/03/computational-journalism-a-manifesto/</guid>
+      <description>While Glyn and I have been discussing the new MSc course between ourselves and with others, we have repeatedly come up with the same issues and themes, again and again. As a planning exercise earlier in the summer, we gathered some of these together into a &amp;lsquo;manifesto&amp;rsquo;.
+The manifesto is online on our main &amp;lsquo;Computational Journalism&amp;rsquo; website with a bit of extra commentary.</description>
+    </item>
+    
+    <item>
+      <title>GeoJSON and topoJSON for UK boundaries</title>
+      <link>/2014/09/17/geojson-and-topojson-for-uk-boundaries/</link>
+      <pubDate>Wed, 17 Sep 2014 10:05:37 +0000</pubDate>
+      
+      <guid>/2014/09/17/geojson-and-topojson-for-uk-boundaries/</guid>
+      <description>I&amp;rsquo;ve just put an archive online containing GeoJSON and topoJSON for UK boundary data. It&amp;rsquo;s all stored on Github, with a viewer and download site hosted on Github pages.
+   Browser for the UK topoJSON stored in the Github repository    The data is all created from shapefiles released by the Office of National Statistics, Ordnance Survey and National Records Scotland, all under the Open Government and OS OpenData licences.</description>
+    </item>
+    
+    <item>
+      <title>CCGs and WPCs via the medium of OAs</title>
+      <link>/2014/09/15/ccgs-and-wpcs-via-the-medium-of-oas/</link>
+      <pubDate>Mon, 15 Sep 2014 14:22:18 +0000</pubDate>
+      
+      <guid>/2014/09/15/ccgs-and-wpcs-via-the-medium-of-oas/</guid>
+      <description>As I was eating lunch this afternoon, I spotted a conversation between @JoeReddington and @MySociety whizz past in Tweetdeck. I traced the conversation back to the beginning and found this request for data:
+I&amp;#39;m looking for a dataset that shows which UK constituencies are in which NHS trust areas. Anyone?
+&amp;mdash; retired account (@retired10072015) September 14, 2014 
+I&amp;rsquo;ve been doing a lot of playing with geographic data recently while preparing to release a site making it easier to get GeoJSON boundaries of various areas in the UK.</description>
+    </item>
+    
+    <item>
+      <title>The Graphical Web 2014</title>
+      <link>/2014/09/04/the-graphical-web-2014/</link>
+      <pubDate>Thu, 04 Sep 2014 10:50:36 +0000</pubDate>
+      
+      <guid>/2014/09/04/the-graphical-web-2014/</guid>
+      <description>photo of the author outside Winchester cathedral    Last week I had a lovely time down in Winchester with m&amp;rsquo;colleague, attending The Graphical Web 2014. This year the theme was &amp;lsquo;Visual Storytelling&amp;rsquo;, so I&amp;rsquo;d gone along to see what new things we could learn about visualisation to include in the MSc in Computational Journalism. We&amp;rsquo;d also already had a few conversations about the course with people who were going to be at the conference, so we were planning to take the opportunity to chat in person about their involvement.</description>
+    </item>
+    
+    <item>
+      <title>SWN Festival 2013 plans – part 1: the data (2!)</title>
+      <link>/2013/08/18/swn-festival-2013-plans-part-1-the-data-2/</link>
+      <pubDate>Sun, 18 Aug 2013 11:36:21 +0000</pubDate>
+      
+      <guid>/2013/08/18/swn-festival-2013-plans-part-1-the-data-2/</guid>
+      <description>In the previous post, I used python and BeautifulSoup to grab the list of artists appearing at SWN Festival 2013, and to scrape their associated soundcloud/twitter/facebook/youtube links (where available).
+However, there are more places to find music online than just those listed on the festival site, and some of those extra sources include additional data that I want to collect, so now we need to search these other sources for the artists.</description>
+    </item>
+    
+    <item>
+      <title>SWN Festival 2013 plans -  part 1: the data</title>
+      <link>/2013/08/14/swn-festival-2013-plans-part-1-the-data/</link>
+      <pubDate>Wed, 14 Aug 2013 12:38:53 +0000</pubDate>
+      
+      <guid>/2013/08/14/swn-festival-2013-plans-part-1-the-data/</guid>
+      <description>As I mentioned, I&amp;rsquo;m planning on doing a bit more development work this year connected to the SWN Festival. The first stage is to get hold of the data associated with the festival in an accessible and machine readable form so it can be used in other apps.
+Unfortunately (but unsurprisingly), being a smallish local festival, there is no API for any of the data. So, getting a list of the bands and their info means we need to resort to web scraping.</description>
+    </item>
+    
+    <item>
+      <title>BoxUK &#34;For the Social Good&#34; Hackday</title>
+      <link>/2011/11/22/boxuk-for-the-social-good-hackday/</link>
+      <pubDate>Tue, 22 Nov 2011 10:51:04 +0000</pubDate>
+      
+      <guid>/2011/11/22/boxuk-for-the-social-good-hackday/</guid>
+      <description>Yesterday I attended the &amp;ldquo;For the Social Good&amp;rdquo; hackday, organised by BoxUK and held at the Students Union at Cardiff University. As you may have gathered from the title, it was a hackday themed around creating apps that had some benefit to society. The event ran from 10am to 10pm, so it was a fairly short hack event compared to some, which had a big influence on what could be done during the time available.</description>
+    </item>
+    
+    <item>
+      <title>Logging in to websites with python</title>
+      <link>/2011/06/09/logging-in-to-websites-with-python/</link>
+      <pubDate>Thu, 09 Jun 2011 14:58:03 +0000</pubDate>
+      
+      <guid>/2011/06/09/logging-in-to-websites-with-python/</guid>
+      <description>As previously explained, I needed a python script to login to a website so I could access data. There&amp;rsquo;s loads of examples out on the web of how to do this, my solution (mashed together from many examples) is described below. For the whole script, jump to the end.
+Firstly, we need to set some simple variables about the website we&amp;rsquo;re trying to log in to. Obviously, I&amp;rsquo;m trying to login to myfitnesspal, but this process should work with most websites that use a simple form + cookie based login process.</description>
+    </item>
+    
+    <item>
+      <title>How to access and download your Google Web History with wget</title>
+      <link>/2011/06/05/how-to-access-and-download-your-google-web-history-with-wget/</link>
+      <pubDate>Sun, 05 Jun 2011 22:57:04 +0000</pubDate>
+      
+      <guid>/2011/06/05/how-to-access-and-download-your-google-web-history-with-wget/</guid>
+      <description>Google Web History has now been recording all of the searches I made in Google since about 2005. Obviously 6 years of search queries and results is a phenomenal amount of data, and it would be nice to get hold of it all to see what I could make of it. Fortunately Google make the data available as an RSS feed, although it&amp;rsquo;s not particularly well documented.
+(caution - many &amp;lsquo;ifs&amp;rsquo; coming up next)</description>
+    </item>
+    
+  </channel>
+</rss>
