@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Psychology on Martin Chorley</title>
+    <link>/tags/psychology/</link>
+    <description>Recent content in Psychology on Martin Chorley</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Tue, 27 Jan 2015 11:00:12 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/psychology/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Personality and Places</title>
+      <link>/2015/01/27/personality-and-places/</link>
+      <pubDate>Tue, 27 Jan 2015 11:00:12 +0000</pubDate>
+      
+      <guid>/2015/01/27/personality-and-places/</guid>
+      <description>Our paper examining the link between individual personality and the places people visit has just been published in Computers in Human Behavior. It&amp;rsquo;s open access, so you can go read it for free, now! 
+In an experiment we ran previously, we asked users of Foursquare to take a personality test and give us access to their checkin history. The personality test gives us a measure of how each person scores for five different factors: Openness, Conscientiousness, Extraversion, Agreeableness and Neuroticism.</description>
+    </item>
+    
+    <item>
+      <title>Extended Mind Crowdsourcing</title>
+      <link>/2014/12/15/extended-mind-crowdsourcing/</link>
+      <pubDate>Mon, 15 Dec 2014 13:37:50 +0000</pubDate>
+      
+      <guid>/2014/12/15/extended-mind-crowdsourcing/</guid>
+      <description>Update 13/01/15: the paper containing the research described below is currently available from the HICSS website
+This post is one I&amp;rsquo;m cross-posting both here and on the MobiSoc blog. Here, because it&amp;rsquo;s my personal translation of one of our latest research papers, and there because it&amp;rsquo;s a very good paper mostly written and driven by Roger Whitaker, so deserves an &amp;lsquo;official&amp;rsquo; blog post!
+A lot of use is made of Crowdsourcing in both business and academia.</description>
+    </item>
+    
+    <item>
+      <title>How do people decide whether or not to read a tweet? </title>
+      <link>/2014/11/04/how-do-people-decide-whether-or-not-to-read-a-tweet/</link>
+      <pubDate>Tue, 04 Nov 2014 12:31:40 +0000</pubDate>
+      
+      <guid>/2014/11/04/how-do-people-decide-whether-or-not-to-read-a-tweet/</guid>
+      <description>It turns out that an existing relationship with the author of the tweet is one of the main factors influencing how someone decides whether or not to read a tweet. At the same time, a large number associated with a tweet can also make the tweet more attractive to readers.
+Our latest Open Access research has discovered how much effect the information about a tweet has on whether people decide to read it or not.</description>
+    </item>
+    
+    <item>
+      <title>Foursquare Personality Experiment</title>
+      <link>/2012/11/20/foursquare-personality-experiment/</link>
+      <pubDate>Tue, 20 Nov 2012 09:20:32 +0000</pubDate>
+      
+      <guid>/2012/11/20/foursquare-personality-experiment/</guid>
+      <description>Today we are finally starting to promote our latest experiment. It&amp;rsquo;s been online for about a month, but we haven&amp;rsquo;t told anyone about it while we&amp;rsquo;ve been finishing up the Year 2 deliverables for Recognition (the review is in a couple of weeks - fingers crossed!) Now however I can start publicly talking about it and encouraging people to take part and get involved!
+We&amp;rsquo;re calling it the Foursquare Personality Experiment, and it&amp;rsquo;s available on the School of Computer Science &amp;amp; Informatics&amp;rsquo; website here:</description>
+    </item>
+    
+  </channel>
+</rss>

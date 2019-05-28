@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Decision Making on Martin Chorley</title>
+    <link>/tags/decision-making/</link>
+    <description>Recent content in Decision Making on Martin Chorley</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Tue, 04 Nov 2014 12:31:40 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/decision-making/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>How do people decide whether or not to read a tweet? </title>
+      <link>/2014/11/04/how-do-people-decide-whether-or-not-to-read-a-tweet/</link>
+      <pubDate>Tue, 04 Nov 2014 12:31:40 +0000</pubDate>
+      
+      <guid>/2014/11/04/how-do-people-decide-whether-or-not-to-read-a-tweet/</guid>
+      <description>It turns out that an existing relationship with the author of the tweet is one of the main factors influencing how someone decides whether or not to read a tweet. At the same time, a large number associated with a tweet can also make the tweet more attractive to readers.
+Our latest Open Access research has discovered how much effect the information about a tweet has on whether people decide to read it or not.</description>
+    </item>
+    
+  </channel>
+</rss>

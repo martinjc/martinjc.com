@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Wowmom 2011 on Martin Chorley</title>
+    <link>/tags/wowmom-2011/</link>
+    <description>Recent content in Wowmom 2011 on Martin Chorley</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Thu, 02 Jun 2011 09:13:28 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/wowmom-2011/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Unexpected</title>
+      <link>/2011/06/02/unexpected/</link>
+      <pubDate>Thu, 02 Jun 2011 09:13:28 +0000</pubDate>
+      
+      <guid>/2011/06/02/unexpected/</guid>
+      <description>So I mentioned something about keeping busy? Yeah, well&amp;hellip;.
+A while back I spent a couple of months playing around with an idea that we thought could make an interesting bit of research. It started with a simple modification to a protocol proposed by someone else (Gavidia et al, A gossip-based distributed news service for wireless mesh networks), where we added some elements of self-adaptation and cooperation. As things sometimes go, the results were quite good but not outstanding and we had more pressing things to look at, so we dropped it and moved onto something else.</description>
+    </item>
+    
+  </channel>
+</rss>

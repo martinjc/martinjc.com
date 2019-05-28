@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Augmented Conversation on Martin Chorley</title>
+    <link>/tags/augmented-conversation/</link>
+    <description>Recent content in Augmented Conversation on Martin Chorley</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Thu, 04 Aug 2011 09:52:23 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/augmented-conversation/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>More Augmented Conversation</title>
+      <link>/2011/08/04/more-augmented-conversation/</link>
+      <pubDate>Thu, 04 Aug 2011 09:52:23 +0000</pubDate>
+      
+      <guid>/2011/08/04/more-augmented-conversation/</guid>
+      <description>Another update on the summer project? Already? Yes.
+The project is really cracking on. We&amp;rsquo;re two weeks from the end and beginning to see the results roll in, every meeting brings a new version of the software with more functionality. Nick has successfully written a nice framework that allows us to input conversations and automatically retrieve search results based on the topics of those conversations. Even the voice input works (almost) and we&amp;rsquo;ve got enough time to try and move on to some content extraction ideas.</description>
+    </item>
+    
+    <item>
+      <title>Curop Project</title>
+      <link>/2011/06/14/curop-project/</link>
+      <pubDate>Tue, 14 Jun 2011 09:14:01 +0000</pubDate>
+      
+      <guid>/2011/06/14/curop-project/</guid>
+      <description>Some excellent news yesterday as we&amp;rsquo;ve heard that we&amp;rsquo;ve got the CUROP funding for the summer project that I previously mentioned.
+All being well, it should start within the next couple of weeks, so I&amp;rsquo;ll update with the progress once there is some!</description>
+    </item>
+    
+    <item>
+      <title>Summer project</title>
+      <link>/2011/06/03/summer-project/</link>
+      <pubDate>Fri, 03 Jun 2011 09:52:48 +0000</pubDate>
+      
+      <guid>/2011/06/03/summer-project/</guid>
+      <description>Over the summer, Ian and I are going to be supervising a summer project. We&amp;rsquo;re going to get a 2nd year undergraduate student for an 8 week project. I&amp;rsquo;ve stuck up a page about it here, and will post whenever there&amp;rsquo;s something interesting to see.</description>
+    </item>
+    
+  </channel>
+</rss>

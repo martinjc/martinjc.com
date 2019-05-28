@@ -1,0 +1,12 @@
+<h2>Journal Articles</h2>
+{{ range ((where $.Site.Data.pub.references "type" "article-journal") sort $.Site.Data.pub.references first 1 .issued "year")}}
+{{- partial "reference.html" . -}}
+{{ end }}
+<h2>Conference Publications</h2>
+{{ range where $.Site.Data.pub.references "type" "paper-conference"}}
+{{- partial "reference.html" . -}}
+{{ end }}
+<h2>Book Chapters</h2>
+{{ range where $.Site.Data.pub.references "type" "chapter"}}
+{{- partial "reference.html" . -}}
+{{ end }}

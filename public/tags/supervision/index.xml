@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Supervision on Martin Chorley</title>
+    <link>/tags/supervision/</link>
+    <description>Recent content in Supervision on Martin Chorley</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Thu, 25 Jul 2013 13:23:14 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/supervision/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Summer Project update</title>
+      <link>/2013/07/25/summer-project-update/</link>
+      <pubDate>Thu, 25 Jul 2013 13:23:14 +0000</pubDate>
+      
+      <guid>/2013/07/25/summer-project-update/</guid>
+      <description>We are storming along with summer projects now, and starting to see some really good results.
+Liam Turner (who is starting a PhD in the school in October) has been working hard to create a mobile version of the 4SQPersonality app. His work is coming along really well, with a great mobile HTML version now up and running, a native android wrapper working, and an iOS wrapper on its way. With any luck we&amp;rsquo;ll have mobile apps for both major platforms ready to be released before the summer is over.</description>
+    </item>
+    
+    <item>
+      <title>Summer Projects</title>
+      <link>/2012/06/26/summer-projects/</link>
+      <pubDate>Tue, 26 Jun 2012 11:49:30 +0000</pubDate>
+      
+      <guid>/2012/06/26/summer-projects/</guid>
+      <description>Both of the summer projects that I&amp;rsquo;m supervising with Walter Colombo have now started, with two students joining us for 8 weeks over summer to gain some experience of the research environment and work on some (hopefully) interesting projects.
+One of our students (James) is investigating the ranking of content on Twitter by pairwise comparison. He&amp;rsquo;s currently building a website to allow comparison of tweets and hopefully we&amp;rsquo;ll be able to get enough people to have a go at it that we can gather a large number of ratings of tweets.</description>
+    </item>
+    
+    <item>
+      <title>More Augmented Conversation</title>
+      <link>/2011/08/04/more-augmented-conversation/</link>
+      <pubDate>Thu, 04 Aug 2011 09:52:23 +0000</pubDate>
+      
+      <guid>/2011/08/04/more-augmented-conversation/</guid>
+      <description>Another update on the summer project? Already? Yes.
+The project is really cracking on. We&amp;rsquo;re two weeks from the end and beginning to see the results roll in, every meeting brings a new version of the software with more functionality. Nick has successfully written a nice framework that allows us to input conversations and automatically retrieve search results based on the topics of those conversations. Even the voice input works (almost) and we&amp;rsquo;ve got enough time to try and move on to some content extraction ideas.</description>
+    </item>
+    
+    <item>
+      <title>CUROP summer project update</title>
+      <link>/2011/07/12/curop-summer-project-update/</link>
+      <pubDate>Tue, 12 Jul 2011 14:04:10 +0000</pubDate>
+      
+      <guid>/2011/07/12/curop-summer-project-update/</guid>
+      <description>I figure it&amp;rsquo;s about time I posted an update on the summer project that myself and Ian are supervising. Our summer student Nick is now two weeks into the project and seems to be getting to grips nicely with the problem. He also seems to be coping pretty well with two novice supervisors babbling away at him whenever we meet up! If he leaves the office without being completely overwhelmed with information I think it&amp;rsquo;s been a successful meeting.</description>
+    </item>
+    
+    <item>
+      <title>Curop Project</title>
+      <link>/2011/06/14/curop-project/</link>
+      <pubDate>Tue, 14 Jun 2011 09:14:01 +0000</pubDate>
+      
+      <guid>/2011/06/14/curop-project/</guid>
+      <description>Some excellent news yesterday as we&amp;rsquo;ve heard that we&amp;rsquo;ve got the CUROP funding for the summer project that I previously mentioned.
+All being well, it should start within the next couple of weeks, so I&amp;rsquo;ll update with the progress once there is some!</description>
+    </item>
+    
+    <item>
+      <title>Summer project</title>
+      <link>/2011/06/03/summer-project/</link>
+      <pubDate>Fri, 03 Jun 2011 09:52:48 +0000</pubDate>
+      
+      <guid>/2011/06/03/summer-project/</guid>
+      <description>Over the summer, Ian and I are going to be supervising a summer project. We&amp;rsquo;re going to get a 2nd year undergraduate student for an 8 week project. I&amp;rsquo;ve stuck up a page about it here, and will post whenever there&amp;rsquo;s something interesting to see.</description>
+    </item>
+    
+  </channel>
+</rss>

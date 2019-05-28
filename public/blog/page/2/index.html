@@ -1,0 +1,950 @@
+<!DOCTYPE html>
+<html><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#b100b2">
+    <meta name="theme-color" content="#b100b2">
+
+    <meta property="og:url" content="https://martinjc.com/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Martin Chorley">
+    <meta property="og:site_name" content="Martin Chorley">
+    <meta property="og:locale" content="en_GB">
+    <meta property="article:author" content="Martin Chorley">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:creator" content="@martinjc">
+    <meta name="twitter:url" content="https://martinjc.com">
+    <meta name="twitter:title" content="Martin Chorley">
+
+    <link rel="icon" href="/img/favicon.png">
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Scope+One" rel="stylesheet">
+    <link rel="stylesheet" href="/css/main.css">
+</head><body><header>
+    <div class="social">
+        <ul>
+            <li><a href="https://www.twitter.com/martinjc" class="icon twitter" title="Twitter"><svg viewBox="0 0 512 512">
+                        <path d="M419.6 168.6c-11.7 5.2-24.2 8.7-37.4 10.2 13.4-8.1 23.8-20.8 28.6-36 -12.6 7.5-26.5 12.9-41.3 15.8 -11.9-12.6-28.8-20.6-47.5-20.6 -42 0-72.9 39.2-63.4 79.9 -54.1-2.7-102.1-28.6-134.2-68 -17 29.2-8.8 67.5 20.1 86.9 -10.7-0.3-20.7-3.3-29.5-8.1 -0.7 30.2 20.9 58.4 52.2 64.6 -9.2 2.5-19.2 3.1-29.4 1.1 8.3 25.9 32.3 44.7 60.8 45.2 -27.4 21.4-61.8 31-96.4 27 28.8 18.5 63 29.2 99.8 29.2 120.8 0 189.1-102.1 185-193.6C399.9 193.1 410.9 181.7 419.6 168.6z" /></svg>
+                    </a></li>
+            <li><a href="mailto:ChorleyMJ@Cardiff.ac.uk" class="icon email" title="Email"><svg viewBox="0 0 512 512">
+                        <path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z" /></svg>
+                    </a></li>
+            <li><a href="https://www.facebook.com/martin.chorley" class="icon facebook" title="Facebook"><svg viewBox="0 0 512 512">
+                        <path d="M211.9 197.4h-36.7v59.9h36.7V433.1h70.5V256.5h49.2l5.2-59.1h-54.4c0 0 0-22.1 0-33.7 0-13.9 2.8-19.5 16.3-19.5 10.9 0 38.2 0 38.2 0V82.9c0 0-40.2 0-48.8 0 -52.5 0-76.1 23.1-76.1 67.3C211.9 188.8 211.9 197.4 211.9 197.4z" /></svg>
+                    </a></li>
+            <li><a href="https://www.github.com/martinjc" class="icon github" title="GitHub"><svg viewBox="0 0 512 512">
+                        <path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z" /></svg>
+                    </a></li>
+            <li><a href="https://www.instagram.com/martinjam" class="icon instagram" title="Instagram"><svg viewBox="0 0 512 512">
+                        <g>
+                            <path d="M256 109.3c47.8 0 53.4 0.2 72.3 1 17.4 0.8 26.9 3.7 33.2 6.2 8.4 3.2 14.3 7.1 20.6 13.4 6.3 6.3 10.1 12.2 13.4 20.6 2.5 6.3 5.4 15.8 6.2 33.2 0.9 18.9 1 24.5 1 72.3s-0.2 53.4-1 72.3c-0.8 17.4-3.7 26.9-6.2 33.2 -3.2 8.4-7.1 14.3-13.4 20.6 -6.3 6.3-12.2 10.1-20.6 13.4 -6.3 2.5-15.8 5.4-33.2 6.2 -18.9 0.9-24.5 1-72.3 1s-53.4-0.2-72.3-1c-17.4-0.8-26.9-3.7-33.2-6.2 -8.4-3.2-14.3-7.1-20.6-13.4 -6.3-6.3-10.1-12.2-13.4-20.6 -2.5-6.3-5.4-15.8-6.2-33.2 -0.9-18.9-1-24.5-1-72.3s0.2-53.4 1-72.3c0.8-17.4 3.7-26.9 6.2-33.2 3.2-8.4 7.1-14.3 13.4-20.6 6.3-6.3 12.2-10.1 20.6-13.4 6.3-2.5 15.8-5.4 33.2-6.2C202.6 109.5 208.2 109.3 256 109.3M256 77.1c-48.6 0-54.7 0.2-73.8 1.1 -19 0.9-32.1 3.9-43.4 8.3 -11.8 4.6-21.7 10.7-31.7 20.6 -9.9 9.9-16.1 19.9-20.6 31.7 -4.4 11.4-7.4 24.4-8.3 43.4 -0.9 19.1-1.1 25.2-1.1 73.8 0 48.6 0.2 54.7 1.1 73.8 0.9 19 3.9 32.1 8.3 43.4 4.6 11.8 10.7 21.7 20.6 31.7 9.9 9.9 19.9 16.1 31.7 20.6 11.4 4.4 24.4 7.4 43.4 8.3 19.1 0.9 25.2 1.1 73.8 1.1s54.7-0.2 73.8-1.1c19-0.9 32.1-3.9 43.4-8.3 11.8-4.6 21.7-10.7 31.7-20.6 9.9-9.9 16.1-19.9 20.6-31.7 4.4-11.4 7.4-24.4 8.3-43.4 0.9-19.1 1.1-25.2 1.1-73.8s-0.2-54.7-1.1-73.8c-0.9-19-3.9-32.1-8.3-43.4 -4.6-11.8-10.7-21.7-20.6-31.7 -9.9-9.9-19.9-16.1-31.7-20.6 -11.4-4.4-24.4-7.4-43.4-8.3C310.7 77.3 304.6 77.1 256 77.1L256 77.1z" />
+                            <path d="M256 164.1c-50.7 0-91.9 41.1-91.9 91.9s41.1 91.9 91.9 91.9 91.9-41.1 91.9-91.9S306.7 164.1 256 164.1zM256 315.6c-32.9 0-59.6-26.7-59.6-59.6s26.7-59.6 59.6-59.6 59.6 26.7 59.6 59.6S288.9 315.6 256 315.6z" />
+                            <circle cx="351.5" cy="160.5" r="21.5" />
+                        </g>
+                    </svg>
+                    </a></li>
+            <li><a href="https://www.last.fm/user/takitomouse" class="icon lastfm" title="Last.fm"><svg viewBox="0 0 512 512">
+                        <path d="M230.104 336.568l-13.607-36.988c0 0-22.11 24.66-55.268 24.66 -29.341 0-50.172-25.512-50.172-66.328 0-52.293 26.359-71.001 52.297-71.001 37.412 0 49.316 24.234 59.522 55.273l13.607 42.518c13.603 41.236 39.113 74.402 112.666 74.402 52.727 0 88.437-16.155 88.437-58.672 0-34.438-19.56-52.297-56.125-60.802l-27.209-5.951c-18.707-4.252-24.233-11.906-24.233-24.659 0-14.456 11.478-22.96 30.189-22.96 20.406 0 31.458 7.653 33.162 25.935l42.516-5.103c-3.402-38.263-29.761-53.996-73.127-53.996 -38.266 0-75.68 14.456-75.68 60.799 0 28.912 14.029 47.197 49.315 55.697l28.916 6.801c21.683 5.104 28.908 14.031 28.908 26.363 0 15.73-15.305 22.107-44.218 22.107 -42.941 0-60.794-22.534-70.999-53.574l-14.032-42.513c-17.854-55.271-46.342-75.68-102.892-75.68 -62.499-0.001-95.663 39.538-95.663 106.715 0 64.628 33.164 99.489 92.689 99.489C207.141 359.1 230.104 336.568 230.104 336.568L230.104 336.568z" /></svg>
+                    </a></li>
+            <li><a href="https://uk.linkedin.com/in/martinchorley" class="icon linkedin" title="LinkedIn"><svg viewBox="0 0 512 512">
+                        <path d="M186.4 142.4c0 19-15.3 34.5-34.2 34.5 -18.9 0-34.2-15.4-34.2-34.5 0-19 15.3-34.5 34.2-34.5C171.1 107.9 186.4 123.4 186.4 142.4zM181.4 201.3h-57.8V388.1h57.8V201.3zM273.8 201.3h-55.4V388.1h55.4c0 0 0-69.3 0-98 0-26.3 12.1-41.9 35.2-41.9 21.3 0 31.5 15 31.5 41.9 0 26.9 0 98 0 98h57.5c0 0 0-68.2 0-118.3 0-50-28.3-74.2-68-74.2 -39.6 0-56.3 30.9-56.3 30.9v-25.2H273.8z" /></svg>
+                    </a></li>
+        </ul>
+    </div>
+
+
+    <nav>
+        <ul>|
+            <li><a href="/">&nbsp;home</a>&nbsp;|</li>
+            <li><a href="/blog">&nbsp;blog</a>&nbsp;|</li>
+            <li><a href="/teaching">&nbsp;teaching</a>&nbsp;|</li>
+            <li><a href="/research">&nbsp;research</a>&nbsp;|</li>
+            <li><a href="/publications">&nbsp;publications</a>&nbsp;|</li>
+        </ul>
+    </nav>
+</header><div id="content">
+<main>
+    
+
+<ul class="pagination">
+    
+    <li class="page-item">
+        <a href="/blog/" class="page-link" aria-label="First"><span aria-hidden="true">&laquo;&laquo;</span></a>
+    </li>
+    
+    <li class="page-item">
+    <a href="/blog/" class="page-link" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a>
+    </li>
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    <li class="page-item"><a class="page-link" href="/blog/">1</a></li>
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    <li class="page-item active"><a class="page-link" href="/blog/page/2/">2</a></li>
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    <li class="page-item"><a class="page-link" href="/blog/page/3/">3</a></li>
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    <li class="page-item disabled"><span aria-hidden="true">&nbsp;&hellip;&nbsp;</span></li>
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    <li class="page-item"><a class="page-link" href="/blog/page/11/">11</a></li>
+    
+    
+    <li class="page-item">
+    <a href="/blog/page/3/" class="page-link" aria-label="Next"><span aria-hidden="true">&raquo;</span></a>
+    </li>
+    
+    <li class="page-item">
+        <a href="/blog/page/11/" class="page-link" aria-label="Last"><span aria-hidden="true">&raquo;&raquo;</span></a>
+    </li>
+    
+</ul>
+
+    
+    <article class="blogpost">
+        <header>
+            <h1> <a href="/2016/08/01/sustainable-software-institute-research-data-visualisation-workshop/">
+                    Sustainable Software Institute – Research Data Visualisation Workshop
+                </a></h1>
+            <p class="author">
+                <span class="date">Monday, Aug 1, 2016</span>
+            </p>
+        </header>
+        <div class="content">
+            <p>Last week I  gave a talk and delivered a hands on session at the Sustainable Software Institute’s ‘<a href="https://www.software.ac.uk/rdvw">Research Data Visualisation Workshop</a>‘ which was held at Manchester University. It was a really engaging event, with a lot of good discussion on the issues surrounding data visualisation.</p>
+
+<p><a href="http://www.iidi.napier.ac.uk/c/people/peopleid/41">Professor Jessie Kennedy</a> from Edinburgh Napier University gave a great keynote looking at a some key design principles in visualisation, including a number of studies I hadn’t seen before but will definitely be including in my teaching in future.</p>
+
+<p>I gave a talk on ‘Human Science Visualisation’ which really focused on a couple of key issues. Firstly, I tried to illustrate the importance of interactivity in complex visualisations. I then talked about how we as academic researchers need publish our interactive visualisations in posterity, and how we should press academic publishers to help us communicate our data to readers. Finally, I wanted to point people towards the excellent visualisation work being done by data journalists, and that the newsrooms are an excellent source of ideas and tips for data visualisation. The slides for my talk are here. It’s the first time I’ve spoken about visualisation outside of the classroom, and it was a really fun talk to give.</p>
+
+<p>We also had two great talks from <a href="https://sites.google.com/site/chbergma/">Dr Christina Bergmann</a> and <a href="http://andysouth.co.uk/">Dr Andy South</a>, focusing on issues of biological visualisation and mapping respectively. All the talks generated some good discussion both in the room and online, which was fantastic to see.</p>
+
+<p>In the afternoon I lead a hands on session looking at visualising data using d3. This was the first time I’d taught a session using d3 v4, which made things slightly interesting. I’m not fully up to speed with all the areas of the API that have changed, so getting the live coding right first time was a bit tricky, but I think I managed. Interestingly, I feel that the changes made to the .data(), .exit(), .enter(), update cycle as discussed in Mike’s “<a href="https://medium.com/@mbostock/what-makes-software-good-943557f8a488">What Makes Software Good</a>” make a lot more sense from a teaching perspective. The addition of .merge() in particular helps a great deal. As you might expect from a d3 workshop that lasted a mere three hours, I’m not entirely convinced that everybody ‘got’ it, but I think a most went away satisfied.</p>
+
+<p>Overall it was a very successful workshop. <a href="http://rgaiacs.com/">Raniere Silva</a> did an excellent job putting it together and running the day, and I really enjoyed it. I’m looking forward to seeing what other people thought about it too.</p>
+
+        </div>
+    </article>
+    
+    <article class="blogpost">
+        <header>
+            <h1> <a href="/2015/07/13/quick-update.../">
+                    Quick Update...
+                </a></h1>
+            <p class="author">
+                <span class="date">Monday, Jul 13, 2015</span>
+            </p>
+        </header>
+        <div class="content">
+            
+
+<p>Been a bit quiet here recently. It&rsquo;s been a very busy few months. I&rsquo;ve got a few projects and thoughts that I&rsquo;ll be posting more on in the next couple of weeks, but I figured it was worth a quick update on what&rsquo;s been going on, and what I&rsquo;ve been up to.</p>
+
+<h3 id="msc-computational-journalism">MSc Computational Journalism</h3>
+
+<p>We have finished the taught part of the MSc, and we&rsquo;re getting well into the dissertation phase for the first cohort of our students. It&rsquo;s been a really good first year, and I&rsquo;ll be posting a debrief and some thoughts on the next year sometime over summer.</p>
+
+<h3 id="bardiff">BarDiff</h3>
+
+<p>I&rsquo;ve launched a <a href="http://bardiff.martinjc.com">data dashboard thing for beer drinking in Cardiff</a>. Powered by <a href="http://www.untappd.com">Untappd</a> checkins, it&rsquo;s providing (I think) a fairly interesting overview of the city. I&rsquo;ve got some ideas for some better visualisations, but for now it&rsquo;s nicely ticking over. Plus it&rsquo;s getting some decent interaction on the social medias</p>
+
+<h3 id="academia">Academia</h3>
+
+<p>The usual ticking over of academia continues - journal reviews, conference reviews,  a book chapter to write, paper deadlines coming and going. It&rsquo;s the same old same old&hellip;.</p>
+
+<h3 id="teaching">Teaching</h3>
+
+<p>I&rsquo;ve started on my teaching qualification (<a href="http://www.cardiff.ac.uk/pcutl/">PgCUTL</a>). The first module portfolio was submitted a couple of weeks ago, and results are due any day now (fingers crossed). I&rsquo;ve also got a few thoughts on the recently announced TEF that I&rsquo;ll be putting up soon, and some things on employability&hellip;</p>
+
+<h3 id="and-finally">and finally&hellip;</h3>
+
+<p>The reason I&rsquo;ve not posted in a while:</p>
+
+
+
+
+
+
+
+
+
+
+<figure>
+    <img src="/2015/07/13/quick-update.../11325423_448026158711440_20867902_n-1024x1024.jpg" width="1024" height="1024" alt="Arthur!">
+    <figcaption>
+        <small>
+            Arthur!
+        </small>
+    </figcaption>
+</figure>
+
+<p>My son, Arthur James Chorley-Jones was born on 13th May 2015. He&rsquo;s amazing, I think he&rsquo;s the best thing that has ever happened, and since he&rsquo;s been around there has not been a huge amount of time for blogging, side-projects, and other such things. Which is ace.</p>
+
+        </div>
+    </article>
+    
+    <article class="blogpost">
+        <header>
+            <h1> <a href="/2015/02/05/accessing-and-scraping-myfitnesspal-data-with-python/">
+                    Accessing and Scraping MyFitnessPal Data with Python
+                </a></h1>
+            <p class="author">
+                <span class="date">Thursday, Feb 5, 2015</span>
+            </p>
+        </header>
+        <div class="content">
+            <p>Interesting news this morning that MyFitnessPal has been bought by Under Armour for  $475 million. I&rsquo;ve used MFP for many years now, and it was pretty helpful in helping me lose all the excess PhD weight that I&rsquo;d put on, and then maintaining a healthy(ish) lifestyle since 2010.</p>
+
+<p>News of an acquisition always has me slightly worried though - not for someone else having access to my data, as I&rsquo;ve made my peace with the fact that using a free service generally means that it&rsquo;s me that&rsquo;s being sold. Giving away my data is the cost of doing business. Rather, it worries me that I may lose access to all the data I&rsquo;ve collected. I have no idea what Under Armour intend for the service in the long run, and while its likely that MFP will continue with business as usual for the foreseeable, it&rsquo;s always worth having a backup of your data.</p>
+
+<p><a href="/2011/06/09/logging-in-to-websites-with-python/">A few years ago, I wrote a couple of python scripts</a> to back up data from MFP and then extract the food and exercise info from the raw HTML. These scripts use Python and Beautiful Soup to do a login to MFP, then go back through your diary history and save all the raw HTML pages, essentially scraping your data.</p>
+
+<p>I came to run them this morning and found they needed a couple of changes to deal with site updates. I&rsquo;ve made the necessary updates and the full code for all the scripts is <a href="https://github.com/martinjc/mfp-scraper">available on GitHub</a>. It&rsquo;s not great, but it works. The code is Python 2 and requires BeautifulSoup and Matplotlib (if you want to use generate_plots.py).</p>
+
+        </div>
+    </article>
+    
+    <article class="blogpost">
+        <header>
+            <h1> <a href="/2015/01/27/personality-and-places/">
+                    Personality and Places
+                </a></h1>
+            <p class="author">
+                <span class="date">Tuesday, Jan 27, 2015</span>
+            </p>
+        </header>
+        <div class="content">
+            <p><strong><a href="http://www.sciencedirect.com/science/article/pii/S0747563214007559">Our paper</a> examining the link between <a href="/2012/11/20/foursquare-personality-experiment/">individual personality and the places people visit</a> has just been published in <a href="http://www.journals.elsevier.com/computers-in-human-behavior/">Computers in Human Behavior</a>. It&rsquo;s open access, so you can <a href="http://dx.doi.org/10.1016/j.chb.2014.12.038">go read it for free, now</a>! </strong></p>
+
+<p>In an experiment we ran previously, we asked users of Foursquare to take a personality test and give us access to their checkin history. The personality test gives us a measure of how each person scores for five different factors: Openness, Conscientiousness, Extraversion, Agreeableness and Neuroticism. The checkin history lists all the places they&rsquo;ve ever checked in to using Foursquare. Because a couple of hundred people took part in the experiment, we ended up with a large number of individual personalities that we could link to over a hundred thousand venues. In total, this represents a pretty staggering half a million Foursquare checkins that we have personality data associated with.</p>
+
+<p>Our first step with this data has been to see if there are any links between personality factors and the places people choose to visit, and we found some interesting connections.</p>
+
+<p>One of our main finding shows that the use of Foursquare for recording checkins seems to correlate well with Conscientiousness. <strong>The more conscientious a user is, the more likely they are to have checked in at more places and to have visited more venues.</strong> This could be because people with a high Conscientiousness score tend to be quite organised and disciplined, and so are more likely to remember to check in at every place they visit.</p>
+
+<p>The opposite is true for Neuroticism: <strong>the more neurotic an individual is, the fewer places they have visited</strong>. Neuroticism is associated with negative feelings, and a tendency to be less social, which could then translate into people going to fewer places, and so checking in less. This is expressed again when we look at only those venues classed as &lsquo;social&rsquo; (i.e. - somewhere you would go to hang out with friends). <strong>The more neurotic someone is, the fewer &lsquo;social&rsquo; venues they have been to.</strong></p>
+
+<p>Surprisingly, we have found no link between Extraversion and the number of social venues visited. It may be expected that extraverts (who are very social in their nature) may go to more social venues. However, the data does not support this. In fact, <strong>we find no link between Extraversion and any aspect of Foursquare checkins</strong> that we have examined so far.</p>
+
+<p>The personality factor of Openness is related to feelings of creativity and artistic expression, and a willingness to experience new things. It is interesting to find that there is a link between Openness and the average distance travelled between checkins -** the more Open an individual is, the further they tend to have travelled**. This could be an expression of an Open individual&rsquo;s desire to experience new things exposing itself through wider travel, and a larger geographic spread of checkins. However, we do not find any link between Openness and the number of different categories visited by a user. We do not see a desire for new experiences express itself in the range and diversity of places visited.</p>
+
+<p>Ultimately, this data could be incredibly useful in improving venue recommendation systems. Current systems use many different information &lsquo;cues&rsquo; to recommend to a user a place they might like to visit. These cues include things such as where they have been in the past, where their friends have been, or where is popular nearby. Perhaps by including aspects of an individual&rsquo;s personality (so including aspects of <em>why</em> they might visit somewhere) we can increase the usefulness of these recommendations.</p>
+
+<p>There is still a lot of analysis to be done on this data, and both myself and <a href="http://www.cs.cf.ac.uk/contactsandpeople/staffpage.php?emailname=NoeN">Nyala Noe</a> are busy churning through it to discover other links between personality and the places people visit. As we find more interesting connections, I&rsquo;ll post more here.</p>
+
+        </div>
+    </article>
+    
+    <article class="blogpost">
+        <header>
+            <h1> <a href="/2015/01/26/nhs-hackday-2015/">
+                    NHS Hackday 2015
+                </a></h1>
+            <p class="author">
+                <span class="date">Monday, Jan 26, 2015</span>
+            </p>
+        </header>
+        <div class="content">
+            
+
+<p>This weekend I took part in an incredibly successful <a href="http://nhshackday.com/">NHS hackday</a>, hosted at Cardiff University and organised by <a href="https://twitter.com/amcunningham">Anne Marie Cunningham</a> and James Morgan. We went as a team from the MSc in Computational Journalism, with myself and <a href="https://twitter.com/egrommet">Glyn</a> attending along with <a href="https://twitter.com/PoojaDante">Pooja</a>, <a href="https://twitter.com/NikitaVashisth">Nikita</a>, <a href="https://twitter.com/Idioteque90">Annalisa</a> and <a href="https://twitter.com/cboutaud">Charles</a>. At the last-minute I recruited a couple of ringers as well, dragging along <del>Rhys Priestland</del> <a href="https://twitter.com/flyingSparx">Dr William Wilberforce Webberley</a> from Comsc and <a href="https://twitter.com/voxmjw">Dr Matthew Williams</a>, previously of this parish. Annalisa also brought along Dan Hewitt, so in total we had a large and diverse team.</p>
+
+<h1 id="the-hackday">The hackday</h1>
+
+<p>This was the first NHS hackday I&rsquo;d attended, but I believe it&rsquo;s the second event held in Cardiff, so Anne Marie and the team have it down to a fine art. The whole weekend seemed to go pretty smoothly (barring a couple of misunderstandings on our part regarding the pitch sessions!). It was certainly one of the most well organised events that I&rsquo;ve attended, with all the necessary ingredients for successful coding: much power, many wifi and plenty of food, snacks and coffee. Anne Marie and the team deserve much recognition and thanks for their hard work. I&rsquo;m definitely in for next year.</p>
+
+<p>The quality of the projects created at the hackday was incredibly high across the board, which was great to see. One of my favourites used an Oculus Rift virtual reality headset to create a zombie &lsquo;game&rsquo; that could be used to test people&rsquo;s peripheral vision. Another standout was a system for logging and visualising the ANGEL factors describing a patient&rsquo;s health situation. It was really pleasing to see these rank highly with the judges too, coming in third and second in the overall rankings. Other great projects brought an old Open Source project back to life, created a system for managing groups walking the Wales Coast path, and created automatic notification systems for healthcare processes. Overall it was a really interesting mix of projects, many of which have clear potential to become useful products within or alongside the NHS. As Matt commented in the pub afterwards, it&rsquo;s probably the first hackday we&rsquo;ve been to where several of the projects have clear original IP with commercial potential.</p>
+
+<h1 id="our-project">Our project</h1>
+
+<p>We had decided before the event that we wanted to build some visualisations of health data across Wales, something like <a href="http://nhsmaps.co.uk/">nhsmaps.co.uk</a>, but working with local health boards and local authorities in Wales. We split into two teams for the implementation: &lsquo;the data team&rsquo; who were responsible for sourcing, processing and inputting data, and the &lsquo;interface team&rsquo; who built the front-end and the visualisations.</p>
+
+<p>Progress was good, with Matthew and William quickly defining a schema for describing data so that the data team could add multiple data sets and have the front-end automatically pick them up and be able to visualise them. The CompJ students worked to find and extract data, adding them to the github repository with the correct metadata. Meanwhile, I pulled a bunch of D3 code together for some simple visualisations.</p>
+
+<p>By the end of the weekend we established a fairly decent system. It&rsquo;s able to visualise a few different types of data, at different resolutions, is mostly mobile friendly, and most importantly is easily extensible and adaptable. It&rsquo;s online now on our <a href="http://bit.ly/hewnhs">github pages</a>, and all the code and documentation is also in the <a href="https://github.com/compjcdf/nhs_hack">github repository</a>.</p>
+
+<p>We&rsquo;ll continue development for a while to improve the usability and code quality, and hopefully we&rsquo;ll find a community willing to take the code base on and keep improving what could be a fairly useful resource for understanding the health of Wales.</p>
+
+<h1 id="debrief">Debrief</h1>
+
+<p>We didn&rsquo;t win any of the prizes, which is understandable. Our project was really focused on the public understanding of the NHS and health, and not for solving a particular need within (or for users of) the NHS. We knew this going in to the weekend, and we&rsquo;d taken the decision that it was more important to work on a project related to the course, so that the students could experience some of the tools and technologies they&rsquo;ll be using as the course progresses than to do something more closely aligned with the brief that would have perhaps been less relevant to the students work.</p>
+
+<p>I need to thank Will and Matt for coming and helping the team. Without Matt wrangling the data team and showing them how to create json metadata descriptors we probably wouldn&rsquo;t have anywhere near as many example datasets as we do. Similarly, without Will&rsquo;s hard work on the front end interface, the project wouldn&rsquo;t look nearly as good as it does, or have anywhere near the functionality. His last-minute addition of localstorage for personal datasets was a triumph. (Sadly though he does lose some coder points for user agent sniffing to decide whether to show a mobile interface :-D.) They were both a massive help, and we couldn&rsquo;t have done it without them.</p>
+
+<p>Also, of course, I need to congratulate the CompJ students, who gave up their weekend to trawl through datasets, pull figures off websites and out of pdf&rsquo;s, and create the lovely easy to process .csv files we needed. It was a great effort from them, and I&rsquo;m looking forward to our next Team CompJ hackday outing.</p>
+
+<p>One thing that sadly did stand out was a lack of participation from Comsc undergraduate students, with only one or two attending. <a href="http://www.cs.cf.ac.uk/contactsandpeople/staffpage.php?emailname=Rob.Davies">Rob Davies</a> stopped by on Saturday, and both Will and I discussed with him what we can do to increase participation in these events. Hopefully we&rsquo;ll make some progress on that front in time for the next hackday.</p>
+
+<h1 id="media">Media</h1>
+
+<p>There&rsquo;s some great photos from the event on Flickr, courtesy of <a href="https://www.flickr.com/photos/paul_clarke/">Paul Clarke</a> (<a href="https://www.flickr.com/photos/paul_clarke/sets/72157650042039338/">Saturday</a> and <a href="https://www.flickr.com/photos/paul_clarke/sets/72157650456182132/">Sunday</a>).</p>
+
+<h1 id="elsewhere">Elsewhere&hellip;</h1>
+
+<p>We got a lovely <a href="https://goodpracticeexchange.wordpress.com/2015/01/24/nhs-hack-day-data-visualisation/">write-up about out project</a> from <a href="https://twitter.com/DyfrigWilliams">Dyfrig Williams</a> of the Good Practice Exchange at the Wales Audit Office. Dyfrig also curated a great <a href="https://storify.com/GoodPracticeWAO/nhs-hack-day-cardiff-2015">storify of the weekend</a>.</p>
+
+<p>Hemavault labs have done a round up of the projects <a href="http://blog.hemavault.com/2015/01/27/nhs-hack-day-cardiff-2015-projects/">here</a></p>
+
+        </div>
+    </article>
+    
+    <article class="blogpost">
+        <header>
+            <h1> <a href="/2015/01/05/compj-labs-postcodes/">
+                    CompJ Labs - Postcodes
+                </a></h1>
+            <p class="author">
+                <span class="date">Monday, Jan 5, 2015</span>
+            </p>
+        </header>
+        <div class="content">
+            <p>I&rsquo;ve thrown up a <a href="http://compj.cs.cf.ac.uk/2015/01/05/empty-properties-postcodes/">post</a> on <a href="http://compj.cs.cf.ac.uk">compj.cs.cf.ac.uk</a> about some work we&rsquo;ve done looking at empty properties in Cardiff. I&rsquo;ll add further posts over the coming weeks about other data analysis we&rsquo;ve done on this topic, and new work looking at the Welsh Assembly.</p>
+
+        </div>
+    </article>
+    
+    <article class="blogpost">
+        <header>
+            <h1> <a href="/2014/12/15/extended-mind-crowdsourcing/">
+                    Extended Mind Crowdsourcing
+                </a></h1>
+            <p class="author">
+                <span class="date">Monday, Dec 15, 2014</span>
+            </p>
+        </header>
+        <div class="content">
+            
+
+<p><em><strong>Update 13/01/15: the paper containing the research described below is currently available from the <a href="http://conferences.computer.org/hicss/2015/papers/7367b635.pdf">HICSS website</a></strong></em></p>
+
+<p><em>This post is one I&rsquo;m cross-posting both here and on the <a href="https://mobisoc.cs.cf.ac.uk/">MobiSoc</a> blog. Here, because it&rsquo;s my personal translation of one of our latest research papers, and there because it&rsquo;s a very good paper mostly written and driven by Roger Whitaker, so deserves an &lsquo;official&rsquo; blog post!</em></p>
+
+<p>A lot of use is made of Crowdsourcing in both business and academia. Business likes it because it allows simple tasks to be outsourced for a small cost. Researchers like it because it allows the gathering of large amounts of data from participants, again for minimal cost. (For an example of this, see our <a href="/2012/09/07/socialcom-2012/">TweetCues</a> work (<a href="http://www.sciencedirect.com/science/article/pii/S1071581914001268">paper here</a>), where we paid Twitter users to take a simple survey and massively increased our sample size for a few dollars). As technology is developing, we can apply crowdsourcing to new problems; particularly those concerned with collective human behaviour and culture.</p>
+
+<h3 id="crowdsourcing">Crowdsourcing</h3>
+
+<p>The traditional <a href="http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=5227025&amp;tag=1">definition of crowdsourcing</a> involves several things:</p>
+
+<ol>
+<li><p>a clearly defined crowd</p></li>
+
+<li><p>a task with a clear goal</p></li>
+
+<li><p>clear recompense received by the crowd</p></li>
+
+<li><p>an identified owner of the task</p></li>
+
+<li><p>an online process</p></li>
+</ol>
+
+<p>The combination of all these things allows us to complete a large set of simple tasks in a short time and often for a reduced cost. It also provides access to global labour markets for users who may not previously have been able to access these resources.</p>
+
+<h3 id="participatory-computing-img-page-date-date-y-m-d-page-slug-crowdsourcing-img-1024x428-png"><img src="/img/{{ page.date | date: &quot;%Y-%m-%d&quot;}}-{{page.slug}}/crowdsourcing_img-1024x428.png" alt="Participatory Computing" /></h3>
+
+<p>Participatory computing is a related concept to crowdsourcing, based around the idea that the resources and data of computing devices can be shared and used to complete tasks. As with crowdsourcing, these tasks are often large, complex and data-driven, but capable of being broken down into smaller chunks that can be distributed to separate computing devices in order to complete the larger task. <a href="http://boinc.berkeley.edu/">BOINC</a> is a clear example of this class of participatory computing.</p>
+
+<p><img src="/img/{{ page.date | date: &quot;%Y-%m-%d&quot;}}-{{page.slug}}/participatory_img-1024x585.png" alt="participatory_img" /></p>
+
+<h3 id="extended-mind-crowdsourcing">Extended Mind Crowdsourcing</h3>
+
+<p>The <a href="http://www.jstor.org/stable/3328150">extended mind hypothesis</a> describes the way that humans extend their thinking beyond the internal mind, to use external objects. For instance, a person using a notebook to record a memory uses the &lsquo;extended mind&rsquo; to record the memory; the internal mind simply recalls that the memory is located in the notebook, an object that is external to the individual.</p>
+
+<p>Extended mind crowdsourcing takes crowdsourcing and participatory computing a step further by including the extended mind hypothesis, to allow us to describe systems that use the extended mind of participants, as represented by their devices and objects, in order to add implicit as well as explicit human computation for collective discovery.</p>
+
+<p><img src="/img/{{ page.date | date: &quot;%Y-%m-%d&quot;}}-{{page.slug}}/emc_img-1024x626.png" alt="emc_img" /></p>
+
+<p>What this means is that we can crowdsource the collection of data and completion of tasks using both individual users, their devices, and the extended mind that the two items together represent. Thus by accessing the information stored within a smartphone or similar personal device, and the wider internet services that the device can connect to, we can access the extended mind of a participant and thus learn more about his or her behaviour and individual characteristics. In essence, extended mind crowdsourcing captures the way in which humans undertake and respond to daily activity. In this sense it supports observation of human life and our interpretation of and response to the environment. By including social networks and social media communication within the extended mind, it is clear that while an individual extended mind may represent a single individual human, it is also possible to represent a group, such as a network or a collective using extended mind crowdsourcing.</p>
+
+<p>By combining the ideas of social computing, crowdsourcing, and the extended mind, we are able to access and aggregate the data that is created through our use of technology. This allows us to extend ideas of human cognition into the physical world, in a less formal and structured way than when using other forms of human computational systems. The reduced focus on task driven systems allows EMC to be directed at the solving of loosely defined problems, and those problems where we have no initial expectations of solutions or findings.</p>
+
+<p>This is a new way of thinking about the systems we create in order to solve problems using computational systems focused on humans, but it has the potential to be a powerful tool in our research toolbox. We are presenting this new Extended Mind Crowdsourcing idea this week at <a href="http://kholden7.wix.com/hicss">HICSS</a>.</p>
+
+        </div>
+    </article>
+    
+    <article class="blogpost">
+        <header>
+            <h1> <a href="/2014/11/19/quick-and-dirty-twitter-api-in-python/">
+                    Quick and Dirty Twitter API in Python
+                </a></h1>
+            <p class="author">
+                <span class="date">Wednesday, Nov 19, 2014</span>
+            </p>
+        </header>
+        <div class="content">
+            <p><strong>QUICK DISCLAIMER: this is a quick and dirty solution to a problem, so may not represent best coding practice, and has absolutely no error checking or handling. Use with caution&hellip;</strong></p>
+
+<p>A recent project has needed me to scrape some data from Twitter. I considered using <a href="https://github.com/tweepy/tweepy">Tweepy</a>, but as it was a project for the <a href="compj.cs.cf.ac.uk">MSc in Computational Journalism</a>, I thought it would be more interesting to write our own simple Twitter API wrapper in Python.</p>
+
+<p>The code presented here will allow you to make any API request to Twitter that uses a GET request, so is really only useful for getting data <em>from</em> Twitter, not sending it <em>to</em> Twitter. It is also only for using with the REST API, not the streaming API, so if you&rsquo;re looking for realtime monitoring, this is not the API wrapper you&rsquo;re looking for. This API wrapper also uses a single user&rsquo;s authentication (yours), so is not setup to allow other users to use Twitter through your application.</p>
+
+<p>The first step is to get some access credentials from Twitter. Head over to <a href="https://apps.twitter.com/">https://apps.twitter.com/</a> and register a new application. Once the application is created, you&rsquo;ll be able to access its details. Under &lsquo;Keys and Access Tokens&rsquo; are four values we&rsquo;re going to need for the API - the  <code>Consumer Key</code> and <code>Consumer Secret</code>, and the <code>Access Token</code> and <code>Access Token Secret</code>. Copy all four values into a new python file, and save it as &lsquo;<code>_credentials.py</code>&rsquo;. Once we have the credentials, we can write some code to make some API requests!</p>
+
+<p>First, we define a Twitter API object that will carry out our API requests. We need to store the API url, and some details to allow us to throttle our requests to Twitter to fit inside their rate limiting.</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Twitter_API</span>:
+
+ <span style="color:#66d9ef">def</span> __init__(self):
+
+   <span style="color:#75715e"># URL for accessing API</span>
+   scheme <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;https://&#34;</span>
+   api_url <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;api.twitter.com&#34;</span>
+   version <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;1.1&#34;</span>
+
+   self<span style="color:#f92672">.</span>api_base <span style="color:#f92672">=</span> scheme <span style="color:#f92672">+</span> api_url <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;/&#34;</span> <span style="color:#f92672">+</span> version
+
+   <span style="color:#75715e">#</span>
+   <span style="color:#75715e"># seconds between queries to each endpoint</span>
+   <span style="color:#75715e"># queries in this project limited to 180</span>
+   <span style="color:#75715e"># per 15 minutes</span>
+   query_interval <span style="color:#f92672">=</span> float(<span style="color:#ae81ff">15</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">60</span>)<span style="color:#f92672">/</span>(<span style="color:#ae81ff">175</span>)
+
+   <span style="color:#75715e">#</span>
+   <span style="color:#75715e"># rate limiting timer</span>
+   self<span style="color:#f92672">.</span>__monitor <span style="color:#f92672">=</span> {<span style="color:#e6db74">&#39;wait&#39;</span>:query_interval,
+     <span style="color:#e6db74">&#39;earliest&#39;</span>:None,
+     <span style="color:#e6db74">&#39;timer&#39;</span>:None}</code></pre></div>
+
+<p>We add a rate limiting method that will make our API sleep if we are requesting things from Twitter too fast:</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e">#</span>
+<span style="color:#75715e"># rate_controller puts the thread to sleep</span>
+<span style="color:#75715e"># if we&#39;re hitting the API too fast</span>
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">__rate_controller</span>(self, monitor_dict):
+
+ <span style="color:#75715e">#</span>
+ <span style="color:#75715e"># join the timer thread</span>
+ <span style="color:#66d9ef">if</span> monitor_dict[<span style="color:#e6db74">&#39;timer&#39;</span>] <span style="color:#f92672">is</span> <span style="color:#f92672">not</span> None:
+ monitor_dict[<span style="color:#e6db74">&#39;timer&#39;</span>]<span style="color:#f92672">.</span>join()
+
+ <span style="color:#75715e"># sleep if necessary</span>
+ <span style="color:#66d9ef">while</span> time<span style="color:#f92672">.</span>time() <span style="color:#f92672">&lt;</span> monitor_dict[<span style="color:#e6db74">&#39;earliest&#39;</span>]:
+   time<span style="color:#f92672">.</span>sleep(monitor_dict[<span style="color:#e6db74">&#39;earliest&#39;</span>] <span style="color:#f92672">-</span> time<span style="color:#f92672">.</span>time())
+
+ <span style="color:#75715e"># work out then the next API call can be made</span>
+ earliest <span style="color:#f92672">=</span> time<span style="color:#f92672">.</span>time() <span style="color:#f92672">+</span> monitor_dict[<span style="color:#e6db74">&#39;wait&#39;</span>]
+ timer <span style="color:#f92672">=</span> threading<span style="color:#f92672">.</span>Timer( earliest<span style="color:#f92672">-</span>time<span style="color:#f92672">.</span>time(), <span style="color:#66d9ef">lambda</span>: None )
+ monitor_dict[<span style="color:#e6db74">&#39;earliest&#39;</span>] <span style="color:#f92672">=</span> earliest
+ monitor_dict[<span style="color:#e6db74">&#39;timer&#39;</span>] <span style="color:#f92672">=</span> timer
+ monitor_dict[<span style="color:#e6db74">&#39;timer&#39;</span>]<span style="color:#f92672">.</span>start()</code></pre></div>
+
+<p>The Twitter API requires us to supply authentication headers in the request. One of these headers is a signature, created by encoding details of the request. We can write a function that will take in all the details of the request (method, url, parameters) and create the signature:</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e">#</span>
+<span style="color:#75715e"># make the signature for the API request</span>
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">get_signature</span>(self, method, url, params):
+
+ <span style="color:#75715e"># escape special characters in all parameter keys</span>
+ encoded_params <span style="color:#f92672">=</span> {}
+ <span style="color:#66d9ef">for</span> k, v <span style="color:#f92672">in</span> params<span style="color:#f92672">.</span>items():
+   encoded_k <span style="color:#f92672">=</span> urllib<span style="color:#f92672">.</span>parse<span style="color:#f92672">.</span>quote_plus(str(k))
+   encoded_v <span style="color:#f92672">=</span> urllib<span style="color:#f92672">.</span>parse<span style="color:#f92672">.</span>quote_plus(str(v))
+   encoded_params[encoded_k] <span style="color:#f92672">=</span> encoded_v
+
+ <span style="color:#75715e"># sort the parameters alphabetically by key</span>
+ sorted_keys <span style="color:#f92672">=</span> sorted(encoded_params<span style="color:#f92672">.</span>keys())
+
+ <span style="color:#75715e"># create a string from the parameters</span>
+ signing_string <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;&#34;</span>
+
+ count <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
+ <span style="color:#66d9ef">for</span> key <span style="color:#f92672">in</span> sorted_keys:
+   signing_string <span style="color:#f92672">+=</span> key
+   signing_string <span style="color:#f92672">+=</span> <span style="color:#e6db74">&#34;=&#34;</span>
+   signing_string <span style="color:#f92672">+=</span> encoded_params[key]
+   count <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>
+   <span style="color:#66d9ef">if</span> count <span style="color:#f92672">&lt;</span> len(sorted_keys):
+     signing_string <span style="color:#f92672">+=</span> <span style="color:#e6db74">&#34;&amp;&#34;</span>
+
+ <span style="color:#75715e"># construct the base string</span>
+ base_string <span style="color:#f92672">=</span> method<span style="color:#f92672">.</span>upper()
+ base_string <span style="color:#f92672">+=</span> <span style="color:#e6db74">&#34;&amp;&#34;</span>
+ base_string <span style="color:#f92672">+=</span> urllib<span style="color:#f92672">.</span>parse<span style="color:#f92672">.</span>quote_plus(url)
+ base_string <span style="color:#f92672">+=</span> <span style="color:#e6db74">&#34;&amp;&#34;</span>
+ base_string <span style="color:#f92672">+=</span> urllib<span style="color:#f92672">.</span>parse<span style="color:#f92672">.</span>quote_plus(signing_string)
+
+ <span style="color:#75715e"># construct the key</span>
+ signing_key <span style="color:#f92672">=</span> urllib<span style="color:#f92672">.</span>parse<span style="color:#f92672">.</span>quote_plus(client_secret) <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;&amp;&#34;</span> <span style="color:#f92672">+</span> urllib<span style="color:#f92672">.</span>parse<span style="color:#f92672">.</span>quote_plus(access_secret)
+
+ <span style="color:#75715e"># encrypt the base string with the key, and base64 encode the result</span>
+ hashed <span style="color:#f92672">=</span> hmac<span style="color:#f92672">.</span>new(signing_key<span style="color:#f92672">.</span>encode(), base_string<span style="color:#f92672">.</span>encode(), sha1)
+ signature <span style="color:#f92672">=</span> base64<span style="color:#f92672">.</span>b64encode(hashed<span style="color:#f92672">.</span>digest())
+ <span style="color:#66d9ef">return</span> signature<span style="color:#f92672">.</span>decode(<span style="color:#e6db74">&#34;utf-8&#34;</span>)</code></pre></div>
+
+<p>Finally, we can write a method to actually <em>make</em> the API request:</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">query_get</span>(self, endpoint, aspect, get_params<span style="color:#f92672">=</span>{}):
+
+ <span style="color:#75715e">#</span>
+ <span style="color:#75715e"># rate limiting</span>
+ self<span style="color:#f92672">.</span>__rate_controller(self<span style="color:#f92672">.</span>__monitor)
+
+ <span style="color:#75715e"># ensure we&#39;re dealing with strings as parameters</span>
+ str_param_data <span style="color:#f92672">=</span> {}
+ <span style="color:#66d9ef">for</span> k, v <span style="color:#f92672">in</span> get_params<span style="color:#f92672">.</span>items():
+   str_param_data[str(k)] <span style="color:#f92672">=</span> str(v)
+
+ <span style="color:#75715e"># construct the query url</span>
+ url <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>api_base <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;/&#34;</span> <span style="color:#f92672">+</span> endpoint <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;/&#34;</span> <span style="color:#f92672">+</span> aspect <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;.json&#34;</span>
+
+ <span style="color:#75715e"># add the header parameters for authorisation</span>
+ header_parameters <span style="color:#f92672">=</span> {
+   <span style="color:#e6db74">&#34;oauth_consumer_key&#34;</span>: client_id,
+   <span style="color:#e6db74">&#34;oauth_nonce&#34;</span>: uuid<span style="color:#f92672">.</span>uuid4(),
+   <span style="color:#e6db74">&#34;oauth_signature_method&#34;</span>: <span style="color:#e6db74">&#34;HMAC-SHA1&#34;</span>,
+   <span style="color:#e6db74">&#34;oauth_timestamp&#34;</span>: time<span style="color:#f92672">.</span>time(),
+   <span style="color:#e6db74">&#34;oauth_token&#34;</span>: access_token,
+   <span style="color:#e6db74">&#34;oauth_version&#34;</span>: <span style="color:#ae81ff">1.0</span>
+ }
+
+ <span style="color:#75715e"># collect all the parameters together for creating the signature</span>
+ signing_parameters <span style="color:#f92672">=</span> {}
+ <span style="color:#66d9ef">for</span> k, v <span style="color:#f92672">in</span> header_parameters<span style="color:#f92672">.</span>items():
+   signing_parameters[k] <span style="color:#f92672">=</span> v
+ <span style="color:#66d9ef">for</span> k, v <span style="color:#f92672">in</span> str_param_data<span style="color:#f92672">.</span>items():
+   signing_parameters[k] <span style="color:#f92672">=</span> v
+
+ <span style="color:#75715e"># create the signature and add it to the header parameters</span>
+ header_parameters[<span style="color:#e6db74">&#34;oauth_signature&#34;</span>] <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>get_signature(<span style="color:#e6db74">&#34;GET&#34;</span>, url, signing_parameters)
+
+ <span style="color:#75715e"># add the OAuth headers</span>
+ header_string <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;OAuth &#34;</span>
+ count <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
+ <span style="color:#66d9ef">for</span> k, v <span style="color:#f92672">in</span> header_parameters<span style="color:#f92672">.</span>items():
+   header_string <span style="color:#f92672">+=</span> urllib<span style="color:#f92672">.</span>parse<span style="color:#f92672">.</span>quote_plus(str(k))
+   header_string <span style="color:#f92672">+=</span> <span style="color:#e6db74">&#34;=</span><span style="color:#ae81ff">\&#34;</span><span style="color:#e6db74">&#34;</span>
+   header_string <span style="color:#f92672">+=</span> urllib<span style="color:#f92672">.</span>parse<span style="color:#f92672">.</span>quote_plus(str(v))
+   header_string <span style="color:#f92672">+=</span> <span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\&#34;</span><span style="color:#e6db74">&#34;</span>
+   count <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>
+   <span style="color:#66d9ef">if</span> count <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">7</span>:
+     header_string <span style="color:#f92672">+=</span> <span style="color:#e6db74">&#34;, &#34;</span>
+
+ headers <span style="color:#f92672">=</span> {
+   <span style="color:#e6db74">&#34;Authorization&#34;</span>: header_string
+ }
+
+ <span style="color:#75715e"># create the full url including parameters</span>
+ url <span style="color:#f92672">=</span> url <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;?&#34;</span> <span style="color:#f92672">+</span> urllib<span style="color:#f92672">.</span>parse<span style="color:#f92672">.</span>urlencode(str_param_data)
+ request <span style="color:#f92672">=</span> urllib<span style="color:#f92672">.</span>request<span style="color:#f92672">.</span>Request(url, headers<span style="color:#f92672">=</span>headers)
+
+ <span style="color:#75715e"># make the API request</span>
+ <span style="color:#66d9ef">try</span>:
+   response <span style="color:#f92672">=</span> urllib<span style="color:#f92672">.</span>request<span style="color:#f92672">.</span>urlopen(request)
+   <span style="color:#66d9ef">except</span> urllib<span style="color:#f92672">.</span>error<span style="color:#f92672">.</span>HTTPError <span style="color:#66d9ef">as</span> e:
+   <span style="color:#66d9ef">print</span>(e)
+ <span style="color:#66d9ef">raise</span> e
+   <span style="color:#66d9ef">except</span> urllib<span style="color:#f92672">.</span>error<span style="color:#f92672">.</span>URLError <span style="color:#66d9ef">as</span> e:
+   <span style="color:#66d9ef">print</span>(e)
+   <span style="color:#66d9ef">raise</span> e
+
+ <span style="color:#75715e"># read the response and return the json</span>
+ raw_data <span style="color:#f92672">=</span> response<span style="color:#f92672">.</span>read()<span style="color:#f92672">.</span>decode(<span style="color:#e6db74">&#34;utf-8&#34;</span>)
+ <span style="color:#66d9ef">return</span> json<span style="color:#f92672">.</span>loads(raw_data)</code></pre></div>
+
+<p>Putting this all together, we have a simple Python class that acts as an API wrapper for GET requests to the Twitter REST API, including the signing and authentication of those requests. Using it is as simple as:</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"> ta <span style="color:#f92672">=</span> Twitter_API()
+
+ <span style="color:#75715e"># retrieve tweets for a user</span>
+ params <span style="color:#f92672">=</span> {
+    <span style="color:#e6db74">&#34;screen_name&#34;</span>: <span style="color:#e6db74">&#34;martinjc&#34;</span>,
+ }
+
+ user_tweets <span style="color:#f92672">=</span> ta<span style="color:#f92672">.</span>query_get(<span style="color:#e6db74">&#34;statuses&#34;</span>, <span style="color:#e6db74">&#34;user_timeline&#34;</span>, params)</code></pre></div>
+
+<p>As always, the full code is online on Github, in both my <a href="https://github.com/CompJCDF/Simple-Python-Twitter-API">personal account</a> and the <a href="https://github.com/CompJCDF">account for</a> the <a href="http://compj.cs.cf.ac.uk/">MSc Computational Journalism</a>.</p>
+
+        </div>
+    </article>
+    
+    <article class="blogpost">
+        <header>
+            <h1> <a href="/2014/11/04/how-do-people-decide-whether-or-not-to-read-a-tweet/">
+                    How do people decide whether or not to read a tweet? 
+                </a></h1>
+            <p class="author">
+                <span class="date">Tuesday, Nov 4, 2014</span>
+            </p>
+        </header>
+        <div class="content">
+            <p>It turns out that an existing relationship with the author of the tweet is one of the main factors influencing how someone decides whether or not to read a tweet. At the same time,  a large number associated with a tweet can also make the tweet more attractive to readers.</p>
+
+<p>Our <a href="http://www.sciencedirect.com/science/article/pii/S1071581914001268">latest Open Access research</a> has discovered how much effect the information about a tweet has on whether people decide to read it or not.</p>
+
+<p>By showing hundreds of Twitter users the information about two tweets but not the tweets themselves, and then asking the users which tweet they would like to read, we have been able to look at which information is more important when users are deciding to read a tweet.</p>
+
+<p>We looked at two different types of information:</p>
+
+<ol>
+<li><p>Simple numbers that describe the tweet, such as the number of retweets it has, or numbers that describe the author, such as how many followers they have, or how many tweets they&rsquo;ve written.</p></li>
+
+<li><p>Whether a relationship between the reader and the author is important, and whether that relationship was best shown through subtle hints, or direct information.</p></li>
+</ol>
+
+<p>When readers can see only one piece of information, the case is clear: they&rsquo;d <strong>rather read the tweet written by someone they are following</strong>. Readers can easily recognise the usernames, names, and profile images of people they already follow, and are likely to choose to read content written by someone they follow (instead of content written by a stranger) around 75% of the time. If all they can see is a piece of numerical information, they would <strong>rather read the tweet with the highest number</strong>, no matter what that number is. The effect is strongest with the number of retweets, followed by the number of followers, but even for the number of following and number of tweets written the effect is significant.</p>
+
+<p>When readers can see two pieces of information, one about their relationship with the author, and one numerical, there are two cases to look at. When the author they follow also has a high numerical value, readers will choose that tweet in around 80% of the cases. When the author they already follow has a lower numerical value, it is still the existing relationship that is more of a draw. <strong>Readers would rather read a tweet from someone they know that has a low number of retweets, than one from a stranger with a high number of retweets.</strong></p>
+
+<p>This work offers an understanding of how the decision-making process works on Twitter when users are skimming their timelines for something to read, and has particular implications for the display and promotion of non-timeline content within content streams. For instance, readers may pay more attention to adverts and promoted content if the link between themselves and the author is highlighted.</p>
+
+<p><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6406256">Previous results</a>  from an early experiment were published at <a href="/2012/09/07/socialcom-2012/">SocialCom</a>. The results in <a href="http://www.sciencedirect.com/science/article/pii/S1071581914001268">this new paper</a> are from a modified and expanded version of <a href="/2012/05/18/tweetcues-twitter-experiment/">this earlier experiment</a>.</p>
+
+        </div>
+    </article>
+    
+    <article class="blogpost">
+        <header>
+            <h1> <a href="/2014/11/01/beards-taches-and-testicles/">
+                    Beards, &#39;Taches and Testicles
+                </a></h1>
+            <p class="author">
+                <span class="date">Saturday, Nov 1, 2014</span>
+            </p>
+        </header>
+        <div class="content">
+            <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<p>This is me:</p>
+
+
+
+
+
+
+
+
+
+
+<figure>
+    <img src="/2014/11/01/beards-taches-and-testicles/2014-11-01-07.23.46-copy-225x300.jpg" width="225" height="300" alt="mildly hungover morning selfie">
+    <figcaption>
+        <small>
+            mildly hungover morning selfie
+        </small>
+    </figcaption>
+</figure>
+
+<p>Obviously the first thing you notice, after my devilishly handsome good looks, is that I have around the lower half of my face what has the potential to be described as,  if one is kind: a &lsquo;beard&rsquo;. It is patchy, it is more than often unkempt, and it is quite ginger, but it is somewhat beard like. I can no longer remember when I grew this beard, but I like it. I like it so much that I refused to shave it off when I graduated in 2013, and again when I got married earlier this year.</p>
+
+<p>However, ominous things have happened. Recently, a mate and colleague done a tweet:</p>
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">I beat testicular cancer this year. To contribute to research I&#39;m supporting <a href="https://twitter.com/MovemberUK">@MovemberUK</a> - join the team <a href="http://t.co/7mtTE7kVmD">http://t.co/7mtTE7kVmD</a> <a href="https://twitter.com/cardiffuni">@cardiffuni</a></p>&mdash; Pete Burnap (@pbFeed) <a href="https://twitter.com/pbFeed/status/524291166615789570">October 20, 2014</a></blockquote>
+
+<p>&ldquo;Good on Pete&rdquo; I thought. Good cause. I did Movember back in 2011, and it was hard, because quite frankly with a moustache I look like a complete tit. At the time I was doing it, I think Pete and I were sharing an office, so he knows how much of a tit you can look like during Movember, yet he&rsquo;s chosen to do it anyway. Well done.</p>
+
+<p>Of course, you won&rsquo;t catch me doing it. I have a beard now, and I won&rsquo;t shave that off. Also, as I mentioned, I look like a complete tit when I grow a moustache. It was fine in 2011, I was only an RA, so I could just hide in the office and work. The only person affected was my wife, who sadly had to be seen in public with me. I&rsquo;m a lecturer now. I can&rsquo;t just hide in my office. I have to teach. I have to stand up in front of students. I can&rsquo;t do that looking like a person who belongs on some sort of list.</p>
+
+<p>Then Vince Knight joined Pete&rsquo;s team:</p>
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">I am now apparently putting my facial hair to the test and have joined <a href="https://twitter.com/pbFeed">@pbFeed</a> for <a href="https://twitter.com/MovemberUK">@MovemberUK</a>. My page is here: <a href="http://t.co/IswbUL7sEG">http://t.co/IswbUL7sEG</a></p>&mdash; Vincent Knight 📎 (@drvinceknight) <a href="https://twitter.com/drvinceknight/status/524532773080805376">October 21, 2014</a></blockquote>
+
+<p>&ldquo;Well done Vince&rdquo; I thought. Good cause. At least Pete won&rsquo;t look so daft walking around campus with a &lsquo;tache now. There&rsquo;ll be two of you at least. Not me of course. No way.</p>
+
+<p>Then Pete done another tweet:</p>
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr"><a href="https://twitter.com/drvinceknight">@drvinceknight</a> <a href="https://twitter.com/MovemberUK">@MovemberUK</a> Yeah you have!!! <a href="https://twitter.com/voxmjw">@voxmjw</a> <a href="https://twitter.com/martinjc">@martinjc</a> <a href="https://twitter.com/walter_colombo1">@walter_colombo1</a> <a href="https://twitter.com/MattLWilliams">@MattLWilliams</a> <a href="https://twitter.com/docjaq">@docjaq</a> <a href="https://twitter.com/flyingSparx">@flyingSparx</a> Get involved!!</p>&mdash; Pete Burnap (@pbFeed) <a href="https://twitter.com/pbFeed/status/524533385847664640">October 21, 2014</a></blockquote>
+
+<p>Oh.</p>
+
+<p>Pete&rsquo;s called me out. He wants me to join in. Maybe we&rsquo;ll just all ignore him and it&rsquo;ll go away.</p>
+
+<p>Then I done a tweet:</p>
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr"><a href="https://twitter.com/pbFeed">@pbFeed</a> <a href="https://twitter.com/drvinceknight">@drvinceknight</a> <a href="https://twitter.com/voxmjw">@voxmjw</a> <a href="https://twitter.com/walter_colombo1">@walter_colombo1</a> <a href="https://twitter.com/MattLWilliams">@MattLWilliams</a> <a href="https://twitter.com/docjaq">@docjaq</a> <a href="https://twitter.com/flyingSparx">@flyingSparx</a> hard to say no, I did look fabulous last time.</p>&mdash; Martin Chorley (@martinjc) <a href="https://twitter.com/martinjc/status/524538880939544576">October 21, 2014</a></blockquote>
+
+<p>WTF? What did I just do? Did I agree to do Movember again? Why? I have no idea. Perhaps I enjoy looking like a tit?</p>
+
+<p>So. I joined. As did many others that Pete called out. And now we&rsquo;re all going to grow moustaches and demand money from our friends, relatives and colleagues. It&rsquo;s a good cause. You can donate to us, our team page is <a href="http://uk.movember.com/team/1637929">here</a>.</p>
+
+<p>First though, there&rsquo;s business to take care of. The beard had to go. I had to locate my shaving equipment, which has not been used in many years, and attempt to remove the lovely facial hair to which I have become so attached, without slicing my face apart in the process:</p>
+
+
+
+
+
+
+
+
+
+
+<figure>
+    <img src="/2014/11/01/beards-taches-and-testicles/beard_removal-1024x910.png" width="1024" height="910" alt="WHAT HAVE I DONE?">
+    <figcaption>
+        <small>
+            WHAT HAVE I DONE?
+        </small>
+    </figcaption>
+</figure>
+
+<p>So that&rsquo;s it. The beard is off and I am clean-shaven for the first time in I don&rsquo;t know how long. This, I think, is quite the sacrifice. But there is more to come. The &lsquo;tache is on its way - slowly working its way out of my upper lip. I am going to look terrible. If you in any way feel inclined, please make it worth it. Donate to <a href="http://mobro.co/martinjc">me</a> or the <a href="http://moteam.co/cardiff-university">team</a>. Don&rsquo;t let my beard have fallen in vain.  After all (I came up with this last night while very drunk and I LOVE IT):  beards grow back. Balls don&rsquo;t.</p>
+
+        </div>
+    </article>
+    
+    
+
+<ul class="pagination">
+    
+    <li class="page-item">
+        <a href="/blog/" class="page-link" aria-label="First"><span aria-hidden="true">&laquo;&laquo;</span></a>
+    </li>
+    
+    <li class="page-item">
+    <a href="/blog/" class="page-link" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a>
+    </li>
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    <li class="page-item"><a class="page-link" href="/blog/">1</a></li>
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    <li class="page-item active"><a class="page-link" href="/blog/page/2/">2</a></li>
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    <li class="page-item"><a class="page-link" href="/blog/page/3/">3</a></li>
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    <li class="page-item disabled"><span aria-hidden="true">&nbsp;&hellip;&nbsp;</span></li>
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    <li class="page-item"><a class="page-link" href="/blog/page/11/">11</a></li>
+    
+    
+    <li class="page-item">
+    <a href="/blog/page/3/" class="page-link" aria-label="Next"><span aria-hidden="true">&raquo;</span></a>
+    </li>
+    
+    <li class="page-item">
+        <a href="/blog/page/11/" class="page-link" aria-label="Last"><span aria-hidden="true">&raquo;&raquo;</span></a>
+    </li>
+    
+</ul>
+
+</main>
+
+    </div><script>
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-25500481-1', 'auto');
+    ga('send', 'pageview');
+
+</script>
+<script>window.twttr = (function (d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0],
+            t = window.twttr || {};
+        if (d.getElementById(id)) return t;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "https://platform.twitter.com/widgets.js";
+        fjs.parentNode.insertBefore(js, fjs);
+
+        t._e = [];
+        t.ready = function (f) {
+            t._e.push(f);
+        };
+
+        return t;
+    }(document, "script", "twitter-wjs"));
+</script></body>
+
+</html>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Chair on Martin Chorley</title>
+    <link>/tags/chair/</link>
+    <description>Recent content in Chair on Martin Chorley</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Tue, 01 Oct 2013 10:22:49 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/chair/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>CSAR Workshop</title>
+      <link>/2013/10/01/csar-workshop/</link>
+      <pubDate>Tue, 01 Oct 2013 10:22:49 +0000</pubDate>
+      
+      <guid>/2013/10/01/csar-workshop/</guid>
+      <description>This week, as part of the &amp;ldquo;Third International Conference on Social Computing and its Applications&amp;rdquo; we held a workshop &amp;ldquo;Collective Social Awareness and Relevance (CSAR)&amp;rdquo;. Organising the workshop (along with Walter Colombo) over the last couple of months has been an interesting process - this is the first time I&amp;rsquo;ve had the chance to get involved in &amp;ldquo;real&amp;rdquo; workshop organisation, so this is the first time I&amp;rsquo;ve seen the process up close.</description>
+    </item>
+    
+  </channel>
+</rss>
