@@ -10,7 +10,6 @@
 .jekyll-metadata
 *.lock
 dist/*
-public/*
 .tmp
 
 
