@@ -28,10 +28,3 @@ I am Module Leader for [Visual Communication and Information Design (CMT212)](ht
 
 I also co-teach the [Digital Investigation (MCT542)](http://handbooks.data.cardiff.ac.uk/module/MCT542.html) module on MSc Computational and Data Journalism.
 
-
-
-
-
-
-
-Details of my previous teaching duties (including tutoring work carried out during my PhD) can be found under '[past teaching](/teaching/past-teaching/)'.
