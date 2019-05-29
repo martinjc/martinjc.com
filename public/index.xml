@@ -6,10 +6,20 @@
     <description>Recent content on Martin Chorley</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
-    <lastBuildDate>Wed, 29 Nov 2017 11:15:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 29 May 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Fitness Data Downloading</title>
+      <link>/2019/05/29/fitness-data-downloading/</link>
+      <pubDate>Wed, 29 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/2019/05/29/fitness-data-downloading/</guid>
+      <description>Like many (most?) people these days who have the foolish notion to exercise outside I track my activities with GPS and a logging app. Well, I say &amp;lsquo;app&amp;rsquo;, but of course with the way all things link together my data ends up shared between four or five different services.
+I recently had call to download my location data for an upcoming project. One of the sites that stores my running and cycling activity is Runkeeper, and it was from here I chose to pull my data.</description>
+    </item>
     
     <item>
       <title>Academic Parent</title>

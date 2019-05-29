@@ -213,6 +213,27 @@
     
     <article class="blogpost">
         <header>
+            <h1> <a href="/2012/10/04/swn-artist-explorer/">
+                    SWN Artist Explorer
+                </a></h1>
+            <p class="author">
+                <span class="date">Thursday, Oct 4, 2012</span>
+            </p>
+        </header>
+        <div class="content">
+            <p>It&rsquo;s that time of year again: <a href="http://swnfest.com/">SWN Festival</a> is once more upon us. It&rsquo;s the highlight of the musical year in Cardiff, and probably the one thing I&rsquo;ll miss about the city when (if?) I leave. In fact, I&rsquo;m pretty certain that even if I left the city I&rsquo;d make the pilgrimage back once a year for SWN because it&rsquo;s just too much fun to miss.</p>
+
+<p>The lineup this year is another cracking one, but as usual with four days of bands spread across so many venues there are a whole bunch of names that I don&rsquo;t recognise. As per usual I&rsquo;ve cooked up a <a href="http://open.spotify.com/user/martinjc/playlist/4O56MWAi1qIO6XfCDXEtjG">Spotify playlist</a>, but even sorting through that takes some time:</p>
+
+<p>I decided this year that it would be nice to have an easy visual way to see what the bands are like, so decided to build myself a little <a href="/swn/">artist explorer</a>. This uses tags from <a href="www.last.fm">Last.FM</a> and generates word clouds using a nice <a href="https://github.com/jasondavies/d3-cloud">javascript plugin</a> for <a href="http://mbostock.github.com/d3/">d3</a> written by <a href="http://www.jasondavies.com/">Jason Davies</a>. Most of the word cloud js was hacked together from Jason&rsquo;s <a href="http://www.jasondavies.com/wordcloud/">example</a>, with some mangling and modification from me. I downloaded the tags for artists offline and stuck them in a .json file so it doesn&rsquo;t hit the Last.FM servers on every page load. What we end up with is a fairly simple tag cloud example that allows you to see at a glance how Last.FM users have categorised the bands. Selecting a tag in the word cloud will show you the other bands in the lineup that have also had that tag applied to them. Of course it&rsquo;s <a href="/swn">online here</a>!</p>
+
+<p>Meanwhile, the code is available on <a href="https://github.com/martinjc/swn_tagger">github</a>, with no guarantees that any of it actually works.</p>
+
+        </div>
+    </article>
+    
+    <article class="blogpost">
+        <header>
             <h1> <a href="/2012/10/02/...-and-back-to-teaching/">
                     ... and back to Teaching
                 </a></h1>
@@ -500,23 +521,6 @@
             <p>Following a conversation with <a href="http://www.cs.cf.ac.uk/contactsandpeople/staffpage.php?emailname=J.A.Quinn">Jon</a> last week, I&rsquo;ve been having thoughts about playing around with Last.FM data again, having not looked at that <a href="http://www.last.fm/api/intro">API</a> for a couple of years. We had discussed the possibility of using the Last.FM web services as part of a project at a <a href="http://www.cs.cf.ac.uk/hackathon/">hackathon</a> that some of the undergraduates are running in a couple of weeks time, and since I&rsquo;ve moved from primarily developing using Java to mainly using Python since I last did anything with Last.FM I thought it would be useful to develop some basic python examples using the Last.FM API.</p>
 
 <p>Yesterday I made a basic skeleton Django site that uses Last.FM for user authentication and includes a basic API wrapper for making queries. The code is all up on <a href="https://github.com/martinjc/djangoLastFMAuth">github</a> for those that are interested.</p>
-
-        </div>
-    </article>
-    
-    <article class="blogpost">
-        <header>
-            <h1> <a href="/2012/01/31/foursquare-category-icon-downloader-2/">
-                    Foursquare Category Icon Downloader (2)
-                </a></h1>
-            <p class="author">
-                <span class="date">Tuesday, Jan 31, 2012</span>
-            </p>
-        </header>
-        <div class="content">
-            <p><strong>UPDATE [01 August 2014]: Even more breaking! More recent version of the script <a href="/2014/08/01/foursquare-icon-downloading-yet-again/">here</a></strong></p>
-
-<p>Someone commented recently that the <a href="/2011/10/01/colourful-foursquare-category-icons/">script I&rsquo;d written to download the Foursquare category icons</a> was broken. <a href="/img/{{ page.date | date: &quot;%Y-%m-%d&quot;}}-{{page.slug}}/downloader.py_1.txt">downloader.py</a> is an update that works as of today (notice the URL param with today&rsquo;s date) that will fetch all available sizes of all the category icons and store them in folders by size.</p>
 
         </div>
     </article>
