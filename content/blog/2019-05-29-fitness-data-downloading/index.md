@@ -4,6 +4,7 @@ comments: true
 date: 2019-05-29
 layout: post
 slug: fitness-data-downloading
+permalink: https://martinjc.com/2019/05/29/fitness-data-downloading/
 title: Fitness Data Downloading
 ---
 
