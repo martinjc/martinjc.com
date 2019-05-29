@@ -213,6 +213,31 @@
     
     <article class="blogpost">
         <header>
+            <h1> <a href="/2013/04/22/open-sauce-hackathon-post-mortem/">
+                    Open Sauce Hackathon - Post Mortem
+                </a></h1>
+            <p class="author">
+                <span class="date">Monday, Apr 22, 2013</span>
+            </p>
+        </header>
+        <div class="content">
+            <p>This weekend saw the second &lsquo;<a href="http://www.cs.cf.ac.uk/hackathon/">Open Sauce Hackathon</a>&rsquo; run by undergraduate students here in the school. Last years was pretty successful, and they improved upon it this year, pulling in many more sponsors and offering more prizes.</p>
+
+<p>Unlike last year, when I turned up having already decided with Jon Quinn what we were doing, I went along this year with no real ideas. I had a desire to do something with a map, as I&rsquo;m pretty sure building stuff connected to maps is going to play a big part in work over the next couple of months. Other than that though, I was at a bit of a loss. After playing around with some ideas and APIs I finally came up with my app: <a href="/dionysus/">dionysus</a>.</p>
+
+<p><img src="/img/{{ page.date | date: &quot;%Y-%m-%d&quot;}}-{{page.slug}}/Screen-Shot-2013-04-22-at-11.37.57.png" alt="Dionysus Screenshot" /></p>
+
+<p>It&rsquo;s a mobile friendly mapping app that shows you two important things: Where the pubs are (using venue data from <a href="http://www.foursquare.com">Foursquare</a>) and where the gigs are at (using event data from <a href="http://www.last.fm">last.fm</a>). If you sign in to either last.fm or Foursquare it will also pull in recommended bars and recommended gigs and highlight these for you.</p>
+
+<p>The mapping is done using <a href="http://leafletjs.com/">leaflet.js</a>, which I found to be nicer and easier to use than Google Maps. The map tiles are based on <a href="http://www.openstreetmap.org/">OpenStreetMap</a> data and come from <a href="http://cloudmade.com/">CloudMade</a>, while the (devastatingly beautiful) icons were rushed together by me over the weekend. The entire app is just client side Javascript and HTML, with HTML5 persistent localStorage used to maintain login authentication between sessions. It&rsquo;s a simple app, but I&rsquo;m pretty pleased with it. In the end I even won a prize for it (£50), so it can&rsquo;t be too bad.</p>
+
+<p>The app is hosted <a href="/dionysus/">here</a>, and the source code is available <a href="https://github.com/martinjc/dionysus">here</a>. Obviously though the code is not very pretty and quite hacky, but it does the job!</p>
+
+        </div>
+    </article>
+    
+    <article class="blogpost">
+        <header>
             <h1> <a href="/2013/04/22/social-media-lecture-experiment/">
                     Social Media Lecture Experiment
                 </a></h1>
@@ -482,27 +507,6 @@ Had I done this, I would have been done far sooner. Ultimately in total I spent 
 <p>Exactly how long I&rsquo;ve been waiting to write this depends on your point of view. I&rsquo;ve definitely been waiting eagerly for 1 month and 2 days, pretty certain that this day was coming. I&rsquo;ve been waiting pretty expectantly for 3 months and 21 days, fairly sure that the day is coming soon. I&rsquo;ve been <em>really desperate</em> to be able to write this for 1 year, 6 months and 10 days, unsure whether I&rsquo;d ever be able to. But ultimately, I guess as it&rsquo;s been exactly 7 years, 1 month and 4 days since I started my PhD, I&rsquo;ve been waiting for this moment for at least that long (even though I wasn&rsquo;t blogging back then, and certainly didn&rsquo;t expect to be writing a bunch of posts like these!).</p>
 
 <p>So, why did it take so long, and why was I waiting for so many different lengths of time? It&rsquo;s a long story, so I&rsquo;ll split it over several posts, but the basic facts are that I did badly, tried to fix it, didn&rsquo;t fix it well enough, so had to fix it again. It&rsquo;s finally done now, and I can move on with all the rest of the stuff I&rsquo;ve got to do.</p>
-
-        </div>
-    </article>
-    
-    <article class="blogpost">
-        <header>
-            <h1> <a href="/2012/10/04/swn-artist-explorer/">
-                    SWN Artist Explorer
-                </a></h1>
-            <p class="author">
-                <span class="date">Thursday, Oct 4, 2012</span>
-            </p>
-        </header>
-        <div class="content">
-            <p>It&rsquo;s that time of year again: <a href="http://swnfest.com/">SWN Festival</a> is once more upon us. It&rsquo;s the highlight of the musical year in Cardiff, and probably the one thing I&rsquo;ll miss about the city when (if?) I leave. In fact, I&rsquo;m pretty certain that even if I left the city I&rsquo;d make the pilgrimage back once a year for SWN because it&rsquo;s just too much fun to miss.</p>
-
-<p>The lineup this year is another cracking one, but as usual with four days of bands spread across so many venues there are a whole bunch of names that I don&rsquo;t recognise. As per usual I&rsquo;ve cooked up a <a href="http://open.spotify.com/user/martinjc/playlist/4O56MWAi1qIO6XfCDXEtjG">Spotify playlist</a>, but even sorting through that takes some time:</p>
-
-<p>I decided this year that it would be nice to have an easy visual way to see what the bands are like, so decided to build myself a little <a href="/swn/">artist explorer</a>. This uses tags from <a href="www.last.fm">Last.FM</a> and generates word clouds using a nice <a href="https://github.com/jasondavies/d3-cloud">javascript plugin</a> for <a href="http://mbostock.github.com/d3/">d3</a> written by <a href="http://www.jasondavies.com/">Jason Davies</a>. Most of the word cloud js was hacked together from Jason&rsquo;s <a href="http://www.jasondavies.com/wordcloud/">example</a>, with some mangling and modification from me. I downloaded the tags for artists offline and stuck them in a .json file so it doesn&rsquo;t hit the Last.FM servers on every page load. What we end up with is a fairly simple tag cloud example that allows you to see at a glance how Last.FM users have categorised the bands. Selecting a tag in the word cloud will show you the other bands in the lineup that have also had that tag applied to them. Of course it&rsquo;s <a href="/swn">online here</a>!</p>
-
-<p>Meanwhile, the code is available on <a href="https://github.com/martinjc/swn_tagger">github</a>, with no guarantees that any of it actually works.</p>
 
         </div>
     </article>

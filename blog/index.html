@@ -205,6 +205,189 @@
     
     <article class="blogpost">
         <header>
+            <h1> <a href="/2019/05/29/fitness-data-downloading/">
+                    Fitness Data Downloading
+                </a></h1>
+            <p class="author">
+                <span class="date">Wednesday, May 29, 2019</span>
+            </p>
+        </header>
+        <div class="content">
+            <p>Like many (most?) people these days who have the foolish notion to exercise outside I track my activities with GPS and a logging app. Well, I say &lsquo;app&rsquo;, but of course with the way all things link together my data ends up shared between four or five different services.</p>
+
+<p>I recently had call to download my location data for an upcoming project. One of the sites that stores my running and cycling activity is <a href="https://www.runkeeper.com">Runkeeper</a>, and it was from here I chose to pull my data.</p>
+
+<p>Runkeeper has an API, and if we&rsquo;re going to pull our data out of the service the first thing we need to do is sign up to use it, which you can do at the <a href="https://runkeeper.com/developer/healthgraph/">Health Graph</a> website. The link to sign up is buried slightly in the <a href="https://runkeeper.com/developer/healthgraph/registration-authorization">documentation</a> - but you can sign up to create an app at <a href="https://runkeeper.com/partner/applications">https://runkeeper.com/partner/applications</a>. You need to enter a few details for an application - as we&rsquo;re only going to be using this for accessing our own data it doesn&rsquo;t really matter what information we put in here:</p>
+
+
+
+
+
+
+
+
+
+
+<figure>
+    <img src="/2019/05/29/fitness-data-downloading/app_details.png" width="1958" height="1326" alt="App Registration">
+    <figcaption>
+        <small>
+            App Registration
+        </small>
+    </figcaption>
+</figure>
+
+<p>Once we&rsquo;ve signed up and got access to the API, we are provided with a <code>client_id</code> and a <code>client_secret</code>. These are the OAuth keys that identify our application to Runkeeper:</p>
+
+
+
+
+
+
+
+
+
+
+<figure>
+    <img src="/2019/05/29/fitness-data-downloading/keys.png" width="2004" height="1496" alt="Keys">
+    <figcaption>
+        <small>
+            Keys
+        </small>
+    </figcaption>
+</figure>
+
+<p>To access user data from Runkeeper we need to follow a typical OAuth flow. We open a URL, sending Runkeeper our <code>client_id</code> and <code>client_secret</code>. Runkeeper asks our user to login and give our application permission to access their data. They then send us back to our redirect address with a single use <code>access_code</code>. We can then make a request to Runkeeper and exchange this <code>access_code</code> for an <code>access_token</code>. This token will allow us to make requests to the Health Graph API and access the data of the user that authorised our application. If we were building a public-facing application we&rsquo;d need to write a bit of server code and get it online somewhere to handle this flow, but for our purposes here we only need to authorise ourselves, so we won&rsquo;t bother and we&rsquo;ll do it all manually.</p>
+
+<p>Putting together the first request URL is quite straightforward:</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">from</span> _credentials <span style="color:#f92672">import</span> client_id, client_secret, access_token
+
+DATA_DIR <span style="color:#f92672">=</span> os<span style="color:#f92672">.</span>path<span style="color:#f92672">.</span>join(os<span style="color:#f92672">.</span>getcwd(), <span style="color:#e6db74">&#34;data&#34;</span>)
+
+
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">get_auth_url</span>():
+    <span style="color:#75715e"># create an authorisation url to copy paste into a browser window</span>
+    <span style="color:#75715e"># so we can get an access token to store in _credentials.py</span>
+
+    base_url <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;https://runkeeper.com/&#34;</span>
+    endpoint <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;apps/authorize&#34;</span>
+    params <span style="color:#f92672">=</span> {
+        <span style="color:#e6db74">&#34;response_type&#34;</span>: <span style="color:#e6db74">&#34;code&#34;</span>,
+        <span style="color:#e6db74">&#34;client_id&#34;</span>: client_id,
+        <span style="color:#e6db74">&#34;redirect_uri&#34;</span>: <span style="color:#e6db74">&#34;http://www.martinjc.com&#34;</span>,
+    }
+
+    auth_url <span style="color:#f92672">=</span> base_url <span style="color:#f92672">+</span> endpoint <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;?&#34;</span> <span style="color:#f92672">+</span> urlencode(params, quote_via<span style="color:#f92672">=</span>quote)
+    <span style="color:#66d9ef">return</span> auth_url</code></pre></div>
+
+<p>Once we have the <code>auth_url</code> we can open it in a web browser. This will open the Runkeeper website and ask us to give permission to our application to access the necessary data:</p>
+
+
+
+
+
+
+
+
+
+
+<figure>
+    <img src="/2019/05/29/fitness-data-downloading/authorise.png" width="1594" height="1206" alt="Authorising the Application">
+    <figcaption>
+        <small>
+            Authorising the Application
+        </small>
+    </figcaption>
+</figure>
+
+<p>If we authorise the application, it will send us back to our redirect URL. A proper server would listen for these requests coming in, capture the code provided in the address bar and carry on with the authentication flow. Again, we&rsquo;re just doing it manually, so we&rsquo;ll just copy and paste that code out of the address bar so we can use it in the next step of the process:</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">do_auth</span>():
+
+    base_url <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;https://runkeeper.com/&#34;</span>
+    endpoint <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;apps/token&#34;</span>
+    params <span style="color:#f92672">=</span> {
+        <span style="color:#e6db74">&#34;grant_type&#34;</span>: <span style="color:#e6db74">&#34;authorization_code&#34;</span>,
+        <span style="color:#e6db74">&#34;code&#34;</span>: <span style="color:#e6db74">&#34;CODE_WE_JUST_COPIED&#34;</span>,
+        <span style="color:#e6db74">&#34;client_id&#34;</span>: client_id,
+        <span style="color:#e6db74">&#34;client_secret&#34;</span>: client_secret,
+        <span style="color:#e6db74">&#34;redirect_uri&#34;</span>: <span style="color:#e6db74">&#34;http://www.martinjc.com&#34;</span>,
+    }
+
+    r <span style="color:#f92672">=</span> requests<span style="color:#f92672">.</span>post(base_url <span style="color:#f92672">+</span> endpoint, params)
+    <span style="color:#66d9ef">print</span>(r<span style="color:#f92672">.</span>json())</code></pre></div>
+
+<p>If all is well, the response from the server will contain the access token we need to make authenticated requests to the server.</p>
+
+<p>We can then use this <code>access_token</code> every time we need to make a request to the API:</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">get_data</span>(endpoint, params<span style="color:#f92672">=</span>None):
+
+    base_url <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;https://api.runkeeper.com/&#34;</span>
+    endpoint <span style="color:#f92672">=</span> endpoint
+
+    headers <span style="color:#f92672">=</span> {<span style="color:#e6db74">&#34;Authorization&#34;</span>: <span style="color:#e6db74">&#34;Bearer &#34;</span> <span style="color:#f92672">+</span> access_token}
+
+    r <span style="color:#f92672">=</span> requests<span style="color:#f92672">.</span>get(base_url <span style="color:#f92672">+</span> endpoint, params<span style="color:#f92672">=</span>params, headers<span style="color:#f92672">=</span>headers)
+    <span style="color:#66d9ef">if</span> r<span style="color:#f92672">.</span>status_code <span style="color:#f92672">!=</span> <span style="color:#ae81ff">200</span>:
+        <span style="color:#66d9ef">return</span> None
+    <span style="color:#66d9ef">return</span> r<span style="color:#f92672">.</span>json()</code></pre></div>
+
+<p>The above function will make a request to the given endpoint (and assuming it succeeds) will return the data back to the calling code. If we want to get the list of all activities for the user, we can use this function like so:</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">get_fitness_activities</span>():
+    <span style="color:#75715e"># store activity URIs separately</span>
+    <span style="color:#66d9ef">with</span> open(<span style="color:#e6db74">&#34;activities.json&#34;</span>, <span style="color:#e6db74">&#34;w&#34;</span>) <span style="color:#66d9ef">as</span> activities_output_file:
+
+        activities <span style="color:#f92672">=</span> []
+        activity_data <span style="color:#f92672">=</span> get_data(<span style="color:#e6db74">&#34;fitnessActivities&#34;</span>)
+
+        num_activities <span style="color:#f92672">=</span> activity_data[<span style="color:#e6db74">&#34;size&#34;</span>]
+        num_calls <span style="color:#f92672">=</span> int(num_activities <span style="color:#f92672">/</span> <span style="color:#ae81ff">25</span>)
+        call_count <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
+
+        <span style="color:#66d9ef">if</span> activity_data<span style="color:#f92672">.</span>get(<span style="color:#e6db74">&#34;items&#34;</span>):
+            activities<span style="color:#f92672">.</span>extend(activity_data[<span style="color:#e6db74">&#34;items&#34;</span>])
+            <span style="color:#66d9ef">print</span>(call_count, len(activity_data[<span style="color:#e6db74">&#34;items&#34;</span>]), len(activities))
+
+        <span style="color:#66d9ef">while</span> activity_data<span style="color:#f92672">.</span>get(<span style="color:#e6db74">&#34;next&#34;</span>) <span style="color:#f92672">and</span> call_count <span style="color:#f92672">&lt;</span> num_calls:
+            activity_data <span style="color:#f92672">=</span> get_data(activity_data[<span style="color:#e6db74">&#34;next&#34;</span>])
+            call_count <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>
+
+            <span style="color:#66d9ef">if</span> activity_data<span style="color:#f92672">.</span>get(<span style="color:#e6db74">&#34;items&#34;</span>):
+                activities<span style="color:#f92672">.</span>extend(activity_data[<span style="color:#e6db74">&#34;items&#34;</span>])
+                <span style="color:#66d9ef">print</span>(call_count, len(activity_data[<span style="color:#e6db74">&#34;items&#34;</span>]), len(activities))
+
+        json<span style="color:#f92672">.</span>dump(activities, activities_output_file)</code></pre></div>
+
+<p>The list of activities in the Health Graph is paginated, so we need to call the endpoint repeatedly, fetching each page of activities.</p>
+
+<p>Once we have downloaded the full list of activities, we can then download the full details of each activity. The API is rate-limited to 100 calls every 15 minutes per user, so we&rsquo;ll put the code to sleep for 9 seconds between calls to ensure we don&rsquo;t go over the rate limit:</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">download_activities</span>(activity_list):
+
+    <span style="color:#66d9ef">for</span> activity_uri <span style="color:#f92672">in</span> activity_list:
+        id_str <span style="color:#f92672">=</span> activity_uri<span style="color:#f92672">.</span>replace(<span style="color:#e6db74">&#34;/fitnessActivities/&#34;</span>, <span style="color:#e6db74">&#34;&#34;</span>)
+        filename <span style="color:#f92672">=</span> os<span style="color:#f92672">.</span>path<span style="color:#f92672">.</span>join(DATA_DIR, <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">%s</span><span style="color:#e6db74">.json&#34;</span> <span style="color:#f92672">%</span> id_str)
+        <span style="color:#66d9ef">if</span> <span style="color:#f92672">not</span> os<span style="color:#f92672">.</span>path<span style="color:#f92672">.</span>exists(filename):
+            activity_data <span style="color:#f92672">=</span> get_data(activity_uri)
+            time<span style="color:#f92672">.</span>sleep(<span style="color:#ae81ff">9</span>)
+            <span style="color:#66d9ef">if</span> activity_data <span style="color:#f92672">is</span> <span style="color:#f92672">not</span> None:
+                <span style="color:#66d9ef">with</span> open(filename, <span style="color:#e6db74">&#34;w&#34;</span>) <span style="color:#66d9ef">as</span> output_file:
+                    json<span style="color:#f92672">.</span>dump(activity_data, output_file)</code></pre></div>
+
+<p>And that&rsquo;s it. Run the code, give it enough time, and you&rsquo;ll end up with all your activity data downloaded from Runkeeper. Easy.</p>
+
+<p>The full code for the script is below, or in <a href="https://gist.github.com/martinjc/0d54358e1ddae6f48f689e899506e570">this gist here</a>.</p>
+
+<script src="https://gist.github.com/martinjc/0d54358e1ddae6f48f689e899506e570.js"></script>
+
+        </div>
+    </article>
+    
+    <article class="blogpost">
+        <header>
             <h1> <a href="/2017/11/29/academic-parent/">
                     Academic Parent
                 </a></h1>
@@ -635,143 +818,6 @@
 <p>I built this as a quick hack this morning. It took about an hour or so, and it shows. The code is not robust in any way, but it works. You can ask it for data from any year (or a number of years) and it’ll happily sit there churning its way through the results and spitting them out as both .csv and .json.</p>
 
 <p>All the code is <a href="https://github.com/martinjc/assembly-expenses-scraper">available on Github</a> and it’s under an MIT Licence. Have fun 😉</p>
-
-        </div>
-    </article>
-    
-    <article class="blogpost">
-        <header>
-            <h1> <a href="/2016/10/05/atom-plugins-for-web-development/">
-                    Atom Plugins for Web Development
-                </a></h1>
-            <p class="author">
-                <span class="date">Wednesday, Oct 5, 2016</span>
-            </p>
-        </header>
-        <div class="content">
-            
-
-<p>I’ve had a number of students in my web-dev module asking me what plugins I’m using in my text editor, so I thought I’d dash off a quick blog post on the plugins I find useful day-to-day. (Actually, most people are normally asking me ‘how did you do that thing where you typed one word and suddenly you had a whole HTML page? The answer is I used a plugin, so ‘what plugins do you use?’ is really the question they should be asking…)</p>
-
-<p>I’m using <a href="https://atom.io/">Atom</a> as my text editor. It’s free, open source, and generally reliable. If you’re a student on my web-dev course you’re stuck using <a href="https://www.sublimetext.com/">Sublime Text</a> in the lab for now. I’m pretty sure most of the Atom plugins I use have either direct Sublime equivalents, or similarly functioning alternatives.</p>
-
-<p>There’s a guide to Atom packages <a href="here">here</a> and one for Sublime Text <a href="https://www.sublimetext.com/docs/3/packages.html">here</a></p>
-
-<p>A quick google for ‘best atom packages web developer’ will probably get you to a far more comprehensive list than this, but here’s my current pick of useful plugins anyway:</p>
-
-<h2 id="emmet-https-atom-io-packages-emmet"><a href="https://atom.io/packages/emmet">emmet</a></h2>
-
-<p>This is essential for anyone writing any amount of HTML. This is the magic package that allows me to write ‘html:5’ in a blank document, hit the shortcut keys (CTRL + E in my setup), and suddenly have a simple boilerplate HTML page.</p>
-
-
-
-
-
-
-
-
-
-
-<figure>
-    <img src="/2016/10/05/atom-plugins-for-web-development/out-1.gif" width="1024" height="879" alt="emmet auto completion">
-    <figcaption>
-        <small>
-            emmet auto completion
-        </small>
-    </figcaption>
-</figure>
-
-<p>It’s ace. Not only that, but it can write loads of HTML for you, and all you have to do is write a CSS selector for that HTML:</p>
-
-
-
-
-
-
-
-
-
-
-<figure>
-    <img src="/2016/10/05/atom-plugins-for-web-development/out-1.gif" width="1024" height="879" alt="html css Selector expansion">
-    <figcaption>
-        <small>
-            html css Selector expansion
-        </small>
-    </figcaption>
-</figure>
-
-<p>Great stuff. The documentation is here.</p>
-
-<h2 id="atom-beautify-https-atom-io-packages-atom-beautify"><a href="https://atom.io/packages/atom-beautify">atom-beautify</a></h2>
-
-<p>This will tidy up your code automatically, fixing the indentation and spacing etc. It can even be set to automatically tidy your code every time you save a file. Awesome huh? Imagine being set a coursework where some of the marks were dependent on not writing code that looks like it was written by a five-year old child who’s addicted to hitting the tab key, then finding out that there’s software to strap that five-year olds thumbs to his hands so he can’t hit that tab key. Awesome.</p>
-
-
-
-
-
-
-
-
-
-
-<figure>
-    <img src="/2016/10/05/atom-plugins-for-web-development/out-2.gif" width="1024" height="869" alt="Beautiful tidy code">
-    <figcaption>
-        <small>
-            Beautiful tidy code
-        </small>
-    </figcaption>
-</figure>
-
-<h2 id="color-picker-https-atom-io-packages-color-picker"><a href="https://atom.io/packages/color-picker">color-picker</a></h2>
-
-<p>This one adds a colour picker right into atom. Just CMD-SHIFT-C and choose your colours!</p>
-
-
-
-
-
-
-
-
-
-
-<figure>
-    <img src="/2016/10/05/atom-plugins-for-web-development/out-3.gif" width="1024" height="869" alt="Colour picker">
-    <figcaption>
-        <small>
-            Colour picker
-        </small>
-    </figcaption>
-</figure>
-
-<p>Another useful colour related plugin you may want to look at is Pigments, which can highlight colours in your projects, and gather them all together so you can see your palette.</p>
-
-<h2 id="linter-https-atom-io-packages-linter"><a href="https://atom.io/packages/linter">linter</a></h2>
-
-<p>My last recommendation is linter. This plugin will automatically check your code for errors. You’ll need to install linters for whatever language you want to check, like linter-tidy, linter-csslint, linter-pylint and linter-jshint.</p>
-
-
-
-
-
-
-
-
-
-
-<figure>
-    <img src="/2016/10/05/atom-plugins-for-web-development/Screenshot.png" width="1206" height="1028" alt="Linter finds errors in your code">
-    <figcaption>
-        <small>
-            Linter finds errors in your code
-        </small>
-    </figcaption>
-</figure>
-
-<p>So there we go – a few recommendations to get you started. Found anything else interesting? Let me know!</p>
 
         </div>
     </article>
