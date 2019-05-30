@@ -2,59 +2,59 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Compj on Martin Chorley</title>
-    <link>/tags/compj/</link>
+    <link>https://martinjc.com/tags/compj/</link>
     <description>Recent content in Compj on Martin Chorley</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
     <lastBuildDate>Mon, 26 Jan 2015 10:15:16 +0000</lastBuildDate>
     
-	<atom:link href="/tags/compj/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://martinjc.com/tags/compj/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>NHS Hackday 2015</title>
-      <link>/2015/01/26/nhs-hackday-2015/</link>
+      <link>https://martinjc.com/2015/01/26/nhs-hackday-2015/</link>
       <pubDate>Mon, 26 Jan 2015 10:15:16 +0000</pubDate>
       
-      <guid>/2015/01/26/nhs-hackday-2015/</guid>
+      <guid>https://martinjc.com/2015/01/26/nhs-hackday-2015/</guid>
       <description>This weekend I took part in an incredibly successful NHS hackday, hosted at Cardiff University and organised by Anne Marie Cunningham and James Morgan. We went as a team from the MSc in Computational Journalism, with myself and Glyn attending along with Pooja, Nikita, Annalisa and Charles. At the last-minute I recruited a couple of ringers as well, dragging along Rhys Priestland Dr William Wilberforce Webberley from Comsc and Dr Matthew Williams, previously of this parish.</description>
     </item>
     
     <item>
       <title>CompJ Labs - Postcodes</title>
-      <link>/2015/01/05/compj-labs-postcodes/</link>
+      <link>https://martinjc.com/2015/01/05/compj-labs-postcodes/</link>
       <pubDate>Mon, 05 Jan 2015 09:27:51 +0000</pubDate>
       
-      <guid>/2015/01/05/compj-labs-postcodes/</guid>
+      <guid>https://martinjc.com/2015/01/05/compj-labs-postcodes/</guid>
       <description>I&amp;rsquo;ve thrown up a post on compj.cs.cf.ac.uk about some work we&amp;rsquo;ve done looking at empty properties in Cardiff. I&amp;rsquo;ll add further posts over the coming weeks about other data analysis we&amp;rsquo;ve done on this topic, and new work looking at the Welsh Assembly.</description>
     </item>
     
     <item>
       <title>Quick and Dirty Twitter API in Python</title>
-      <link>/2014/11/19/quick-and-dirty-twitter-api-in-python/</link>
+      <link>https://martinjc.com/2014/11/19/quick-and-dirty-twitter-api-in-python/</link>
       <pubDate>Wed, 19 Nov 2014 12:13:11 +0000</pubDate>
       
-      <guid>/2014/11/19/quick-and-dirty-twitter-api-in-python/</guid>
+      <guid>https://martinjc.com/2014/11/19/quick-and-dirty-twitter-api-in-python/</guid>
       <description>QUICK DISCLAIMER: this is a quick and dirty solution to a problem, so may not represent best coding practice, and has absolutely no error checking or handling. Use with caution&amp;hellip;
 A recent project has needed me to scrape some data from Twitter. I considered using Tweepy, but as it was a project for the MSc in Computational Journalism, I thought it would be more interesting to write our own simple Twitter API wrapper in Python.</description>
     </item>
     
     <item>
       <title>Computational Journalism - &#39;a Manifesto&#39;</title>
-      <link>/2014/10/03/computational-journalism-a-manifesto/</link>
+      <link>https://martinjc.com/2014/10/03/computational-journalism-a-manifesto/</link>
       <pubDate>Fri, 03 Oct 2014 08:00:04 +0000</pubDate>
       
-      <guid>/2014/10/03/computational-journalism-a-manifesto/</guid>
+      <guid>https://martinjc.com/2014/10/03/computational-journalism-a-manifesto/</guid>
       <description>While Glyn and I have been discussing the new MSc course between ourselves and with others, we have repeatedly come up with the same issues and themes, again and again. As a planning exercise earlier in the summer, we gathered some of these together into a &amp;lsquo;manifesto&amp;rsquo;.
 The manifesto is online on our main &amp;lsquo;Computational Journalism&amp;rsquo; website with a bit of extra commentary.</description>
     </item>
     
     <item>
       <title>MSc Computational Journalism about to launch</title>
-      <link>/2014/04/15/msc-computational-journalism-about-to-launch/</link>
+      <link>https://martinjc.com/2014/04/15/msc-computational-journalism-about-to-launch/</link>
       <pubDate>Tue, 15 Apr 2014 15:35:35 +0000</pubDate>
       
-      <guid>/2014/04/15/msc-computational-journalism-about-to-launch/</guid>
+      <guid>https://martinjc.com/2014/04/15/msc-computational-journalism-about-to-launch/</guid>
       <description>For the last two years I&amp;rsquo;ve been working on a project with some colleagues in the school of Journalism, Media and Cultural Studies (JOMEC) here at Cardiff University and it&amp;rsquo;s finally all coming together. This week we&amp;rsquo;ve been able to announce that (subject to some final internal paperwork wrangling) we&amp;rsquo;ll be launching an MSc in Computational Journalism this September. The story of how the course came about is fairly long, but starts simply with a tweet (unfortunately missing the context, but you get the drift):</description>
     </item>
     

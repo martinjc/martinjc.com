@@ -2,99 +2,99 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Foursquare on Martin Chorley</title>
-    <link>/tags/foursquare/</link>
+    <link>https://martinjc.com/tags/foursquare/</link>
     <description>Recent content in Foursquare on Martin Chorley</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
     <lastBuildDate>Tue, 27 Jan 2015 11:00:12 +0000</lastBuildDate>
     
-	<atom:link href="/tags/foursquare/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://martinjc.com/tags/foursquare/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Personality and Places</title>
-      <link>/2015/01/27/personality-and-places/</link>
+      <link>https://martinjc.com/2015/01/27/personality-and-places/</link>
       <pubDate>Tue, 27 Jan 2015 11:00:12 +0000</pubDate>
       
-      <guid>/2015/01/27/personality-and-places/</guid>
+      <guid>https://martinjc.com/2015/01/27/personality-and-places/</guid>
       <description>Our paper examining the link between individual personality and the places people visit has just been published in Computers in Human Behavior. It&amp;rsquo;s open access, so you can go read it for free, now! 
 In an experiment we ran previously, we asked users of Foursquare to take a personality test and give us access to their checkin history. The personality test gives us a measure of how each person scores for five different factors: Openness, Conscientiousness, Extraversion, Agreeableness and Neuroticism.</description>
     </item>
     
     <item>
       <title>Foursquare icon downloading (yet again)</title>
-      <link>/2014/08/01/foursquare-icon-downloading-yet-again/</link>
+      <link>https://martinjc.com/2014/08/01/foursquare-icon-downloading-yet-again/</link>
       <pubDate>Fri, 01 Aug 2014 07:14:16 +0000</pubDate>
       
-      <guid>/2014/08/01/foursquare-icon-downloading-yet-again/</guid>
+      <guid>https://martinjc.com/2014/08/01/foursquare-icon-downloading-yet-again/</guid>
       <description>Previously I&amp;rsquo;vewritten about a little script to download all the category icons from Foursquare and to create many different coloured versions of them. I&amp;rsquo;ve recently had to do this again for a project, and found my previous script did not work with a recent API version. I&amp;rsquo;ve updated the script to fix it and put it up on github.</description>
     </item>
     
     <item>
       <title>SCA 2013 - Visiting Patterns and Personality of Foursquare Users</title>
-      <link>/2013/10/01/sca-2013-visiting-patterns-and-personality-of-foursquare-users/</link>
+      <link>https://martinjc.com/2013/10/01/sca-2013-visiting-patterns-and-personality-of-foursquare-users/</link>
       <pubDate>Tue, 01 Oct 2013 12:30:47 +0000</pubDate>
       
-      <guid>/2013/10/01/sca-2013-visiting-patterns-and-personality-of-foursquare-users/</guid>
+      <guid>https://martinjc.com/2013/10/01/sca-2013-visiting-patterns-and-personality-of-foursquare-users/</guid>
       <description>Nice work by [@martinjc](https://twitter.com/martinjc) on Foursquare checkins and personality # sca2013 [pic.twitter.com/9afebFrzYS](http://t.co/9afebFrzYS) — Shaun Lawson (@shaunlawson) [October 1, 2013](https://twitter.com/shaunlawson/statuses/384979369175027712) Today was presentation day for me at SCA 2013 - I was presenting the initial results of the Foursquare experiment, which has now been running for a while. The presentation seemed to go really well - I think it&amp;rsquo;s the strongest work I&amp;rsquo;ve done yet, and so it was easy to talk well and with confidence about it, which led to a nice talk.</description>
     </item>
     
     <item>
       <title>KSRI Services Summer School - Social Computing Theory and Hackathon</title>
-      <link>/2013/09/24/ksri-services-summer-school-social-computing-theory-and-hackathon/</link>
+      <link>https://martinjc.com/2013/09/24/ksri-services-summer-school-social-computing-theory-and-hackathon/</link>
       <pubDate>Tue, 24 Sep 2013 11:19:20 +0000</pubDate>
       
-      <guid>/2013/09/24/ksri-services-summer-school-social-computing-theory-and-hackathon/</guid>
+      <guid>https://martinjc.com/2013/09/24/ksri-services-summer-school-social-computing-theory-and-hackathon/</guid>
       <description>I was invited by Simon Caton to come to the KSRI Services Summer School, held at KIT in Germany, to help him run a workshop session on Social Computing. We decided to use the session as a crash course in retrieving and manipulating data from Social Media APIs - showing the students the basics, then running a mini &amp;lsquo;hackathon&amp;rsquo; for the students to gain some practical experience.
 I think the session went really well, the students seemed to enjoy it and the feedback was very positive.</description>
     </item>
     
     <item>
       <title>Summer Project update</title>
-      <link>/2013/07/25/summer-project-update/</link>
+      <link>https://martinjc.com/2013/07/25/summer-project-update/</link>
       <pubDate>Thu, 25 Jul 2013 13:23:14 +0000</pubDate>
       
-      <guid>/2013/07/25/summer-project-update/</guid>
+      <guid>https://martinjc.com/2013/07/25/summer-project-update/</guid>
       <description>We are storming along with summer projects now, and starting to see some really good results.
 Liam Turner (who is starting a PhD in the school in October) has been working hard to create a mobile version of the 4SQPersonality app. His work is coming along really well, with a great mobile HTML version now up and running, a native android wrapper working, and an iOS wrapper on its way. With any luck we&amp;rsquo;ll have mobile apps for both major platforms ready to be released before the summer is over.</description>
     </item>
     
     <item>
       <title>Open Sauce Hackathon - Post Mortem</title>
-      <link>/2013/04/22/open-sauce-hackathon-post-mortem/</link>
+      <link>https://martinjc.com/2013/04/22/open-sauce-hackathon-post-mortem/</link>
       <pubDate>Mon, 22 Apr 2013 10:51:12 +0000</pubDate>
       
-      <guid>/2013/04/22/open-sauce-hackathon-post-mortem/</guid>
+      <guid>https://martinjc.com/2013/04/22/open-sauce-hackathon-post-mortem/</guid>
       <description>This weekend saw the second &amp;lsquo;Open Sauce Hackathon&amp;rsquo; run by undergraduate students here in the school. Last years was pretty successful, and they improved upon it this year, pulling in many more sponsors and offering more prizes.
 Unlike last year, when I turned up having already decided with Jon Quinn what we were doing, I went along this year with no real ideas. I had a desire to do something with a map, as I&amp;rsquo;m pretty sure building stuff connected to maps is going to play a big part in work over the next couple of months.</description>
     </item>
     
     <item>
       <title>Foursquare Personality Experiment</title>
-      <link>/2012/11/20/foursquare-personality-experiment/</link>
+      <link>https://martinjc.com/2012/11/20/foursquare-personality-experiment/</link>
       <pubDate>Tue, 20 Nov 2012 09:20:32 +0000</pubDate>
       
-      <guid>/2012/11/20/foursquare-personality-experiment/</guid>
+      <guid>https://martinjc.com/2012/11/20/foursquare-personality-experiment/</guid>
       <description>Today we are finally starting to promote our latest experiment. It&amp;rsquo;s been online for about a month, but we haven&amp;rsquo;t told anyone about it while we&amp;rsquo;ve been finishing up the Year 2 deliverables for Recognition (the review is in a couple of weeks - fingers crossed!) Now however I can start publicly talking about it and encouraging people to take part and get involved!
 We&amp;rsquo;re calling it the Foursquare Personality Experiment, and it&amp;rsquo;s available on the School of Computer Science &amp;amp; Informatics&amp;rsquo; website here:</description>
     </item>
     
     <item>
       <title>Foursquare Category Icon Downloader (2)</title>
-      <link>/2012/01/31/foursquare-category-icon-downloader-2/</link>
+      <link>https://martinjc.com/2012/01/31/foursquare-category-icon-downloader-2/</link>
       <pubDate>Tue, 31 Jan 2012 08:50:10 +0000</pubDate>
       
-      <guid>/2012/01/31/foursquare-category-icon-downloader-2/</guid>
+      <guid>https://martinjc.com/2012/01/31/foursquare-category-icon-downloader-2/</guid>
       <description>UPDATE [01 August 2014]: Even more breaking! More recent version of the script here
 Someone commented recently that the script I&amp;rsquo;d written to download the Foursquare category icons was broken. downloader.py is an update that works as of today (notice the URL param with today&amp;rsquo;s date) that will fetch all available sizes of all the category icons and store them in folders by size.</description>
     </item>
     
     <item>
       <title>Foursquare Hackathon Post Mortem</title>
-      <link>/2011/11/22/foursquare-hackathon-post-mortem/</link>
+      <link>https://martinjc.com/2011/11/22/foursquare-hackathon-post-mortem/</link>
       <pubDate>Tue, 22 Nov 2011 10:24:13 +0000</pubDate>
       
-      <guid>/2011/11/22/foursquare-hackathon-post-mortem/</guid>
+      <guid>https://martinjc.com/2011/11/22/foursquare-hackathon-post-mortem/</guid>
       <description>Note: I wrote this post just after the hackathon, but then forgot to actually publish it! 
 There&amp;rsquo;s a fair amount I learnt from taking part in and helping to organise the foursquare hackathon here at the university that probably deserves its own post. I&amp;rsquo;ll split it into two parts, the taking part and the organisation.
 Organising a hack event There were a couple of things I learnt from helping to organise the event that perhaps weren&amp;rsquo;t clear to begin with:</description>
@@ -102,10 +102,10 @@ Organising a hack event There were a couple of things I learnt from helping to o
     
     <item>
       <title>Colourful Foursquare category icons </title>
-      <link>/2011/10/01/colourful-foursquare-category-icons/</link>
+      <link>https://martinjc.com/2011/10/01/colourful-foursquare-category-icons/</link>
       <pubDate>Sat, 01 Oct 2011 16:24:07 +0000</pubDate>
       
-      <guid>/2011/10/01/colourful-foursquare-category-icons/</guid>
+      <guid>https://martinjc.com/2011/10/01/colourful-foursquare-category-icons/</guid>
       <description>UPDATE [01 August 2014]: Even more breaking! More recent version of the script here
 UPDATE 31/01/2011 - new version of the downloader script is here
 A couple of projects I&amp;rsquo;m working on at the moment need the ability to add foursquare venues to a map. This is pretty straightforward, but what is also needed is the ability to distinguish between the categories of the venues. To do this, I&amp;rsquo;m adding custom markers to a google map at a venue location, with the marker having an icon representing the venue category.</description>
@@ -113,48 +113,48 @@ A couple of projects I&amp;rsquo;m working on at the moment need the ability to 
     
     <item>
       <title>Foursquare Hackathon Cardiff - Day 2</title>
-      <link>/2011/09/19/foursquare-hackathon-cardiff-day-2/</link>
+      <link>https://martinjc.com/2011/09/19/foursquare-hackathon-cardiff-day-2/</link>
       <pubDate>Mon, 19 Sep 2011 08:25:15 +0000</pubDate>
       
-      <guid>/2011/09/19/foursquare-hackathon-cardiff-day-2/</guid>
+      <guid>https://martinjc.com/2011/09/19/foursquare-hackathon-cardiff-day-2/</guid>
       <description>Wow. I thought Saturday was busy, but I was wrong. Saturday was a cake walk compared to the crazy nightmare that was Sunday. The challenge of trying to get something (anything) working before the app submission deadline was incredible. Coding was fast and intense, and required a lot of good communication and fast thinking. Unfortunately we hit a few roadblocks that slowed us down (2 hours debugging problems with django&amp;rsquo;s static file serving really didn&amp;rsquo;t help, neither did jQuery mobile being an absolute pain in the rear end), but by the end of the day we had a nice looking site with some actual working functionality.</description>
     </item>
     
     <item>
       <title>Foursquare Hackathon Cardiff - Day 1</title>
-      <link>/2011/09/17/foursquare-hackathon-cardiff-day-1/</link>
+      <link>https://martinjc.com/2011/09/17/foursquare-hackathon-cardiff-day-1/</link>
       <pubDate>Sat, 17 Sep 2011 19:07:04 +0000</pubDate>
       
-      <guid>/2011/09/17/foursquare-hackathon-cardiff-day-1/</guid>
+      <guid>https://martinjc.com/2011/09/17/foursquare-hackathon-cardiff-day-1/</guid>
       <description>I was fully intending to try and live-blog the progress of the foursquare hackathon today, even going as far as to install a live blog plugin, but things have been going very quickly and we&amp;rsquo;ve been hitting the coding hard so I just haven&amp;rsquo;t had time!
 We&amp;rsquo;ve managed to get a decent crowd in, a roughly 50:50 split of people we already knew from the School and other people from elsewhere.</description>
     </item>
     
     <item>
       <title>Foursquare Hackathon</title>
-      <link>/2011/09/14/foursquare-hackathon/</link>
+      <link>https://martinjc.com/2011/09/14/foursquare-hackathon/</link>
       <pubDate>Wed, 14 Sep 2011 15:57:16 +0000</pubDate>
       
-      <guid>/2011/09/14/foursquare-hackathon/</guid>
+      <guid>https://martinjc.com/2011/09/14/foursquare-hackathon/</guid>
       <description>Along with Matthew Williams and Chris Gwilliams I&amp;rsquo;m helping to organise the Cardiff edition of the Foursquare global hackathon this weekend. I&amp;rsquo;m hoping it&amp;rsquo;ll be a pretty good event. Signup&amp;rsquo;s are looking pretty positive and I&amp;rsquo;m hopeful that we&amp;rsquo;ll get some decent apps being created.
 The organising is actually quite fun, but it is remarkable how much there is to do and remember. Thankfully the School of Computer Science &amp;amp; Informatics are being very supportive and allowing us to host it there, which makes things easier.</description>
     </item>
     
     <item>
       <title>Django &#43; Foursquare &#43; OAuth = webapp?</title>
-      <link>/2011/09/08/django-foursquare-oauth-webapp/</link>
+      <link>https://martinjc.com/2011/09/08/django-foursquare-oauth-webapp/</link>
       <pubDate>Thu, 08 Sep 2011 17:36:13 +0000</pubDate>
       
-      <guid>/2011/09/08/django-foursquare-oauth-webapp/</guid>
+      <guid>https://martinjc.com/2011/09/08/django-foursquare-oauth-webapp/</guid>
       <description>Moving on from my fun with getting django + twitter + oauth to play nicely, it&amp;rsquo;s now time to start writing a web app that uses foursquare as the authentication/login method. As part of this, I need a basic django framework for doing authentication with foursquare. This may be useful to someone else at some point (including me when I forget in three months time how I did things), so I&amp;rsquo;ve written up the details and added the code to github.</description>
     </item>
     
     <item>
       <title>Bad Foursquare Day...</title>
-      <link>/2011/06/17/bad-foursquare-day.../</link>
+      <link>https://martinjc.com/2011/06/17/bad-foursquare-day.../</link>
       <pubDate>Fri, 17 Jun 2011 13:18:46 +0000</pubDate>
       
-      <guid>/2011/06/17/bad-foursquare-day.../</guid>
+      <guid>https://martinjc.com/2011/06/17/bad-foursquare-day.../</guid>
       <description>I can understand losing mayorships, but when it&amp;rsquo;s somebody close to you and she steals two from you in one day, it&amp;rsquo;s ridiculous:
 I will have my revenge&amp;hellip;</description>
     </item>

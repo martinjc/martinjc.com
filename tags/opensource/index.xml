@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Opensource on Martin Chorley</title>
-    <link>/tags/opensource/</link>
+    <link>https://martinjc.com/tags/opensource/</link>
     <description>Recent content in Opensource on Martin Chorley</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
     <lastBuildDate>Mon, 26 Jan 2015 10:15:16 +0000</lastBuildDate>
     
-	<atom:link href="/tags/opensource/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://martinjc.com/tags/opensource/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>NHS Hackday 2015</title>
-      <link>/2015/01/26/nhs-hackday-2015/</link>
+      <link>https://martinjc.com/2015/01/26/nhs-hackday-2015/</link>
       <pubDate>Mon, 26 Jan 2015 10:15:16 +0000</pubDate>
       
-      <guid>/2015/01/26/nhs-hackday-2015/</guid>
+      <guid>https://martinjc.com/2015/01/26/nhs-hackday-2015/</guid>
       <description>This weekend I took part in an incredibly successful NHS hackday, hosted at Cardiff University and organised by Anne Marie Cunningham and James Morgan. We went as a team from the MSc in Computational Journalism, with myself and Glyn attending along with Pooja, Nikita, Annalisa and Charles. At the last-minute I recruited a couple of ringers as well, dragging along Rhys Priestland Dr William Wilberforce Webberley from Comsc and Dr Matthew Williams, previously of this parish.</description>
     </item>
     

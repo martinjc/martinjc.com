@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Mfp on Martin Chorley</title>
-    <link>/tags/mfp/</link>
+    <link>https://martinjc.com/tags/mfp/</link>
     <description>Recent content in Mfp on Martin Chorley</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
     <lastBuildDate>Thu, 05 Feb 2015 11:02:36 +0000</lastBuildDate>
     
-	<atom:link href="/tags/mfp/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://martinjc.com/tags/mfp/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Accessing and Scraping MyFitnessPal Data with Python</title>
-      <link>/2015/02/05/accessing-and-scraping-myfitnesspal-data-with-python/</link>
+      <link>https://martinjc.com/2015/02/05/accessing-and-scraping-myfitnesspal-data-with-python/</link>
       <pubDate>Thu, 05 Feb 2015 11:02:36 +0000</pubDate>
       
-      <guid>/2015/02/05/accessing-and-scraping-myfitnesspal-data-with-python/</guid>
+      <guid>https://martinjc.com/2015/02/05/accessing-and-scraping-myfitnesspal-data-with-python/</guid>
       <description>Interesting news this morning that MyFitnessPal has been bought by Under Armour for $475 million. I&amp;rsquo;ve used MFP for many years now, and it was pretty helpful in helping me lose all the excess PhD weight that I&amp;rsquo;d put on, and then maintaining a healthy(ish) lifestyle since 2010.
 News of an acquisition always has me slightly worried though - not for someone else having access to my data, as I&amp;rsquo;ve made my peace with the fact that using a free service generally means that it&amp;rsquo;s me that&amp;rsquo;s being sold.</description>
     </item>

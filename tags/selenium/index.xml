@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Selenium on Martin Chorley</title>
-    <link>/tags/selenium/</link>
+    <link>https://martinjc.com/tags/selenium/</link>
     <description>Recent content in Selenium on Martin Chorley</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
     <lastBuildDate>Wed, 02 Nov 2016 20:17:40 +0000</lastBuildDate>
     
-	<atom:link href="/tags/selenium/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://martinjc.com/tags/selenium/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Scraping the Assembly</title>
-      <link>/2016/11/02/scraping-the-assembly/</link>
+      <link>https://martinjc.com/2016/11/02/scraping-the-assembly/</link>
       <pubDate>Wed, 02 Nov 2016 20:17:40 +0000</pubDate>
       
-      <guid>/2016/11/02/scraping-the-assembly/</guid>
+      <guid>https://martinjc.com/2016/11/02/scraping-the-assembly/</guid>
       <description>M’colleague is currently teaching a first-semester module on Data Journalism to the students on our MSc in Computational and Data Journalism. As part of this, they need to do some sort of data project. One of the students is looking at the expenses of Welsh Assembly Members. These are all freely available online, but not in an easy to manipulate form. According to the Assembly they’d be happy to give the data out as a spreadsheet, if we submitted an FOI.</description>
     </item>
     

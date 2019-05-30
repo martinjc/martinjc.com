@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Martin Chorley</title>
-    <link>/</link>
+    <link>https://martinjc.com/</link>
     <description>Recent content on Martin Chorley</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
     <lastBuildDate>Wed, 29 May 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://martinjc.com/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Fitness Data Downloading</title>
-      <link>/2019/05/29/fitness-data-downloading/</link>
+      <link>https://martinjc.com/2019/05/29/fitness-data-downloading/</link>
       <pubDate>Wed, 29 May 2019 00:00:00 +0000</pubDate>
       
-      <guid>/2019/05/29/fitness-data-downloading/</guid>
+      <guid>https://martinjc.com/2019/05/29/fitness-data-downloading/</guid>
       <description>Like many (most?) people these days who have the foolish notion to exercise outside I track my activities with GPS and a logging app. Well, I say &amp;lsquo;app&amp;rsquo;, but of course with the way all things link together my data ends up shared between four or five different services.
 I recently had call to download my location data for an upcoming project. One of the sites that stores my running and cycling activity is Runkeeper, and it was from here I chose to pull my data.</description>
     </item>
     
     <item>
       <title>Academic Parent</title>
-      <link>/2017/11/29/academic-parent/</link>
+      <link>https://martinjc.com/2017/11/29/academic-parent/</link>
       <pubDate>Wed, 29 Nov 2017 11:15:00 +0000</pubDate>
       
-      <guid>/2017/11/29/academic-parent/</guid>
+      <guid>https://martinjc.com/2017/11/29/academic-parent/</guid>
       <description>I, like many others, made note of a recent tweet by Nathan Hall discussing the attitude of his colleagues when he prioritises family over career:
 I still find it interesting the puzzled expressions I get from colleagues when mentioning how childcare impacts my academic work; when explaining why I try to minimize conference travel, leave the office by 4 PM, or sometimes cancel meetings due to dad responsibilities.
 &amp;mdash; Nathan C.</description>
@@ -34,40 +34,40 @@ I still find it interesting the puzzled expressions I get from colleagues when m
     
     <item>
       <title>DataJConf Debrief</title>
-      <link>/2017/08/05/datajconf-debrief/</link>
+      <link>https://martinjc.com/2017/08/05/datajconf-debrief/</link>
       <pubDate>Sat, 05 Aug 2017 11:15:00 +0000</pubDate>
       
-      <guid>/2017/08/05/datajconf-debrief/</guid>
+      <guid>https://martinjc.com/2017/08/05/datajconf-debrief/</guid>
       <description>DataJConf at UCD    A month ago we held the first European Data and Computational Journalism Conference in Dublin, Ireland. This is a long overdue post about that event.
 The conference idea started as all good ideas do, in the pub and with a tweet. It was at a social event during ICWSM &amp;lsquo;16 where I was first introduced to Bahareh Heravi, a data journalism lecturer from UCD.</description>
     </item>
     
     <item>
       <title>Post-Graduation Thoughts</title>
-      <link>/2017/08/04/post-graduation-thoughts/</link>
+      <link>https://martinjc.com/2017/08/04/post-graduation-thoughts/</link>
       <pubDate>Fri, 04 Aug 2017 14:35:00 +0000</pubDate>
       
-      <guid>/2017/08/04/post-graduation-thoughts/</guid>
+      <guid>https://martinjc.com/2017/08/04/post-graduation-thoughts/</guid>
       <description>Last month I took part in my first graduation ceremony as part of the academic procession. This is the bit where staff members from the school(s) that are graduating get dressed up in their silly robes, &amp;lsquo;process&amp;rsquo; into the graduation ceremony, and sit on stage for an hour or so clapping as all their students stride across the stage to shake the VC&amp;rsquo;s hand and graduate from their degree.
 It&amp;rsquo;s a lot of fun, because who doesn&amp;rsquo;t like dressing up in silly robes and a hat?</description>
     </item>
     
     <item>
       <title>Thoughts from the CEI Learning &amp; Teaching Conference 2017</title>
-      <link>/2017/07/05/thoughts-from-the-cei-learning-teaching-conference-2017/</link>
+      <link>https://martinjc.com/2017/07/05/thoughts-from-the-cei-learning-teaching-conference-2017/</link>
       <pubDate>Wed, 05 Jul 2017 11:15:00 +0000</pubDate>
       
-      <guid>/2017/07/05/thoughts-from-the-cei-learning-teaching-conference-2017/</guid>
+      <guid>https://martinjc.com/2017/07/05/thoughts-from-the-cei-learning-teaching-conference-2017/</guid>
       <description>Yesterday was the annual &amp;lsquo;Learning &amp;amp; Teaching Conference&amp;rsquo; of the Cardiff University Centre for Education Innovation. This year the theme was &amp;lsquo;To Tech or not to Tech, is that the Question?&amp;rsquo;. It&amp;rsquo;s the first time I&amp;rsquo;ve attended this conference, and I thought I&amp;rsquo;d get some of my thoughts from the day down in pixels.
 (Reading this back later, I realise what a tangent this went on. From &amp;ldquo;I&amp;rsquo;m going to review #CUCEI17&amp;rdquo; to &amp;ldquo;there are some teachers out there that could do better but I don&amp;rsquo;t know how to help them&amp;rdquo;.</description>
     </item>
     
     <item>
       <title>Catching a Bug</title>
-      <link>/2017/06/12/catching-a-bug/</link>
+      <link>https://martinjc.com/2017/06/12/catching-a-bug/</link>
       <pubDate>Mon, 12 Jun 2017 12:45:00 +0000</pubDate>
       
-      <guid>/2017/06/12/catching-a-bug/</guid>
+      <guid>https://martinjc.com/2017/06/12/catching-a-bug/</guid>
       <description>I&amp;rsquo;m doing some data analysis, and I just caught a showstopper of a bug. Want to see it? Here&amp;rsquo;s the code as it was before:
 new_index = [LIKERT[value] for value in LIKERT.keys() if value in data_counts.index] and here&amp;rsquo;s a simple fix for the code:
 new_index = [LIKERT[value] for value in data_counts.index] Doesn&amp;rsquo;t look like much of a problem, but it completely changed the way my data was analysed. Both lines are creating a new index for a pandas dataframe.</description>
@@ -75,10 +75,10 @@ new_index = [LIKERT[value] for value in data_counts.index] Doesn&amp;rsquo;t loo
     
     <item>
       <title>Weeknotes - 29th May 2017</title>
-      <link>/2017/06/04/weeknotes-29th-may-2017/</link>
+      <link>https://martinjc.com/2017/06/04/weeknotes-29th-may-2017/</link>
       <pubDate>Sun, 04 Jun 2017 20:00:40 +0000</pubDate>
       
-      <guid>/2017/06/04/weeknotes-29th-may-2017/</guid>
+      <guid>https://martinjc.com/2017/06/04/weeknotes-29th-may-2017/</guid>
       <description>Monday 29th May BANK HOLIDAY, innit
 Tuesday 30th May OH GOD, NOW I&amp;rsquo;VE GOT A DAY LESS TO DO EVERYTHING!
 Finished my visualisation coursework marking today. Generally really good quality across the board, and a really enjoyable set of work to mark. As time goes on, I&amp;rsquo;m liking this visualisation course more and more. It&amp;rsquo;s fun to teach as it&amp;rsquo;s an interesting and quite subjective field, which is not usual in a &amp;lsquo;normal&amp;rsquo; Computer Science course.</description>
@@ -86,106 +86,106 @@ Finished my visualisation coursework marking today. Generally really good qualit
     
     <item>
       <title>Weeknotes - 22nd May 2017</title>
-      <link>/2017/05/28/weeknotes-22nd-may-2017/</link>
+      <link>https://martinjc.com/2017/05/28/weeknotes-22nd-may-2017/</link>
       <pubDate>Sun, 28 May 2017 20:00:40 +0000</pubDate>
       
-      <guid>/2017/05/28/weeknotes-22nd-may-2017/</guid>
+      <guid>https://martinjc.com/2017/05/28/weeknotes-22nd-may-2017/</guid>
       <description>Strange week this week - coming back from holiday, lots of time spent catching up, arranging meetings and organising more meetings for next week
 Monday 22.05.17 Most of Monday morning was spent dealing with all the emails I&amp;rsquo;d received while away last week. The usual mix of requests for information from admin, queries from current, potential and past students, and a number of things relating to projects that are either about to start or were supposed to have started by now!</description>
     </item>
     
     <item>
       <title>Weeknotes - 14th May 2017</title>
-      <link>/2017/05/15/weeknotes-14th-may-2017/</link>
+      <link>https://martinjc.com/2017/05/15/weeknotes-14th-may-2017/</link>
       <pubDate>Mon, 15 May 2017 20:13:40 +0000</pubDate>
       
-      <guid>/2017/05/15/weeknotes-14th-may-2017/</guid>
+      <guid>https://martinjc.com/2017/05/15/weeknotes-14th-may-2017/</guid>
       <description>A very good week this week, in that I was only in work for 3 days, but still accomplished a lot. Through some convenient meetings I&amp;rsquo;ve managed to get a whole mess of projects lined up for the next year or so, and I came out of the week on Friday very eager to get cracking on things.
 Monday 8.5.17 This week started with our Assessment and Feedback focused teaching &amp;lsquo;away day&amp;rsquo;, which wasn&amp;rsquo;t really an away day because we didn&amp;rsquo;t go anywhere, but which was incredibly useful nonetheless.</description>
     </item>
     
     <item>
       <title>Scraping the Assembly</title>
-      <link>/2016/11/02/scraping-the-assembly/</link>
+      <link>https://martinjc.com/2016/11/02/scraping-the-assembly/</link>
       <pubDate>Wed, 02 Nov 2016 20:17:40 +0000</pubDate>
       
-      <guid>/2016/11/02/scraping-the-assembly/</guid>
+      <guid>https://martinjc.com/2016/11/02/scraping-the-assembly/</guid>
       <description>M’colleague is currently teaching a first-semester module on Data Journalism to the students on our MSc in Computational and Data Journalism. As part of this, they need to do some sort of data project. One of the students is looking at the expenses of Welsh Assembly Members. These are all freely available online, but not in an easy to manipulate form. According to the Assembly they’d be happy to give the data out as a spreadsheet, if we submitted an FOI.</description>
     </item>
     
     <item>
       <title>Atom Plugins for Web Development</title>
-      <link>/2016/10/05/atom-plugins-for-web-development/</link>
+      <link>https://martinjc.com/2016/10/05/atom-plugins-for-web-development/</link>
       <pubDate>Wed, 05 Oct 2016 20:17:40 +0000</pubDate>
       
-      <guid>/2016/10/05/atom-plugins-for-web-development/</guid>
+      <guid>https://martinjc.com/2016/10/05/atom-plugins-for-web-development/</guid>
       <description>I’ve had a number of students in my web-dev module asking me what plugins I’m using in my text editor, so I thought I’d dash off a quick blog post on the plugins I find useful day-to-day. (Actually, most people are normally asking me ‘how did you do that thing where you typed one word and suddenly you had a whole HTML page? The answer is I used a plugin, so ‘what plugins do you use?</description>
     </item>
     
     <item>
       <title>Sustainable Software Institute – Research Data Visualisation Workshop</title>
-      <link>/2016/08/01/sustainable-software-institute-research-data-visualisation-workshop/</link>
+      <link>https://martinjc.com/2016/08/01/sustainable-software-institute-research-data-visualisation-workshop/</link>
       <pubDate>Mon, 01 Aug 2016 20:17:40 +0000</pubDate>
       
-      <guid>/2016/08/01/sustainable-software-institute-research-data-visualisation-workshop/</guid>
+      <guid>https://martinjc.com/2016/08/01/sustainable-software-institute-research-data-visualisation-workshop/</guid>
       <description>Last week I gave a talk and delivered a hands on session at the Sustainable Software Institute’s ‘Research Data Visualisation Workshop‘ which was held at Manchester University. It was a really engaging event, with a lot of good discussion on the issues surrounding data visualisation.
 Professor Jessie Kennedy from Edinburgh Napier University gave a great keynote looking at a some key design principles in visualisation, including a number of studies I hadn’t seen before but will definitely be including in my teaching in future.</description>
     </item>
     
     <item>
       <title>Quick Update...</title>
-      <link>/2015/07/13/quick-update.../</link>
+      <link>https://martinjc.com/2015/07/13/quick-update.../</link>
       <pubDate>Mon, 13 Jul 2015 20:17:40 +0000</pubDate>
       
-      <guid>/2015/07/13/quick-update.../</guid>
+      <guid>https://martinjc.com/2015/07/13/quick-update.../</guid>
       <description>Been a bit quiet here recently. It&amp;rsquo;s been a very busy few months. I&amp;rsquo;ve got a few projects and thoughts that I&amp;rsquo;ll be posting more on in the next couple of weeks, but I figured it was worth a quick update on what&amp;rsquo;s been going on, and what I&amp;rsquo;ve been up to.
 MSc Computational Journalism We have finished the taught part of the MSc, and we&amp;rsquo;re getting well into the dissertation phase for the first cohort of our students.</description>
     </item>
     
     <item>
       <title>Accessing and Scraping MyFitnessPal Data with Python</title>
-      <link>/2015/02/05/accessing-and-scraping-myfitnesspal-data-with-python/</link>
+      <link>https://martinjc.com/2015/02/05/accessing-and-scraping-myfitnesspal-data-with-python/</link>
       <pubDate>Thu, 05 Feb 2015 11:02:36 +0000</pubDate>
       
-      <guid>/2015/02/05/accessing-and-scraping-myfitnesspal-data-with-python/</guid>
+      <guid>https://martinjc.com/2015/02/05/accessing-and-scraping-myfitnesspal-data-with-python/</guid>
       <description>Interesting news this morning that MyFitnessPal has been bought by Under Armour for $475 million. I&amp;rsquo;ve used MFP for many years now, and it was pretty helpful in helping me lose all the excess PhD weight that I&amp;rsquo;d put on, and then maintaining a healthy(ish) lifestyle since 2010.
 News of an acquisition always has me slightly worried though - not for someone else having access to my data, as I&amp;rsquo;ve made my peace with the fact that using a free service generally means that it&amp;rsquo;s me that&amp;rsquo;s being sold.</description>
     </item>
     
     <item>
       <title>Personality and Places</title>
-      <link>/2015/01/27/personality-and-places/</link>
+      <link>https://martinjc.com/2015/01/27/personality-and-places/</link>
       <pubDate>Tue, 27 Jan 2015 11:00:12 +0000</pubDate>
       
-      <guid>/2015/01/27/personality-and-places/</guid>
+      <guid>https://martinjc.com/2015/01/27/personality-and-places/</guid>
       <description>Our paper examining the link between individual personality and the places people visit has just been published in Computers in Human Behavior. It&amp;rsquo;s open access, so you can go read it for free, now! 
 In an experiment we ran previously, we asked users of Foursquare to take a personality test and give us access to their checkin history. The personality test gives us a measure of how each person scores for five different factors: Openness, Conscientiousness, Extraversion, Agreeableness and Neuroticism.</description>
     </item>
     
     <item>
       <title>NHS Hackday 2015</title>
-      <link>/2015/01/26/nhs-hackday-2015/</link>
+      <link>https://martinjc.com/2015/01/26/nhs-hackday-2015/</link>
       <pubDate>Mon, 26 Jan 2015 10:15:16 +0000</pubDate>
       
-      <guid>/2015/01/26/nhs-hackday-2015/</guid>
+      <guid>https://martinjc.com/2015/01/26/nhs-hackday-2015/</guid>
       <description>This weekend I took part in an incredibly successful NHS hackday, hosted at Cardiff University and organised by Anne Marie Cunningham and James Morgan. We went as a team from the MSc in Computational Journalism, with myself and Glyn attending along with Pooja, Nikita, Annalisa and Charles. At the last-minute I recruited a couple of ringers as well, dragging along Rhys Priestland Dr William Wilberforce Webberley from Comsc and Dr Matthew Williams, previously of this parish.</description>
     </item>
     
     <item>
       <title>CompJ Labs - Postcodes</title>
-      <link>/2015/01/05/compj-labs-postcodes/</link>
+      <link>https://martinjc.com/2015/01/05/compj-labs-postcodes/</link>
       <pubDate>Mon, 05 Jan 2015 09:27:51 +0000</pubDate>
       
-      <guid>/2015/01/05/compj-labs-postcodes/</guid>
+      <guid>https://martinjc.com/2015/01/05/compj-labs-postcodes/</guid>
       <description>I&amp;rsquo;ve thrown up a post on compj.cs.cf.ac.uk about some work we&amp;rsquo;ve done looking at empty properties in Cardiff. I&amp;rsquo;ll add further posts over the coming weeks about other data analysis we&amp;rsquo;ve done on this topic, and new work looking at the Welsh Assembly.</description>
     </item>
     
     <item>
       <title>Extended Mind Crowdsourcing</title>
-      <link>/2014/12/15/extended-mind-crowdsourcing/</link>
+      <link>https://martinjc.com/2014/12/15/extended-mind-crowdsourcing/</link>
       <pubDate>Mon, 15 Dec 2014 13:37:50 +0000</pubDate>
       
-      <guid>/2014/12/15/extended-mind-crowdsourcing/</guid>
+      <guid>https://martinjc.com/2014/12/15/extended-mind-crowdsourcing/</guid>
       <description>Update 13/01/15: the paper containing the research described below is currently available from the HICSS website
 This post is one I&amp;rsquo;m cross-posting both here and on the MobiSoc blog. Here, because it&amp;rsquo;s my personal translation of one of our latest research papers, and there because it&amp;rsquo;s a very good paper mostly written and driven by Roger Whitaker, so deserves an &amp;lsquo;official&amp;rsquo; blog post!
 A lot of use is made of Crowdsourcing in both business and academia.</description>
@@ -193,60 +193,60 @@ A lot of use is made of Crowdsourcing in both business and academia.</descriptio
     
     <item>
       <title>Quick and Dirty Twitter API in Python</title>
-      <link>/2014/11/19/quick-and-dirty-twitter-api-in-python/</link>
+      <link>https://martinjc.com/2014/11/19/quick-and-dirty-twitter-api-in-python/</link>
       <pubDate>Wed, 19 Nov 2014 12:13:11 +0000</pubDate>
       
-      <guid>/2014/11/19/quick-and-dirty-twitter-api-in-python/</guid>
+      <guid>https://martinjc.com/2014/11/19/quick-and-dirty-twitter-api-in-python/</guid>
       <description>QUICK DISCLAIMER: this is a quick and dirty solution to a problem, so may not represent best coding practice, and has absolutely no error checking or handling. Use with caution&amp;hellip;
 A recent project has needed me to scrape some data from Twitter. I considered using Tweepy, but as it was a project for the MSc in Computational Journalism, I thought it would be more interesting to write our own simple Twitter API wrapper in Python.</description>
     </item>
     
     <item>
       <title>How do people decide whether or not to read a tweet? </title>
-      <link>/2014/11/04/how-do-people-decide-whether-or-not-to-read-a-tweet/</link>
+      <link>https://martinjc.com/2014/11/04/how-do-people-decide-whether-or-not-to-read-a-tweet/</link>
       <pubDate>Tue, 04 Nov 2014 12:31:40 +0000</pubDate>
       
-      <guid>/2014/11/04/how-do-people-decide-whether-or-not-to-read-a-tweet/</guid>
+      <guid>https://martinjc.com/2014/11/04/how-do-people-decide-whether-or-not-to-read-a-tweet/</guid>
       <description>It turns out that an existing relationship with the author of the tweet is one of the main factors influencing how someone decides whether or not to read a tweet. At the same time, a large number associated with a tweet can also make the tweet more attractive to readers.
 Our latest Open Access research has discovered how much effect the information about a tweet has on whether people decide to read it or not.</description>
     </item>
     
     <item>
       <title>Beards, &#39;Taches and Testicles</title>
-      <link>/2014/11/01/beards-taches-and-testicles/</link>
+      <link>https://martinjc.com/2014/11/01/beards-taches-and-testicles/</link>
       <pubDate>Sat, 01 Nov 2014 11:16:53 +0000</pubDate>
       
-      <guid>/2014/11/01/beards-taches-and-testicles/</guid>
+      <guid>https://martinjc.com/2014/11/01/beards-taches-and-testicles/</guid>
       <description>This is me:
    mildly hungover morning selfie    Obviously the first thing you notice, after my devilishly handsome good looks, is that I have around the lower half of my face what has the potential to be described as, if one is kind: a &amp;lsquo;beard&amp;rsquo;. It is patchy, it is more than often unkempt, and it is quite ginger, but it is somewhat beard like.</description>
     </item>
     
     <item>
       <title>Computational Journalism - &#39;a Manifesto&#39;</title>
-      <link>/2014/10/03/computational-journalism-a-manifesto/</link>
+      <link>https://martinjc.com/2014/10/03/computational-journalism-a-manifesto/</link>
       <pubDate>Fri, 03 Oct 2014 08:00:04 +0000</pubDate>
       
-      <guid>/2014/10/03/computational-journalism-a-manifesto/</guid>
+      <guid>https://martinjc.com/2014/10/03/computational-journalism-a-manifesto/</guid>
       <description>While Glyn and I have been discussing the new MSc course between ourselves and with others, we have repeatedly come up with the same issues and themes, again and again. As a planning exercise earlier in the summer, we gathered some of these together into a &amp;lsquo;manifesto&amp;rsquo;.
 The manifesto is online on our main &amp;lsquo;Computational Journalism&amp;rsquo; website with a bit of extra commentary.</description>
     </item>
     
     <item>
       <title>GeoJSON and topoJSON for UK boundaries</title>
-      <link>/2014/09/17/geojson-and-topojson-for-uk-boundaries/</link>
+      <link>https://martinjc.com/2014/09/17/geojson-and-topojson-for-uk-boundaries/</link>
       <pubDate>Wed, 17 Sep 2014 10:05:37 +0000</pubDate>
       
-      <guid>/2014/09/17/geojson-and-topojson-for-uk-boundaries/</guid>
+      <guid>https://martinjc.com/2014/09/17/geojson-and-topojson-for-uk-boundaries/</guid>
       <description>I&amp;rsquo;ve just put an archive online containing GeoJSON and topoJSON for UK boundary data. It&amp;rsquo;s all stored on Github, with a viewer and download site hosted on Github pages.
    Browser for the UK topoJSON stored in the Github repository    The data is all created from shapefiles released by the Office of National Statistics, Ordnance Survey and National Records Scotland, all under the Open Government and OS OpenData licences.</description>
     </item>
     
     <item>
       <title>CCGs and WPCs via the medium of OAs</title>
-      <link>/2014/09/15/ccgs-and-wpcs-via-the-medium-of-oas/</link>
+      <link>https://martinjc.com/2014/09/15/ccgs-and-wpcs-via-the-medium-of-oas/</link>
       <pubDate>Mon, 15 Sep 2014 14:22:18 +0000</pubDate>
       
-      <guid>/2014/09/15/ccgs-and-wpcs-via-the-medium-of-oas/</guid>
+      <guid>https://martinjc.com/2014/09/15/ccgs-and-wpcs-via-the-medium-of-oas/</guid>
       <description>As I was eating lunch this afternoon, I spotted a conversation between @JoeReddington and @MySociety whizz past in Tweetdeck. I traced the conversation back to the beginning and found this request for data:
 I&amp;#39;m looking for a dataset that shows which UK constituencies are in which NHS trust areas. Anyone?
 &amp;mdash; retired account (@retired10072015) September 14, 2014 
@@ -255,194 +255,194 @@ I&amp;rsquo;ve been doing a lot of playing with geographic data recently while 
     
     <item>
       <title>sitting on the dock of the bay</title>
-      <link>/2014/09/08/sitting-on-the-dock-of-the-bay/</link>
+      <link>https://martinjc.com/2014/09/08/sitting-on-the-dock-of-the-bay/</link>
       <pubDate>Mon, 08 Sep 2014 19:12:31 +0000</pubDate>
       
-      <guid>/2014/09/08/sitting-on-the-dock-of-the-bay/</guid>
+      <guid>https://martinjc.com/2014/09/08/sitting-on-the-dock-of-the-bay/</guid>
       <description>While we negotiate the transition from the old house which we&amp;rsquo;ve sold to the new house we&amp;rsquo;ve just bought we&amp;rsquo;ve been renting a lovely flat up on Penarth head. One of the main benefits of this flat is the glorious view over Cardiff Bay and to the city centre beyond. No matter what time it is, whenever I pass by the living room window I end up staring out across the city.</description>
     </item>
     
     <item>
       <title>The Graphical Web 2014</title>
-      <link>/2014/09/04/the-graphical-web-2014/</link>
+      <link>https://martinjc.com/2014/09/04/the-graphical-web-2014/</link>
       <pubDate>Thu, 04 Sep 2014 10:50:36 +0000</pubDate>
       
-      <guid>/2014/09/04/the-graphical-web-2014/</guid>
+      <guid>https://martinjc.com/2014/09/04/the-graphical-web-2014/</guid>
       <description>photo of the author outside Winchester cathedral    Last week I had a lovely time down in Winchester with m&amp;rsquo;colleague, attending The Graphical Web 2014. This year the theme was &amp;lsquo;Visual Storytelling&amp;rsquo;, so I&amp;rsquo;d gone along to see what new things we could learn about visualisation to include in the MSc in Computational Journalism. We&amp;rsquo;d also already had a few conversations about the course with people who were going to be at the conference, so we were planning to take the opportunity to chat in person about their involvement.</description>
     </item>
     
     <item>
       <title>Foursquare icon downloading (yet again)</title>
-      <link>/2014/08/01/foursquare-icon-downloading-yet-again/</link>
+      <link>https://martinjc.com/2014/08/01/foursquare-icon-downloading-yet-again/</link>
       <pubDate>Fri, 01 Aug 2014 07:14:16 +0000</pubDate>
       
-      <guid>/2014/08/01/foursquare-icon-downloading-yet-again/</guid>
+      <guid>https://martinjc.com/2014/08/01/foursquare-icon-downloading-yet-again/</guid>
       <description>Previously I&amp;rsquo;vewritten about a little script to download all the category icons from Foursquare and to create many different coloured versions of them. I&amp;rsquo;ve recently had to do this again for a project, and found my previous script did not work with a recent API version. I&amp;rsquo;ve updated the script to fix it and put it up on github.</description>
     </item>
     
     <item>
       <title>Unified Diff and recruiting Guest Lecturers</title>
-      <link>/2014/07/23/unified-diff-and-recruiting-guest-lecturers/</link>
+      <link>https://martinjc.com/2014/07/23/unified-diff-and-recruiting-guest-lecturers/</link>
       <pubDate>Wed, 23 Jul 2014 11:55:21 +0000</pubDate>
       
-      <guid>/2014/07/23/unified-diff-and-recruiting-guest-lecturers/</guid>
+      <guid>https://martinjc.com/2014/07/23/unified-diff-and-recruiting-guest-lecturers/</guid>
       <description>Last week I gave a quick lightning talk at UnifiedDiff - a local tech meetup here in Cardiff. The main point of the talk was to try and recruit more industry involvement for our new MSc in Computational Journalism - preferably by getting some web developers and software engineers in to give guest lectures on the tools, languages and processes they use.
 The talk went well, and I&amp;rsquo;ve had several offers from people wanting to get involved and add some real value to the course, which is brilliant.</description>
     </item>
     
     <item>
       <title>Wedding!</title>
-      <link>/2014/07/10/wedding/</link>
+      <link>https://martinjc.com/2014/07/10/wedding/</link>
       <pubDate>Thu, 10 Jul 2014 12:36:13 +0000</pubDate>
       
-      <guid>/2014/07/10/wedding/</guid>
+      <guid>https://martinjc.com/2014/07/10/wedding/</guid>
       <description>On the 25th May 2014, after many years of procrastination and denials that we would ever get married, Lisa and I finally tied the knot. It was a superb day, plenty of fun was had by all, and I thought it was worth writing a little bit about some of the companies, suppliers and individuals who helped make it so good. If you&amp;rsquo;re planning a wedding in Shrewsbury or Shropshire, you can do far worse than to ask these guys for their help:</description>
     </item>
     
     <item>
       <title>Hotel Olivedo</title>
-      <link>/2014/05/31/hotel-olivedo/</link>
+      <link>https://martinjc.com/2014/05/31/hotel-olivedo/</link>
       <pubDate>Sat, 31 May 2014 11:55:46 +0000</pubDate>
       
-      <guid>/2014/05/31/hotel-olivedo/</guid>
+      <guid>https://martinjc.com/2014/05/31/hotel-olivedo/</guid>
       <description>Hotel Olivedo</description>
     </item>
     
     <item>
       <title>Hotel Russell</title>
-      <link>/2014/05/26/hotel-russell/</link>
+      <link>https://martinjc.com/2014/05/26/hotel-russell/</link>
       <pubDate>Mon, 26 May 2014 14:36:38 +0000</pubDate>
       
-      <guid>/2014/05/26/hotel-russell/</guid>
+      <guid>https://martinjc.com/2014/05/26/hotel-russell/</guid>
       <description>Hotel Russell</description>
     </item>
     
     <item>
       <title>The wind&#39;s brought down a tree right outside our flat. This is too much excitement for Penarth Northcliffe</title>
-      <link>/2014/05/10/the-winds-brought-down-a-tree-right-outside-our-flat.-this-is-too-much-excitement-for-penarth-northcliffe/</link>
+      <link>https://martinjc.com/2014/05/10/the-winds-brought-down-a-tree-right-outside-our-flat.-this-is-too-much-excitement-for-penarth-northcliffe/</link>
       <pubDate>Sat, 10 May 2014 13:42:47 +0000</pubDate>
       
-      <guid>/2014/05/10/the-winds-brought-down-a-tree-right-outside-our-flat.-this-is-too-much-excitement-for-penarth-northcliffe/</guid>
+      <guid>https://martinjc.com/2014/05/10/the-winds-brought-down-a-tree-right-outside-our-flat.-this-is-too-much-excitement-for-penarth-northcliffe/</guid>
       <description>Northcliffe</description>
     </item>
     
     <item>
       <title>MSc Computational Journalism about to launch</title>
-      <link>/2014/04/15/msc-computational-journalism-about-to-launch/</link>
+      <link>https://martinjc.com/2014/04/15/msc-computational-journalism-about-to-launch/</link>
       <pubDate>Tue, 15 Apr 2014 15:35:35 +0000</pubDate>
       
-      <guid>/2014/04/15/msc-computational-journalism-about-to-launch/</guid>
+      <guid>https://martinjc.com/2014/04/15/msc-computational-journalism-about-to-launch/</guid>
       <description>For the last two years I&amp;rsquo;ve been working on a project with some colleagues in the school of Journalism, Media and Cultural Studies (JOMEC) here at Cardiff University and it&amp;rsquo;s finally all coming together. This week we&amp;rsquo;ve been able to announce that (subject to some final internal paperwork wrangling) we&amp;rsquo;ll be launching an MSc in Computational Journalism this September. The story of how the course came about is fairly long, but starts simply with a tweet (unfortunately missing the context, but you get the drift):</description>
     </item>
     
     <item>
       <title>Writing Computational Journalism manifesto v1.0 for the new course. Smashing it, as always. Urban Tap House</title>
-      <link>/2014/04/15/writing-computational-journalism-manifesto-v1.0-for-the-new-course.-smashing-it-as-always.-urban-tap-house/</link>
+      <link>https://martinjc.com/2014/04/15/writing-computational-journalism-manifesto-v1.0-for-the-new-course.-smashing-it-as-always.-urban-tap-house/</link>
       <pubDate>Tue, 15 Apr 2014 14:49:13 +0000</pubDate>
       
-      <guid>/2014/04/15/writing-computational-journalism-manifesto-v1.0-for-the-new-course.-smashing-it-as-always.-urban-tap-house/</guid>
+      <guid>https://martinjc.com/2014/04/15/writing-computational-journalism-manifesto-v1.0-for-the-new-course.-smashing-it-as-always.-urban-tap-house/</guid>
       <description>Urban Tap House</description>
     </item>
     
     <item>
       <title>SciSCREEN - &#39;Her&#39;</title>
-      <link>/2014/03/19/sciscreen-her/</link>
+      <link>https://martinjc.com/2014/03/19/sciscreen-her/</link>
       <pubDate>Wed, 19 Mar 2014 10:37:12 +0000</pubDate>
       
-      <guid>/2014/03/19/sciscreen-her/</guid>
+      <guid>https://martinjc.com/2014/03/19/sciscreen-her/</guid>
       <description>Last month I was invited along as a guest speaker for the regular sciSCREEN event held at Chapter Arts Centre. This is a great event that combines a showing of a movie with a discussion session about the themes and science issues presented in the film. A short essay based on my rambling improvised talk is below, and has been posted on the sciSCREEN website here.
 &amp;lsquo;Her&amp;rsquo; and Artificial Intelligence &amp;lsquo;Her&amp;rsquo; presents us with a near-future world in which the way we interact with computers has moved on.</description>
     </item>
     
     <item>
       <title>LaTeX: An Introduction (Part 1)</title>
-      <link>/2014/02/10/latex-an-introduction-part-1/</link>
+      <link>https://martinjc.com/2014/02/10/latex-an-introduction-part-1/</link>
       <pubDate>Mon, 10 Feb 2014 16:00:50 +0000</pubDate>
       
-      <guid>/2014/02/10/latex-an-introduction-part-1/</guid>
+      <guid>https://martinjc.com/2014/02/10/latex-an-introduction-part-1/</guid>
       <description>I just finished giving the first part of my &amp;ldquo;Introduction to LaTeX&amp;rdquo; course for the University Graduate College. This is a complete introduction to LaTeX from scratch. As promised in the lecture, I&amp;rsquo;ve uploaded all the notes and source code, which are available from my github page. Also included is the example code I was using during the lecture - by going back through the commit history you can see the changes made as we covered different topics.</description>
     </item>
     
     <item>
       <title>Welcome to 2014</title>
-      <link>/2014/01/06/welcome-to-2014/</link>
+      <link>https://martinjc.com/2014/01/06/welcome-to-2014/</link>
       <pubDate>Mon, 06 Jan 2014 11:38:43 +0000</pubDate>
       
-      <guid>/2014/01/06/welcome-to-2014/</guid>
+      <guid>https://martinjc.com/2014/01/06/welcome-to-2014/</guid>
       <description>So. 2013. That was an alright year. Finished the Recognition project, finally graduated, got a 12 month fellowship, started some interesting projects, and pushed on with the new MSc with JOMEC. Professionally, not too bad at all. Personally the year wasn&amp;rsquo;t bad either, what with getting engaged and finally getting the house on the market.
 But now it&amp;rsquo;s a new year, so it&amp;rsquo;s time to push things on further. My plans so far for this year seem to be &amp;lsquo;smash it&amp;rsquo;.</description>
     </item>
     
     <item>
       <title>Beer! Chapter Arts Centre</title>
-      <link>/2013/10/26/beer-chapter-arts-centre/</link>
+      <link>https://martinjc.com/2013/10/26/beer-chapter-arts-centre/</link>
       <pubDate>Sat, 26 Oct 2013 13:53:18 +0000</pubDate>
       
-      <guid>/2013/10/26/beer-chapter-arts-centre/</guid>
+      <guid>https://martinjc.com/2013/10/26/beer-chapter-arts-centre/</guid>
       <description>Chapter Arts Centre</description>
     </item>
     
     <item>
       <title>Hard at work! — Cardiff University School of Computer Science &amp; Informatics</title>
-      <link>/2013/10/25/hard-at-work-cardiff-university-school-of-computer-science-informatics/</link>
+      <link>https://martinjc.com/2013/10/25/hard-at-work-cardiff-university-school-of-computer-science-informatics/</link>
       <pubDate>Fri, 25 Oct 2013 11:16:20 +0000</pubDate>
       
-      <guid>/2013/10/25/hard-at-work-cardiff-university-school-of-computer-science-informatics/</guid>
+      <guid>https://martinjc.com/2013/10/25/hard-at-work-cardiff-university-school-of-computer-science-informatics/</guid>
       <description>Cardiff University School of Computer Science &amp;amp; Informatics</description>
     </item>
     
     <item>
       <title>Python &#43; OAuth</title>
-      <link>/2013/10/25/python-oauth/</link>
+      <link>https://martinjc.com/2013/10/25/python-oauth/</link>
       <pubDate>Fri, 25 Oct 2013 09:02:51 +0000</pubDate>
       
-      <guid>/2013/10/25/python-oauth/</guid>
+      <guid>https://martinjc.com/2013/10/25/python-oauth/</guid>
       <description>As part of a current project I had the misfortune of having to to deal with a bunch of OAuth authenticated web services using a command line script in Python. Usually this isn&amp;rsquo;t really a problem as most decent client libraries for services such as Twitter or Foursquare can handle the authentication requests themselves, usually wrapping their own internal OAuth implementation. However, when it comes to web services that don&amp;rsquo;t have existing python client libraries, you have to do the implementation yourself.</description>
     </item>
     
     <item>
       <title>SCA 2013 - Visiting Patterns and Personality of Foursquare Users</title>
-      <link>/2013/10/01/sca-2013-visiting-patterns-and-personality-of-foursquare-users/</link>
+      <link>https://martinjc.com/2013/10/01/sca-2013-visiting-patterns-and-personality-of-foursquare-users/</link>
       <pubDate>Tue, 01 Oct 2013 12:30:47 +0000</pubDate>
       
-      <guid>/2013/10/01/sca-2013-visiting-patterns-and-personality-of-foursquare-users/</guid>
+      <guid>https://martinjc.com/2013/10/01/sca-2013-visiting-patterns-and-personality-of-foursquare-users/</guid>
       <description>Nice work by [@martinjc](https://twitter.com/martinjc) on Foursquare checkins and personality # sca2013 [pic.twitter.com/9afebFrzYS](http://t.co/9afebFrzYS) — Shaun Lawson (@shaunlawson) [October 1, 2013](https://twitter.com/shaunlawson/statuses/384979369175027712) Today was presentation day for me at SCA 2013 - I was presenting the initial results of the Foursquare experiment, which has now been running for a while. The presentation seemed to go really well - I think it&amp;rsquo;s the strongest work I&amp;rsquo;ve done yet, and so it was easy to talk well and with confidence about it, which led to a nice talk.</description>
     </item>
     
     <item>
       <title>CSAR Workshop</title>
-      <link>/2013/10/01/csar-workshop/</link>
+      <link>https://martinjc.com/2013/10/01/csar-workshop/</link>
       <pubDate>Tue, 01 Oct 2013 10:22:49 +0000</pubDate>
       
-      <guid>/2013/10/01/csar-workshop/</guid>
+      <guid>https://martinjc.com/2013/10/01/csar-workshop/</guid>
       <description>This week, as part of the &amp;ldquo;Third International Conference on Social Computing and its Applications&amp;rdquo; we held a workshop &amp;ldquo;Collective Social Awareness and Relevance (CSAR)&amp;rdquo;. Organising the workshop (along with Walter Colombo) over the last couple of months has been an interesting process - this is the first time I&amp;rsquo;ve had the chance to get involved in &amp;ldquo;real&amp;rdquo; workshop organisation, so this is the first time I&amp;rsquo;ve seen the process up close.</description>
     </item>
     
     <item>
       <title>KSRI Services Summer School - Social Computing Theory and Hackathon</title>
-      <link>/2013/09/24/ksri-services-summer-school-social-computing-theory-and-hackathon/</link>
+      <link>https://martinjc.com/2013/09/24/ksri-services-summer-school-social-computing-theory-and-hackathon/</link>
       <pubDate>Tue, 24 Sep 2013 11:19:20 +0000</pubDate>
       
-      <guid>/2013/09/24/ksri-services-summer-school-social-computing-theory-and-hackathon/</guid>
+      <guid>https://martinjc.com/2013/09/24/ksri-services-summer-school-social-computing-theory-and-hackathon/</guid>
       <description>I was invited by Simon Caton to come to the KSRI Services Summer School, held at KIT in Germany, to help him run a workshop session on Social Computing. We decided to use the session as a crash course in retrieving and manipulating data from Social Media APIs - showing the students the basics, then running a mini &amp;lsquo;hackathon&amp;rsquo; for the students to gain some practical experience.
 I think the session went really well, the students seemed to enjoy it and the feedback was very positive.</description>
     </item>
     
     <item>
       <title>Post-Processed Dinosaurs</title>
-      <link>/2013/08/28/post-processed-dinosaurs/</link>
+      <link>https://martinjc.com/2013/08/28/post-processed-dinosaurs/</link>
       <pubDate>Wed, 28 Aug 2013 10:45:45 +0000</pubDate>
       
-      <guid>/2013/08/28/post-processed-dinosaurs/</guid>
+      <guid>https://martinjc.com/2013/08/28/post-processed-dinosaurs/</guid>
       <description>Finding myself with a free afternoon this week, I strolled down to the local Odeon to see Jurassic Park: IMAX 3D. (It should be noted that the &amp;lsquo;IMAX&amp;rdquo; bit doesn&amp;rsquo;t mean much - the screen at the Odeon is nowhere near as big as a true &amp;lsquo;IMAX&amp;rsquo; screen). I should say, I love this film a lot - hence my willingness to pay £12 (£12!!??!) to see it again on the big screen.</description>
     </item>
     
     <item>
       <title>not another bloody wordle?!?!</title>
-      <link>/2013/08/20/not-another-bloody-wordle/</link>
+      <link>https://martinjc.com/2013/08/20/not-another-bloody-wordle/</link>
       <pubDate>Tue, 20 Aug 2013 08:04:53 +0000</pubDate>
       
-      <guid>/2013/08/20/not-another-bloody-wordle/</guid>
+      <guid>https://martinjc.com/2013/08/20/not-another-bloody-wordle/</guid>
       <description>(UPDATE: an earlier version of this was totally wrong. It&amp;rsquo;s better now.)
 Inspired by a Facebook post from a colleague, I decided to waste ten minutes this week knocking together a word cloud from the text of my thesis. The process was pretty straightforward.
 First up - extracting the text from the thesis. Like all good scienticians, my thesis was written in LaTeX. I thought I could have used a couple of different tools to extract the plain text from the raw .</description>
@@ -450,77 +450,77 @@ First up - extracting the text from the thesis. Like all good scienticians, my t
     
     <item>
       <title>SWN Festival 2013 plans – part 1: the data (2!)</title>
-      <link>/2013/08/18/swn-festival-2013-plans-part-1-the-data-2/</link>
+      <link>https://martinjc.com/2013/08/18/swn-festival-2013-plans-part-1-the-data-2/</link>
       <pubDate>Sun, 18 Aug 2013 11:36:21 +0000</pubDate>
       
-      <guid>/2013/08/18/swn-festival-2013-plans-part-1-the-data-2/</guid>
+      <guid>https://martinjc.com/2013/08/18/swn-festival-2013-plans-part-1-the-data-2/</guid>
       <description>In the previous post, I used python and BeautifulSoup to grab the list of artists appearing at SWN Festival 2013, and to scrape their associated soundcloud/twitter/facebook/youtube links (where available).
 However, there are more places to find music online than just those listed on the festival site, and some of those extra sources include additional data that I want to collect, so now we need to search these other sources for the artists.</description>
     </item>
     
     <item>
       <title>EPSRC Doctoral Award Fellowship</title>
-      <link>/2013/08/16/epsrc-doctoral-award-fellowship/</link>
+      <link>https://martinjc.com/2013/08/16/epsrc-doctoral-award-fellowship/</link>
       <pubDate>Fri, 16 Aug 2013 15:47:06 +0000</pubDate>
       
-      <guid>/2013/08/16/epsrc-doctoral-award-fellowship/</guid>
+      <guid>https://martinjc.com/2013/08/16/epsrc-doctoral-award-fellowship/</guid>
       <description>I&amp;rsquo;m really very pleased to be able to say that I have been awarded a 2013 EPSRC doctoral award fellowship. This means I&amp;rsquo;ve been given an opportunity to spend 12 months from October this year working independently on a research project of my own choosing. I&amp;rsquo;ll be looking at the connection between places and personality, analysing the large dataset collected through the Foursquare Personality app to try and build towards a recommendation system for places that uses personality as one of its key input signals.</description>
     </item>
     
     <item>
       <title>SWN Festival 2013 plans -  part 1: the data</title>
-      <link>/2013/08/14/swn-festival-2013-plans-part-1-the-data/</link>
+      <link>https://martinjc.com/2013/08/14/swn-festival-2013-plans-part-1-the-data/</link>
       <pubDate>Wed, 14 Aug 2013 12:38:53 +0000</pubDate>
       
-      <guid>/2013/08/14/swn-festival-2013-plans-part-1-the-data/</guid>
+      <guid>https://martinjc.com/2013/08/14/swn-festival-2013-plans-part-1-the-data/</guid>
       <description>As I mentioned, I&amp;rsquo;m planning on doing a bit more development work this year connected to the SWN Festival. The first stage is to get hold of the data associated with the festival in an accessible and machine readable form so it can be used in other apps.
 Unfortunately (but unsurprisingly), being a smallish local festival, there is no API for any of the data. So, getting a list of the bands and their info means we need to resort to web scraping.</description>
     </item>
     
     <item>
       <title>SWN Festival 2013 - plans</title>
-      <link>/2013/08/11/swn-festival-2013-plans/</link>
+      <link>https://martinjc.com/2013/08/11/swn-festival-2013-plans/</link>
       <pubDate>Sun, 11 Aug 2013 17:15:53 +0000</pubDate>
       
-      <guid>/2013/08/11/swn-festival-2013-plans/</guid>
+      <guid>https://martinjc.com/2013/08/11/swn-festival-2013-plans/</guid>
       <description>Last year I had a go at creating a couple of web apps based around the bands playing the SWN Festival here in Cardiff. I love SWN with all my heart, it&amp;rsquo;s a permanent fixture in my calendar and even if (when) I leave Cardiff it&amp;rsquo;ll be the one thing I come back for every year. It&amp;rsquo;s a great way to see and discover new bands, but sometimes the sheer volume of music on offer can be overwhelming.</description>
     </item>
     
     <item>
       <title>Summer Project update</title>
-      <link>/2013/07/25/summer-project-update/</link>
+      <link>https://martinjc.com/2013/07/25/summer-project-update/</link>
       <pubDate>Thu, 25 Jul 2013 13:23:14 +0000</pubDate>
       
-      <guid>/2013/07/25/summer-project-update/</guid>
+      <guid>https://martinjc.com/2013/07/25/summer-project-update/</guid>
       <description>We are storming along with summer projects now, and starting to see some really good results.
 Liam Turner (who is starting a PhD in the school in October) has been working hard to create a mobile version of the 4SQPersonality app. His work is coming along really well, with a great mobile HTML version now up and running, a native android wrapper working, and an iOS wrapper on its way. With any luck we&amp;rsquo;ll have mobile apps for both major platforms ready to be released before the summer is over.</description>
     </item>
     
     <item>
       <title>Open Sauce Hackathon - Post Mortem</title>
-      <link>/2013/04/22/open-sauce-hackathon-post-mortem/</link>
+      <link>https://martinjc.com/2013/04/22/open-sauce-hackathon-post-mortem/</link>
       <pubDate>Mon, 22 Apr 2013 10:51:12 +0000</pubDate>
       
-      <guid>/2013/04/22/open-sauce-hackathon-post-mortem/</guid>
+      <guid>https://martinjc.com/2013/04/22/open-sauce-hackathon-post-mortem/</guid>
       <description>This weekend saw the second &amp;lsquo;Open Sauce Hackathon&amp;rsquo; run by undergraduate students here in the school. Last years was pretty successful, and they improved upon it this year, pulling in many more sponsors and offering more prizes.
 Unlike last year, when I turned up having already decided with Jon Quinn what we were doing, I went along this year with no real ideas. I had a desire to do something with a map, as I&amp;rsquo;m pretty sure building stuff connected to maps is going to play a big part in work over the next couple of months.</description>
     </item>
     
     <item>
       <title>Social Media Lecture Experiment</title>
-      <link>/2013/04/22/social-media-lecture-experiment/</link>
+      <link>https://martinjc.com/2013/04/22/social-media-lecture-experiment/</link>
       <pubDate>Mon, 22 Apr 2013 10:29:08 +0000</pubDate>
       
-      <guid>/2013/04/22/social-media-lecture-experiment/</guid>
+      <guid>https://martinjc.com/2013/04/22/social-media-lecture-experiment/</guid>
       <description>I&amp;rsquo;ve very recently had the opportunity to be involved in a different kind of lecture here at the School of Computer Science and Informatics. For his final year project one of our third year students (Samuel Boyes) is assessing the use of modern technology, social networking and video conferencing as part of the traditional lecture. As I had already been asked a few weeks ago to give a guest lecture in Matt Williams&amp;rsquo; module Fundamentals of Computing with Java, on the topic of code maintainability/readability, we were presented with a nice opportunity to test out Sam&amp;rsquo;s theories in an actual lecture.</description>
     </item>
     
     <item>
       <title>CUROP Summer Project</title>
-      <link>/2013/03/27/curop-summer-project/</link>
+      <link>https://martinjc.com/2013/03/27/curop-summer-project/</link>
       <pubDate>Wed, 27 Mar 2013 13:05:27 +0000</pubDate>
       
-      <guid>/2013/03/27/curop-summer-project/</guid>
+      <guid>https://martinjc.com/2013/03/27/curop-summer-project/</guid>
       <description>As in previous years, I (along with Walter as co-supervisor) have managed to score some University funding for a summer project through the CUROP programme.
 This years project is titled &amp;ldquo;How Unique is my City? An online analysis of the UK&amp;rdquo;.
 A huge amount of information regarding places is available online. Services such as Foursquare, Yelp, Google Places, TripAdvisor etc. allow users to rate and review locations and venues, creating a ’long-tail’ of content describing peoples feelings and interactions with these places.</description>
@@ -528,20 +528,20 @@ A huge amount of information regarding places is available online. Services such
     
     <item>
       <title>Advanced LaTeX Course</title>
-      <link>/2013/03/15/advanced-latex-course/</link>
+      <link>https://martinjc.com/2013/03/15/advanced-latex-course/</link>
       <pubDate>Fri, 15 Mar 2013 15:22:36 +0000</pubDate>
       
-      <guid>/2013/03/15/advanced-latex-course/</guid>
+      <guid>https://martinjc.com/2013/03/15/advanced-latex-course/</guid>
       <description>Here are the slides and source code for the UGC Advanced LaTeX course, 15th March 2013
 Introduction (Beginners Recap, Graphics &amp;amp; Figures) - handouts and source BibTeX and Referencing - handouts &amp;amp; source Custom Commands &amp;amp; Environments, Source Code Listings, Tips &amp;amp; Tricks - handouts &amp;amp; source Exercise Sheets - handouts &amp;amp; source</description>
     </item>
     
     <item>
       <title>Cinema 2012 - the review</title>
-      <link>/2013/02/06/cinema-2012-the-review/</link>
+      <link>https://martinjc.com/2013/02/06/cinema-2012-the-review/</link>
       <pubDate>Wed, 06 Feb 2013 14:15:41 +0000</pubDate>
       
-      <guid>/2013/02/06/cinema-2012-the-review/</guid>
+      <guid>https://martinjc.com/2013/02/06/cinema-2012-the-review/</guid>
       <description>At the beginning of the year I embarked upon a challenge: watch 100 movies in the cinema in 1 year. I thought it would be fun, but difficult.
 It was fun.
 It was difficult.
@@ -550,10 +550,10 @@ This is a not very brief account of that year, starting with the best movies tha
     
     <item>
       <title>LaTeX notes and links</title>
-      <link>/2013/02/01/latex-notes-and-links/</link>
+      <link>https://martinjc.com/2013/02/01/latex-notes-and-links/</link>
       <pubDate>Fri, 01 Feb 2013 15:39:06 +0000</pubDate>
       
-      <guid>/2013/02/01/latex-notes-and-links/</guid>
+      <guid>https://martinjc.com/2013/02/01/latex-notes-and-links/</guid>
       <description>During the `LaTeX for Beginners&amp;rsquo; UGC course on Friday 1st February I promised that I would upload the source code for my presentations along with some useful links:
  Introduction slides and source
  Maths slides and source
@@ -565,185 +565,185 @@ This is a not very brief account of that year, starting with the best movies tha
     
     <item>
       <title>LaTeX beamer handouts (with frames and borders)</title>
-      <link>/2013/01/29/latex-beamer-handouts-with-frames-and-borders/</link>
+      <link>https://martinjc.com/2013/01/29/latex-beamer-handouts-with-frames-and-borders/</link>
       <pubDate>Tue, 29 Jan 2013 09:46:45 +0000</pubDate>
       
-      <guid>/2013/01/29/latex-beamer-handouts-with-frames-and-borders/</guid>
+      <guid>https://martinjc.com/2013/01/29/latex-beamer-handouts-with-frames-and-borders/</guid>
       <description>I&amp;rsquo;m working on some notes for a beginners LaTeX course that I&amp;rsquo;m giving for the University Graduate College this week. In a temporary fit of insanity I decided it would be nice to write all the slides in LaTeX, so that I can distribute the source to the students so they get some real world LaTeX examples to go along with the course notes.
 I was attempting to make handouts for the students using the great handoutWithNotes package.</description>
     </item>
     
     <item>
       <title>Foursquare Personality Experiment</title>
-      <link>/2012/11/20/foursquare-personality-experiment/</link>
+      <link>https://martinjc.com/2012/11/20/foursquare-personality-experiment/</link>
       <pubDate>Tue, 20 Nov 2012 09:20:32 +0000</pubDate>
       
-      <guid>/2012/11/20/foursquare-personality-experiment/</guid>
+      <guid>https://martinjc.com/2012/11/20/foursquare-personality-experiment/</guid>
       <description>Today we are finally starting to promote our latest experiment. It&amp;rsquo;s been online for about a month, but we haven&amp;rsquo;t told anyone about it while we&amp;rsquo;ve been finishing up the Year 2 deliverables for Recognition (the review is in a couple of weeks - fingers crossed!) Now however I can start publicly talking about it and encouraging people to take part and get involved!
 We&amp;rsquo;re calling it the Foursquare Personality Experiment, and it&amp;rsquo;s available on the School of Computer Science &amp;amp; Informatics&amp;rsquo; website here:</description>
     </item>
     
     <item>
       <title>PhD Post-mortem - The Summary</title>
-      <link>/2012/11/16/phd-post-mortem-the-summary/</link>
+      <link>https://martinjc.com/2012/11/16/phd-post-mortem-the-summary/</link>
       <pubDate>Fri, 16 Nov 2012 11:05:17 +0000</pubDate>
       
-      <guid>/2012/11/16/phd-post-mortem-the-summary/</guid>
+      <guid>https://martinjc.com/2012/11/16/phd-post-mortem-the-summary/</guid>
       <description>I originally wrote a whole bunch of posts (6!) about my PhD, what went wrong, how I felt about it, and so on. Then I read it all back and it was a bunch of hugely self-indulgent poorly written bollocks (what&amp;rsquo;s new?), so I decided not to publish it. Maybe sometime later I&amp;rsquo;ll get round to it, but for now, the tl-dr; is:
 My viva was a car crash, my examiners hated my work, I got too depressed over the result to engage with the corrections process, had another viva, it was terrible but not as bad, I pulled it together and corrected it all in the end, thanks to some excellent support from everyone else.</description>
     </item>
     
     <item>
       <title>7 years, 1 month and 4 days later...</title>
-      <link>/2012/11/05/7-years-1-month-and-4-days-later.../</link>
+      <link>https://martinjc.com/2012/11/05/7-years-1-month-and-4-days-later.../</link>
       <pubDate>Mon, 05 Nov 2012 11:44:39 +0000</pubDate>
       
-      <guid>/2012/11/05/7-years-1-month-and-4-days-later.../</guid>
+      <guid>https://martinjc.com/2012/11/05/7-years-1-month-and-4-days-later.../</guid>
       <description>This is a post I&amp;rsquo;ve been waiting to write for a very long time. A very, very, long time. As I&amp;rsquo;ve been waiting so long I&amp;rsquo;m going to start with the good news: on the 30th October 2012 I finally received confirmation that my examiners had accepted my PhD corrections and I should be approved for my degree. I&amp;rsquo;m Dr Martin Chorley.
 Exactly how long I&amp;rsquo;ve been waiting to write this depends on your point of view.</description>
     </item>
     
     <item>
       <title>SWN Artist Explorer</title>
-      <link>/2012/10/04/swn-artist-explorer/</link>
+      <link>https://martinjc.com/2012/10/04/swn-artist-explorer/</link>
       <pubDate>Thu, 04 Oct 2012 09:48:18 +0000</pubDate>
       
-      <guid>/2012/10/04/swn-artist-explorer/</guid>
+      <guid>https://martinjc.com/2012/10/04/swn-artist-explorer/</guid>
       <description>It&amp;rsquo;s that time of year again: SWN Festival is once more upon us. It&amp;rsquo;s the highlight of the musical year in Cardiff, and probably the one thing I&amp;rsquo;ll miss about the city when (if?) I leave. In fact, I&amp;rsquo;m pretty certain that even if I left the city I&amp;rsquo;d make the pilgrimage back once a year for SWN because it&amp;rsquo;s just too much fun to miss.
 The lineup this year is another cracking one, but as usual with four days of bands spread across so many venues there are a whole bunch of names that I don&amp;rsquo;t recognise.</description>
     </item>
     
     <item>
       <title>... and back to Teaching</title>
-      <link>/2012/10/02/...-and-back-to-teaching/</link>
+      <link>https://martinjc.com/2012/10/02/...-and-back-to-teaching/</link>
       <pubDate>Tue, 02 Oct 2012 09:04:20 +0000</pubDate>
       
-      <guid>/2012/10/02/...-and-back-to-teaching/</guid>
+      <guid>https://martinjc.com/2012/10/02/...-and-back-to-teaching/</guid>
       <description>I haven&amp;rsquo;t lectured in any meaningful sense for quite a while; in fact the last time I taught was the 2010&amp;frasl;2011 academic year when I was lecturing half of a first year maths module. Since then there have been other things occupying my time, (namely the battle of the thesis) but that&amp;rsquo;s almost over now, so my attention once again turns to getting some more teaching under my belt.
 You get the feeling with some academics that teaching is seen as an annoyance - something that has to be done as part of the job but that is at best a distraction.</description>
     </item>
     
     <item>
       <title>SocialCom 2012</title>
-      <link>/2012/09/07/socialcom-2012/</link>
+      <link>https://martinjc.com/2012/09/07/socialcom-2012/</link>
       <pubDate>Fri, 07 Sep 2012 13:37:48 +0000</pubDate>
       
-      <guid>/2012/09/07/socialcom-2012/</guid>
+      <guid>https://martinjc.com/2012/09/07/socialcom-2012/</guid>
       <description>I&amp;rsquo;ve just returned from SocialCom 2012 and figured it was worth a post to round it all up. This is not that post however; that will take a little longer to write as there were quite a few really interesting and relevant talks to round up. I also had some good discussions about the work we&amp;rsquo;ve been doing, the work we&amp;rsquo;re planning to do and some of the work that others are doing.</description>
     </item>
     
     <item>
       <title>Talking about research</title>
-      <link>/2012/07/03/talking-about-research/</link>
+      <link>https://martinjc.com/2012/07/03/talking-about-research/</link>
       <pubDate>Tue, 03 Jul 2012 15:08:21 +0000</pubDate>
       
-      <guid>/2012/07/03/talking-about-research/</guid>
+      <guid>https://martinjc.com/2012/07/03/talking-about-research/</guid>
       <description>As someone who spends most of their life elbow deep in research, it&amp;rsquo;s sometimes hard to take a step back and view what you&amp;rsquo;re doing from the outside.
 I&amp;rsquo;m pretty happy with my ability to communicate our work to a scientific audience. It&amp;rsquo;s something I&amp;rsquo;ve been trained (and have trained myself) to do over the last five or six years and so is something I find quite easy. The thought of having to explain what I do to a conference audience, or to the project partners in a meeting is something that I know I can cope with.</description>
     </item>
     
     <item>
       <title>Summer Projects</title>
-      <link>/2012/06/26/summer-projects/</link>
+      <link>https://martinjc.com/2012/06/26/summer-projects/</link>
       <pubDate>Tue, 26 Jun 2012 11:49:30 +0000</pubDate>
       
-      <guid>/2012/06/26/summer-projects/</guid>
+      <guid>https://martinjc.com/2012/06/26/summer-projects/</guid>
       <description>Both of the summer projects that I&amp;rsquo;m supervising with Walter Colombo have now started, with two students joining us for 8 weeks over summer to gain some experience of the research environment and work on some (hopefully) interesting projects.
 One of our students (James) is investigating the ranking of content on Twitter by pairwise comparison. He&amp;rsquo;s currently building a website to allow comparison of tweets and hopefully we&amp;rsquo;ll be able to get enough people to have a go at it that we can gather a large number of ratings of tweets.</description>
     </item>
     
     <item>
       <title>TweetCues Twitter Experiment</title>
-      <link>/2012/05/18/tweetcues-twitter-experiment/</link>
+      <link>https://martinjc.com/2012/05/18/tweetcues-twitter-experiment/</link>
       <pubDate>Fri, 18 May 2012 12:47:18 +0000</pubDate>
       
-      <guid>/2012/05/18/tweetcues-twitter-experiment/</guid>
+      <guid>https://martinjc.com/2012/05/18/tweetcues-twitter-experiment/</guid>
       <description>As I mentioned in the last post, our Twitter Experiment (called TweetCues) is now live. Just this morning I updated it to version 2.0 to begin collection of data for a journal paper, assuming of course that our conference paper on the initial findings gets accepted somewhere.
    Tweetcues Homepage    This has been an interesting project that has taken quite a long while to come to fruition.</description>
     </item>
     
     <item>
       <title>Update</title>
-      <link>/2012/05/15/update/</link>
+      <link>https://martinjc.com/2012/05/15/update/</link>
       <pubDate>Tue, 15 May 2012 13:40:31 +0000</pubDate>
       
-      <guid>/2012/05/15/update/</guid>
+      <guid>https://martinjc.com/2012/05/15/update/</guid>
       <description>So, I&amp;rsquo;ve been kind of ignoring this blog, haven&amp;rsquo;t I?
 Ah well, never mind. I have a good excuse as I&amp;rsquo;ve been very busy working on something else, which I&amp;rsquo;ll explain in a post sometime soon. For now though I&amp;rsquo;ve made a decision to use this blog more and also to include more regular small updates on work things as well as the other stuff I&amp;rsquo;ve been doing outside of work.</description>
     </item>
     
     <item>
       <title>Truckers of Husk &#43; Gallops &#43; Kutosis Review</title>
-      <link>/2012/03/10/truckers-of-husk-gallops-kutosis-review/</link>
+      <link>https://martinjc.com/2012/03/10/truckers-of-husk-gallops-kutosis-review/</link>
       <pubDate>Sat, 10 Mar 2012 11:42:44 +0000</pubDate>
       
-      <guid>/2012/03/10/truckers-of-husk-gallops-kutosis-review/</guid>
+      <guid>https://martinjc.com/2012/03/10/truckers-of-husk-gallops-kutosis-review/</guid>
       <description>Last Saturday I went along to The Globe in Roath, accompanied by my excellent musical companion Ms. Jones (and joined later on by our token northener Mark) to watch a number of bands that we&amp;rsquo;d seen before, but in a new setting. This is a review of that what happened there.
 Let&amp;rsquo;s start with the venue, The Globe. The Globe is not the worst venue in Cardiff (Bogiez/Barfly, The SU Great Hall).</description>
     </item>
     
     <item>
       <title>100 Movies in the Cinema in 1 Year</title>
-      <link>/2012/03/04/100-movies-in-the-cinema-in-1-year/</link>
+      <link>https://martinjc.com/2012/03/04/100-movies-in-the-cinema-in-1-year/</link>
       <pubDate>Sun, 04 Mar 2012 22:10:37 +0000</pubDate>
       
-      <guid>/2012/03/04/100-movies-in-the-cinema-in-1-year/</guid>
+      <guid>https://martinjc.com/2012/03/04/100-movies-in-the-cinema-in-1-year/</guid>
       <description>After reading this blog post at the end of January I decided that watching at least 100 movies in the cinema in a year was the kind of challenge I could get behind. Last year&amp;rsquo;s challenge to get fit and healthy was fairly successful and seemed like much harder work than going to the cinema a few times could ever be. After all, 100 movies a year is less than 2 a week, so it must be easy, right?</description>
     </item>
     
     <item>
       <title>Django &#43; Last.FM Authentication</title>
-      <link>/2012/02/27/django-last.fm-authentication/</link>
+      <link>https://martinjc.com/2012/02/27/django-last.fm-authentication/</link>
       <pubDate>Mon, 27 Feb 2012 09:20:01 +0000</pubDate>
       
-      <guid>/2012/02/27/django-last.fm-authentication/</guid>
+      <guid>https://martinjc.com/2012/02/27/django-last.fm-authentication/</guid>
       <description>Following a conversation with Jon last week, I&amp;rsquo;ve been having thoughts about playing around with Last.FM data again, having not looked at that API for a couple of years. We had discussed the possibility of using the Last.FM web services as part of a project at a hackathon that some of the undergraduates are running in a couple of weeks time, and since I&amp;rsquo;ve moved from primarily developing using Java to mainly using Python since I last did anything with Last.</description>
     </item>
     
     <item>
       <title>Foursquare Category Icon Downloader (2)</title>
-      <link>/2012/01/31/foursquare-category-icon-downloader-2/</link>
+      <link>https://martinjc.com/2012/01/31/foursquare-category-icon-downloader-2/</link>
       <pubDate>Tue, 31 Jan 2012 08:50:10 +0000</pubDate>
       
-      <guid>/2012/01/31/foursquare-category-icon-downloader-2/</guid>
+      <guid>https://martinjc.com/2012/01/31/foursquare-category-icon-downloader-2/</guid>
       <description>UPDATE [01 August 2014]: Even more breaking! More recent version of the script here
 Someone commented recently that the script I&amp;rsquo;d written to download the Foursquare category icons was broken. downloader.py is an update that works as of today (notice the URL param with today&amp;rsquo;s date) that will fetch all available sizes of all the category icons and store them in folders by size.</description>
     </item>
     
     <item>
       <title>matplotlib &#43; mac os x 10.7 (Lion)</title>
-      <link>/2012/01/12/matplotlib-mac-os-x-10.7-lion/</link>
+      <link>https://martinjc.com/2012/01/12/matplotlib-mac-os-x-10.7-lion/</link>
       <pubDate>Thu, 12 Jan 2012 16:25:27 +0000</pubDate>
       
-      <guid>/2012/01/12/matplotlib-mac-os-x-10.7-lion/</guid>
+      <guid>https://martinjc.com/2012/01/12/matplotlib-mac-os-x-10.7-lion/</guid>
       <description>Today I spent a good long chunk of my day shouting at my computer and trying to install matplotlib, a very handy python library. I finally solved it, so figured it was worth posting about here, in case anyone else has the same problem.
 I recently updated my system python to version 2.7, so I&amp;rsquo;ve had to go through reinstalling various libraries that I use on a semi-regular basis. Matplotlib is one of these that up until now I&amp;rsquo;ve had no call for.</description>
     </item>
     
     <item>
       <title>Introduction to Django talk</title>
-      <link>/2011/12/09/introduction-to-django-talk/</link>
+      <link>https://martinjc.com/2011/12/09/introduction-to-django-talk/</link>
       <pubDate>Fri, 09 Dec 2011 08:17:23 +0000</pubDate>
       
-      <guid>/2011/12/09/introduction-to-django-talk/</guid>
+      <guid>https://martinjc.com/2011/12/09/introduction-to-django-talk/</guid>
       <description>Last week I was asked by Stuart Allen to give a talk to the students in his first year &amp;ldquo;Problem Solving with Python&amp;rdquo; course on the topic of django, the python web framework. As I&amp;rsquo;m not lecturing at the moment I like to do these odd talks or cover the odd lecture just to keep up the skill set for when I start doing it again properly, so I agreed. Plus, I think django is ace and it&amp;rsquo;s always nice to try and brainwash students into using educate students about your favourite technology :-)</description>
     </item>
     
     <item>
       <title>BoxUK &#34;For the Social Good&#34; Hackday</title>
-      <link>/2011/11/22/boxuk-for-the-social-good-hackday/</link>
+      <link>https://martinjc.com/2011/11/22/boxuk-for-the-social-good-hackday/</link>
       <pubDate>Tue, 22 Nov 2011 10:51:04 +0000</pubDate>
       
-      <guid>/2011/11/22/boxuk-for-the-social-good-hackday/</guid>
+      <guid>https://martinjc.com/2011/11/22/boxuk-for-the-social-good-hackday/</guid>
       <description>Yesterday I attended the &amp;ldquo;For the Social Good&amp;rdquo; hackday, organised by BoxUK and held at the Students Union at Cardiff University. As you may have gathered from the title, it was a hackday themed around creating apps that had some benefit to society. The event ran from 10am to 10pm, so it was a fairly short hack event compared to some, which had a big influence on what could be done during the time available.</description>
     </item>
     
     <item>
       <title>Foursquare Hackathon Post Mortem</title>
-      <link>/2011/11/22/foursquare-hackathon-post-mortem/</link>
+      <link>https://martinjc.com/2011/11/22/foursquare-hackathon-post-mortem/</link>
       <pubDate>Tue, 22 Nov 2011 10:24:13 +0000</pubDate>
       
-      <guid>/2011/11/22/foursquare-hackathon-post-mortem/</guid>
+      <guid>https://martinjc.com/2011/11/22/foursquare-hackathon-post-mortem/</guid>
       <description>Note: I wrote this post just after the hackathon, but then forgot to actually publish it! 
 There&amp;rsquo;s a fair amount I learnt from taking part in and helping to organise the foursquare hackathon here at the university that probably deserves its own post. I&amp;rsquo;ll split it into two parts, the taking part and the organisation.
 Organising a hack event There were a couple of things I learnt from helping to organise the event that perhaps weren&amp;rsquo;t clear to begin with:</description>
@@ -751,10 +751,10 @@ Organising a hack event There were a couple of things I learnt from helping to o
     
     <item>
       <title>Colourful Foursquare category icons </title>
-      <link>/2011/10/01/colourful-foursquare-category-icons/</link>
+      <link>https://martinjc.com/2011/10/01/colourful-foursquare-category-icons/</link>
       <pubDate>Sat, 01 Oct 2011 16:24:07 +0000</pubDate>
       
-      <guid>/2011/10/01/colourful-foursquare-category-icons/</guid>
+      <guid>https://martinjc.com/2011/10/01/colourful-foursquare-category-icons/</guid>
       <description>UPDATE [01 August 2014]: Even more breaking! More recent version of the script here
 UPDATE 31/01/2011 - new version of the downloader script is here
 A couple of projects I&amp;rsquo;m working on at the moment need the ability to add foursquare venues to a map. This is pretty straightforward, but what is also needed is the ability to distinguish between the categories of the venues. To do this, I&amp;rsquo;m adding custom markers to a google map at a venue location, with the marker having an icon representing the venue category.</description>
@@ -762,190 +762,190 @@ A couple of projects I&amp;rsquo;m working on at the moment need the ability to 
     
     <item>
       <title>Foursquare Hackathon Cardiff - Day 2</title>
-      <link>/2011/09/19/foursquare-hackathon-cardiff-day-2/</link>
+      <link>https://martinjc.com/2011/09/19/foursquare-hackathon-cardiff-day-2/</link>
       <pubDate>Mon, 19 Sep 2011 08:25:15 +0000</pubDate>
       
-      <guid>/2011/09/19/foursquare-hackathon-cardiff-day-2/</guid>
+      <guid>https://martinjc.com/2011/09/19/foursquare-hackathon-cardiff-day-2/</guid>
       <description>Wow. I thought Saturday was busy, but I was wrong. Saturday was a cake walk compared to the crazy nightmare that was Sunday. The challenge of trying to get something (anything) working before the app submission deadline was incredible. Coding was fast and intense, and required a lot of good communication and fast thinking. Unfortunately we hit a few roadblocks that slowed us down (2 hours debugging problems with django&amp;rsquo;s static file serving really didn&amp;rsquo;t help, neither did jQuery mobile being an absolute pain in the rear end), but by the end of the day we had a nice looking site with some actual working functionality.</description>
     </item>
     
     <item>
       <title>Foursquare Hackathon Cardiff - Day 1</title>
-      <link>/2011/09/17/foursquare-hackathon-cardiff-day-1/</link>
+      <link>https://martinjc.com/2011/09/17/foursquare-hackathon-cardiff-day-1/</link>
       <pubDate>Sat, 17 Sep 2011 19:07:04 +0000</pubDate>
       
-      <guid>/2011/09/17/foursquare-hackathon-cardiff-day-1/</guid>
+      <guid>https://martinjc.com/2011/09/17/foursquare-hackathon-cardiff-day-1/</guid>
       <description>I was fully intending to try and live-blog the progress of the foursquare hackathon today, even going as far as to install a live blog plugin, but things have been going very quickly and we&amp;rsquo;ve been hitting the coding hard so I just haven&amp;rsquo;t had time!
 We&amp;rsquo;ve managed to get a decent crowd in, a roughly 50:50 split of people we already knew from the School and other people from elsewhere.</description>
     </item>
     
     <item>
       <title>Foursquare Hackathon</title>
-      <link>/2011/09/14/foursquare-hackathon/</link>
+      <link>https://martinjc.com/2011/09/14/foursquare-hackathon/</link>
       <pubDate>Wed, 14 Sep 2011 15:57:16 +0000</pubDate>
       
-      <guid>/2011/09/14/foursquare-hackathon/</guid>
+      <guid>https://martinjc.com/2011/09/14/foursquare-hackathon/</guid>
       <description>Along with Matthew Williams and Chris Gwilliams I&amp;rsquo;m helping to organise the Cardiff edition of the Foursquare global hackathon this weekend. I&amp;rsquo;m hoping it&amp;rsquo;ll be a pretty good event. Signup&amp;rsquo;s are looking pretty positive and I&amp;rsquo;m hopeful that we&amp;rsquo;ll get some decent apps being created.
 The organising is actually quite fun, but it is remarkable how much there is to do and remember. Thankfully the School of Computer Science &amp;amp; Informatics are being very supportive and allowing us to host it there, which makes things easier.</description>
     </item>
     
     <item>
       <title>Django &#43; Foursquare &#43; OAuth = webapp?</title>
-      <link>/2011/09/08/django-foursquare-oauth-webapp/</link>
+      <link>https://martinjc.com/2011/09/08/django-foursquare-oauth-webapp/</link>
       <pubDate>Thu, 08 Sep 2011 17:36:13 +0000</pubDate>
       
-      <guid>/2011/09/08/django-foursquare-oauth-webapp/</guid>
+      <guid>https://martinjc.com/2011/09/08/django-foursquare-oauth-webapp/</guid>
       <description>Moving on from my fun with getting django + twitter + oauth to play nicely, it&amp;rsquo;s now time to start writing a web app that uses foursquare as the authentication/login method. As part of this, I need a basic django framework for doing authentication with foursquare. This may be useful to someone else at some point (including me when I forget in three months time how I did things), so I&amp;rsquo;ve written up the details and added the code to github.</description>
     </item>
     
     <item>
       <title>Edinburgh Festival... Day Five</title>
-      <link>/2011/09/08/edinburgh-festival...-day-five/</link>
+      <link>https://martinjc.com/2011/09/08/edinburgh-festival...-day-five/</link>
       <pubDate>Thu, 08 Sep 2011 12:40:42 +0000</pubDate>
       
-      <guid>/2011/09/08/edinburgh-festival...-day-five/</guid>
+      <guid>https://martinjc.com/2011/09/08/edinburgh-festival...-day-five/</guid>
       <description>It&amp;rsquo;s the last full day at the festival and we wake up even later than the day before. It&amp;rsquo;s so late we decide to skip breakfast, and as it&amp;rsquo;s time for lunch we&amp;rsquo;ll head out for curry. A quick curry and rice and we&amp;rsquo;re up and running for the day once more. The shows today don&amp;rsquo;t start until later on, so we have a bit of a walk around, grab a coffee and cake, then once more split, as Lisa decides to go back to the flat briefly while I head to pub.</description>
     </item>
     
     <item>
       <title>Edinburgh Festival... Day Four</title>
-      <link>/2011/09/08/edinburgh-festival...-day-four/</link>
+      <link>https://martinjc.com/2011/09/08/edinburgh-festival...-day-four/</link>
       <pubDate>Thu, 08 Sep 2011 08:56:13 +0000</pubDate>
       
-      <guid>/2011/09/08/edinburgh-festival...-day-four/</guid>
+      <guid>https://martinjc.com/2011/09/08/edinburgh-festival...-day-four/</guid>
       <description>Wednesday we wake up later than intended, so miss the planned start to the day at the Shakespeare breakfast. In all, it&amp;rsquo;s a very slow start to the day, the pace of the previous few days is beginning to get to us. We head off for a walk and a bagel to wake up, and I get butter all over my face from a very lovely, but very buttery and bacon filled bagel.</description>
     </item>
     
     <item>
       <title>Edinburgh Festival... Day Three</title>
-      <link>/2011/09/07/edinburgh-festival...-day-three/</link>
+      <link>https://martinjc.com/2011/09/07/edinburgh-festival...-day-three/</link>
       <pubDate>Wed, 07 Sep 2011 06:23:08 +0000</pubDate>
       
-      <guid>/2011/09/07/edinburgh-festival...-day-three/</guid>
+      <guid>https://martinjc.com/2011/09/07/edinburgh-festival...-day-three/</guid>
       <description>Success today as we start the day with a run round the meadows, despite all the beer yesterday. A &amp;lsquo;debate&amp;rsquo; which I lose ends in us also running around the links and up towards Warrender Park Crescent. The flat I stayed in during my second stint in Edinburgh for the MSc was there, so it was nice to be running around the old stomping ground.
 After the run I bump into another Shrewsbury Town fan outside tesco&amp;rsquo;s.</description>
     </item>
     
     <item>
       <title>Edinburgh Festival... Day Two</title>
-      <link>/2011/09/05/edinburgh-festival...-day-two/</link>
+      <link>https://martinjc.com/2011/09/05/edinburgh-festival...-day-two/</link>
       <pubDate>Mon, 05 Sep 2011 06:19:02 +0000</pubDate>
       
-      <guid>/2011/09/05/edinburgh-festival...-day-two/</guid>
+      <guid>https://martinjc.com/2011/09/05/edinburgh-festival...-day-two/</guid>
       <description>Day two began with the best intentions - I woke up early, fully intending to go for a run around the meadows. It only took about thirty seconds of being awake for me to realise that wasn&amp;rsquo;t going to happen, so I went back to sleep for another hour. By about 8.30 the waking up was really beginning to take hold, so we relented and got up.
 Usual morning operations completed (including Lisa having to conclude delicate negotiations with reception for the use of a hairdryer), we headed out into town.</description>
     </item>
     
     <item>
       <title>Edinburgh Festival... Day One (The Shows)</title>
-      <link>/2011/08/25/edinburgh-festival...-day-one-the-shows/</link>
+      <link>https://martinjc.com/2011/08/25/edinburgh-festival...-day-one-the-shows/</link>
       <pubDate>Thu, 25 Aug 2011 20:23:30 +0000</pubDate>
       
-      <guid>/2011/08/25/edinburgh-festival...-day-one-the-shows/</guid>
+      <guid>https://martinjc.com/2011/08/25/edinburgh-festival...-day-one-the-shows/</guid>
       <description>Our first show was Dave Gorman at Assembly at the George Square Lecture Theatre, so after checking in we headed straight over there. We sat in the sun on the steps outside the venue and supped a couple of pints of Deuchars. We shouldn&amp;rsquo;t have bothered, it was served so cold you couldn&amp;rsquo;t taste anything, although maybe that was a blessing seeing as it came from a bar inside a shipping container and was served in a plastic cup.</description>
     </item>
     
     <item>
       <title>Edinburgh 2011.... Day One (The Journey)</title>
-      <link>/2011/08/25/edinburgh-2011....-day-one-the-journey/</link>
+      <link>https://martinjc.com/2011/08/25/edinburgh-2011....-day-one-the-journey/</link>
       <pubDate>Thu, 25 Aug 2011 19:25:27 +0000</pubDate>
       
-      <guid>/2011/08/25/edinburgh-2011....-day-one-the-journey/</guid>
+      <guid>https://martinjc.com/2011/08/25/edinburgh-2011....-day-one-the-journey/</guid>
       <description>Despite having lived in Edinburgh for almost a year on and off while doing my MSc, I&amp;rsquo;ve never been up there at festival time. We decided to rectify this, so earlier on in the year (way earlier on in the year) we booked some accommodation for the second week of the festival and made our plans to hit the city for a festival holiday. Over a few posts I&amp;rsquo;ll describe in laborious detail what we did, what we saw, and what we (or I) thought of it.</description>
     </item>
     
     <item>
       <title>Why write?</title>
-      <link>/2011/08/24/why-write/</link>
+      <link>https://martinjc.com/2011/08/24/why-write/</link>
       <pubDate>Wed, 24 Aug 2011 21:28:18 +0000</pubDate>
       
-      <guid>/2011/08/24/why-write/</guid>
+      <guid>https://martinjc.com/2011/08/24/why-write/</guid>
       <description>It&amp;rsquo;s a fairly sensible question: why do I write anything here? There aren&amp;rsquo;t going to be that many people reading, if any. Probably the only people that come past are going to be the other people in COMSC having a nose around to see what people are putting on their websites, and the few visitors I get from the random google searches that seem to appear in my analytics reports every now and again.</description>
     </item>
     
     <item>
       <title>More Augmented Conversation</title>
-      <link>/2011/08/04/more-augmented-conversation/</link>
+      <link>https://martinjc.com/2011/08/04/more-augmented-conversation/</link>
       <pubDate>Thu, 04 Aug 2011 09:52:23 +0000</pubDate>
       
-      <guid>/2011/08/04/more-augmented-conversation/</guid>
+      <guid>https://martinjc.com/2011/08/04/more-augmented-conversation/</guid>
       <description>Another update on the summer project? Already? Yes.
 The project is really cracking on. We&amp;rsquo;re two weeks from the end and beginning to see the results roll in, every meeting brings a new version of the software with more functionality. Nick has successfully written a nice framework that allows us to input conversations and automatically retrieve search results based on the topics of those conversations. Even the voice input works (almost) and we&amp;rsquo;ve got enough time to try and move on to some content extraction ideas.</description>
     </item>
     
     <item>
       <title>CUROP summer project update</title>
-      <link>/2011/07/12/curop-summer-project-update/</link>
+      <link>https://martinjc.com/2011/07/12/curop-summer-project-update/</link>
       <pubDate>Tue, 12 Jul 2011 14:04:10 +0000</pubDate>
       
-      <guid>/2011/07/12/curop-summer-project-update/</guid>
+      <guid>https://martinjc.com/2011/07/12/curop-summer-project-update/</guid>
       <description>I figure it&amp;rsquo;s about time I posted an update on the summer project that myself and Ian are supervising. Our summer student Nick is now two weeks into the project and seems to be getting to grips nicely with the problem. He also seems to be coping pretty well with two novice supervisors babbling away at him whenever we meet up! If he leaves the office without being completely overwhelmed with information I think it&amp;rsquo;s been a successful meeting.</description>
     </item>
     
     <item>
       <title>WowMom 2011</title>
-      <link>/2011/06/29/wowmom-2011/</link>
+      <link>https://martinjc.com/2011/06/29/wowmom-2011/</link>
       <pubDate>Wed, 29 Jun 2011 09:20:16 +0000</pubDate>
       
-      <guid>/2011/06/29/wowmom-2011/</guid>
+      <guid>https://martinjc.com/2011/06/29/wowmom-2011/</guid>
       <description>Last week I attended WowMom 2011 in Lucca, Italy. The conference was pretty good, but I was mainly there for the Autonomic and Opportunistic Computing (AOC) workshop where I was presenting some work, as I mentioned in an earlier post. The workshop was really interesting, a lot of the work was relevant to work we&amp;rsquo;d done in the past on the SocialNets project and work we&amp;rsquo;re doing in the future with the Recognition project.</description>
     </item>
     
     <item>
       <title>Bad Foursquare Day...</title>
-      <link>/2011/06/17/bad-foursquare-day.../</link>
+      <link>https://martinjc.com/2011/06/17/bad-foursquare-day.../</link>
       <pubDate>Fri, 17 Jun 2011 13:18:46 +0000</pubDate>
       
-      <guid>/2011/06/17/bad-foursquare-day.../</guid>
+      <guid>https://martinjc.com/2011/06/17/bad-foursquare-day.../</guid>
       <description>I can understand losing mayorships, but when it&amp;rsquo;s somebody close to you and she steals two from you in one day, it&amp;rsquo;s ridiculous:
 I will have my revenge&amp;hellip;</description>
     </item>
     
     <item>
       <title>Curop Project</title>
-      <link>/2011/06/14/curop-project/</link>
+      <link>https://martinjc.com/2011/06/14/curop-project/</link>
       <pubDate>Tue, 14 Jun 2011 09:14:01 +0000</pubDate>
       
-      <guid>/2011/06/14/curop-project/</guid>
+      <guid>https://martinjc.com/2011/06/14/curop-project/</guid>
       <description>Some excellent news yesterday as we&amp;rsquo;ve heard that we&amp;rsquo;ve got the CUROP funding for the summer project that I previously mentioned.
 All being well, it should start within the next couple of weeks, so I&amp;rsquo;ll update with the progress once there is some!</description>
     </item>
     
     <item>
       <title>Logging in to websites with python</title>
-      <link>/2011/06/09/logging-in-to-websites-with-python/</link>
+      <link>https://martinjc.com/2011/06/09/logging-in-to-websites-with-python/</link>
       <pubDate>Thu, 09 Jun 2011 14:58:03 +0000</pubDate>
       
-      <guid>/2011/06/09/logging-in-to-websites-with-python/</guid>
+      <guid>https://martinjc.com/2011/06/09/logging-in-to-websites-with-python/</guid>
       <description>As previously explained, I needed a python script to login to a website so I could access data. There&amp;rsquo;s loads of examples out on the web of how to do this, my solution (mashed together from many examples) is described below. For the whole script, jump to the end.
 Firstly, we need to set some simple variables about the website we&amp;rsquo;re trying to log in to. Obviously, I&amp;rsquo;m trying to login to myfitnesspal, but this process should work with most websites that use a simple form + cookie based login process.</description>
     </item>
     
     <item>
       <title>Scraping data from MyFitnessPal with python</title>
-      <link>/2011/06/09/scraping-data-from-myfitnesspal-with-python/</link>
+      <link>https://martinjc.com/2011/06/09/scraping-data-from-myfitnesspal-with-python/</link>
       <pubDate>Thu, 09 Jun 2011 08:07:33 +0000</pubDate>
       
-      <guid>/2011/06/09/scraping-data-from-myfitnesspal-with-python/</guid>
+      <guid>https://martinjc.com/2011/06/09/scraping-data-from-myfitnesspal-with-python/</guid>
       <description>Following my success with extracting my Google Search History in a simple manner, I&amp;rsquo;ve decided that I should do something similar to extract all the data I&amp;rsquo;ve been feeding into myfitnesspal for the last 5 months. As I briefly mentioned in the review of the app + website, the progress graphs leave a lot to be desired and there&amp;rsquo;s very little in the way of analysis of the data. I have a lot of questions about my progress and there is no easy way to answer all of them using just the website.</description>
     </item>
     
     <item>
       <title>Losing Weight in 2011 continued... Libra</title>
-      <link>/2011/06/08/losing-weight-in-2011-continued...-libra/</link>
+      <link>https://martinjc.com/2011/06/08/losing-weight-in-2011-continued...-libra/</link>
       <pubDate>Wed, 08 Jun 2011 21:41:16 +0000</pubDate>
       
-      <guid>/2011/06/08/losing-weight-in-2011-continued...-libra/</guid>
+      <guid>https://martinjc.com/2011/06/08/losing-weight-in-2011-continued...-libra/</guid>
       <description>Another of the very useful apps I&amp;rsquo;ve been using since the start of the &amp;ldquo;New Regime&amp;rdquo; is Libra. It totally makes up for the crappy progress graphs on the MyFitnessPal website or in the mobile app.
 It&amp;rsquo;s an app that has a singular purpose: it&amp;rsquo;s just for tracking weight. But it does it very well. You enter a weight for every day, it works out statistics based on those weights, calculates the trend value for your weight, (so smoothes out daily fluctuations caused by water intake etc), and predicts when you&amp;rsquo;ll hit your target.</description>
     </item>
     
     <item>
       <title>Google Web History - Wordle</title>
-      <link>/2011/06/07/google-web-history-wordle/</link>
+      <link>https://martinjc.com/2011/06/07/google-web-history-wordle/</link>
       <pubDate>Tue, 07 Jun 2011 08:38:38 +0000</pubDate>
       
-      <guid>/2011/06/07/google-web-history-wordle/</guid>
+      <guid>https://martinjc.com/2011/06/07/google-web-history-wordle/</guid>
       <description>So, you&amp;rsquo;ve downloaded your Google search history, what&amp;rsquo;s the first thing you do? Split all the queries into individual words and make a wordle of course:
    A wordle of my Google search queries    There we have it - my use of Google for five years. Turns out I do programming and live in Cardiff. Who&amp;rsquo;d have thought it?
 **edit: **why have I googled for google so much?</description>
@@ -953,10 +953,10 @@ It&amp;rsquo;s an app that has a singular purpose: it&amp;rsquo;s just for track
     
     <item>
       <title>Losing Weight in 2011 continued... My Fitness Pal</title>
-      <link>/2011/06/07/losing-weight-in-2011-continued...-my-fitness-pal/</link>
+      <link>https://martinjc.com/2011/06/07/losing-weight-in-2011-continued...-my-fitness-pal/</link>
       <pubDate>Tue, 07 Jun 2011 08:01:20 +0000</pubDate>
       
-      <guid>/2011/06/07/losing-weight-in-2011-continued...-my-fitness-pal/</guid>
+      <guid>https://martinjc.com/2011/06/07/losing-weight-in-2011-continued...-my-fitness-pal/</guid>
       <description>(The first in a series of posts on apps I&amp;rsquo;ve found useful under &amp;lsquo;the new regime&amp;rsquo;)
 One of the best apps/services I&amp;rsquo;ve found for general fitness and nutrition and weight loss is MyFitnessPal. I&amp;rsquo;m fairly sure I wouldn&amp;rsquo;t have made quite as good progress without it.
 The main selling point of the service is that it allows you to track what you eat and what exercise you do, in order to monitor and help regulate your calorific intake.</description>
@@ -964,103 +964,103 @@ The main selling point of the service is that it allows you to track what you ea
     
     <item>
       <title>How to access and download your Google Web History with wget</title>
-      <link>/2011/06/05/how-to-access-and-download-your-google-web-history-with-wget/</link>
+      <link>https://martinjc.com/2011/06/05/how-to-access-and-download-your-google-web-history-with-wget/</link>
       <pubDate>Sun, 05 Jun 2011 22:57:04 +0000</pubDate>
       
-      <guid>/2011/06/05/how-to-access-and-download-your-google-web-history-with-wget/</guid>
+      <guid>https://martinjc.com/2011/06/05/how-to-access-and-download-your-google-web-history-with-wget/</guid>
       <description>Google Web History has now been recording all of the searches I made in Google since about 2005. Obviously 6 years of search queries and results is a phenomenal amount of data, and it would be nice to get hold of it all to see what I could make of it. Fortunately Google make the data available as an RSS feed, although it&amp;rsquo;s not particularly well documented.
 (caution - many &amp;lsquo;ifs&amp;rsquo; coming up next)</description>
     </item>
     
     <item>
       <title>Losing weight in 2011</title>
-      <link>/2011/06/05/losing-weight-in-2011/</link>
+      <link>https://martinjc.com/2011/06/05/losing-weight-in-2011/</link>
       <pubDate>Sun, 05 Jun 2011 16:19:20 +0000</pubDate>
       
-      <guid>/2011/06/05/losing-weight-in-2011/</guid>
+      <guid>https://martinjc.com/2011/06/05/losing-weight-in-2011/</guid>
       <description>Since the beginning of the year I&amp;rsquo;ve been living under what we&amp;rsquo;ve been calling &amp;lsquo;the new regime&amp;rsquo;. This &amp;lsquo;new regime&amp;rsquo; basically involves not living like a fat useless slob, so I&amp;rsquo;ve been getting fit, eating healthily and losing weight. So far I&amp;rsquo;ve lost over 10kg and can now run around the park a few times without collapsing to the floor clutching at my chest and screaming about ambulances, so I&amp;rsquo;d say its going pretty well.</description>
     </item>
     
     <item>
       <title>Summer project</title>
-      <link>/2011/06/03/summer-project/</link>
+      <link>https://martinjc.com/2011/06/03/summer-project/</link>
       <pubDate>Fri, 03 Jun 2011 09:52:48 +0000</pubDate>
       
-      <guid>/2011/06/03/summer-project/</guid>
+      <guid>https://martinjc.com/2011/06/03/summer-project/</guid>
       <description>Over the summer, Ian and I are going to be supervising a summer project. We&amp;rsquo;re going to get a 2nd year undergraduate student for an 8 week project. I&amp;rsquo;ve stuck up a page about it here, and will post whenever there&amp;rsquo;s something interesting to see.</description>
     </item>
     
     <item>
       <title>Paper published</title>
-      <link>/2011/06/02/paper-published/</link>
+      <link>https://martinjc.com/2011/06/02/paper-published/</link>
       <pubDate>Thu, 02 Jun 2011 09:23:51 +0000</pubDate>
       
-      <guid>/2011/06/02/paper-published/</guid>
+      <guid>https://martinjc.com/2011/06/02/paper-published/</guid>
       <description>Our latest paper (&amp;ldquo;Opportunistic social dissemination of micro-blogs&amp;rdquo;) on some of the last work we did for the Socialnets project has finally been published, and can be viewed online here, or in preprint form from my publications page.</description>
     </item>
     
     <item>
       <title>Unexpected</title>
-      <link>/2011/06/02/unexpected/</link>
+      <link>https://martinjc.com/2011/06/02/unexpected/</link>
       <pubDate>Thu, 02 Jun 2011 09:13:28 +0000</pubDate>
       
-      <guid>/2011/06/02/unexpected/</guid>
+      <guid>https://martinjc.com/2011/06/02/unexpected/</guid>
       <description>So I mentioned something about keeping busy? Yeah, well&amp;hellip;.
 A while back I spent a couple of months playing around with an idea that we thought could make an interesting bit of research. It started with a simple modification to a protocol proposed by someone else (Gavidia et al, A gossip-based distributed news service for wireless mesh networks), where we added some elements of self-adaptation and cooperation. As things sometimes go, the results were quite good but not outstanding and we had more pressing things to look at, so we dropped it and moved onto something else.</description>
     </item>
     
     <item>
       <title>Keeping Busy</title>
-      <link>/2011/04/07/keeping-busy/</link>
+      <link>https://martinjc.com/2011/04/07/keeping-busy/</link>
       <pubDate>Thu, 07 Apr 2011 15:03:38 +0000</pubDate>
       
-      <guid>/2011/04/07/keeping-busy/</guid>
+      <guid>https://martinjc.com/2011/04/07/keeping-busy/</guid>
       <description>I have found that the secret to forgetting that it&amp;rsquo;s my viva in 13 days is to keep busy. Extraordinarily busy. Luckily, work is conspiring right along with me, with coding on our first experiment in full go-mode, a workshop + social dinner next week to help organise, reading and planning for our main &amp;lsquo;project&amp;rsquo; to do, a paper to edit and revise for a workshop and a side project looking at 4sq to move from prototype &amp;lsquo;buggy as hell, falls over if you look at it funny&amp;rsquo; mode to &amp;lsquo;production, solid as a rock, leave it running and forget about it&amp;rsquo; mode.</description>
     </item>
     
     <item>
       <title>Django &#43; Tweepy &#43; OAuth</title>
-      <link>/2011/04/04/django-tweepy-oauth/</link>
+      <link>https://martinjc.com/2011/04/04/django-tweepy-oauth/</link>
       <pubDate>Mon, 04 Apr 2011 18:27:24 +0000</pubDate>
       
-      <guid>/2011/04/04/django-tweepy-oauth/</guid>
+      <guid>https://martinjc.com/2011/04/04/django-tweepy-oauth/</guid>
       <description>There is a lot of information out there that talks about putting Django and Tweepy together to make a Twitter web app. I read a lot of it recently, and although a lot of it is helpful some of it can be quite complicated or out of date.
 To make things simple, I thought I&amp;rsquo;d create an example Django project that just contains the basics needed to get up and running.</description>
     </item>
     
     <item>
       <title>Twitter Wordle</title>
-      <link>/2011/04/04/twitter-wordle/</link>
+      <link>https://martinjc.com/2011/04/04/twitter-wordle/</link>
       <pubDate>Mon, 04 Apr 2011 13:36:44 +0000</pubDate>
       
-      <guid>/2011/04/04/twitter-wordle/</guid>
+      <guid>https://martinjc.com/2011/04/04/twitter-wordle/</guid>
       <description>Next week we have the project partners coming over to Cardiff for a workshop. Stu and myself were discussing that we should have some way to display information throughout the day, something that makes it easy to pick out the main themes of talks etc. I&amp;rsquo;m a big fan of the Wordle as a way of displaying text, so we thought it would be nice if we could have a dynamic Wordle displayed that people could add to throughout the workshop.</description>
     </item>
     
     <item>
       <title>23 days and counting...</title>
-      <link>/2011/03/28/23-days-and-counting.../</link>
+      <link>https://martinjc.com/2011/03/28/23-days-and-counting.../</link>
       <pubDate>Mon, 28 Mar 2011 21:18:58 +0000</pubDate>
       
-      <guid>/2011/03/28/23-days-and-counting.../</guid>
+      <guid>https://martinjc.com/2011/03/28/23-days-and-counting.../</guid>
       <description>Waiting is annoying. It&amp;rsquo;s close now though&amp;hellip;</description>
     </item>
     
     <item>
       <title>fun with django...</title>
-      <link>/2011/03/28/fun-with-django.../</link>
+      <link>https://martinjc.com/2011/03/28/fun-with-django.../</link>
       <pubDate>Mon, 28 Mar 2011 21:12:15 +0000</pubDate>
       
-      <guid>/2011/03/28/fun-with-django.../</guid>
+      <guid>https://martinjc.com/2011/03/28/fun-with-django.../</guid>
       <description>One of the latest ideas we are working on for the new project is looking at how providing different amounts of information affects our perception of content. Even in pure implementation terms this is interestingly unlike any of the work I&amp;rsquo;ve done in the last few years, most of which was simulation based. &amp;ldquo;Code a simulation, run the simulation, analyse the results&amp;rdquo; has been a pattern of work since the beginning of my PhD and beyond.</description>
     </item>
     
     <item>
       <title>the first one</title>
-      <link>/2011/03/28/the-first-one/</link>
+      <link>https://martinjc.com/2011/03/28/the-first-one/</link>
       <pubDate>Mon, 28 Mar 2011 20:44:09 +0000</pubDate>
       
-      <guid>/2011/03/28/the-first-one/</guid>
+      <guid>https://martinjc.com/2011/03/28/the-first-one/</guid>
       <description>I figure blogging is now so outdated and behind the times that it is safe for me to start.
 So I have. Here.
 I&amp;rsquo;ll probably have to move this to another host soon, as it&amp;rsquo;s hosted on the work web server which means I probably can&amp;rsquo;t/shouldn&amp;rsquo;t be as sweary as I would normally like to be.
@@ -1069,30 +1069,30 @@ Until I get fed up of self censorship though, here it is.</description>
     
     <item>
       <title>Teaching</title>
-      <link>/teaching/</link>
+      <link>https://martinjc.com/teaching/</link>
       <pubDate>Fri, 25 Mar 2011 20:22:40 +0000</pubDate>
       
-      <guid>/teaching/</guid>
+      <guid>https://martinjc.com/teaching/</guid>
       <description>I am the Director of Learning and Teaching (DLT) for the School of Computer Science and Informatics. For the last few years I&amp;rsquo;ve been the Deputy DLT, and have spent a lot of time focused on Postgraduate students, working as the chair of the Postgraduate Operations Team, Senior Personal Tutor for Taught Postgraduate students, and the Student Rep Coordinator for the postgrad Student-Staff Panel.
 I&amp;rsquo;m the MSc Programme Leader for the MSc in Computational and Data Journalism, a joint course between the School of Computer Science &amp;amp; Informatics and the School of Journalism, Media and Culture here at Cardiff University.</description>
     </item>
     
     <item>
       <title>Research</title>
-      <link>/research/</link>
+      <link>https://martinjc.com/research/</link>
       <pubDate>Fri, 25 Mar 2011 11:46:38 +0000</pubDate>
       
-      <guid>/research/</guid>
+      <guid>https://martinjc.com/research/</guid>
       <description>A large focus of my current research is in the area of Computational and Data Journalism, including studying Data Journalism and Computer Science education. I&amp;rsquo;m interested in the understanding of educational methods (including the use of innovative teaching and assessment) particularly within STEM subjects, but also at the cross-disciplinary boundary.
 I like doing research wherever computer science, IT systems and devices brush up against the real world, as things are far more interesting when people are involved.</description>
     </item>
     
     <item>
       <title>publications</title>
-      <link>/publications/</link>
+      <link>https://martinjc.com/publications/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/publications/</guid>
+      <guid>https://martinjc.com/publications/</guid>
       <description>A list of my publications is given below, it&amp;rsquo;s usually fairly up to date. Alternatively, you can take a look at my Google Scholar profile, or my profile on any number of useless &amp;ldquo;academic profile&amp;rdquo; websites (listed at the end of the page).
 Journal Articles  Margeret Hall, Athanasios Mazarakis, Martin Chorley, Simon Caton,  2018  &#34;Editorial of the special issue on following user pathways: Key contributions and future directions in cross-platform social media research&#34;</description>
     </item>

@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Cli on Martin Chorley</title>
-    <link>/tags/cli/</link>
+    <link>https://martinjc.com/tags/cli/</link>
     <description>Recent content in Cli on Martin Chorley</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
     <lastBuildDate>Sun, 05 Jun 2011 22:57:04 +0000</lastBuildDate>
     
-	<atom:link href="/tags/cli/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://martinjc.com/tags/cli/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>How to access and download your Google Web History with wget</title>
-      <link>/2011/06/05/how-to-access-and-download-your-google-web-history-with-wget/</link>
+      <link>https://martinjc.com/2011/06/05/how-to-access-and-download-your-google-web-history-with-wget/</link>
       <pubDate>Sun, 05 Jun 2011 22:57:04 +0000</pubDate>
       
-      <guid>/2011/06/05/how-to-access-and-download-your-google-web-history-with-wget/</guid>
+      <guid>https://martinjc.com/2011/06/05/how-to-access-and-download-your-google-web-history-with-wget/</guid>
       <description>Google Web History has now been recording all of the searches I made in Google since about 2005. Obviously 6 years of search queries and results is a phenomenal amount of data, and it would be nice to get hold of it all to see what I could make of it. Fortunately Google make the data available as an RSS feed, although it&amp;rsquo;s not particularly well documented.
 (caution - many &amp;lsquo;ifs&amp;rsquo; coming up next)</description>
     </item>

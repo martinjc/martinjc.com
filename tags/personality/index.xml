@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Personality on Martin Chorley</title>
-    <link>/tags/personality/</link>
+    <link>https://martinjc.com/tags/personality/</link>
     <description>Recent content in Personality on Martin Chorley</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
     <lastBuildDate>Tue, 27 Jan 2015 11:00:12 +0000</lastBuildDate>
     
-	<atom:link href="/tags/personality/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://martinjc.com/tags/personality/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Personality and Places</title>
-      <link>/2015/01/27/personality-and-places/</link>
+      <link>https://martinjc.com/2015/01/27/personality-and-places/</link>
       <pubDate>Tue, 27 Jan 2015 11:00:12 +0000</pubDate>
       
-      <guid>/2015/01/27/personality-and-places/</guid>
+      <guid>https://martinjc.com/2015/01/27/personality-and-places/</guid>
       <description>Our paper examining the link between individual personality and the places people visit has just been published in Computers in Human Behavior. It&amp;rsquo;s open access, so you can go read it for free, now! 
 In an experiment we ran previously, we asked users of Foursquare to take a personality test and give us access to their checkin history. The personality test gives us a measure of how each person scores for five different factors: Openness, Conscientiousness, Extraversion, Agreeableness and Neuroticism.</description>
     </item>
     
     <item>
       <title>Extended Mind Crowdsourcing</title>
-      <link>/2014/12/15/extended-mind-crowdsourcing/</link>
+      <link>https://martinjc.com/2014/12/15/extended-mind-crowdsourcing/</link>
       <pubDate>Mon, 15 Dec 2014 13:37:50 +0000</pubDate>
       
-      <guid>/2014/12/15/extended-mind-crowdsourcing/</guid>
+      <guid>https://martinjc.com/2014/12/15/extended-mind-crowdsourcing/</guid>
       <description>Update 13/01/15: the paper containing the research described below is currently available from the HICSS website
 This post is one I&amp;rsquo;m cross-posting both here and on the MobiSoc blog. Here, because it&amp;rsquo;s my personal translation of one of our latest research papers, and there because it&amp;rsquo;s a very good paper mostly written and driven by Roger Whitaker, so deserves an &amp;lsquo;official&amp;rsquo; blog post!
 A lot of use is made of Crowdsourcing in both business and academia.</description>
@@ -34,28 +34,28 @@ A lot of use is made of Crowdsourcing in both business and academia.</descriptio
     
     <item>
       <title>SCA 2013 - Visiting Patterns and Personality of Foursquare Users</title>
-      <link>/2013/10/01/sca-2013-visiting-patterns-and-personality-of-foursquare-users/</link>
+      <link>https://martinjc.com/2013/10/01/sca-2013-visiting-patterns-and-personality-of-foursquare-users/</link>
       <pubDate>Tue, 01 Oct 2013 12:30:47 +0000</pubDate>
       
-      <guid>/2013/10/01/sca-2013-visiting-patterns-and-personality-of-foursquare-users/</guid>
+      <guid>https://martinjc.com/2013/10/01/sca-2013-visiting-patterns-and-personality-of-foursquare-users/</guid>
       <description>Nice work by [@martinjc](https://twitter.com/martinjc) on Foursquare checkins and personality # sca2013 [pic.twitter.com/9afebFrzYS](http://t.co/9afebFrzYS) — Shaun Lawson (@shaunlawson) [October 1, 2013](https://twitter.com/shaunlawson/statuses/384979369175027712) Today was presentation day for me at SCA 2013 - I was presenting the initial results of the Foursquare experiment, which has now been running for a while. The presentation seemed to go really well - I think it&amp;rsquo;s the strongest work I&amp;rsquo;ve done yet, and so it was easy to talk well and with confidence about it, which led to a nice talk.</description>
     </item>
     
     <item>
       <title>EPSRC Doctoral Award Fellowship</title>
-      <link>/2013/08/16/epsrc-doctoral-award-fellowship/</link>
+      <link>https://martinjc.com/2013/08/16/epsrc-doctoral-award-fellowship/</link>
       <pubDate>Fri, 16 Aug 2013 15:47:06 +0000</pubDate>
       
-      <guid>/2013/08/16/epsrc-doctoral-award-fellowship/</guid>
+      <guid>https://martinjc.com/2013/08/16/epsrc-doctoral-award-fellowship/</guid>
       <description>I&amp;rsquo;m really very pleased to be able to say that I have been awarded a 2013 EPSRC doctoral award fellowship. This means I&amp;rsquo;ve been given an opportunity to spend 12 months from October this year working independently on a research project of my own choosing. I&amp;rsquo;ll be looking at the connection between places and personality, analysing the large dataset collected through the Foursquare Personality app to try and build towards a recommendation system for places that uses personality as one of its key input signals.</description>
     </item>
     
     <item>
       <title>Foursquare Personality Experiment</title>
-      <link>/2012/11/20/foursquare-personality-experiment/</link>
+      <link>https://martinjc.com/2012/11/20/foursquare-personality-experiment/</link>
       <pubDate>Tue, 20 Nov 2012 09:20:32 +0000</pubDate>
       
-      <guid>/2012/11/20/foursquare-personality-experiment/</guid>
+      <guid>https://martinjc.com/2012/11/20/foursquare-personality-experiment/</guid>
       <description>Today we are finally starting to promote our latest experiment. It&amp;rsquo;s been online for about a month, but we haven&amp;rsquo;t told anyone about it while we&amp;rsquo;ve been finishing up the Year 2 deliverables for Recognition (the review is in a couple of weeks - fingers crossed!) Now however I can start publicly talking about it and encouraging people to take part and get involved!
 We&amp;rsquo;re calling it the Foursquare Personality Experiment, and it&amp;rsquo;s available on the School of Computer Science &amp;amp; Informatics&amp;rsquo; website here:</description>
     </item>

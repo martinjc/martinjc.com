@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Latex on Martin Chorley</title>
-    <link>/tags/latex/</link>
+    <link>https://martinjc.com/tags/latex/</link>
     <description>Recent content in Latex on Martin Chorley</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
     <lastBuildDate>Fri, 15 Mar 2013 15:22:36 +0000</lastBuildDate>
     
-	<atom:link href="/tags/latex/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://martinjc.com/tags/latex/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Advanced LaTeX Course</title>
-      <link>/2013/03/15/advanced-latex-course/</link>
+      <link>https://martinjc.com/2013/03/15/advanced-latex-course/</link>
       <pubDate>Fri, 15 Mar 2013 15:22:36 +0000</pubDate>
       
-      <guid>/2013/03/15/advanced-latex-course/</guid>
+      <guid>https://martinjc.com/2013/03/15/advanced-latex-course/</guid>
       <description>Here are the slides and source code for the UGC Advanced LaTeX course, 15th March 2013
 Introduction (Beginners Recap, Graphics &amp;amp; Figures) - handouts and source BibTeX and Referencing - handouts &amp;amp; source Custom Commands &amp;amp; Environments, Source Code Listings, Tips &amp;amp; Tricks - handouts &amp;amp; source Exercise Sheets - handouts &amp;amp; source</description>
     </item>
     
     <item>
       <title>LaTeX notes and links</title>
-      <link>/2013/02/01/latex-notes-and-links/</link>
+      <link>https://martinjc.com/2013/02/01/latex-notes-and-links/</link>
       <pubDate>Fri, 01 Feb 2013 15:39:06 +0000</pubDate>
       
-      <guid>/2013/02/01/latex-notes-and-links/</guid>
+      <guid>https://martinjc.com/2013/02/01/latex-notes-and-links/</guid>
       <description>During the `LaTeX for Beginners&amp;rsquo; UGC course on Friday 1st February I promised that I would upload the source code for my presentations along with some useful links:
  Introduction slides and source
  Maths slides and source
@@ -38,10 +38,10 @@ Introduction (Beginners Recap, Graphics &amp;amp; Figures) - handouts and sourc
     
     <item>
       <title>LaTeX beamer handouts (with frames and borders)</title>
-      <link>/2013/01/29/latex-beamer-handouts-with-frames-and-borders/</link>
+      <link>https://martinjc.com/2013/01/29/latex-beamer-handouts-with-frames-and-borders/</link>
       <pubDate>Tue, 29 Jan 2013 09:46:45 +0000</pubDate>
       
-      <guid>/2013/01/29/latex-beamer-handouts-with-frames-and-borders/</guid>
+      <guid>https://martinjc.com/2013/01/29/latex-beamer-handouts-with-frames-and-borders/</guid>
       <description>I&amp;rsquo;m working on some notes for a beginners LaTeX course that I&amp;rsquo;m giving for the University Graduate College this week. In a temporary fit of insanity I decided it would be nice to write all the slides in LaTeX, so that I can distribute the source to the students so they get some real world LaTeX examples to go along with the course notes.
 I was attempting to make handouts for the students using the great handoutWithNotes package.</description>
     </item>

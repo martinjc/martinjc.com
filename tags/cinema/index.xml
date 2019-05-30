@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Cinema on Martin Chorley</title>
-    <link>/tags/cinema/</link>
+    <link>https://martinjc.com/tags/cinema/</link>
     <description>Recent content in Cinema on Martin Chorley</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
     <lastBuildDate>Wed, 28 Aug 2013 10:45:45 +0000</lastBuildDate>
     
-	<atom:link href="/tags/cinema/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://martinjc.com/tags/cinema/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Post-Processed Dinosaurs</title>
-      <link>/2013/08/28/post-processed-dinosaurs/</link>
+      <link>https://martinjc.com/2013/08/28/post-processed-dinosaurs/</link>
       <pubDate>Wed, 28 Aug 2013 10:45:45 +0000</pubDate>
       
-      <guid>/2013/08/28/post-processed-dinosaurs/</guid>
+      <guid>https://martinjc.com/2013/08/28/post-processed-dinosaurs/</guid>
       <description>Finding myself with a free afternoon this week, I strolled down to the local Odeon to see Jurassic Park: IMAX 3D. (It should be noted that the &amp;lsquo;IMAX&amp;rdquo; bit doesn&amp;rsquo;t mean much - the screen at the Odeon is nowhere near as big as a true &amp;lsquo;IMAX&amp;rsquo; screen). I should say, I love this film a lot - hence my willingness to pay £12 (£12!!??!) to see it again on the big screen.</description>
     </item>
     
     <item>
       <title>Cinema 2012 - the review</title>
-      <link>/2013/02/06/cinema-2012-the-review/</link>
+      <link>https://martinjc.com/2013/02/06/cinema-2012-the-review/</link>
       <pubDate>Wed, 06 Feb 2013 14:15:41 +0000</pubDate>
       
-      <guid>/2013/02/06/cinema-2012-the-review/</guid>
+      <guid>https://martinjc.com/2013/02/06/cinema-2012-the-review/</guid>
       <description>At the beginning of the year I embarked upon a challenge: watch 100 movies in the cinema in 1 year. I thought it would be fun, but difficult.
 It was fun.
 It was difficult.
@@ -34,10 +34,10 @@ This is a not very brief account of that year, starting with the best movies tha
     
     <item>
       <title>100 Movies in the Cinema in 1 Year</title>
-      <link>/2012/03/04/100-movies-in-the-cinema-in-1-year/</link>
+      <link>https://martinjc.com/2012/03/04/100-movies-in-the-cinema-in-1-year/</link>
       <pubDate>Sun, 04 Mar 2012 22:10:37 +0000</pubDate>
       
-      <guid>/2012/03/04/100-movies-in-the-cinema-in-1-year/</guid>
+      <guid>https://martinjc.com/2012/03/04/100-movies-in-the-cinema-in-1-year/</guid>
       <description>After reading this blog post at the end of January I decided that watching at least 100 movies in the cinema in a year was the kind of challenge I could get behind. Last year&amp;rsquo;s challenge to get fit and healthy was fairly successful and seemed like much harder work than going to the cinema a few times could ever be. After all, 100 movies a year is less than 2 a week, so it must be easy, right?</description>
     </item>
     

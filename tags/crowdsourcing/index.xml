@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Crowdsourcing on Martin Chorley</title>
-    <link>/tags/crowdsourcing/</link>
+    <link>https://martinjc.com/tags/crowdsourcing/</link>
     <description>Recent content in Crowdsourcing on Martin Chorley</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
     <lastBuildDate>Mon, 15 Dec 2014 13:37:50 +0000</lastBuildDate>
     
-	<atom:link href="/tags/crowdsourcing/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://martinjc.com/tags/crowdsourcing/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Extended Mind Crowdsourcing</title>
-      <link>/2014/12/15/extended-mind-crowdsourcing/</link>
+      <link>https://martinjc.com/2014/12/15/extended-mind-crowdsourcing/</link>
       <pubDate>Mon, 15 Dec 2014 13:37:50 +0000</pubDate>
       
-      <guid>/2014/12/15/extended-mind-crowdsourcing/</guid>
+      <guid>https://martinjc.com/2014/12/15/extended-mind-crowdsourcing/</guid>
       <description>Update 13/01/15: the paper containing the research described below is currently available from the HICSS website
 This post is one I&amp;rsquo;m cross-posting both here and on the MobiSoc blog. Here, because it&amp;rsquo;s my personal translation of one of our latest research papers, and there because it&amp;rsquo;s a very good paper mostly written and driven by Roger Whitaker, so deserves an &amp;lsquo;official&amp;rsquo; blog post!
 A lot of use is made of Crowdsourcing in both business and academia.</description>

@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Dinosaurs on Martin Chorley</title>
-    <link>/tags/dinosaurs/</link>
+    <link>https://martinjc.com/tags/dinosaurs/</link>
     <description>Recent content in Dinosaurs on Martin Chorley</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
     <lastBuildDate>Wed, 28 Aug 2013 10:45:45 +0000</lastBuildDate>
     
-	<atom:link href="/tags/dinosaurs/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://martinjc.com/tags/dinosaurs/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Post-Processed Dinosaurs</title>
-      <link>/2013/08/28/post-processed-dinosaurs/</link>
+      <link>https://martinjc.com/2013/08/28/post-processed-dinosaurs/</link>
       <pubDate>Wed, 28 Aug 2013 10:45:45 +0000</pubDate>
       
-      <guid>/2013/08/28/post-processed-dinosaurs/</guid>
+      <guid>https://martinjc.com/2013/08/28/post-processed-dinosaurs/</guid>
       <description>Finding myself with a free afternoon this week, I strolled down to the local Odeon to see Jurassic Park: IMAX 3D. (It should be noted that the &amp;lsquo;IMAX&amp;rdquo; bit doesn&amp;rsquo;t mean much - the screen at the Odeon is nowhere near as big as a true &amp;lsquo;IMAX&amp;rsquo; screen). I should say, I love this film a lot - hence my willingness to pay £12 (£12!!??!) to see it again on the big screen.</description>
     </item>
     

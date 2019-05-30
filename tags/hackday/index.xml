@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Hackday on Martin Chorley</title>
-    <link>/tags/hackday/</link>
+    <link>https://martinjc.com/tags/hackday/</link>
     <description>Recent content in Hackday on Martin Chorley</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
     <lastBuildDate>Tue, 22 Nov 2011 10:51:04 +0000</lastBuildDate>
     
-	<atom:link href="/tags/hackday/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://martinjc.com/tags/hackday/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>BoxUK &#34;For the Social Good&#34; Hackday</title>
-      <link>/2011/11/22/boxuk-for-the-social-good-hackday/</link>
+      <link>https://martinjc.com/2011/11/22/boxuk-for-the-social-good-hackday/</link>
       <pubDate>Tue, 22 Nov 2011 10:51:04 +0000</pubDate>
       
-      <guid>/2011/11/22/boxuk-for-the-social-good-hackday/</guid>
+      <guid>https://martinjc.com/2011/11/22/boxuk-for-the-social-good-hackday/</guid>
       <description>Yesterday I attended the &amp;ldquo;For the Social Good&amp;rdquo; hackday, organised by BoxUK and held at the Students Union at Cardiff University. As you may have gathered from the title, it was a hackday themed around creating apps that had some benefit to society. The event ran from 10am to 10pm, so it was a fairly short hack event compared to some, which had a big influence on what could be done during the time available.</description>
     </item>
     

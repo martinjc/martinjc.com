@@ -2,41 +2,41 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Last.fm on Martin Chorley</title>
-    <link>/tags/last.fm/</link>
+    <link>https://martinjc.com/tags/last.fm/</link>
     <description>Recent content in Last.fm on Martin Chorley</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
     <lastBuildDate>Mon, 22 Apr 2013 10:51:12 +0000</lastBuildDate>
     
-	<atom:link href="/tags/last.fm/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://martinjc.com/tags/last.fm/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Open Sauce Hackathon - Post Mortem</title>
-      <link>/2013/04/22/open-sauce-hackathon-post-mortem/</link>
+      <link>https://martinjc.com/2013/04/22/open-sauce-hackathon-post-mortem/</link>
       <pubDate>Mon, 22 Apr 2013 10:51:12 +0000</pubDate>
       
-      <guid>/2013/04/22/open-sauce-hackathon-post-mortem/</guid>
+      <guid>https://martinjc.com/2013/04/22/open-sauce-hackathon-post-mortem/</guid>
       <description>This weekend saw the second &amp;lsquo;Open Sauce Hackathon&amp;rsquo; run by undergraduate students here in the school. Last years was pretty successful, and they improved upon it this year, pulling in many more sponsors and offering more prizes.
 Unlike last year, when I turned up having already decided with Jon Quinn what we were doing, I went along this year with no real ideas. I had a desire to do something with a map, as I&amp;rsquo;m pretty sure building stuff connected to maps is going to play a big part in work over the next couple of months.</description>
     </item>
     
     <item>
       <title>SWN Artist Explorer</title>
-      <link>/2012/10/04/swn-artist-explorer/</link>
+      <link>https://martinjc.com/2012/10/04/swn-artist-explorer/</link>
       <pubDate>Thu, 04 Oct 2012 09:48:18 +0000</pubDate>
       
-      <guid>/2012/10/04/swn-artist-explorer/</guid>
+      <guid>https://martinjc.com/2012/10/04/swn-artist-explorer/</guid>
       <description>It&amp;rsquo;s that time of year again: SWN Festival is once more upon us. It&amp;rsquo;s the highlight of the musical year in Cardiff, and probably the one thing I&amp;rsquo;ll miss about the city when (if?) I leave. In fact, I&amp;rsquo;m pretty certain that even if I left the city I&amp;rsquo;d make the pilgrimage back once a year for SWN because it&amp;rsquo;s just too much fun to miss.
 The lineup this year is another cracking one, but as usual with four days of bands spread across so many venues there are a whole bunch of names that I don&amp;rsquo;t recognise.</description>
     </item>
     
     <item>
       <title>Django &#43; Last.FM Authentication</title>
-      <link>/2012/02/27/django-last.fm-authentication/</link>
+      <link>https://martinjc.com/2012/02/27/django-last.fm-authentication/</link>
       <pubDate>Mon, 27 Feb 2012 09:20:01 +0000</pubDate>
       
-      <guid>/2012/02/27/django-last.fm-authentication/</guid>
+      <guid>https://martinjc.com/2012/02/27/django-last.fm-authentication/</guid>
       <description>Following a conversation with Jon last week, I&amp;rsquo;ve been having thoughts about playing around with Last.FM data again, having not looked at that API for a couple of years. We had discussed the possibility of using the Last.FM web services as part of a project at a hackathon that some of the undergraduates are running in a couple of weeks time, and since I&amp;rsquo;ve moved from primarily developing using Java to mainly using Python since I last did anything with Last.</description>
     </item>
     

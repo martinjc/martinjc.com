@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Epsrc on Martin Chorley</title>
-    <link>/tags/epsrc/</link>
+    <link>https://martinjc.com/tags/epsrc/</link>
     <description>Recent content in Epsrc on Martin Chorley</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
     <lastBuildDate>Fri, 16 Aug 2013 15:47:06 +0000</lastBuildDate>
     
-	<atom:link href="/tags/epsrc/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://martinjc.com/tags/epsrc/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>EPSRC Doctoral Award Fellowship</title>
-      <link>/2013/08/16/epsrc-doctoral-award-fellowship/</link>
+      <link>https://martinjc.com/2013/08/16/epsrc-doctoral-award-fellowship/</link>
       <pubDate>Fri, 16 Aug 2013 15:47:06 +0000</pubDate>
       
-      <guid>/2013/08/16/epsrc-doctoral-award-fellowship/</guid>
+      <guid>https://martinjc.com/2013/08/16/epsrc-doctoral-award-fellowship/</guid>
       <description>I&amp;rsquo;m really very pleased to be able to say that I have been awarded a 2013 EPSRC doctoral award fellowship. This means I&amp;rsquo;ve been given an opportunity to spend 12 months from October this year working independently on a research project of my own choosing. I&amp;rsquo;ll be looking at the connection between places and personality, analysing the large dataset collected through the Foursquare Personality app to try and build towards a recommendation system for places that uses personality as one of its key input signals.</description>
     </item>
     

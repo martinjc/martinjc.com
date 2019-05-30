@@ -2,59 +2,59 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Python on Martin Chorley</title>
-    <link>/tags/python/</link>
+    <link>https://martinjc.com/tags/python/</link>
     <description>Recent content in Python on Martin Chorley</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
     <lastBuildDate>Wed, 02 Nov 2016 20:17:40 +0000</lastBuildDate>
     
-	<atom:link href="/tags/python/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://martinjc.com/tags/python/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Scraping the Assembly</title>
-      <link>/2016/11/02/scraping-the-assembly/</link>
+      <link>https://martinjc.com/2016/11/02/scraping-the-assembly/</link>
       <pubDate>Wed, 02 Nov 2016 20:17:40 +0000</pubDate>
       
-      <guid>/2016/11/02/scraping-the-assembly/</guid>
+      <guid>https://martinjc.com/2016/11/02/scraping-the-assembly/</guid>
       <description>M’colleague is currently teaching a first-semester module on Data Journalism to the students on our MSc in Computational and Data Journalism. As part of this, they need to do some sort of data project. One of the students is looking at the expenses of Welsh Assembly Members. These are all freely available online, but not in an easy to manipulate form. According to the Assembly they’d be happy to give the data out as a spreadsheet, if we submitted an FOI.</description>
     </item>
     
     <item>
       <title>Accessing and Scraping MyFitnessPal Data with Python</title>
-      <link>/2015/02/05/accessing-and-scraping-myfitnesspal-data-with-python/</link>
+      <link>https://martinjc.com/2015/02/05/accessing-and-scraping-myfitnesspal-data-with-python/</link>
       <pubDate>Thu, 05 Feb 2015 11:02:36 +0000</pubDate>
       
-      <guid>/2015/02/05/accessing-and-scraping-myfitnesspal-data-with-python/</guid>
+      <guid>https://martinjc.com/2015/02/05/accessing-and-scraping-myfitnesspal-data-with-python/</guid>
       <description>Interesting news this morning that MyFitnessPal has been bought by Under Armour for $475 million. I&amp;rsquo;ve used MFP for many years now, and it was pretty helpful in helping me lose all the excess PhD weight that I&amp;rsquo;d put on, and then maintaining a healthy(ish) lifestyle since 2010.
 News of an acquisition always has me slightly worried though - not for someone else having access to my data, as I&amp;rsquo;ve made my peace with the fact that using a free service generally means that it&amp;rsquo;s me that&amp;rsquo;s being sold.</description>
     </item>
     
     <item>
       <title>CompJ Labs - Postcodes</title>
-      <link>/2015/01/05/compj-labs-postcodes/</link>
+      <link>https://martinjc.com/2015/01/05/compj-labs-postcodes/</link>
       <pubDate>Mon, 05 Jan 2015 09:27:51 +0000</pubDate>
       
-      <guid>/2015/01/05/compj-labs-postcodes/</guid>
+      <guid>https://martinjc.com/2015/01/05/compj-labs-postcodes/</guid>
       <description>I&amp;rsquo;ve thrown up a post on compj.cs.cf.ac.uk about some work we&amp;rsquo;ve done looking at empty properties in Cardiff. I&amp;rsquo;ll add further posts over the coming weeks about other data analysis we&amp;rsquo;ve done on this topic, and new work looking at the Welsh Assembly.</description>
     </item>
     
     <item>
       <title>Quick and Dirty Twitter API in Python</title>
-      <link>/2014/11/19/quick-and-dirty-twitter-api-in-python/</link>
+      <link>https://martinjc.com/2014/11/19/quick-and-dirty-twitter-api-in-python/</link>
       <pubDate>Wed, 19 Nov 2014 12:13:11 +0000</pubDate>
       
-      <guid>/2014/11/19/quick-and-dirty-twitter-api-in-python/</guid>
+      <guid>https://martinjc.com/2014/11/19/quick-and-dirty-twitter-api-in-python/</guid>
       <description>QUICK DISCLAIMER: this is a quick and dirty solution to a problem, so may not represent best coding practice, and has absolutely no error checking or handling. Use with caution&amp;hellip;
 A recent project has needed me to scrape some data from Twitter. I considered using Tweepy, but as it was a project for the MSc in Computational Journalism, I thought it would be more interesting to write our own simple Twitter API wrapper in Python.</description>
     </item>
     
     <item>
       <title>CCGs and WPCs via the medium of OAs</title>
-      <link>/2014/09/15/ccgs-and-wpcs-via-the-medium-of-oas/</link>
+      <link>https://martinjc.com/2014/09/15/ccgs-and-wpcs-via-the-medium-of-oas/</link>
       <pubDate>Mon, 15 Sep 2014 14:22:18 +0000</pubDate>
       
-      <guid>/2014/09/15/ccgs-and-wpcs-via-the-medium-of-oas/</guid>
+      <guid>https://martinjc.com/2014/09/15/ccgs-and-wpcs-via-the-medium-of-oas/</guid>
       <description>As I was eating lunch this afternoon, I spotted a conversation between @JoeReddington and @MySociety whizz past in Tweetdeck. I traced the conversation back to the beginning and found this request for data:
 I&amp;#39;m looking for a dataset that shows which UK constituencies are in which NHS trust areas. Anyone?
 &amp;mdash; retired account (@retired10072015) September 14, 2014 
@@ -63,28 +63,28 @@ I&amp;rsquo;ve been doing a lot of playing with geographic data recently while 
     
     <item>
       <title>Foursquare icon downloading (yet again)</title>
-      <link>/2014/08/01/foursquare-icon-downloading-yet-again/</link>
+      <link>https://martinjc.com/2014/08/01/foursquare-icon-downloading-yet-again/</link>
       <pubDate>Fri, 01 Aug 2014 07:14:16 +0000</pubDate>
       
-      <guid>/2014/08/01/foursquare-icon-downloading-yet-again/</guid>
+      <guid>https://martinjc.com/2014/08/01/foursquare-icon-downloading-yet-again/</guid>
       <description>Previously I&amp;rsquo;vewritten about a little script to download all the category icons from Foursquare and to create many different coloured versions of them. I&amp;rsquo;ve recently had to do this again for a project, and found my previous script did not work with a recent API version. I&amp;rsquo;ve updated the script to fix it and put it up on github.</description>
     </item>
     
     <item>
       <title>Python &#43; OAuth</title>
-      <link>/2013/10/25/python-oauth/</link>
+      <link>https://martinjc.com/2013/10/25/python-oauth/</link>
       <pubDate>Fri, 25 Oct 2013 09:02:51 +0000</pubDate>
       
-      <guid>/2013/10/25/python-oauth/</guid>
+      <guid>https://martinjc.com/2013/10/25/python-oauth/</guid>
       <description>As part of a current project I had the misfortune of having to to deal with a bunch of OAuth authenticated web services using a command line script in Python. Usually this isn&amp;rsquo;t really a problem as most decent client libraries for services such as Twitter or Foursquare can handle the authentication requests themselves, usually wrapping their own internal OAuth implementation. However, when it comes to web services that don&amp;rsquo;t have existing python client libraries, you have to do the implementation yourself.</description>
     </item>
     
     <item>
       <title>not another bloody wordle?!?!</title>
-      <link>/2013/08/20/not-another-bloody-wordle/</link>
+      <link>https://martinjc.com/2013/08/20/not-another-bloody-wordle/</link>
       <pubDate>Tue, 20 Aug 2013 08:04:53 +0000</pubDate>
       
-      <guid>/2013/08/20/not-another-bloody-wordle/</guid>
+      <guid>https://martinjc.com/2013/08/20/not-another-bloody-wordle/</guid>
       <description>(UPDATE: an earlier version of this was totally wrong. It&amp;rsquo;s better now.)
 Inspired by a Facebook post from a colleague, I decided to waste ten minutes this week knocking together a word cloud from the text of my thesis. The process was pretty straightforward.
 First up - extracting the text from the thesis. Like all good scienticians, my thesis was written in LaTeX. I thought I could have used a couple of different tools to extract the plain text from the raw .</description>
@@ -92,49 +92,49 @@ First up - extracting the text from the thesis. Like all good scienticians, my t
     
     <item>
       <title>SWN Festival 2013 plans – part 1: the data (2!)</title>
-      <link>/2013/08/18/swn-festival-2013-plans-part-1-the-data-2/</link>
+      <link>https://martinjc.com/2013/08/18/swn-festival-2013-plans-part-1-the-data-2/</link>
       <pubDate>Sun, 18 Aug 2013 11:36:21 +0000</pubDate>
       
-      <guid>/2013/08/18/swn-festival-2013-plans-part-1-the-data-2/</guid>
+      <guid>https://martinjc.com/2013/08/18/swn-festival-2013-plans-part-1-the-data-2/</guid>
       <description>In the previous post, I used python and BeautifulSoup to grab the list of artists appearing at SWN Festival 2013, and to scrape their associated soundcloud/twitter/facebook/youtube links (where available).
 However, there are more places to find music online than just those listed on the festival site, and some of those extra sources include additional data that I want to collect, so now we need to search these other sources for the artists.</description>
     </item>
     
     <item>
       <title>SWN Festival 2013 plans -  part 1: the data</title>
-      <link>/2013/08/14/swn-festival-2013-plans-part-1-the-data/</link>
+      <link>https://martinjc.com/2013/08/14/swn-festival-2013-plans-part-1-the-data/</link>
       <pubDate>Wed, 14 Aug 2013 12:38:53 +0000</pubDate>
       
-      <guid>/2013/08/14/swn-festival-2013-plans-part-1-the-data/</guid>
+      <guid>https://martinjc.com/2013/08/14/swn-festival-2013-plans-part-1-the-data/</guid>
       <description>As I mentioned, I&amp;rsquo;m planning on doing a bit more development work this year connected to the SWN Festival. The first stage is to get hold of the data associated with the festival in an accessible and machine readable form so it can be used in other apps.
 Unfortunately (but unsurprisingly), being a smallish local festival, there is no API for any of the data. So, getting a list of the bands and their info means we need to resort to web scraping.</description>
     </item>
     
     <item>
       <title>Django &#43; Last.FM Authentication</title>
-      <link>/2012/02/27/django-last.fm-authentication/</link>
+      <link>https://martinjc.com/2012/02/27/django-last.fm-authentication/</link>
       <pubDate>Mon, 27 Feb 2012 09:20:01 +0000</pubDate>
       
-      <guid>/2012/02/27/django-last.fm-authentication/</guid>
+      <guid>https://martinjc.com/2012/02/27/django-last.fm-authentication/</guid>
       <description>Following a conversation with Jon last week, I&amp;rsquo;ve been having thoughts about playing around with Last.FM data again, having not looked at that API for a couple of years. We had discussed the possibility of using the Last.FM web services as part of a project at a hackathon that some of the undergraduates are running in a couple of weeks time, and since I&amp;rsquo;ve moved from primarily developing using Java to mainly using Python since I last did anything with Last.</description>
     </item>
     
     <item>
       <title>Foursquare Category Icon Downloader (2)</title>
-      <link>/2012/01/31/foursquare-category-icon-downloader-2/</link>
+      <link>https://martinjc.com/2012/01/31/foursquare-category-icon-downloader-2/</link>
       <pubDate>Tue, 31 Jan 2012 08:50:10 +0000</pubDate>
       
-      <guid>/2012/01/31/foursquare-category-icon-downloader-2/</guid>
+      <guid>https://martinjc.com/2012/01/31/foursquare-category-icon-downloader-2/</guid>
       <description>UPDATE [01 August 2014]: Even more breaking! More recent version of the script here
 Someone commented recently that the script I&amp;rsquo;d written to download the Foursquare category icons was broken. downloader.py is an update that works as of today (notice the URL param with today&amp;rsquo;s date) that will fetch all available sizes of all the category icons and store them in folders by size.</description>
     </item>
     
     <item>
       <title>Colourful Foursquare category icons </title>
-      <link>/2011/10/01/colourful-foursquare-category-icons/</link>
+      <link>https://martinjc.com/2011/10/01/colourful-foursquare-category-icons/</link>
       <pubDate>Sat, 01 Oct 2011 16:24:07 +0000</pubDate>
       
-      <guid>/2011/10/01/colourful-foursquare-category-icons/</guid>
+      <guid>https://martinjc.com/2011/10/01/colourful-foursquare-category-icons/</guid>
       <description>UPDATE [01 August 2014]: Even more breaking! More recent version of the script here
 UPDATE 31/01/2011 - new version of the downloader script is here
 A couple of projects I&amp;rsquo;m working on at the moment need the ability to add foursquare venues to a map. This is pretty straightforward, but what is also needed is the ability to distinguish between the categories of the venues. To do this, I&amp;rsquo;m adding custom markers to a google map at a venue location, with the marker having an icon representing the venue category.</description>
@@ -142,58 +142,58 @@ A couple of projects I&amp;rsquo;m working on at the moment need the ability to 
     
     <item>
       <title>Foursquare Hackathon Cardiff - Day 1</title>
-      <link>/2011/09/17/foursquare-hackathon-cardiff-day-1/</link>
+      <link>https://martinjc.com/2011/09/17/foursquare-hackathon-cardiff-day-1/</link>
       <pubDate>Sat, 17 Sep 2011 19:07:04 +0000</pubDate>
       
-      <guid>/2011/09/17/foursquare-hackathon-cardiff-day-1/</guid>
+      <guid>https://martinjc.com/2011/09/17/foursquare-hackathon-cardiff-day-1/</guid>
       <description>I was fully intending to try and live-blog the progress of the foursquare hackathon today, even going as far as to install a live blog plugin, but things have been going very quickly and we&amp;rsquo;ve been hitting the coding hard so I just haven&amp;rsquo;t had time!
 We&amp;rsquo;ve managed to get a decent crowd in, a roughly 50:50 split of people we already knew from the School and other people from elsewhere.</description>
     </item>
     
     <item>
       <title>Django &#43; Foursquare &#43; OAuth = webapp?</title>
-      <link>/2011/09/08/django-foursquare-oauth-webapp/</link>
+      <link>https://martinjc.com/2011/09/08/django-foursquare-oauth-webapp/</link>
       <pubDate>Thu, 08 Sep 2011 17:36:13 +0000</pubDate>
       
-      <guid>/2011/09/08/django-foursquare-oauth-webapp/</guid>
+      <guid>https://martinjc.com/2011/09/08/django-foursquare-oauth-webapp/</guid>
       <description>Moving on from my fun with getting django + twitter + oauth to play nicely, it&amp;rsquo;s now time to start writing a web app that uses foursquare as the authentication/login method. As part of this, I need a basic django framework for doing authentication with foursquare. This may be useful to someone else at some point (including me when I forget in three months time how I did things), so I&amp;rsquo;ve written up the details and added the code to github.</description>
     </item>
     
     <item>
       <title>Logging in to websites with python</title>
-      <link>/2011/06/09/logging-in-to-websites-with-python/</link>
+      <link>https://martinjc.com/2011/06/09/logging-in-to-websites-with-python/</link>
       <pubDate>Thu, 09 Jun 2011 14:58:03 +0000</pubDate>
       
-      <guid>/2011/06/09/logging-in-to-websites-with-python/</guid>
+      <guid>https://martinjc.com/2011/06/09/logging-in-to-websites-with-python/</guid>
       <description>As previously explained, I needed a python script to login to a website so I could access data. There&amp;rsquo;s loads of examples out on the web of how to do this, my solution (mashed together from many examples) is described below. For the whole script, jump to the end.
 Firstly, we need to set some simple variables about the website we&amp;rsquo;re trying to log in to. Obviously, I&amp;rsquo;m trying to login to myfitnesspal, but this process should work with most websites that use a simple form + cookie based login process.</description>
     </item>
     
     <item>
       <title>Django &#43; Tweepy &#43; OAuth</title>
-      <link>/2011/04/04/django-tweepy-oauth/</link>
+      <link>https://martinjc.com/2011/04/04/django-tweepy-oauth/</link>
       <pubDate>Mon, 04 Apr 2011 18:27:24 +0000</pubDate>
       
-      <guid>/2011/04/04/django-tweepy-oauth/</guid>
+      <guid>https://martinjc.com/2011/04/04/django-tweepy-oauth/</guid>
       <description>There is a lot of information out there that talks about putting Django and Tweepy together to make a Twitter web app. I read a lot of it recently, and although a lot of it is helpful some of it can be quite complicated or out of date.
 To make things simple, I thought I&amp;rsquo;d create an example Django project that just contains the basics needed to get up and running.</description>
     </item>
     
     <item>
       <title>Twitter Wordle</title>
-      <link>/2011/04/04/twitter-wordle/</link>
+      <link>https://martinjc.com/2011/04/04/twitter-wordle/</link>
       <pubDate>Mon, 04 Apr 2011 13:36:44 +0000</pubDate>
       
-      <guid>/2011/04/04/twitter-wordle/</guid>
+      <guid>https://martinjc.com/2011/04/04/twitter-wordle/</guid>
       <description>Next week we have the project partners coming over to Cardiff for a workshop. Stu and myself were discussing that we should have some way to display information throughout the day, something that makes it easy to pick out the main themes of talks etc. I&amp;rsquo;m a big fan of the Wordle as a way of displaying text, so we thought it would be nice if we could have a dynamic Wordle displayed that people could add to throughout the workshop.</description>
     </item>
     
     <item>
       <title>fun with django...</title>
-      <link>/2011/03/28/fun-with-django.../</link>
+      <link>https://martinjc.com/2011/03/28/fun-with-django.../</link>
       <pubDate>Mon, 28 Mar 2011 21:12:15 +0000</pubDate>
       
-      <guid>/2011/03/28/fun-with-django.../</guid>
+      <guid>https://martinjc.com/2011/03/28/fun-with-django.../</guid>
       <description>One of the latest ideas we are working on for the new project is looking at how providing different amounts of information affects our perception of content. Even in pure implementation terms this is interestingly unlike any of the work I&amp;rsquo;ve done in the last few years, most of which was simulation based. &amp;ldquo;Code a simulation, run the simulation, analyse the results&amp;rdquo; has been a pattern of work since the beginning of my PhD and beyond.</description>
     </item>
     

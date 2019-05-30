@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ksri on Martin Chorley</title>
-    <link>/tags/ksri/</link>
+    <link>https://martinjc.com/tags/ksri/</link>
     <description>Recent content in Ksri on Martin Chorley</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
     <lastBuildDate>Tue, 24 Sep 2013 11:19:20 +0000</lastBuildDate>
     
-	<atom:link href="/tags/ksri/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://martinjc.com/tags/ksri/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>KSRI Services Summer School - Social Computing Theory and Hackathon</title>
-      <link>/2013/09/24/ksri-services-summer-school-social-computing-theory-and-hackathon/</link>
+      <link>https://martinjc.com/2013/09/24/ksri-services-summer-school-social-computing-theory-and-hackathon/</link>
       <pubDate>Tue, 24 Sep 2013 11:19:20 +0000</pubDate>
       
-      <guid>/2013/09/24/ksri-services-summer-school-social-computing-theory-and-hackathon/</guid>
+      <guid>https://martinjc.com/2013/09/24/ksri-services-summer-school-social-computing-theory-and-hackathon/</guid>
       <description>I was invited by Simon Caton to come to the KSRI Services Summer School, held at KIT in Germany, to help him run a workshop session on Social Computing. We decided to use the session as a crash course in retrieving and manipulating data from Social Media APIs - showing the students the basics, then running a mini &amp;lsquo;hackathon&amp;rsquo; for the students to gain some practical experience.
 I think the session went really well, the students seemed to enjoy it and the feedback was very positive.</description>
     </item>
