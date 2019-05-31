@@ -11,18 +11,16 @@ I am the Director of Learning and Teaching (DLT) for the School of Computer Scie
 
 I'm the MSc Programme Leader for the [MSc in Computational and Data Journalism](http://www.cardiff.ac.uk/study/postgraduate/taught/courses/course/computational-and-data-journalism-msc), a joint course between the [School of Computer Science & Informatics](http://www.cardiff.ac.uk/computer-science/) and the [School of Journalism, Media and Culture](http://www.cardiff.ac.uk/journalism-media-and-culture) here at Cardiff University.
 
+I am currently an external examiner for Exeter University, for their MSc Computer Science, MSc Computer Science with Business, MSc Data Science, and MSc Data Science with Business.
+
 
 ## Autumn Semester
-
-
 
 I am Module Leader for [Web Application Development (CMT112)](http://handbooks.data.cardiff.ac.uk/module/CMT112.html) in the Autumn semester. This module is core for the MSc Computing, MSc Computing and IT Management, and the MSc Computational and Data Journalism programmes, and is an optional module for students on the MSc Data Science and Analytics.
 
 
 
 ## Spring Semester
-
-
 
 I am Module Leader for [Visual Communication and Information Design (CMT212)](http://handbooks.data.cardiff.ac.uk/module/CMT212.html), an optional module for several of the MSc programmes.
 
