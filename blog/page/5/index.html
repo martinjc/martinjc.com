@@ -211,6 +211,128 @@
     
     <article class="blogpost">
         <header>
+            <h1> <a href="https://martinjc.com/2013/10/25/hard-at-work-cardiff-university-school-of-computer-science-informatics/">
+                    Hard at work! — Cardiff University School of Computer Science &amp; Informatics
+                </a></h1>
+            <p class="author">
+                <span class="date">Friday, Oct 25, 2013</span>
+            </p>
+        </header>
+        <div class="content">
+            
+
+
+
+
+
+
+
+
+<figure>
+    <img src="/2013/10/25/hard-at-work-cardiff-university-school-of-computer-science-informatics/790204_mq2Ule3P_1JDGWFuUZcBKq-Rkp8cLknDZ4WD7MEKqEI.jpg" width="960" height="720" alt="">
+    <figcaption>
+        <small>
+            
+        </small>
+    </figcaption>
+</figure>
+
+<p><a href="http://foursquare.com/v/4b978a27f964a520f20735e3">Cardiff University School of Computer Science &amp; Informatics</a></p>
+
+<p><img src="http://maps.google.com/maps/api/staticmap?center=51.48396191513654,-3.1693410873413086&amp;zoom=16&amp;size=710x440&amp;maptype=roadmap&amp;sensor=false&amp;markers=color:red%7C51.48396191513654,-3.1693410873413086" alt="" /></p>
+
+        </div>
+    </article>
+    
+    <article class="blogpost">
+        <header>
+            <h1> <a href="https://martinjc.com/2013/10/25/python-oauth/">
+                    Python &#43; OAuth
+                </a></h1>
+            <p class="author">
+                <span class="date">Friday, Oct 25, 2013</span>
+            </p>
+        </header>
+        <div class="content">
+            <p>As part of a current project I had the misfortune of having to to deal with a bunch of OAuth authenticated web services using a command line script in Python. Usually this isn&rsquo;t really a problem as most decent client libraries for services such as <a href="https://github.com/tweepy/tweepy">Twitter</a> or <a href="https://pypi.python.org/pypi/foursquare">Foursquare</a> can handle the authentication requests themselves, usually wrapping their own internal OAuth implementation. However, when it comes to web services that don&rsquo;t have existing python client libraries, you have to do the implementation yourself. Unfortunately support for OAuth in Python is a mess, so this is not the most pleasant of tasks, especially when most stackoverflow <a href="http://stackoverflow.com/questions/12628246/how-to-send-oauth-request-with-python-oauth2">posts</a> <a href="http://stackoverflow.com/questions/15610749/github-api-v3-access-via-python-oauth2-library-redirect-issue">on</a> <a href="http://stackoverflow.com/questions/1666415/python-oauth-library">the</a> topic point to massively <a href="http://code.daaku.org/python-oauth/">outdated</a> and <a href="https://github.com/simplegeo/python-oauth2">unmaintained</a> Python libraries.</p>
+
+<p>Fortunately after some digging around, I was able to find a nice, well maintained and <a href="https://rauth.readthedocs.org/en/latest/">fairly well documented</a> solution: <a href="https://github.com/litl/rauth">rauth</a>, which is very clean and easy to use. As an example, I was trying to connect to the Fitbit API, and it really was as simple as following their example.</p>
+
+<p>Firstly, we create an OAuth1Service:</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> rauth
+<span style="color:#f92672">from</span> _credentials <span style="color:#f92672">import</span> consumer_key, consumer_secret
+
+base_url <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;https://api.fitbit.com&#34;</span>
+request_token_url <span style="color:#f92672">=</span> base_url <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;/oauth/request_token&#34;</span>
+access_token_url <span style="color:#f92672">=</span> base_url <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;/oauth/access_token&#34;</span>
+authorize_url <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;http://www.fitbit.com/oauth/authorize&#34;</span>
+
+fitbit <span style="color:#f92672">=</span> rauth<span style="color:#f92672">.</span>OAuth1Service(
+ name<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;fitbit&#34;</span>,
+ consumer_key<span style="color:#f92672">=</span>consumer_key,
+ consumer_secret<span style="color:#f92672">=</span>consumer_secret,
+ request_token_url<span style="color:#f92672">=</span>request_token_url,
+ access_token_url<span style="color:#f92672">=</span>access_token_url,
+ authorize_url<span style="color:#f92672">=</span>authorize_url,
+ base_url<span style="color:#f92672">=</span>base_url)</code></pre></div>
+
+<p>Then we get the temporary request token credentials:</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">request_token, request_token_secret <span style="color:#f92672">=</span> fitbit<span style="color:#f92672">.</span>get_request_token()
+
+<span style="color:#66d9ef">print</span> <span style="color:#e6db74">&#34; request_token = </span><span style="color:#e6db74">%s</span><span style="color:#e6db74">&#34;</span> <span style="color:#f92672">%</span> request_token
+<span style="color:#66d9ef">print</span> <span style="color:#e6db74">&#34; request_token_secret = </span><span style="color:#e6db74">%s</span><span style="color:#e6db74">&#34;</span> <span style="color:#f92672">%</span> request_token_secret
+<span style="color:#66d9ef">print</span></code></pre></div>
+
+<p>We then ask the user to authorise our application, and give us the PIN so we can prove to the service that they authorised us:</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">authorize_url <span style="color:#f92672">=</span> fitbit<span style="color:#f92672">.</span>get_authorize_url(request_token)
+
+<span style="color:#66d9ef">print</span> <span style="color:#e6db74">&#34;Go to the following page in your browser: &#34;</span> <span style="color:#f92672">+</span> authorize_url
+<span style="color:#66d9ef">print</span>
+
+accepted <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;n&#39;</span>
+<span style="color:#66d9ef">while</span> accepted<span style="color:#f92672">.</span>lower() <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;n&#39;</span>:
+ accepted <span style="color:#f92672">=</span> raw_input(<span style="color:#e6db74">&#39;Have you authorized me? (y/n) &#39;</span>)
+pin <span style="color:#f92672">=</span> raw_input(<span style="color:#e6db74">&#39;Enter PIN from browser &#39;</span>)</code></pre></div>
+
+<p>Finally, we can create an authenticated session and access user data from the service:</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">session <span style="color:#f92672">=</span> fitbit<span style="color:#f92672">.</span>get_auth_session(request_token,
+ request_token_secret,
+ method<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;POST&#34;</span>,
+ data<span style="color:#f92672">=</span>{<span style="color:#e6db74">&#39;oauth_verifier&#39;</span>: pin})
+
+<span style="color:#66d9ef">print</span> <span style="color:#e6db74">&#34;&#34;</span>
+<span style="color:#66d9ef">print</span> <span style="color:#e6db74">&#34; access_token = </span><span style="color:#e6db74">%s</span><span style="color:#e6db74">&#34;</span> <span style="color:#f92672">%</span> session<span style="color:#f92672">.</span>access_token
+<span style="color:#66d9ef">print</span> <span style="color:#e6db74">&#34; access_token_secret = </span><span style="color:#e6db74">%s</span><span style="color:#e6db74">&#34;</span> <span style="color:#f92672">%</span> session<span style="color:#f92672">.</span>access_token_secret
+<span style="color:#66d9ef">print</span> <span style="color:#e6db74">&#34;&#34;</span>
+
+url <span style="color:#f92672">=</span> base_url <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;/1/&#34;</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;user/-/profile.json&#34;</span>
+
+r <span style="color:#f92672">=</span> session<span style="color:#f92672">.</span>get(url, params<span style="color:#f92672">=</span>{}, header_auth<span style="color:#f92672">=</span>True)
+<span style="color:#66d9ef">print</span> r<span style="color:#f92672">.</span>json()</code></pre></div>
+
+<p>It really is that easy to perform a 3-legged OAuth authentication on the command line. If you&rsquo;re only interested in data from 1 user, and you want to run the app multiple times, once you have the access token and secret, there&rsquo;s nothing to stop you just storing those and re-creating your session each time without having to re-authenticate (assuming the service does not expire access tokens):</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">base_url <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;https://api.fitbit.com/&#34;</span>
+api_version <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;1/&#34;</span>
+token <span style="color:#f92672">=</span> (fitbit_oauth_token, fitbit_oauth_secret)
+consumer <span style="color:#f92672">=</span> (fitbit_consumer_key, fitbit_consumer_secret)
+
+session <span style="color:#f92672">=</span> rauth<span style="color:#f92672">.</span>OAuth1Session(consumer[<span style="color:#ae81ff">0</span>], consumer[<span style="color:#ae81ff">1</span>], token[<span style="color:#ae81ff">0</span>], token[<span style="color:#ae81ff">1</span>])
+url <span style="color:#f92672">=</span> base_url <span style="color:#f92672">+</span> api_version <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;user/-/profile.json&#34;</span>
+r <span style="color:#f92672">=</span> session<span style="color:#f92672">.</span>get(url, params<span style="color:#f92672">=</span>{}, header_auth<span style="color:#f92672">=</span>True)
+<span style="color:#66d9ef">print</span> r<span style="color:#f92672">.</span>json()</code></pre></div>
+
+<p>So there we have it. Simple OAuth authentication on the command line, in Python. As always, the code is available on <a href="https://github.com/martinjc/rauth---fitbit-example">github</a> if you&rsquo;re interested.</p>
+
+        </div>
+    </article>
+    
+    <article class="blogpost">
+        <header>
             <h1> <a href="https://martinjc.com/2013/10/01/sca-2013-visiting-patterns-and-personality-of-foursquare-users/">
                     SCA 2013 - Visiting Patterns and Personality of Foursquare Users
                 </a></h1>
@@ -551,48 +673,6 @@ artists <span style="color:#f92672">=</span> {}
     json<span style="color:#f92672">.</span>dump(artists, outfile)</code></pre></div>
 
 <p>Now we have the basic data for each artist, we can go on to search for more information on other music sites. The nice thing about this script is that when the lineup gets updated, we can just re-run the code and capture all the new artists that have been added. I should also mention that all the code I&rsquo;m using for this is available on <a href="https://github.com/martinjc/swnScraper2013">github</a>.</p>
-
-        </div>
-    </article>
-    
-    <article class="blogpost">
-        <header>
-            <h1> <a href="https://martinjc.com/2013/08/11/swn-festival-2013-plans/">
-                    SWN Festival 2013 - plans
-                </a></h1>
-            <p class="author">
-                <span class="date">Sunday, Aug 11, 2013</span>
-            </p>
-        </header>
-        <div class="content">
-            <p>Last year I had a go at creating a couple of web apps based around the bands playing the <a href="http://www.swnfest.com">SWN Festival</a> here in Cardiff. I love SWN with all my heart, it&rsquo;s a permanent fixture in my calendar and even if (when) I leave Cardiff it&rsquo;ll be the one thing I come back for every year. It&rsquo;s a great way to see and discover new bands, but sometimes the sheer volume of music on offer can be overwhelming. So I wanted to see if I could create some web apps that would help to navigate your way through all the bands, and find the ones that you should go and see.</p>
-
-<p>The <a href="/swn/2012/tags/">first</a> was a simple app that gathered artist tags from Last.FM, allowing you to see which artists playing the festival had similar tags - so if you knew you liked one artist you could find other artists tagged with the same terms. The <a href="/swn/2012/rec/">second</a> (which technically wasn&rsquo;t ever really finished) would allow you to login with a last.fm account and find the artists whose tags best matched the tags for your top artists in your last.fm profile.</p>
-
-<p>I liked both these apps and found them both useful - but I don&rsquo;t think they went far enough. I only started development late in the year, about a month before the festival, so didn&rsquo;t have a lot of time to really get into it. This year I&rsquo;m starting a lot earlier, so I&rsquo;ve got time to do a lot more.</p>
-
-<p>Firstly I&rsquo;d like to repeat the apps from last year, but perhaps combining them in some way. I&rsquo;d like to include more links to the actual music, making it easy to get from an artist to their songs by including embeds from soundcloud, spotify, youtube etc. I&rsquo;d also like to try making a mobile app guide to the festival (probably as an android app as the official app is iOS only). I&rsquo;m hopeful that given enough free time I should be able to get some genuinely useful stuff done, and I&rsquo;ll be blogging about it here as I work on it.</p>
-
-        </div>
-    </article>
-    
-    <article class="blogpost">
-        <header>
-            <h1> <a href="https://martinjc.com/2013/07/25/summer-project-update/">
-                    Summer Project update
-                </a></h1>
-            <p class="author">
-                <span class="date">Thursday, Jul 25, 2013</span>
-            </p>
-        </header>
-        <div class="content">
-            <p>We are storming along with <a href="/research/student-projects/">summer projects</a> now, and starting to see some really good results.</p>
-
-<p>Liam Turner (who is starting a PhD in the school in October) has been working hard to create a mobile version of the <a href="http://www.cs.cf.ac.uk/recognition/foursqexp/">4SQPersonality</a> app. His work is coming along really well, with a great mobile HTML version now up and running, a native android wrapper working, and an iOS wrapper on its way. With any luck we&rsquo;ll have mobile apps for both major platforms ready to be released before the summer is over.</p>
-
-<p>Max Chandler, who is now a second year undergraduate, has done some great work looking at the Foursquare venues within various cities around the UK, analysing them for similarity and spatial distribution. He&rsquo;s just over halfway through the project now and is beginning to work on visualising the data he&rsquo;s collected and analysed. He&rsquo;s creating some interesting interactive visualisations using <a href="http://d3js.org/">D3</a>, so as soon as he&rsquo;s done I&rsquo;ll link to the website here.</p>
-
-<p>It&rsquo;s been a really good summer for student projects so far, with some really pleasing results. I&rsquo;ll post more description of the projects and share some of the results as they come to a close in the coming weeks.</p>
 
         </div>
     </article>

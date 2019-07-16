@@ -211,6 +211,260 @@
     
     <article class="blogpost">
         <header>
+            <h1> <a href="https://martinjc.com/2011/09/14/foursquare-hackathon/">
+                    Foursquare Hackathon
+                </a></h1>
+            <p class="author">
+                <span class="date">Wednesday, Sep 14, 2011</span>
+            </p>
+        </header>
+        <div class="content">
+            <p>Along with <a href="http://www.mattjw.net/blog/">Matthew Williams</a> and <a href="http://encima.co.uk/">Chris Gwilliams</a> I&rsquo;m helping to organise the Cardiff edition of the <a href="http://blog.foursquare.com/2011/09/09/the-global-hackathon-is-in-a-week-sign-up-now/">Foursquare global hackathon</a> this weekend. I&rsquo;m hoping it&rsquo;ll be a pretty good event. <a href="http://www.meetup.com/foursquare-API/Cardiff-GB/340442/">Signup</a>&rsquo;s are looking pretty positive and I&rsquo;m hopeful that we&rsquo;ll get some decent apps being created.</p>
+
+<p>The organising is actually quite fun, but it is remarkable how much there is to do and remember. Thankfully the <a href="http://www.cs.cf.ac.uk/">School of Computer Science &amp; Informatics</a> are being very supportive and allowing us to host it there, which makes things easier. I&rsquo;ll be posting here throughout the event (and afterwards).</p>
+
+        </div>
+    </article>
+    
+    <article class="blogpost">
+        <header>
+            <h1> <a href="https://martinjc.com/2011/09/08/django-foursquare-oauth-webapp/">
+                    Django &#43; Foursquare &#43; OAuth = webapp?
+                </a></h1>
+            <p class="author">
+                <span class="date">Thursday, Sep 8, 2011</span>
+            </p>
+        </header>
+        <div class="content">
+            <p>Moving on from my fun with getting django + twitter + oauth to play nicely, it&rsquo;s now time to start writing a web app that uses foursquare as the authentication/login method. As part of this, I need a basic django framework for doing authentication with foursquare. This may be useful to someone else at some point (including me when I forget in three months time how I did things), so I&rsquo;ve written up the details and added the code to <a href="https://github.com/martinjc/DjangoFoursq">github</a>.</p>
+
+<p>Firstly, you need to <a href="https://foursquare.com/oauth/">register an application</a> with Foursquare to get your Client ID and Client Secret. You can enter any name and website you want, but the callback url needs to be our local development machine (assuming that&rsquo;s where you&rsquo;re doing the development), and to be the callback url that we&rsquo;re going to specify in a minute:</p>
+
+
+
+
+
+
+
+
+
+
+<figure>
+    <img src="/2011/09/08/django-foursquare-oauth-webapp/Foursquare-Register-300x174.jpg" width="300" height="174" alt="Form to register an application">
+    <figcaption>
+        <small>
+            Form to register an application
+        </small>
+    </figcaption>
+</figure>
+
+<p>The more observant will notice that the callback url is currently <a href="http://127.0.0.1/foursq_auth/callback/">http://127.0.0.1/foursq_auth/callback/</a>, but that the django web server actually runs on port 8000, so the url really needs to be <a href="http://127.0.0.1:8000/foursq_auth/callback/">http://127.0.0.1:8000/foursq_auth/callback/</a>. Unfortunately the form validation doesn&rsquo;t allow you to use a &lsquo;:&rsquo; in your callback url. However, once the consumer is registered you can edit the callback url, and the form for that doesn&rsquo;t validate the url (or does but doesn&rsquo;t moan about the colon). Eventually, you are looking for the consumer to be registered with a callback url like this:</p>
+
+
+
+
+
+
+
+
+
+
+<figure>
+    <img src="/2011/09/08/django-foursquare-oauth-webapp/CapturFiles-300x51.jpg" width="300" height="51" alt="">
+    <figcaption>
+        <small>
+            
+        </small>
+    </figcaption>
+</figure>
+
+<p>Once that is registered, we can get on with writing the code. The basic premise is pretty simple, we need just five urls in our django app, five views to go with them, and two basic html pages, one for login, and one to show we are logged in. Assuming you have a django project started (for reference the one I&rsquo;m using here is called &lsquo;Dj4sq&rsquo;) we can start by creating our foursquare app:</p>
+
+<pre><code>django-admin.py startapp foursq_auth
+</code></pre>
+
+<p>We then want to edit urls.py for our main django project to allow the new app to handle its own views:</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">urlpatterns <span style="color:#f92672">=</span> patterns(<span style="color:#e6db74">&#39;&#39;</span>,
+    (<span style="color:#e6db74">r</span><span style="color:#e6db74">&#39;^foursq_auth/&#39;</span>, include(<span style="color:#e6db74">&#39;Dj4sq.foursq_auth.urls&#39;</span>)),
+)</code></pre></div>
+
+<p>and create and edit a file urls.py in the foursq_auth app with the five views we want:</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">urlpatterns <span style="color:#f92672">=</span> patterns(<span style="color:#e6db74">&#39;foursq_auth.views&#39;</span>,
+    <span style="color:#75715e"># main page redirects to start or login</span>
+    url(<span style="color:#e6db74">r</span><span style="color:#e6db74">&#39;^$&#39;</span>, view<span style="color:#f92672">=</span>main, name<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;main&#39;</span>),
+    <span style="color:#75715e"># receive OAuth token from 4sq</span>
+    url(<span style="color:#e6db74">r</span><span style="color:#e6db74">&#39;^callback/$&#39;</span>, view<span style="color:#f92672">=</span>callback, name<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;oauth_return&#39;</span>),
+    <span style="color:#75715e"># logout from the app</span>
+    url(<span style="color:#e6db74">r</span><span style="color:#e6db74">&#39;^logout/$&#39;</span>, view<span style="color:#f92672">=</span>unauth, name<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;oauth_unauth&#39;</span>),
+    <span style="color:#75715e"># authenticate with 4sq using OAuth</span>
+    url(<span style="color:#e6db74">r</span><span style="color:#e6db74">&#39;^auth/$&#39;</span>, view<span style="color:#f92672">=</span>auth, name<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;oauth_auth&#39;</span>),
+    <span style="color:#75715e"># main page once logged in</span>
+    url( <span style="color:#e6db74">r</span><span style="color:#e6db74">&#39;^done/$&#39;</span>, view<span style="color:#f92672">=</span>done, name<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;oauth_done&#39;</span> ),
+)</code></pre></div>
+
+<p>We then need our two basic html pages login.html and done.html:</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">html</span>&gt;
+    &lt;<span style="color:#f92672">head</span>&gt;
+        &lt;<span style="color:#f92672">title</span>&gt;Foursquare OAuth Example&lt;/<span style="color:#f92672">title</span>&gt;
+    &lt;/<span style="color:#f92672">head</span>&gt;
+    &lt;<span style="color:#f92672">body</span>&gt;
+    &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;login&#34;</span>&gt;
+        &lt;<span style="color:#f92672">p</span>&gt;Sign in with Foursquare to begin.&lt;/<span style="color:#f92672">p</span>&gt;
+        &lt;<span style="color:#f92672">p</span>&gt;&lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;auth/&#34;</span>&gt;Login&lt;/<span style="color:#f92672">a</span>&gt;&lt;/<span style="color:#f92672">p</span>&gt;
+    &lt;/<span style="color:#f92672">div</span>&gt;
+    &lt;/<span style="color:#f92672">body</span>&gt;
+&lt;/<span style="color:#f92672">html</span>&gt;
+&lt;<span style="color:#f92672">html</span>&gt;
+    &lt;<span style="color:#f92672">head</span>&gt;
+        &lt;<span style="color:#f92672">title</span>&gt;Foursquare OAuth Example&lt;/<span style="color:#f92672">title</span>&gt;
+    &lt;/<span style="color:#f92672">head</span>&gt;
+    &lt;<span style="color:#f92672">body</span>&gt;
+        &lt;<span style="color:#f92672">p</span>&gt;Hi {{ name }}, you&#39;ve successfully logged in! &lt;/<span style="color:#f92672">p</span>&gt;
+	&lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;../logout/&#34;</span>&gt;Logout&lt;/<span style="color:#f92672">a</span>&gt;
+    &lt;/<span style="color:#f92672">body</span>&gt;
+&lt;/<span style="color:#f92672">html</span>&gt;</code></pre></div>
+
+<p>All that&rsquo;s left after that is to write the views to tie it all together. We need a few variables defined for our code to work:</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">CLIENT_ID <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;YOUR_CLIENT_ID&#39;</span>
+CLIENT_SECRET <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;YOUR_CLIENT_SECRET&#39;</span>
+
+request_token_url <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;https://foursquare.com/oauth2/authenticate&#39;</span>
+access_token_url <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;https://foursquare.com/oauth2/access_token&#39;</span>
+redirect_url <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;http://127.0.0.1:8000/foursq_auth/callback&#39;</span></code></pre></div>
+
+<p>We can then write the views. The first one, &lsquo;main&rsquo; is super easy, as it only needs to return our login page:</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">main</span>( request ):
+    <span style="color:#66d9ef">return</span> render_to_response( <span style="color:#e6db74">&#39;foursq_auth/login.html&#39;</span> )</code></pre></div>
+
+<p>The second, &lsquo;auth&rsquo;, is the first step in our authentication process, requesting an authorisation code from foursquare and redirecting the user to the page to authorise our app:</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">auth</span>( request ):
+    <span style="color:#75715e"># build the url to request</span>
+    params <span style="color:#f92672">=</span> {<span style="color:#e6db74">&#39;client_id&#39;</span> : CLIENT_ID,
+            <span style="color:#e6db74">&#39;response_type&#39;</span> : <span style="color:#e6db74">&#39;code&#39;</span>,
+            <span style="color:#e6db74">&#39;redirect_uri&#39;</span> : redirect_url }
+    data <span style="color:#f92672">=</span> urllib<span style="color:#f92672">.</span>urlencode( params )
+    <span style="color:#75715e"># redirect the user to the url to confirm access for the app</span>
+    <span style="color:#66d9ef">return</span> HttpResponseRedirect(<span style="color:#e6db74">&#39;</span><span style="color:#e6db74">%s</span><span style="color:#e6db74">?</span><span style="color:#e6db74">%s</span><span style="color:#e6db74">&#39;</span> <span style="color:#f92672">%</span> (request_token_url, data))</code></pre></div>
+
+<p>If the user accepts our app, they&rsquo;ll be re-directed to our callback url, and an authorisation code will be passed back as one of the parameters of the url, so the next view, &lsquo;callback&rsquo; needs to deal with this. It then needs to post a request to foursquare with the authorisation code in order to receive the access_token for the user:</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># get the code returned from foursquare</span>
+code <span style="color:#f92672">=</span> request<span style="color:#f92672">.</span>GET<span style="color:#f92672">.</span>get(<span style="color:#e6db74">&#39;code&#39;</span>)
+
+<span style="color:#75715e"># build the url to request the access_token</span>
+params <span style="color:#f92672">=</span> { <span style="color:#e6db74">&#39;client_id&#39;</span> : CLIENT_ID,
+           <span style="color:#e6db74">&#39;client_secret&#39;</span> : CLIENT_SECRET,
+           <span style="color:#e6db74">&#39;grant_type&#39;</span> : <span style="color:#e6db74">&#39;authorization_code&#39;</span>,
+           <span style="color:#e6db74">&#39;redirect_uri&#39;</span> : redirect_url,
+           <span style="color:#e6db74">&#39;code&#39;</span> : code}
+data <span style="color:#f92672">=</span> urllib<span style="color:#f92672">.</span>urlencode( params )
+req <span style="color:#f92672">=</span> urllib2<span style="color:#f92672">.</span>Request( access_token_url, data )
+
+<span style="color:#75715e"># request the access_token</span>
+response <span style="color:#f92672">=</span> urllib2<span style="color:#f92672">.</span>urlopen( req )
+access_token <span style="color:#f92672">=</span> json<span style="color:#f92672">.</span>loads( response<span style="color:#f92672">.</span>read( ) )
+access_token <span style="color:#f92672">=</span> access_token[<span style="color:#e6db74">&#39;access_token&#39;</span>]
+
+<span style="color:#75715e"># store the access_token for later use</span>
+request<span style="color:#f92672">.</span>session[<span style="color:#e6db74">&#39;access_token&#39;</span>] <span style="color:#f92672">=</span> access_token
+
+<span style="color:#75715e"># redirect the user to show we&#39;re done</span>
+<span style="color:#66d9ef">return</span> HttpResponseRedirect(reverse( <span style="color:#e6db74">&#39;oauth_done&#39;</span> ) )</code></pre></div>
+
+<p>If we&rsquo;ve got the access token, we&rsquo;re all set. From now on we can make any calls to the Foursquare API that require authorisation, as long as we supply this token as a parameter to the request named &lsquo;oauth_token&rsquo;. To prove that we&rsquo;re logged in, we&rsquo;ll re-direct the user at the end of the callback to a &lsquo;done&rsquo; page, which will display some user details:</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">done</span>( request ):
+    <span style="color:#75715e"># get the access_token</span>
+    access_token <span style="color:#f92672">=</span> request<span style="color:#f92672">.</span>session<span style="color:#f92672">.</span>get(<span style="color:#e6db74">&#39;access_token&#39;</span>)
+
+    <span style="color:#75715e"># request user details from foursquare</span>
+    params <span style="color:#f92672">=</span> { <span style="color:#e6db74">&#39;oauth_token&#39;</span> : access_token }
+    data <span style="color:#f92672">=</span> urllib<span style="color:#f92672">.</span>urlencode( params )
+    url <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;https://api.foursquare.com/v2/users/self&#39;</span>
+    full_url <span style="color:#f92672">=</span> url <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39;?&#39;</span> <span style="color:#f92672">+</span> data
+    <span style="color:#66d9ef">print</span> full_url
+    response <span style="color:#f92672">=</span> urllib2<span style="color:#f92672">.</span>urlopen( full_url )
+    response <span style="color:#f92672">=</span> response<span style="color:#f92672">.</span>read( )
+    user <span style="color:#f92672">=</span> json<span style="color:#f92672">.</span>loads( response )[<span style="color:#e6db74">&#39;response&#39;</span>][<span style="color:#e6db74">&#39;user&#39;</span>]
+    name <span style="color:#f92672">=</span> user[<span style="color:#e6db74">&#39;firstName&#39;</span>]
+
+    <span style="color:#75715e"># show the page with the user&#39;s name to show they&#39;ve logged in</span>
+    <span style="color:#66d9ef">return</span> render_to_response(<span style="color:#e6db74">&#39;foursq_auth/done.html&#39;</span>, {<span style="color:#e6db74">&#39;name&#39;</span>:name})</code></pre></div>
+
+<p>And with that, we&rsquo;re all done. We can fire up the django server with:</p>
+
+<pre><code>python manage.py runserver
+</code></pre>
+
+<p>open our browser to 127.0.0.1:8000/foursq_auth/ and go through the login process:</p>
+
+
+
+
+
+
+
+
+
+
+<figure>
+    <img src="/2011/09/08/django-foursquare-oauth-webapp/login-html-300x189.jpg" width="300" height="189" alt="Login Page">
+    <figcaption>
+        <small>
+            Login Page
+        </small>
+    </figcaption>
+</figure>
+
+
+
+
+
+
+
+
+
+
+<figure>
+    <img src="/2011/09/08/django-foursquare-oauth-webapp/foursquare-approval1-300x185.jpg" width="300" height="185" alt="Approving the app at Foursquare">
+    <figcaption>
+        <small>
+            Approving the app at Foursquare
+        </small>
+    </figcaption>
+</figure>
+
+
+
+
+
+
+
+
+
+
+<figure>
+    <img src="/2011/09/08/django-foursquare-oauth-webapp/done-html-300x189.jpg" width="300" height="189" alt="Successfully logged in">
+    <figcaption>
+        <small>
+            Successfully logged in
+        </small>
+    </figcaption>
+</figure>
+
+<p>And that&rsquo;s that - A Django web app doing OAuth authentication with Foursquare. The full code is up on <a href="https://github.com/martinjc/DjangoFoursq">github</a> if you want to take a closer look.</p>
+
+        </div>
+    </article>
+    
+    <article class="blogpost">
+        <header>
             <h1> <a href="https://martinjc.com/2011/09/08/edinburgh-festival...-day-five/">
                     Edinburgh Festival... Day Five
                 </a></h1>
@@ -437,42 +691,6 @@ Naked people: 1</p>
             <p>Another update on the summer project? Already? Yes.</p>
 
 <p>The project is really cracking on. We&rsquo;re two weeks from the end and beginning to see the results roll in, every meeting brings a new version of the software with more functionality. Nick has successfully written a nice framework that allows us to input conversations and automatically retrieve search results based on the topics of those conversations. Even the voice input works (almost) and we&rsquo;ve got enough time to try and move on to some content extraction ideas. I&rsquo;ve now written a script to do some automatic evaluation and we&rsquo;re in a position to subject the attendees of next week&rsquo;s mobisoc meeting to a human evaluation, which I&rsquo;m sure will be fun for all concerned.</p>
-
-        </div>
-    </article>
-    
-    <article class="blogpost">
-        <header>
-            <h1> <a href="https://martinjc.com/2011/07/12/curop-summer-project-update/">
-                    CUROP summer project update
-                </a></h1>
-            <p class="author">
-                <span class="date">Tuesday, Jul 12, 2011</span>
-            </p>
-        </header>
-        <div class="content">
-            <p>I figure it&rsquo;s about time I posted an update on the <a href="http://users.cs.cf.ac.uk/M.J.Chorley/research/augmented-conversation/">summer project</a> that myself and Ian are supervising. Our summer student Nick is now two weeks into the project and seems to be getting to grips nicely with the problem. He also seems to be coping pretty well with two novice supervisors babbling away at him whenever we meet up! If he leaves the office without being completely overwhelmed with information I think it&rsquo;s been a successful meeting.</p>
-
-<p>So far Nick has managed to code some software that takes textual input, passes it to several web services for keyword detection and then performs searches for relevant content on Google, Yahoo! and Bing. The next stage is to get to grips with the temporal nature of conversations so that the keyword detection and searches are carried out continually, with some control of time scales and how much text is used as input. After that we&rsquo;ll start to look at algorithms for combining keywords to get the most successful search queries possible. Meanwhile, we need to come up with a human evaluation that isn&rsquo;t going to make everyone at MobiSoc hate us when we ask them to do it, and an algorithmic evaluation that makes sense and actually evaluates the right parts of the system.</p>
-
-<p>Overall though we&rsquo;re ahead of schedule, which is a very good place to be. I&rsquo;ll continue to post about progress as the project goes on.</p>
-
-        </div>
-    </article>
-    
-    <article class="blogpost">
-        <header>
-            <h1> <a href="https://martinjc.com/2011/06/29/wowmom-2011/">
-                    WowMom 2011
-                </a></h1>
-            <p class="author">
-                <span class="date">Wednesday, Jun 29, 2011</span>
-            </p>
-        </header>
-        <div class="content">
-            <p>Last week I attended <a href="http://wowmom2011.imtlucca.it/">WowMom 2011</a> in Lucca, Italy. The conference was pretty good, but I was mainly there for the <a href="http://cnd.iit.cnr.it/aoc2011/index.html">Autonomic and Opportunistic Computing (AOC) workshop</a> where I was presenting some work, as I mentioned in an earlier <a href="http://users.cs.cf.ac.uk/M.J.Chorley/2011/06/02/unexpected/">post</a>. The workshop was really interesting, a lot of the work was relevant to work we&rsquo;d done in the past on the SocialNets project and work we&rsquo;re doing in the future with the Recognition project. There were some very interesting discussions on areas such as mobility models and mobility traces and the capturing of user data, particularly in the keynote from <a href="http://www.cs.st-andrews.ac.uk/~tristan/">Tristan Henderson</a> and also in the panel session at the end of the day. I also met some very interesting people from around the place and hopefully will run into them again at some conference or other down the line.</p>
-
-<p>I&rsquo;ve just got to sort through all my notes now so I can talk about it all at MobiSoc tomorrow lunchtime!</p>
 
         </div>
     </article>

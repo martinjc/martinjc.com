@@ -207,6 +207,236 @@
     
     <article class="blogpost">
         <header>
+            <h1> <a href="https://martinjc.com/2014/11/19/quick-and-dirty-twitter-api-in-python/">
+                    Quick and Dirty Twitter API in Python
+                </a></h1>
+            <p class="author">
+                <span class="date">Wednesday, Nov 19, 2014</span>
+            </p>
+        </header>
+        <div class="content">
+            <p><strong>QUICK DISCLAIMER: this is a quick and dirty solution to a problem, so may not represent best coding practice, and has absolutely no error checking or handling. Use with caution&hellip;</strong></p>
+
+<p>A recent project has needed me to scrape some data from Twitter. I considered using <a href="https://github.com/tweepy/tweepy">Tweepy</a>, but as it was a project for the <a href="compj.cs.cf.ac.uk">MSc in Computational Journalism</a>, I thought it would be more interesting to write our own simple Twitter API wrapper in Python.</p>
+
+<p>The code presented here will allow you to make any API request to Twitter that uses a GET request, so is really only useful for getting data <em>from</em> Twitter, not sending it <em>to</em> Twitter. It is also only for using with the REST API, not the streaming API, so if you&rsquo;re looking for realtime monitoring, this is not the API wrapper you&rsquo;re looking for. This API wrapper also uses a single user&rsquo;s authentication (yours), so is not setup to allow other users to use Twitter through your application.</p>
+
+<p>The first step is to get some access credentials from Twitter. Head over to <a href="https://apps.twitter.com/">https://apps.twitter.com/</a> and register a new application. Once the application is created, you&rsquo;ll be able to access its details. Under &lsquo;Keys and Access Tokens&rsquo; are four values we&rsquo;re going to need for the API - the  <code>Consumer Key</code> and <code>Consumer Secret</code>, and the <code>Access Token</code> and <code>Access Token Secret</code>. Copy all four values into a new python file, and save it as &lsquo;<code>_credentials.py</code>&rsquo;. Once we have the credentials, we can write some code to make some API requests!</p>
+
+<p>First, we define a Twitter API object that will carry out our API requests. We need to store the API url, and some details to allow us to throttle our requests to Twitter to fit inside their rate limiting.</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Twitter_API</span>:
+
+ <span style="color:#66d9ef">def</span> __init__(self):
+
+   <span style="color:#75715e"># URL for accessing API</span>
+   scheme <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;https://&#34;</span>
+   api_url <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;api.twitter.com&#34;</span>
+   version <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;1.1&#34;</span>
+
+   self<span style="color:#f92672">.</span>api_base <span style="color:#f92672">=</span> scheme <span style="color:#f92672">+</span> api_url <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;/&#34;</span> <span style="color:#f92672">+</span> version
+
+   <span style="color:#75715e">#</span>
+   <span style="color:#75715e"># seconds between queries to each endpoint</span>
+   <span style="color:#75715e"># queries in this project limited to 180</span>
+   <span style="color:#75715e"># per 15 minutes</span>
+   query_interval <span style="color:#f92672">=</span> float(<span style="color:#ae81ff">15</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">60</span>)<span style="color:#f92672">/</span>(<span style="color:#ae81ff">175</span>)
+
+   <span style="color:#75715e">#</span>
+   <span style="color:#75715e"># rate limiting timer</span>
+   self<span style="color:#f92672">.</span>__monitor <span style="color:#f92672">=</span> {<span style="color:#e6db74">&#39;wait&#39;</span>:query_interval,
+     <span style="color:#e6db74">&#39;earliest&#39;</span>:None,
+     <span style="color:#e6db74">&#39;timer&#39;</span>:None}</code></pre></div>
+
+<p>We add a rate limiting method that will make our API sleep if we are requesting things from Twitter too fast:</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e">#</span>
+<span style="color:#75715e"># rate_controller puts the thread to sleep</span>
+<span style="color:#75715e"># if we&#39;re hitting the API too fast</span>
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">__rate_controller</span>(self, monitor_dict):
+
+ <span style="color:#75715e">#</span>
+ <span style="color:#75715e"># join the timer thread</span>
+ <span style="color:#66d9ef">if</span> monitor_dict[<span style="color:#e6db74">&#39;timer&#39;</span>] <span style="color:#f92672">is</span> <span style="color:#f92672">not</span> None:
+ monitor_dict[<span style="color:#e6db74">&#39;timer&#39;</span>]<span style="color:#f92672">.</span>join()
+
+ <span style="color:#75715e"># sleep if necessary</span>
+ <span style="color:#66d9ef">while</span> time<span style="color:#f92672">.</span>time() <span style="color:#f92672">&lt;</span> monitor_dict[<span style="color:#e6db74">&#39;earliest&#39;</span>]:
+   time<span style="color:#f92672">.</span>sleep(monitor_dict[<span style="color:#e6db74">&#39;earliest&#39;</span>] <span style="color:#f92672">-</span> time<span style="color:#f92672">.</span>time())
+
+ <span style="color:#75715e"># work out then the next API call can be made</span>
+ earliest <span style="color:#f92672">=</span> time<span style="color:#f92672">.</span>time() <span style="color:#f92672">+</span> monitor_dict[<span style="color:#e6db74">&#39;wait&#39;</span>]
+ timer <span style="color:#f92672">=</span> threading<span style="color:#f92672">.</span>Timer( earliest<span style="color:#f92672">-</span>time<span style="color:#f92672">.</span>time(), <span style="color:#66d9ef">lambda</span>: None )
+ monitor_dict[<span style="color:#e6db74">&#39;earliest&#39;</span>] <span style="color:#f92672">=</span> earliest
+ monitor_dict[<span style="color:#e6db74">&#39;timer&#39;</span>] <span style="color:#f92672">=</span> timer
+ monitor_dict[<span style="color:#e6db74">&#39;timer&#39;</span>]<span style="color:#f92672">.</span>start()</code></pre></div>
+
+<p>The Twitter API requires us to supply authentication headers in the request. One of these headers is a signature, created by encoding details of the request. We can write a function that will take in all the details of the request (method, url, parameters) and create the signature:</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e">#</span>
+<span style="color:#75715e"># make the signature for the API request</span>
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">get_signature</span>(self, method, url, params):
+
+ <span style="color:#75715e"># escape special characters in all parameter keys</span>
+ encoded_params <span style="color:#f92672">=</span> {}
+ <span style="color:#66d9ef">for</span> k, v <span style="color:#f92672">in</span> params<span style="color:#f92672">.</span>items():
+   encoded_k <span style="color:#f92672">=</span> urllib<span style="color:#f92672">.</span>parse<span style="color:#f92672">.</span>quote_plus(str(k))
+   encoded_v <span style="color:#f92672">=</span> urllib<span style="color:#f92672">.</span>parse<span style="color:#f92672">.</span>quote_plus(str(v))
+   encoded_params[encoded_k] <span style="color:#f92672">=</span> encoded_v
+
+ <span style="color:#75715e"># sort the parameters alphabetically by key</span>
+ sorted_keys <span style="color:#f92672">=</span> sorted(encoded_params<span style="color:#f92672">.</span>keys())
+
+ <span style="color:#75715e"># create a string from the parameters</span>
+ signing_string <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;&#34;</span>
+
+ count <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
+ <span style="color:#66d9ef">for</span> key <span style="color:#f92672">in</span> sorted_keys:
+   signing_string <span style="color:#f92672">+=</span> key
+   signing_string <span style="color:#f92672">+=</span> <span style="color:#e6db74">&#34;=&#34;</span>
+   signing_string <span style="color:#f92672">+=</span> encoded_params[key]
+   count <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>
+   <span style="color:#66d9ef">if</span> count <span style="color:#f92672">&lt;</span> len(sorted_keys):
+     signing_string <span style="color:#f92672">+=</span> <span style="color:#e6db74">&#34;&amp;&#34;</span>
+
+ <span style="color:#75715e"># construct the base string</span>
+ base_string <span style="color:#f92672">=</span> method<span style="color:#f92672">.</span>upper()
+ base_string <span style="color:#f92672">+=</span> <span style="color:#e6db74">&#34;&amp;&#34;</span>
+ base_string <span style="color:#f92672">+=</span> urllib<span style="color:#f92672">.</span>parse<span style="color:#f92672">.</span>quote_plus(url)
+ base_string <span style="color:#f92672">+=</span> <span style="color:#e6db74">&#34;&amp;&#34;</span>
+ base_string <span style="color:#f92672">+=</span> urllib<span style="color:#f92672">.</span>parse<span style="color:#f92672">.</span>quote_plus(signing_string)
+
+ <span style="color:#75715e"># construct the key</span>
+ signing_key <span style="color:#f92672">=</span> urllib<span style="color:#f92672">.</span>parse<span style="color:#f92672">.</span>quote_plus(client_secret) <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;&amp;&#34;</span> <span style="color:#f92672">+</span> urllib<span style="color:#f92672">.</span>parse<span style="color:#f92672">.</span>quote_plus(access_secret)
+
+ <span style="color:#75715e"># encrypt the base string with the key, and base64 encode the result</span>
+ hashed <span style="color:#f92672">=</span> hmac<span style="color:#f92672">.</span>new(signing_key<span style="color:#f92672">.</span>encode(), base_string<span style="color:#f92672">.</span>encode(), sha1)
+ signature <span style="color:#f92672">=</span> base64<span style="color:#f92672">.</span>b64encode(hashed<span style="color:#f92672">.</span>digest())
+ <span style="color:#66d9ef">return</span> signature<span style="color:#f92672">.</span>decode(<span style="color:#e6db74">&#34;utf-8&#34;</span>)</code></pre></div>
+
+<p>Finally, we can write a method to actually <em>make</em> the API request:</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">query_get</span>(self, endpoint, aspect, get_params<span style="color:#f92672">=</span>{}):
+
+ <span style="color:#75715e">#</span>
+ <span style="color:#75715e"># rate limiting</span>
+ self<span style="color:#f92672">.</span>__rate_controller(self<span style="color:#f92672">.</span>__monitor)
+
+ <span style="color:#75715e"># ensure we&#39;re dealing with strings as parameters</span>
+ str_param_data <span style="color:#f92672">=</span> {}
+ <span style="color:#66d9ef">for</span> k, v <span style="color:#f92672">in</span> get_params<span style="color:#f92672">.</span>items():
+   str_param_data[str(k)] <span style="color:#f92672">=</span> str(v)
+
+ <span style="color:#75715e"># construct the query url</span>
+ url <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>api_base <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;/&#34;</span> <span style="color:#f92672">+</span> endpoint <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;/&#34;</span> <span style="color:#f92672">+</span> aspect <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;.json&#34;</span>
+
+ <span style="color:#75715e"># add the header parameters for authorisation</span>
+ header_parameters <span style="color:#f92672">=</span> {
+   <span style="color:#e6db74">&#34;oauth_consumer_key&#34;</span>: client_id,
+   <span style="color:#e6db74">&#34;oauth_nonce&#34;</span>: uuid<span style="color:#f92672">.</span>uuid4(),
+   <span style="color:#e6db74">&#34;oauth_signature_method&#34;</span>: <span style="color:#e6db74">&#34;HMAC-SHA1&#34;</span>,
+   <span style="color:#e6db74">&#34;oauth_timestamp&#34;</span>: time<span style="color:#f92672">.</span>time(),
+   <span style="color:#e6db74">&#34;oauth_token&#34;</span>: access_token,
+   <span style="color:#e6db74">&#34;oauth_version&#34;</span>: <span style="color:#ae81ff">1.0</span>
+ }
+
+ <span style="color:#75715e"># collect all the parameters together for creating the signature</span>
+ signing_parameters <span style="color:#f92672">=</span> {}
+ <span style="color:#66d9ef">for</span> k, v <span style="color:#f92672">in</span> header_parameters<span style="color:#f92672">.</span>items():
+   signing_parameters[k] <span style="color:#f92672">=</span> v
+ <span style="color:#66d9ef">for</span> k, v <span style="color:#f92672">in</span> str_param_data<span style="color:#f92672">.</span>items():
+   signing_parameters[k] <span style="color:#f92672">=</span> v
+
+ <span style="color:#75715e"># create the signature and add it to the header parameters</span>
+ header_parameters[<span style="color:#e6db74">&#34;oauth_signature&#34;</span>] <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>get_signature(<span style="color:#e6db74">&#34;GET&#34;</span>, url, signing_parameters)
+
+ <span style="color:#75715e"># add the OAuth headers</span>
+ header_string <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;OAuth &#34;</span>
+ count <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
+ <span style="color:#66d9ef">for</span> k, v <span style="color:#f92672">in</span> header_parameters<span style="color:#f92672">.</span>items():
+   header_string <span style="color:#f92672">+=</span> urllib<span style="color:#f92672">.</span>parse<span style="color:#f92672">.</span>quote_plus(str(k))
+   header_string <span style="color:#f92672">+=</span> <span style="color:#e6db74">&#34;=</span><span style="color:#ae81ff">\&#34;</span><span style="color:#e6db74">&#34;</span>
+   header_string <span style="color:#f92672">+=</span> urllib<span style="color:#f92672">.</span>parse<span style="color:#f92672">.</span>quote_plus(str(v))
+   header_string <span style="color:#f92672">+=</span> <span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\&#34;</span><span style="color:#e6db74">&#34;</span>
+   count <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>
+   <span style="color:#66d9ef">if</span> count <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">7</span>:
+     header_string <span style="color:#f92672">+=</span> <span style="color:#e6db74">&#34;, &#34;</span>
+
+ headers <span style="color:#f92672">=</span> {
+   <span style="color:#e6db74">&#34;Authorization&#34;</span>: header_string
+ }
+
+ <span style="color:#75715e"># create the full url including parameters</span>
+ url <span style="color:#f92672">=</span> url <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;?&#34;</span> <span style="color:#f92672">+</span> urllib<span style="color:#f92672">.</span>parse<span style="color:#f92672">.</span>urlencode(str_param_data)
+ request <span style="color:#f92672">=</span> urllib<span style="color:#f92672">.</span>request<span style="color:#f92672">.</span>Request(url, headers<span style="color:#f92672">=</span>headers)
+
+ <span style="color:#75715e"># make the API request</span>
+ <span style="color:#66d9ef">try</span>:
+   response <span style="color:#f92672">=</span> urllib<span style="color:#f92672">.</span>request<span style="color:#f92672">.</span>urlopen(request)
+   <span style="color:#66d9ef">except</span> urllib<span style="color:#f92672">.</span>error<span style="color:#f92672">.</span>HTTPError <span style="color:#66d9ef">as</span> e:
+   <span style="color:#66d9ef">print</span>(e)
+ <span style="color:#66d9ef">raise</span> e
+   <span style="color:#66d9ef">except</span> urllib<span style="color:#f92672">.</span>error<span style="color:#f92672">.</span>URLError <span style="color:#66d9ef">as</span> e:
+   <span style="color:#66d9ef">print</span>(e)
+   <span style="color:#66d9ef">raise</span> e
+
+ <span style="color:#75715e"># read the response and return the json</span>
+ raw_data <span style="color:#f92672">=</span> response<span style="color:#f92672">.</span>read()<span style="color:#f92672">.</span>decode(<span style="color:#e6db74">&#34;utf-8&#34;</span>)
+ <span style="color:#66d9ef">return</span> json<span style="color:#f92672">.</span>loads(raw_data)</code></pre></div>
+
+<p>Putting this all together, we have a simple Python class that acts as an API wrapper for GET requests to the Twitter REST API, including the signing and authentication of those requests. Using it is as simple as:</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"> ta <span style="color:#f92672">=</span> Twitter_API()
+
+ <span style="color:#75715e"># retrieve tweets for a user</span>
+ params <span style="color:#f92672">=</span> {
+    <span style="color:#e6db74">&#34;screen_name&#34;</span>: <span style="color:#e6db74">&#34;martinjc&#34;</span>,
+ }
+
+ user_tweets <span style="color:#f92672">=</span> ta<span style="color:#f92672">.</span>query_get(<span style="color:#e6db74">&#34;statuses&#34;</span>, <span style="color:#e6db74">&#34;user_timeline&#34;</span>, params)</code></pre></div>
+
+<p>As always, the full code is online on Github, in both my <a href="https://github.com/CompJCDF/Simple-Python-Twitter-API">personal account</a> and the <a href="https://github.com/CompJCDF">account for</a> the <a href="http://compj.cs.cf.ac.uk/">MSc Computational Journalism</a>.</p>
+
+        </div>
+    </article>
+    
+    <article class="blogpost">
+        <header>
+            <h1> <a href="https://martinjc.com/2014/11/04/how-do-people-decide-whether-or-not-to-read-a-tweet/">
+                    How do people decide whether or not to read a tweet? 
+                </a></h1>
+            <p class="author">
+                <span class="date">Tuesday, Nov 4, 2014</span>
+            </p>
+        </header>
+        <div class="content">
+            <p>It turns out that an existing relationship with the author of the tweet is one of the main factors influencing how someone decides whether or not to read a tweet. At the same time,  a large number associated with a tweet can also make the tweet more attractive to readers.</p>
+
+<p>Our <a href="http://www.sciencedirect.com/science/article/pii/S1071581914001268">latest Open Access research</a> has discovered how much effect the information about a tweet has on whether people decide to read it or not.</p>
+
+<p>By showing hundreds of Twitter users the information about two tweets but not the tweets themselves, and then asking the users which tweet they would like to read, we have been able to look at which information is more important when users are deciding to read a tweet.</p>
+
+<p>We looked at two different types of information:</p>
+
+<ol>
+<li><p>Simple numbers that describe the tweet, such as the number of retweets it has, or numbers that describe the author, such as how many followers they have, or how many tweets they&rsquo;ve written.</p></li>
+
+<li><p>Whether a relationship between the reader and the author is important, and whether that relationship was best shown through subtle hints, or direct information.</p></li>
+</ol>
+
+<p>When readers can see only one piece of information, the case is clear: they&rsquo;d <strong>rather read the tweet written by someone they are following</strong>. Readers can easily recognise the usernames, names, and profile images of people they already follow, and are likely to choose to read content written by someone they follow (instead of content written by a stranger) around 75% of the time. If all they can see is a piece of numerical information, they would <strong>rather read the tweet with the highest number</strong>, no matter what that number is. The effect is strongest with the number of retweets, followed by the number of followers, but even for the number of following and number of tweets written the effect is significant.</p>
+
+<p>When readers can see two pieces of information, one about their relationship with the author, and one numerical, there are two cases to look at. When the author they follow also has a high numerical value, readers will choose that tweet in around 80% of the cases. When the author they already follow has a lower numerical value, it is still the existing relationship that is more of a draw. <strong>Readers would rather read a tweet from someone they know that has a low number of retweets, than one from a stranger with a high number of retweets.</strong></p>
+
+<p>This work offers an understanding of how the decision-making process works on Twitter when users are skimming their timelines for something to read, and has particular implications for the display and promotion of non-timeline content within content streams. For instance, readers may pay more attention to adverts and promoted content if the link between themselves and the author is highlighted.</p>
+
+<p><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6406256">Previous results</a>  from an early experiment were published at <a href="/2012/09/07/socialcom-2012/">SocialCom</a>. The results in <a href="http://www.sciencedirect.com/science/article/pii/S1071581914001268">this new paper</a> are from a modified and expanded version of <a href="/2012/05/18/tweetcues-twitter-experiment/">this earlier experiment</a>.</p>
+
+        </div>
+    </article>
+    
+    <article class="blogpost">
+        <header>
             <h1> <a href="https://martinjc.com/2014/11/01/beards-taches-and-testicles/">
                     Beards, &#39;Taches and Testicles
                 </a></h1>
@@ -568,274 +798,6 @@ pcon_nm <span style="color:#f92672">=</span> {}
 <p>The talk went well, and I&rsquo;ve had several offers from people wanting to get involved and add some real value to the course, which is brilliant. Of course, there&rsquo;s always room to add more, so if you&rsquo;re interested in coming and talking to our students, <a href="/contact/">get in touch</a>!</p>
 
 <p>If you&rsquo;re interested, the slides from the talk are <a href="/img/{{ page.date | date: &quot;%Y-%m-%d&quot;}}-{{page.slug}}/Unified-Diff-Giving-up-your-time-for-money-and-satisfaction.pdf">here</a></p>
-
-        </div>
-    </article>
-    
-    <article class="blogpost">
-        <header>
-            <h1> <a href="https://martinjc.com/2014/07/10/wedding/">
-                    Wedding!
-                </a></h1>
-            <p class="author">
-                <span class="date">Thursday, Jul 10, 2014</span>
-            </p>
-        </header>
-        <div class="content">
-            
-
-<p>On the 25th May 2014, after many years of procrastination and denials that we would ever get married, Lisa and I finally tied the knot. It was a superb day, plenty of fun was had by all, and I thought it was worth writing a little bit about some of the companies, suppliers and individuals who helped make it so good. If you&rsquo;re planning a wedding in Shrewsbury or Shropshire, you can do far worse than to ask these guys for their help:</p>
-
-<h3 id="venues">Venues:</h3>
-
-
-
-
-
-
-
-
-
-
-<figure>
-    <img src="/2014/07/10/wedding/052_martin_and_lisa-copy-300x199.jpg" width="300" height="199" alt="Shrewsbury Castle">
-    <figcaption>
-        <small>
-            Shrewsbury Castle
-        </small>
-    </figcaption>
-</figure>
-
-<p>The ceremony venue was in what is almost the &lsquo;default&rsquo; venue for civil ceremonies in Shrewsbury: <a href="http://www.shrewsburymuseum.org.uk/visit-shrewsbury/shrewsbury-castle/">Shrewsbury Castle</a>. You can&rsquo;t use the word &lsquo;fantastic&rsquo; enough when you&rsquo;re talking about the castle - it really is a great venue. We got married there, my mother got married there recently, and our friends got married there before her. It&rsquo;s limited in terms of the numbers you can have in the ceremony itself, but that really didn&rsquo;t bother us, and so the castle was the obvious choice. Ian (the castle custodian) was really helpful, from our first contact onwards. He was always available to answer questions, and on the wedding day he worked really hard to help everything go smoothly. Such a lovely, friendly chap, we knew we could relax about the ceremony as he had everything under control.</p>
-
-
-
-
-
-
-
-
-
-
-<figure>
-    <img src="/2014/07/10/wedding/234_martin_and_lisa-copy-300x199.jpg" width="300" height="199" alt="Drapers Hall, Shrewsbury">
-    <figcaption>
-        <small>
-            Drapers Hall, Shrewsbury
-        </small>
-    </figcaption>
-</figure>
-
-<p>The reception venue was <a href="http://www.drapershallrestaurant.co.uk/">Drapers Hall</a>, a great restaurant just around the corner from Shrewsbury Castle. When we visited home in 2013 to look for venues, I thought this was kind of a strange option - it wasn&rsquo;t anything like the more traditional hotels, country houses and renovated barns that we were looking at. In the end, I think it was that fact that made it perfect. We spoke to Nigel, who runs the restaurant, about our wedding, and from the moment he started talking about food, describing the kind of thing he could make for the wedding breakfast, and then for the evening reception, we were sold. Because he wasn&rsquo;t a hotel trying to sell us a &lsquo;package&rsquo; deal, we were able to tailor everything to our own tastes and needs. The venue itself is amazing; a great old Shrewsbury building, full of history, and decorated with a mix of old and new that works so well.</p>
-
-<p>
-
-
-
-
-
-
-
-
-<figure>
-    <img src="/2014/07/10/wedding/2014-05-25-16.43.42-300x225.jpg" width="300" height="225" alt="Dessert - chocolate fondant">
-    <figcaption>
-        <small>
-            Dessert - chocolate fondant
-        </small>
-    </figcaption>
-</figure>
-<img src="/img/{{ page.date | date: &quot;%Y-%m-%d&quot;}}-{{page.slug}}/2014-05-25-16.43.42-300x225.jpg" alt="Dessert - chocolate fondant" /></p>
-
-<p>The food was glorious - all our guests got a choice of starters and main courses, and they all tasted and looked amazing. The staff were great, very helpful, always on hand without being overbearing, and nothing was ever too much trouble, all evening. We had a dedicated contact all day, who introduced himself to Lisa as she was wandering the halls the evening before the wedding (unaccustomed to having nothing to do) by saying &ldquo;Hi, I&rsquo;m Tim. I&rsquo;ll be your guy for the wedding day&rdquo;. He totally was our guy; whenever we needed something, he was there to help. He kept us up to date with plans and timing, and managed the whole event to help it go off smoothly.  The rest of the staff were also consistently brilliant, doing everything from re-making a playlist on spotify at short notice, to dealing with some idiot (me) knocking over the celebration cake in the middle of the evening party. The rooms in the hotel are glorious, and there are only six of them, so you can restrict who you invite to stay over! I was so pleased with the whole event, it was really good fun.</p>
-
-<h3 id="flowers">Flowers:</h3>
-
-<p>
-
-
-
-
-
-
-
-
-<figure>
-    <img src="/2014/07/10/wedding/196_martin_and_lisa-copy-248x300.jpg" width="248" height="300" alt="Bouquet">
-    <figcaption>
-        <small>
-            Bouquet
-        </small>
-    </figcaption>
-</figure>
-<img src="/img/{{ page.date | date: &quot;%Y-%m-%d&quot;}}-{{page.slug}}/196_martin_and_lisa-copy-248x300.jpg" alt="Bouquet" /></p>
-
-<h3 id="dress">Dress:</h3>
-
-
-
-
-
-
-
-
-
-
-<figure>
-    <img src="/2014/07/10/wedding/340_martin_and_lisa-copy-196x300.jpg" width="196" height="300" alt="Wedding Dress">
-    <figcaption>
-        <small>
-            Wedding Dress
-        </small>
-    </figcaption>
-</figure>
-
-<p>Again, not really my domain, but after visiting every wedding dress shop <del>in the world</del> in Cardiff and Shrewsbury, and conducting 3 months research into what did and didn&rsquo;t suit, Lisa went with <a href="http://www.hayleyj.co.uk/">Hayley J</a>. Obviously I can&rsquo;t really comment on the process, having not been involved, and I haven&rsquo;t even met Hayley herself, but Lisa assures me that the whole thing was done extremely well. The story she tells is that she had sort of decided what she wanted, but couldn&rsquo;t find anything that ticked all of the boxes, or anything that fit properly. She was only visiting Hayley on the off chance, expecting that a custom made dress would be far too expensive. Within about thirty seconds of meeting her, Hayley had described exactly what Lisa wanted without even asking what she was looking for in a dress, and had quoted a more reasonable price than any of the &lsquo;off the peg&rsquo; dresses Lisa had been considering. A couple of fitting sessions later, and Lisa had the most lovely wedding dress ever. I think she looked amazing in it, and I know she was delighted.</p>
-
-<h3 id="suit">Suit:</h3>
-
-
-
-
-
-
-
-
-
-
-<figure>
-    <img src="/2014/07/10/wedding/351_martin_and_lisa-copy-153x300.jpg" width="153" height="300" alt="Suit">
-    <figcaption>
-        <small>
-            Suit
-        </small>
-    </figcaption>
-</figure>
-
-<p>Originally, I was going to hire suits for myself and the groomsmen. However, I wanted to wear an everyday three-piece suit for the wedding, I wasn&rsquo;t really interested in going with a morning suit as might be more traditional. Then we actually looked into hiring normal style suits, and they were pretty awful. Plus, hiring suits is expensive. So, with only a couple of months to go before the wedding, I told my groomsmen and family they were on their own, and I wasn&rsquo;t hiring them suits. Instead, I was going to take the suit budget and blow it all on me, getting a suit tailor made. I checked a couple of places online, but then went with <a href="http://www.martin-david.co.uk/">Martin David</a>. I turned up there expecting to be told there was no way that they could make a suit in time, but actually they said they could do it in seven weeks. Again, the guys there were friendly and helpful, they explained all the choices and decisions well, and I felt totally happy all the way through the process. Plus, it was nowhere near as expensive as I thought it would be. I ended up with a really classic looking three piece suit, that will last me well for years.</p>
-
-<h3 id="bridesmaids-dresses">Bridesmaids Dresses</h3>
-
-
-
-
-
-
-
-
-
-
-<figure>
-    <img src="/2014/07/10/wedding/094_martin_and_lisa-copy-295x300.jpg" width="295" height="300" alt="Bridesmaids">
-    <figcaption>
-        <small>
-            Bridesmaids
-        </small>
-    </figcaption>
-</figure>
-
-<p>Again, a Lisa thing. I think that, as with her own dress, she tried every shop in the world for Bridesmaids dresses, before deciding on ordering some through <a href="http://www.weddingworldshropshire.co.uk/">Wedding World</a> in Shrewsbury. As with all the people we met while organising our wedding, they were extremely friendly, knowledgeable and helpful. The dresses arrived on time, and they even dealt with a couple of small manufacturing problems quickly and efficiently.</p>
-
-<h3 id="wedding-car">Wedding Car:</h3>
-
-
-
-
-
-
-
-
-
-
-<figure>
-    <img src="/2014/07/10/wedding/036_martin_and_lisa-copy-300x288.jpg" width="300" height="288" alt="Car and Driver">
-    <figcaption>
-        <small>
-            Car and Driver
-        </small>
-    </figcaption>
-</figure>
-
-<p>I&rsquo;m pretty sure that <a href="http://www.frankpainter.co.uk/page/wedding-anniversary-car-hire">Frank Painter &amp; Sons</a> is probably the best choice for hiring a wedding car in Shrewsbury, but we hired them because of a pun. I mean, their cars are ace, and their prices are reasonable, but it was the pun that sold it to us. While out touring wedding venues, we bumped into a couple of their drivers who were sat outside a hotel while the ceremony happened inside. We mentioned we were getting married, and asked if they had a card we could take away so we could call them later. At some point, we mentioned that we were only looking for one car, for Lisa, and one of the drivers said &ldquo;well, you could always have one each. You know, his and hearse!&rdquo; It was hilarious. As long as you know that Frank Painter &amp; Sons is also a funeral directors. Which you didn&rsquo;t. But you can see why we hired them, eh?</p>
-
-<h3 id="band">Band:</h3>
-
-
-
-
-
-
-
-
-
-
-<figure>
-    <img src="/2014/07/10/wedding/PDSC0022-copy2-300x205.jpg" width="300" height="205" alt="Band">
-    <figcaption>
-        <small>
-            Band
-        </small>
-    </figcaption>
-</figure>
-
-<p>Oh the music. We agonised for ages about the music. Then at almost the last minute, we booked the <a href="http://www.thehotjazzbiscuits.com/">Hot Jazz Biscuits</a>, and I am so glad we did. They&rsquo;re actually run by an old school friend, although I didn&rsquo;t realise it at the time. We&rsquo;d heard some good things about them, and their videos online looked pretty good, so not really knowing what we wanted, we went with them. They were awesome. They turned up on time, were set up and ready to go when the party needed to start, and they played wonderful music all evening. We didn&rsquo;t really have a plan on how many sets we wanted, or when they should play, so they just took care of it themselves. We didn&rsquo;t even have a first dance planned (we just couldn&rsquo;t decide) so we told them to play something and we&rsquo;d dance to it! That&rsquo;s how we ended up with Van Morrison&rsquo;s Moondance as our first dance. The music was good, and we danced all night, which it turns out is exactly what I was looking for. They even did a few encores for us, even though they&rsquo;d played for longer than we&rsquo;d paid them for. A superb band that kept the party going all night.</p>
-
-<h3 id="photographers">Photographers:</h3>
-
-<p>This is a bit irrelevant in a post about a Shrewsbury wedding, as we didn&rsquo;t use photographers from Shrewsbury, or even Shropshire, but they were ace so they deserve a mention too. We used the lovely Caroline and Ian from <a href="http://www.weheartwedding.co.uk/">weheartwedding</a>, based in Cardiff. Lisa met them at a wedding fair, they were nice, and they were happy to travel as long as we paid for fuel. Professional and lovely all the way through the day, I can&rsquo;t recommend them enough. We got the photos through just a few days ago, and they&rsquo;re all brilliant (most of the photos in this post came from them). Choosing which ones we want to print out and display is going to be a really hard task indeed&hellip;</p>
-
-
-
-
-
-
-
-
-
-
-<figure>
-    <img src="/2014/07/10/wedding/300_martin_and_lisa-copy-680x1024.jpg" width="680" height="1024" alt="Lisa and Martin Wedding">
-    <figcaption>
-        <small>
-            Lisa and Martin Wedding
-        </small>
-    </figcaption>
-</figure>
-
-        </div>
-    </article>
-    
-    <article class="blogpost">
-        <header>
-            <h1> <a href="https://martinjc.com/2014/05/31/hotel-olivedo/">
-                    Hotel Olivedo
-                </a></h1>
-            <p class="author">
-                <span class="date">Saturday, May 31, 2014</span>
-            </p>
-        </header>
-        <div class="content">
-            
-
-
-
-
-
-
-
-
-<figure>
-    <img src="/2014/05/31/hotel-olivedo/790204_aErRDcar_4SOUiYpE6xxQrUd9zBWW7rF-rv7wSG75ws.jpg" width="960" height="435" alt="">
-    <figcaption>
-        <small>
-            
-        </small>
-    </figcaption>
-</figure>
-
-<p><a href="http://4sq.com/o0Mo08">Hotel Olivedo</a></p>
-
-<p><img src="http://ift.tt/1oG9nmI" alt="" /></p>
 
         </div>
     </article>
