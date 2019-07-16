@@ -13,7 +13,7 @@
     "build:images": "imagemin _assets/img/**/* --out-dir static/img",
     "build:critical:prod": "critical public/index.html --inline --minify --base public > tmp/index.html && cp tmp/index.html public/index.html",
     "copy:images": "cp -r _assets/img/* static/img",
-    "build:hugo:dev": "hugo",
+    "build:hugo:dev": "hugo --buildDrafts",
     "build:hugo:prod": "hugo",
     "clean": "rimraf tmp",
     "mkdirs": "mkdir -p tmp",
