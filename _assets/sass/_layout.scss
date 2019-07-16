@@ -115,6 +115,14 @@ nav {
     }
 }
 
+.twitter-tweet {
+    margin:auto;
+}
+
+.youtube-vid {
+    margin:auto;
+}
+
 @include media-query($medium-break) {
     body {
         max-width: $max-content-size;
