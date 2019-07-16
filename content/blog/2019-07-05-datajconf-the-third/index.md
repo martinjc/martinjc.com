@@ -19,6 +19,6 @@ When Bahareh initially pitched the idea of running a conference in this field on
 There were some truly interesting talks on both days, and some very interesting practical workshops too. Our keynotes, Daniele Grasso and Meredith Broussard did fantastic jobs of opening and closing our first day of talks. Our local hosts did a spectacular job with the organisation. Bella and the team put together a local program that was welcoming and inclusive, and showed off Malaga to its fullest. We as organisers all agreed that the job the team had done was fantastic, and they've set the bar very high indeed for wherever the conference goes next. 
 
 The roundup video gives a really good overview of what the conference looked like:
-<iframe width="560" height="315" src="https://www.youtube.com/embed/WAls1xTwFS0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class='youtube-vid' width="560" height="315" src="https://www.youtube.com/embed/WAls1xTwFS0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
