@@ -2,15 +2,13 @@
 title: "Martin Chorley"
 ---
 
-
-<h1>hello.</h1>
+<h1>goodbye.</h1>
 
 <img src="img/Headshot_2013_-cropped_small.jpeg" class="headshot" alt="Headshot">
 
 <p>I am Dr Martin Chorley.</p>
 
 <p>I'm a Senior Lecturer at the <a href="http://www.cardiff.ac.uk/computer-science/">School of Computer Science &amp; Informatics</a>, Cardiff University. I am the Director of Learning and Teaching for the school, which means I look after our Undergraduate and Taught Postgraduate programmes and students.</p>
-
 
 <p>I’m programme leader for the <a href="http://www.cardiff.ac.uk/study/postgraduate/taught/courses/course/computational-and-data-journalism-msc">MSc in Computational and Data Journalism</a>, our innovative joint-honours degree with the <a href="http://www.cardiff.ac.uk/journalism-media-and-culture">School of Journalism, Media and Culture (JOMEC)</a>. I helped design the course with colleagues from JOMEC and teach on some of the modules.</p>
 
