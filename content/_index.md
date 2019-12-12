@@ -2,7 +2,7 @@
 title: "Martin Chorley"
 ---
 
-<h1>goodbye.</h1>
+<h1>hello.</h1>
 
 <img src="img/Headshot_2013_-cropped_small.jpeg" class="headshot" alt="Headshot">
 
