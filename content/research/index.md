@@ -27,6 +27,7 @@ I'm guest editor for a special issue of the International Journal of Human-Compu
 
 I have reviewed for the following journals:
 
+-   International Journal of Human-Computer Interaction
 -   ACM Transactions on Internet Technology
 -   WWW
 -   Concurrency and Computation: Practice and Experience
@@ -57,7 +58,6 @@ I have served on various committees for conferences and workshops:
 #### Internal examining
 
 -   Lowri Williams - "Pushing the Envelope of Sentiment Analysis Beyond Words and Polarities" (2017). Supervised by Professor Irena Spasi ́c
-
 
 ## Past Research
 
