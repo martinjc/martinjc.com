@@ -1,0 +1,3 @@
+[submodule "themes/mjc"]
+	path = themes/mjc
+	url = https://github.com/martinjc/mjc.git
