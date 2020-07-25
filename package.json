@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/martinjc/martinjc.com/issues"
   },
-  "homepage": "https://github.com/martinjc/martinjc.com#readme"
+  "homepage": "https://github.com/martinjc/martinjc.com#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.11.0"
+  }
 }
