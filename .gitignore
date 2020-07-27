@@ -3,9 +3,7 @@
 .*/
 tmp
 public
-
-# generated css
-static/css/main.css
+build
 
 #
 #
