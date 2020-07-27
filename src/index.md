@@ -5,7 +5,7 @@ title: "Martin Chorley"
 
 # hello
 
-[](img/Headshot_2013_-cropped_small.jpeg)
+![](img/Headshot_2013_-cropped_small.jpeg)
 
 I am Dr Martin Chorley.
 
