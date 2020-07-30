@@ -1,9 +1,9 @@
 ---
 author: martin
 comments: true
+layout: post
 date: 2017-11-29 11:15:00+00:00
 title: Academic Parent
-tags:
 ---
 
 I, like many others, made note of a recent tweet by Nathan Hall discussing the attitude of his colleagues when he prioritises family over career:

@@ -3,6 +3,7 @@ author: martin
 comments: true
 date: 2017-08-05 11:15:00+00:00
 title: DataJConf Debrief
+layout: post
 slug: datajconf-debrief
 tags:
 ---
