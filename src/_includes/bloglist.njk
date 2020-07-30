@@ -1,0 +1,37 @@
+---
+title: blog
+layout: base.njk
+pagination:
+  data: collections.post
+  size: 10
+  alias: posts
+  reverse: true
+---
+
+<main>
+    {% for post in posts %}
+    <article class="blogpost">
+        <header>
+            <h1> <a href="{{ post.url | url }}">
+                    {{ post.data.title }}
+                </a></h1>
+            <p class="author">
+                <span class="date">{{ post.data.date }}</span>
+            </p>
+        </header>
+        <div class="content">
+            {{ post.data.content | safe }}
+        </div>
+    </article>
+    {% endfor %}
+</main>
+
+<nav aria-labelledby="my-pagination">
+  <ol>
+    <li>{% if page.url != pagination.href.first %}<a href="{{ pagination.href.first }}">First</a>{% else %}First{% endif %}</li>
+{%- for pageEntry in pagination.pages %}
+    <li><a href="{{ pagination.hrefs[ loop.index0 ] }}"{% if page.url == pagination.hrefs[ loop.index0 ] %} aria-current="page"{% endif %}> {{ loop.index }}</a></li>
+{%- endfor %}
+    <li>{% if page.url != pagination.href.last %}<a href="{{ pagination.href.last }}">Last</a>{% else %}Last{% endif %}</li>
+  </ol>
+</nav>

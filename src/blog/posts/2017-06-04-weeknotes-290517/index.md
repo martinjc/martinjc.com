@@ -1,0 +1,54 @@
+---
+author: martin
+comments: true
+date: 2017-06-04 20:00:40+00:00
+layout: post
+link: https://martinjc.com/2017/06/04/weeknotes-290517/
+slug: weeknotes-290517
+title: Weeknotes - 29th May 2017
+tags:
+ - teaching
+ - weeknotes
+---
+
+# Monday 29th May
+
+BANK HOLIDAY, innit
+
+# Tuesday 30th May
+
+OH GOD, NOW I'VE GOT A DAY LESS TO DO EVERYTHING!
+
+Finished my visualisation coursework marking today. Generally really good quality across the board, and a really enjoyable set of work to mark. As time goes on, I'm liking this visualisation course more and more. It's fun to teach as it's an interesting and quite subjective field, which is not usual in a 'normal' Computer Science course. There's lots of scope for discussion and argument and plenty of chances for students to really get stuck into some data analysis and communication and really show off their skills. I get the feeling the mark distribution skewed a little higher than last year, but I haven't checked that yet.
+
+Also met with the last student who has expressed an interest in our CUROP project for this summer, so we'll be able to make a decision on that soon and get that project rolling. I also met with another of our CompDJ students about their dissertation project - they're looking to build a bot that will write articles automatically about particular topics. A very ambitious project, but one that looks to be really interesting.
+
+The other major task on Tuesday was a Skype call with the rest of the organising committee of DataJConf to finalise the accepted talks and sort out the schedule. We had a really great set of submissions, with a good mix from industry and academia. Our programme committee did a great job of reviewing them, so it was a fairly simple task to conduct a quick meta-review of the papers, decide where our cut-off point is and then take the top 8 papers forward to the conference. Sadly the fact that we're only one-day main track this year meant we had to lose some very good submissions, but I'm hopeful those authors will still come along and pitch their discussion topics for the Unconference on the day after DataJConf (and we invited them to in their notification emails). The [schedule is now online](http://datajconf.com/#schedule), and it looks like it's going to be a really good day. Tickets are selling, and the attendee numbers are ticking up. We were supposed to make a decision this week on which room to go for, the big room or the bigger room, but we put that off to see how numbers look in a weeks time. It's a bit of a gamble as there's always a chance that if we need to switch from the room we already have booked the other room will be unavailable by the time we make our minds up, but who doesn't like a bit of risk in their conference planning?
+
+# Wednesday 31st May
+
+A day in which very little was accomplished towards my own goals, but which had to be done. Most of the morning was taken up with a meeting with my counterpart in undergraduate operations, the school manager, and various faces from college about our generally low survey response rates in the School, and how we might do better at communicating with students to foster a culture that encourages these response rates to improve. One of the key points we came up with was that while we're very good at listening to students as a school, and then acting upon their feedback, we're pretty rubbish at communicating those actions and changes back to the students. The outcome of this discussion was a need to empower the operations teams for postgrads and undergrads to do more with the various surveys and module feedback questionnaires, to bring actions and recommendations to the teaching and learning quality committee and boards of studies, and to work with the comms team to make sure students know that what they tell us is listened to and acted upon, and is therefore quite important. Essentially it's about a culture change within the school, and we all know how easy that is, right...
+
+Also had some interesting discussions with my Head of School today about a number of projects I've got going on at the moment. I already [wrote](https://martinjc.com/2017/05/22/weeknotes-220517/) about trying to coordinate the large number of new programme / programme change approvals that we have happening within the school, but we also discussed a couple of other projects. One, looking at end-of-module feedback has been going on for a while but is close to being ready for launch. The other was around module-review, and how I want to improve that process by moving to a git based approach, which will allow better oversight and review of module changes and data collection. I'll talk more about that as the project develops.
+
+At lunchtime we had our first official meeting with Stuart, our third-year student who is working with us for the summer on our Education Innovation chatbot project. He seems to have really hit the ground running and is getting stuck in to building code and designing solutions. Really great to see, and it looks highly likely that we're going to have something working to test with students in the Autumn.
+
+The afternoon was taken up with an Academic Approval Event in the School of Modern Languages. I was on the panel as the internal member from outside the college. It's the second approval event I've done, and was a fairly pleasant experience. The programme we were looking at was well thought out, and would clearly be a benefit to the school in question. There were the usual typos and small inconsistencies in the documentation, and we had some recommendations that might improve the student experience, particularly around assessment, where there were a lot of essays that might be replaced with some more interesting types of assessment. Overall though it looks good, and I hope they make a success of it.
+
+While all that was going on, we were hosting a hackday over in Bute, a collaboration with [The Bureau Local](https://www.thebureauinvestigates.com/projects/the-bureau-local). A team came over from [The Bristol Cable](https://thebristolcable.org/) and along with our students spent the day looking at voter numbers within local constituencies. I wrote a [tiny write up](http://compj.cs.cf.ac.uk/2017/05/31/hacking-voterpower-with-the-bureau-local/) over at the CompDJ blog, but I was a bit annoyed I couldn't get more involved, what with everything else that was going on yesterday. Hopefully I'll be able to get stuck in at the next one, as I'm sure this wont be the last hackday type event the Bureau organises.
+
+# Thursday 1st June
+
+Today was spent interviewing students for another of our summer projects, looking at Journalism Education. We've been carrying out a data collection experiment since last summer looking at the skill requirements of the media industry as exposed through job advertising and mailing list postings, and now we're looking to back that up through a qualitative analysis of journalism school educators and their syllabi. We had 12 students from a range of schools express an interest in working on this project with us, and choosing between them is a very hard task indeed. Luckily m'colleague is leading this project, so most of that particular burden falls on him. Hopefully we'll have someone in place very soon and we can get the third of our summer projects up and running.
+
+# Friday 2nd June
+
+Y.A.D.A.F
+
+# Sunday 4th June
+
+My 'Friday' was spent working on some analysis of module evaluation feedback. As I mentioned in Tuesday's notes, we need to do more and better with the feedback given to us by students. I've been working for a while on creating some simple dashboards that transform the quite poor output of the module evaluation system into something that is firstly a little more usable by module leaders, but that also looks more like the survey dashboards (NSS, PTES, etc) that we are used to dealing with.
+
+{{< bundleimg "dashboard" "Module Evaluation Dashboards - WiP" "Module Evaluation Dashboards - WiP" >}}
+
+The idea is that consistency between the types of visualisations and analysis used will reduce the cognitive burden when trying to assess the feedback and compare across surveys. I'm now starting to put together a system that will create individual dashboards for lecturers and module leaders, and that will also allow comparison between modules on the various programmes and years of our degree schemes, and allow comparison to the school as a whole. With any luck I'll be able to present this at the next TLAQC and we can start to deliver these to lecturers and operations teams to help them understand what the students are telling them. Today was mostly refactoring my existing analysis code that takes the raw survey data and converts it into percent agree/disagree scores as per the NSS dashboards, and collects the data across the different groupings (years/programmes) of modules.

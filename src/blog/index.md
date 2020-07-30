@@ -1,0 +1,4 @@
+---
+layout: bloglist
+title: posts
+---
