@@ -4,8 +4,24 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build:css:dev": "node-sass src/_sass/main.scss > build/css/main.css",
-    "build:eleventy:dev": "eleventy"
+    "reinstall": "rimraf node_modules && npm cache clean && npm install",
+    "start": "npm-run-all --parallel serve watch",
+    "clean": "rimraf public tmp",
+    "mkdirs": "mdkir -p public; mkdir -p tmp/css",
+    "build:css:dev": "node-sass src/_sass/main.scss > tmp/css/main.css",
+    "build:css:prod": "node-sass src/_sass/main.scss -x --output-style compressed | postcss -u autoprefixer -b 'last 2 versions' -u cssnano --no-map > tmp/css/main.css",
+    "build:eleventy:dev": "eleventy",
+    "build:eleventy:prod": "eleventy",
+    "build:dev": "npm run build:css:dev && npm run build:eleventy:dev",
+    "prebuild:dev": "npm run clean && npm run mkdirs",
+    "prebuild:prod": "npm run clean && npm run mkdirs",
+    "build:prod": "npm run build:css:prod && npm run build:eleventy:prod",
+    "kill": "lsof -n -i:8080 | grep LISTEN | awk '{print $2}' | xargs kill -9",
+    "preserve": "npm run build:dev && npm run kill",
+    "serve": "browser-sync start -s --files 'public/**/*.(js|css|html)' --ss 'public' --port 8080 --reload-debounce 500",
+    "watch": "npm-run-all --parallel watch:*",
+    "watch:css": "onchange --await-write-finish 4000 'src/_sass/**/*.scss' -- npm run build:css:dev && npm run build:eleventy:dev",
+    "watch:eleventy": "onchange --await-write-finish 4000 'src/**/*.njk' 'src/**/*.md' -- npm run build:eleventy:dev"
   },
   "repository": {
     "type": "git",
@@ -20,7 +36,13 @@
   "devDependencies": {
     "@11ty/eleventy": "^0.11.0",
     "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.1",
-    "node-sass": "^4.14.1"
+    "autoprefixer": "^9.8.6",
+    "browser-sync": "^2.26.12",
+    "cssnano": "^4.1.10",
+    "node-sass": "^4.14.1",
+    "npm-run-all": "^4.1.5",
+    "onchange": "^7.0.2",
+    "rimraf": "^3.0.2"
   },
   "dependencies": {}
 }
