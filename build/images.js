@@ -40,7 +40,7 @@ image_files.forEach(f => {
                 image
                     .resize(options)
                     .jpeg()
-                    .toFile(`${output_directory}${path.sep}${path.basename(f, path.extname(f))}_16_9_${s.width}_${path.extname(f)}`);
+                    .toFile(`${output_directory}${path.sep}${path.basename(f, path.extname(f))}_16_9_${s.width}${path.extname(f)}`);
             });
         });
     image
@@ -58,7 +58,7 @@ image_files.forEach(f => {
                 image
                     .resize(options)
                     .jpeg()
-                    .toFile(`${output_directory}${path.sep}${path.basename(f, path.extname(f))}_3_4_${s.width}_${path.extname(f)}`);
+                    .toFile(`${output_directory}${path.sep}${path.basename(f, path.extname(f))}_3_4_${s.width}${path.extname(f)}`);
         });
     });
 });
