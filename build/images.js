@@ -2,56 +2,11 @@ const fs = require('fs');
 const path = require('path');
 const sharp = require('sharp');
 const glob = require('glob'); 
+const sizes = require("./image_sizes");
 
-const widths = [320, 612, 904, 1196, 1488, 1780];
-const sizes_16_9 = [
-    {
-        width: 320,
-        height: 180
-    },
-    {
-        width: 612,
-        height: 344
-    },
-    {
-        width: 904,
-        height: 509
-    },
-    {
-        width: 1196,
-        height: 673
-    },
-    {
-        width: 1488,
-        height: 837
-    },
-    {
-        width: 1780,
-        height: 1001
-    }
-];
-const sizes_3_4 = [
-    {
-        width: 320,
-        height: 427
-    },
-    {
-        width: 500,
-        height: 667
-    },
-    {
-        width: 680,
-        height: 907
-    },
-    {
-        width: 860,
-        height: 1147
-    },
-    {
-        width: 1040,
-        height: 1387
-    }
-]
+const widths = sizes.widths;
+const sizes_16_9 = sizes.sizes_16_9;
+const sizes_3_4 = sizes.sizes_3_4;
 
 let image_files = glob.sync('src/img/**/*.{png,PNG,jpg,JPG}');
 
@@ -68,7 +23,7 @@ image_files.forEach(f => {
                 withoutEnlargement: true
             })
             .jpeg()
-            .toFile(`${output_directory}${path.sep}${path.basename(f, path.extname(f))}-${w}${path.extname(f)}`);
+            .toFile(`${output_directory}${path.sep}${path.basename(f, path.extname(f))}_${w}${path.extname(f)}`);
     });
     image
         .metadata()
