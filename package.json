@@ -12,6 +12,7 @@
     "build:css:prod": "node-sass src/_sass/main.scss -x --output-style compressed | postcss -u autoprefixer -b 'last 2 versions' -u cssnano --no-map > tmp/css/main.css",
     "build:eleventy:dev": "eleventy",
     "build:eleventy:prod": "eleventy",
+    "build:images": "node build/images.js",
     "build:dev": "npm run build:css:dev && npm run build:eleventy:dev",
     "prebuild:dev": "npm run clean && npm run mkdirs",
     "prebuild:prod": "npm run clean && npm run mkdirs",
@@ -42,7 +43,8 @@
     "node-sass": "^4.14.1",
     "npm-run-all": "^4.1.5",
     "onchange": "^7.0.2",
-    "rimraf": "^3.0.2"
+    "rimraf": "^3.0.2",
+    "sharp": "^0.25.4"
   },
   "dependencies": {}
 }
