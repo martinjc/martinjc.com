@@ -16,7 +16,7 @@ pagination:
                     {{ post.data.title }}
                 </a></h1>
             <p class="author">
-                <span class="date">{{ post.data.date }}</span>
+                <span class="date">{{ post.data.date | readableDate }}</span>
             </p>
         </header>
         <div class="content">
