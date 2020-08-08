@@ -13,8 +13,3 @@ title: Hotel Russell
 
 
 [Hotel Russell](http://4sq.com/dDjp6x)
-
-
-
-
-![](http://ift.tt/1680SUv)

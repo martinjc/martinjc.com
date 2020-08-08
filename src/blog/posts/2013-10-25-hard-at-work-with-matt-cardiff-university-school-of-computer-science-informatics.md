@@ -16,4 +16,4 @@ title: Hard at work! — Cardiff University School of Computer Science & Informa
 
 
 
-![](http://maps.google.com/maps/api/staticmap?center=51.48396191513654,-3.1693410873413086&zoom=16&size=710x440&maptype=roadmap&sensor=false&markers=color:red%7C51.48396191513654,-3.1693410873413086)
+![](https://maps.google.com/maps/api/staticmap?center=51.48396191513654,-3.1693410873413086&zoom=16&size=710x440&maptype=roadmap&sensor=false&markers=color:red%7C51.48396191513654,-3.1693410873413086)

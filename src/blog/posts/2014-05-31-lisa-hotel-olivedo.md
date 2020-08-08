@@ -14,6 +14,3 @@ title: Hotel Olivedo
 [Hotel Olivedo](http://4sq.com/o0Mo08)
 
 
-
-
-![](http://ift.tt/1oG9nmI)

@@ -16,4 +16,4 @@ title: Beer! Chapter Arts Centre
 
 
 
-![](http://maps.google.com/maps/api/staticmap?center=51.482973085700024,-3.2034158706665035&zoom=16&size=710x440&maptype=roadmap&sensor=false&markers=color:red%7C51.482973085700024,-3.2034158706665035)
+![](https://maps.google.com/maps/api/staticmap?center=51.482973085700024,-3.2034158706665035&zoom=16&size=710x440&maptype=roadmap&sensor=false&markers=color:red%7C51.482973085700024,-3.2034158706665035)

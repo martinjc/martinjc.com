@@ -26,7 +26,7 @@ I'm fairly sure I've seen these guys a number of times before, at least once or 
 
 This is a recent track that seems in parts to show more development, it's got more going on:
 
-<iframe src="http://www.youtube.com/embed/bnSFv5qRioM" frameborder="0" width="560" height="315"></iframe>
+<iframe src="https://www.youtube.com/embed/bnSFv5qRioM" frameborder="0" width="560" height="315"></iframe>
 
 Overall they were enjoyable, played well, and I'll give them 4 out of some.
 
@@ -36,9 +36,9 @@ Overall they were enjoyable, played well, and I'll give them 4 out of some.
 
 Again, I've seen Gallops a number of times before, mainly at SWN. On paper they're not my thing, focusing fairly heavily on electronic sounds, but in reality I really love them. They're an awesome live act and every time I see them they have something new to show. The main driving force behind them is the thundering and perfect drums; their drummer is an absolute animal, arrogant and agressive and with every right to sit behind the drumkit with the knowledge that he's almost certainly the most talented guy with a set of drumsticks in the room. He almost imbalances the band, as with his drumming there's not a lot the other band members can do to match his talent, which is probably one of their only weak points. The only other glaring weak point would be the guy with the mac. I've said it before and I'll say it again, a laptop is not an instrument. If your job could be replaced with someone pressing play on a tape deck you're superfluous, get the fuck off the stage. That aside, this band have grown massively in the two/three years I've been watching them, and I'm looking forward to their album in the next couple of months to see where they're going next.
 
-<iframe src="http://www.youtube.com/embed/f2Wa491-YN0" frameborder="0" width="560" height="315"></iframe>
+<iframe src="https://www.youtube.com/embed/f2Wa491-YN0" frameborder="0" width="560" height="315"></iframe>
 
-<iframe src="http://www.youtube.com/embed/GV7CMZKgHbQ" frameborder="0" width="420" height="315"></iframe>
+<iframe src="https://www.youtube.com/embed/GV7CMZKgHbQ" frameborder="0" width="420" height="315"></iframe>
 
 Once again these guys were great live. They clearly spend a lot of time practising getting it right, and it pays off. I'll give them six out of some.
 
