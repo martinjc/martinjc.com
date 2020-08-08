@@ -13,11 +13,11 @@ I recently had call to download my location data for an upcoming project. One of
 
 Runkeeper has an API, and if we're going to pull our data out of the service the first thing we need to do is sign up to use it, which you can do at the [Health Graph](https://runkeeper.com/developer/healthgraph/) website. The link to sign up is buried slightly in the [documentation](https://runkeeper.com/developer/healthgraph/registration-authorization) - but you can sign up to create an app at https://runkeeper.com/partner/applications. You need to enter a few details for an application - as we're only going to be using this for accessing our own data it doesn't really matter what information we put in here:
 
-{% insertBlogImage "img/2019-05-29-fitness-data-downloading/app_details" "App Registration" %}
+{% insertBlogImage "img/2019-05-29-fitness-data-downloading/app_details.png" "App Registration" %}
 
 Once we've signed up and got access to the API, we are provided with a `client_id` and a `client_secret`. These are the OAuth keys that identify our application to Runkeeper:
 
-{% insertBlogImage "img/2019-05-29-fitness-data-downloading/keys" "Keys" %}
+{% insertBlogImage "img/2019-05-29-fitness-data-downloading/keys.png" "Keys" %}
 
 To access user data from Runkeeper we need to follow a typical OAuth flow. We open a URL, sending Runkeeper our `client_id` and `client_secret`. Runkeeper asks our user to login and give our application permission to access their data. They then send us back to our redirect address with a single use `access_code`. We can then make a request to Runkeeper and exchange this `access_code` for an `access_token`. This token will allow us to make requests to the Health Graph API and access the data of the user that authorised our application. If we were building a public-facing application we'd need to write a bit of server code and get it online somewhere to handle this flow, but for our purposes here we only need to authorise ourselves, so we won't bother and we'll do it all manually.
 
@@ -47,7 +47,7 @@ def get_auth_url():
 
 Once we have the `auth_url` we can open it in a web browser. This will open the Runkeeper website and ask us to give permission to our application to access the necessary data:
 
-{% insertBlogImage "img/2019-05-29-fitness-data-downloading/authorise" %}
+{% insertBlogImage "img/2019-05-29-fitness-data-downloading/authorise.png" %}
 
 If we authorise the application, it will send us back to our redirect URL. A proper server would listen for these requests coming in, capture the code provided in the address bar and carry on with the authentication flow. Again, we're just doing it manually, so we'll just copy and paste that code out of the address bar so we can use it in the next step of the process:
 
