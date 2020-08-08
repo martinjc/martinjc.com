@@ -5,7 +5,9 @@ title: "Martin Chorley"
 
 # hello
 
-{% insertImage "img/headshot", "me" %}
+
+
+{% insertImage "img/headshot.jpg", "me" "headshot"%}
 
 I am Dr Martin Chorley.
 

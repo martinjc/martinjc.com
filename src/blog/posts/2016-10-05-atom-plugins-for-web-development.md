@@ -25,11 +25,13 @@ A quick google for ‘best atom packages web developer’ will probably get you 
 
 This is essential for anyone writing any amount of HTML. This is the magic package that allows me to write ‘html:5’ in a blank document, hit the shortcut keys (CTRL + E in my setup), and suddenly have a simple boilerplate HTML page.
 
-{{< bundleimg "out" "emmet auto completion" "emmet auto completion" >}}
+
+{% insertBlogImage "img/2016-10-05-atom-plugins-for-web-development/out.gif" "Emmet auto completion" %}
+
 
 It’s ace. Not only that, but it can write loads of HTML for you, and all you have to do is write a CSS selector for that HTML:
 
-{{< bundleimg "out-1" "html css Selector expansion" "html css Selector expansion" >}}
+{% insertBlogImage "img/2016-10-05-atom-plugins-for-web-development/out-1.gif" "html css Selector expansion" %}
 
 Great stuff. The documentation is here.
 
@@ -37,13 +39,13 @@ Great stuff. The documentation is here.
 
 This will tidy up your code automatically, fixing the indentation and spacing etc. It can even be set to automatically tidy your code every time you save a file. Awesome huh? Imagine being set a coursework where some of the marks were dependent on not writing code that looks like it was written by a five-year old child who’s addicted to hitting the tab key, then finding out that there’s software to strap that five-year olds thumbs to his hands so he can’t hit that tab key. Awesome.
 
-{{< bundleimg "out-2" "Beautiful tidy code" "Beautiful tidy code" >}}
+{% insertBlogImage "img/2016-10-05-atom-plugins-for-web-development/out-2.gif" "Beautiful tidy code" %}
 
 ## [color-picker](https://atom.io/packages/color-picker)
 
 This one adds a colour picker right into atom. Just CMD-SHIFT-C and choose your colours!
 
-{{< bundleimg "out-3" "Colour picker" "Colour picker" >}}
+{% insertBlogImage "img/2016-10-05-atom-plugins-for-web-development/out-3.gif" "Colour picker" %}
 
 Another useful colour related plugin you may want to look at is Pigments, which can highlight colours in your projects, and gather them all together so you can see your palette.
 
@@ -51,6 +53,6 @@ Another useful colour related plugin you may want to look at is Pigments, which 
 
 My last recommendation is linter. This plugin will automatically check your code for errors. You’ll need to install linters for whatever language you want to check, like linter-tidy, linter-csslint, linter-pylint and linter-jshint.
 
-{{< bundleimg "Screenshot" "Linter finds errors in your code" "Linter finds errors in your code" >}}
+{% insertBlogImage "img/2016-10-05-atom-plugins-for-web-development/Screenshot.png" "Linter finds errors in your code" %}
 
 So there we go – a few recommendations to get you started. Found anything else interesting? Let me know!

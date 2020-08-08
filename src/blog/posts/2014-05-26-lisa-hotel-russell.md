@@ -8,9 +8,8 @@ slug: lisa-hotel-russell
 title: Hotel Russell
 ---
 
-{{< bundleimg "790204_q64sFGha96JdZ6yldcj8S1yL-gWGja4xull3mzjJWpM" "" "" >}}
 
-
+{% insertBlogImage "img/2014-05-26-lisa-hotel-russell/790204_q64sFGha96JdZ6yldcj8S1yL-gWGja4xull3mzjJWpM.jpg" %}
 
 
 [Hotel Russell](http://4sq.com/dDjp6x)

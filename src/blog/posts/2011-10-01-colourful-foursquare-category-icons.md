@@ -22,7 +22,7 @@ A couple of projects I'm working on at the moment need the ability to add foursq
 
 Foursquare already have lots of category icons ready made, and they supply the urls in the [/venues/category](https://developer.foursquare.com/docs/explore.html#req=venues/categories) endpoint, which is handy.  It seems from [official responses](https://groups.google.com/forum/#!topic/foursquare-api/TsRBGdXDgzg) on the forum that they don't mind you downloading these icons for use in your apps, and they also supply the icons in [several sizes](https://groups.google.com/d/topic/foursquare-api/Pw0p4qqW79A/discussion), so hacking together a script to download all the available icons is pretty easy. The following python code will do just that - grab the latest category hierarchy from Foursquare, process it to extract all the category id's and icon locations, then download each icon in all available sizes:
 
-{{< highlight python >}}
+``` python
 import urllib2
 import urllib
 import json
@@ -79,11 +79,11 @@ if __name__ == "__main__":
                 localFile.close( )
             except Exception:
                 pass
-{{< /highlight >}}
+```
 
 After running this script, we have a local copy of all the category icons to use in our application downloaded. In my case, I need to be able to differentiate between venues within the categories, so it would be nice to have different coloured icons for my different classes of venue. Luckily this is also pretty simple. You'll need [ImageMagick](http://www.imagemagick.org/script/index.php) installed, but if it is, the following code will go through all the greyscale icons downloaded with the previous script and convert them to whichever colours you like:
 
-{{< highlight python >}}
+``` python
 import os
 
 #
@@ -120,7 +120,7 @@ for fname in files:
             colour_name = '%s_%s.png' % ( stripped_name, colour)
             os.system( 'convert %s +level-colors %s, %s'
                         % ( fname, magickcolour, colour_name ) )
-{{< /highlight >}}
+```
 
 The colour names come from [this list](http://www.imagemagick.org/script/color.php) of imagemagick colours, you can obviously pick whichever colours you want. If you run this script in the directory with the downloaded Foursquare category icons, you'll end up with a multitude of differently sized, differently coloured icons.
 

@@ -22,7 +22,7 @@ I was invited by [Simon Caton](http://www.ksri.kit.edu/Default.aspx?PageId=691&l
 
 I think the session went really well, the students seemed to enjoy it and the feedback was very positive. We spent about 90 minutes talking about APIs, JSON, Twitter, Facebook and Foursquare, then set the students off on forming teams and brainstorming ideas. Very quickly they managed to get set up grabbing Twitter data from the streaming API, and coming up with ways of analysing it for interesting facts and statistics.  A number of the students were not coders, and had never done anything like this before, so it was great to see them diving in, setting up servers and running php scripts to grab the data. It was also good to see the level of team work on display; everyone was communicating, dividing the work, and getting on well. Fuelled by a combination of pizza, beer, red bull and haribo they coded into the night, until we drew things to a close at about 10pm and retired to the nearest bar for a pint of debrief.
 
-{{< bundleimg "2013-09-23-18.03.23" "Hackathon Students" "Hackathon Students" >}}
+{% insertBlogImage "img/2013-09-24-ksri-services-summer-school-social-computing-theory-and-hackathon/2013-09-23-18.03.23-1024x768.jpg" "Hackathon Students" %}
 
 It was a really good experience, and I think everyone got something useful out of it. I'm looking forward to the presentations later on today to see what everyone came up with.
 

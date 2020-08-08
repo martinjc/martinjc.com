@@ -50,6 +50,6 @@ I've started on my teaching qualification ([PgCUTL](http://www.cardiff.ac.uk/pcu
 
 The reason I've not posted in a while:
 
-{{< bundleimg "11325423_448026158711440_20867902" "Arthur!" "Arthur!" >}}
+{% insertBlogImage "img/2015-07-13-quick-update/11325423_448026158711440_20867902_n-1024x1024.jpg" "Arthur!" %}
 
 My son, Arthur James Chorley-Jones was born on 13th May 2015. He's amazing, I think he's the best thing that has ever happened, and since he's been around there has not been a huge amount of time for blogging, side-projects, and other such things. Which is ace.

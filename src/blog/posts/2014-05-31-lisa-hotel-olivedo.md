@@ -8,7 +8,7 @@ slug: lisa-hotel-olivedo
 title: Hotel Olivedo
 ---
 
-{{< bundleimg "790204_aErRDcar_4SOUiYpE6xxQrUd9zBWW7rF-rv7wSG75ws" "" "" >}}
+{% insertBlogImage "martinjc.com/src/img/2014-05-31-lisa-hotel-olivedo/790204_aErRDcar_4SOUiYpE6xxQrUd9zBWW7rF-rv7wSG75ws.jpg" %}
 
 
 [Hotel Olivedo](http://4sq.com/o0Mo08)

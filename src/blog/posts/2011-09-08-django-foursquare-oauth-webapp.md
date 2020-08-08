@@ -16,30 +16,29 @@ Moving on from my fun with getting django + twitter + oauth to play nicely, it's
 
 Firstly, you need to [register an application](https://foursquare.com/oauth/) with Foursquare to get your Client ID and Client Secret. You can enter any name and website you want, but the callback url needs to be our local development machine (assuming that's where you're doing the development), and to be the callback url that we're going to specify in a minute:
 
-
-{{< bundleimg "Foursquare-Register" "Form to register an application" "Form to register an application" >}}
+{% insertBlogImage "img/2011-09-08-django-foursquare-oauth-webapp/Foursquare-Register-300x174.jpg" "Form to register an application" %}
 
 The more observant will notice that the callback url is currently http://127.0.0.1/foursq_auth/callback/, but that the django web server actually runs on port 8000, so the url really needs to be http://127.0.0.1:8000/foursq_auth/callback/. Unfortunately the form validation doesn't allow you to use a ':' in your callback url. However, once the consumer is registered you can edit the callback url, and the form for that doesn't validate the url (or does but doesn't moan about the colon). Eventually, you are looking for the consumer to be registered with a callback url like this:
 
-{{< bundleimg "CapturFiles" "" "" >}}
+{% insertBlogImage "img/2011-09-08-django-foursquare-oauth-webapp/CapturFiles-300x51.jpg" "Form to register an application" %}
 
 Once that is registered, we can get on with writing the code. The basic premise is pretty simple, we need just five urls in our django app, five views to go with them, and two basic html pages, one for login, and one to show we are logged in. Assuming you have a django project started (for reference the one I'm using here is called 'Dj4sq') we can start by creating our foursquare app:
 
-
-    django-admin.py startapp foursq_auth
-
+``` python
+django-admin.py startapp foursq_auth
+```
 
 We then want to edit urls.py for our main django project to allow the new app to handle its own views:
 
-{{< highlight python >}}
+``` python
 urlpatterns = patterns('',
     (r'^foursq_auth/', include('Dj4sq.foursq_auth.urls')),
 )
-{{< /highlight >}}
+```
 
 and create and edit a file urls.py in the foursq_auth app with the five views we want:
 
-{{< highlight python >}}
+``` python
 urlpatterns = patterns('foursq_auth.views',
     # main page redirects to start or login
     url(r'^$', view=main, name='main'),
@@ -52,11 +51,11 @@ urlpatterns = patterns('foursq_auth.views',
     # main page once logged in
     url( r'^done/$', view=done, name='oauth_done' ),
 )
-{{< /highlight >}}
+```
 
 We then need our two basic html pages login.html and done.html:
 
-{{< highlight html >}}
+``` html
 <html>
     <head>
         <title>Foursquare OAuth Example</title>
@@ -77,29 +76,29 @@ We then need our two basic html pages login.html and done.html:
 	<a href="../logout/">Logout</a>
     </body>
 </html>
-{{< /highlight >}}
+```
 
 All that's left after that is to write the views to tie it all together. We need a few variables defined for our code to work:
 
-{{< highlight python >}}
+``` python
 CLIENT_ID = 'YOUR_CLIENT_ID'
 CLIENT_SECRET = 'YOUR_CLIENT_SECRET'
 
 request_token_url = 'https://foursquare.com/oauth2/authenticate'
 access_token_url = 'https://foursquare.com/oauth2/access_token'
 redirect_url = 'http://127.0.0.1:8000/foursq_auth/callback'
-{{< /highlight >}}
+```
 
 We can then write the views. The first one, 'main' is super easy, as it only needs to return our login page:
 
-{{< highlight python >}}
+``` python
 def main( request ):
     return render_to_response( 'foursq_auth/login.html' )
-{{< /highlight >}}
+```
 
 The second, 'auth', is the first step in our authentication process, requesting an authorisation code from foursquare and redirecting the user to the page to authorise our app:
 
-{{< highlight python >}}
+``` python
 def auth( request ):
     # build the url to request
     params = {'client_id' : CLIENT_ID,
@@ -108,11 +107,11 @@ def auth( request ):
     data = urllib.urlencode( params )
     # redirect the user to the url to confirm access for the app
     return HttpResponseRedirect('%s?%s' % (request_token_url, data))
-{{< /highlight >}}
+```
 
 If the user accepts our app, they'll be re-directed to our callback url, and an authorisation code will be passed back as one of the parameters of the url, so the next view, 'callback' needs to deal with this. It then needs to post a request to foursquare with the authorisation code in order to receive the access_token for the user:
 
-{{< highlight python >}}
+``` python
 # get the code returned from foursquare
 code = request.GET.get('code')
 
@@ -135,11 +134,11 @@ request.session['access_token'] = access_token
 
 # redirect the user to show we're done
 return HttpResponseRedirect(reverse( 'oauth_done' ) )
-{{< /highlight >}}
+```
 
 If we've got the access token, we're all set. From now on we can make any calls to the Foursquare API that require authorisation, as long as we supply this token as a parameter to the request named 'oauth_token'. To prove that we're logged in, we'll re-direct the user at the end of the callback to a 'done' page, which will display some user details:
 
-{{< highlight python >}}
+``` python
 def done( request ):
     # get the access_token
     access_token = request.session.get('access_token')
@@ -157,7 +156,7 @@ def done( request ):
 
     # show the page with the user's name to show they've logged in
     return render_to_response('foursq_auth/done.html', {'name':name})
-{{< /highlight >}}
+```
 
 And with that, we're all done. We can fire up the django server with:
 
@@ -167,10 +166,10 @@ And with that, we're all done. We can fire up the django server with:
 
 open our browser to 127.0.0.1:8000/foursq_auth/ and go through the login process:
 
-{{< bundleimg "login-html" "Login Page" "Login Page" >}}
+{% insertBlogImage "img/2011-09-08-django-foursquare-oauth-webapp/login-html-300x189.jpg" "Login Page" %}
 
-{{< bundleimg "foursquare-approval1" "Approving the app at Foursquare" "Approving the app at Foursquare" >}}
+{% insertBlogImage "img/2011-09-08-django-foursquare-oauth-webapp/foursquare-approval1-300x185.jpg" "Approving the app at Foursquare" %}
 
-{{< bundleimg "done-html" "Successfully logged in" "Successfully logged in" >}}
+{% insertBlogImage "img/2011-09-08-django-foursquare-oauth-webapp/done-html-300x189.jpg" "Successfully logged in" %}
 
 And that's that - A Django web app doing OAuth authentication with Foursquare. The full code is up on [github](https://github.com/martinjc/DjangoFoursq) if you want to take a closer look.

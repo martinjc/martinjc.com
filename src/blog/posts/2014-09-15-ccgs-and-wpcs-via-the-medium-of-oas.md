@@ -28,7 +28,7 @@ Checking the lookup tables at the ONS, it was clear that unfortunately there was
 
 First, let's create a dictionary with an entry for each CCG. For each CCG we'll store it's ID, name, and a set of OAs contained within. We'll also add  an empty set for the WPCs contained within the CCG:
 
-{{< highlight python >}}
+``` python
 
 import csv
 from collections import defaultdict
@@ -43,13 +43,13 @@ with open('OA11_CCG13_NHSAT_NHSCR_EN_LU.csv', 'r') as oa_to_cgc_file:
       data[row['CCG13CD']] = {'CCG13CD': row['CCG13CD'], 'CCG13NM': row['CCG13NM'], 'PCON11CD list': set(), 'PCON11NM list': set(), 'OA11CD list': set(),}
     data[row['CCG13CD']]['OA11CD list'].add(row['OA11CD'])
 
-{{< /highlight >}}
+```
 
 
 Next we create a lookup table that allows us to convert from OA to WPC:
 
 
-{{< highlight python >}}
+``` python
 # extract information for output area to constituency lookup
 oas = {}
 pcon_nm = {}
@@ -59,12 +59,12 @@ with open('OA11_PCON11_EER11_EW_LU.csv', 'r') as oa_to_pcon_file:
   for row in reader:
     oas[row['OA11CD']] = row['PCON11CD']
     pcon_nm[row['PCON11CD']] = row['PCON11NM']
-{{< /highlight >}}
+```
 
 
 As the almost last step we go through the CCGs, and for each one we go through the list of OAs it covers, and lookup the WPC each OA belongs to:
 
-{{< highlight python >}}
+``` python
 # go through all the ccgs and lookup pcons from oas
 for ccg, d in data.iteritems():
 
@@ -73,11 +73,11 @@ for ccg, d in data.iteritems():
    d['PCON11NM list'].add(pcon_nm[oas[oa]])
 
 del d['OA11CD list']
-{{< /highlight >}}
+```
 
 Finally we just need to output the data:
 
-{{< highlight python >}}
+``` python
     for d in data.values():
 
      d['PCON11CD list'] = ';'.join(d['PCON11CD list'])
@@ -87,7 +87,7 @@ Finally we just need to output the data:
       writer = csv.DictWriter(out_file, ['CCG13CD', 'CCG13NM', 'PCON11CD list', 'PCON11NM list'])
       writer.writeheader()
       writer.writerows(data.values())
-{{< /highlight >}}
+```
 
 
 Run the script, and we get a nice CSV with one row for each CCG, each row containing a list of the WPC ids and names the CCG covers.

@@ -16,7 +16,7 @@ tags:
 
 This is me:
 
-{{< bundleimg "2014-11-01-07.23.46" "mildly hungover morning selfie" "mildly hungover morning selfie" >}}
+{% insertBlogImage "img/2014-11-01-beards-taches-and-testicles/2014-11-01-07.23.46-copy-225x300.jpg" "mildly hungover morning selfie" %}
 
 Obviously the first thing you notice, after my devilishly handsome good looks, is that I have around the lower half of my face what has the potential to be described as,  if one is kind: a 'beard'. It is patchy, it is more than often unkempt, and it is quite ginger, but it is somewhat beard like. I can no longer remember when I grew this beard, but I like it. I like it so much that I refused to shave it off when I graduated in 2013, and again when I got married earlier this year.
 
@@ -52,6 +52,6 @@ So. I joined. As did many others that Pete called out. And now we're all going t
 
 First though, there's business to take care of. The beard had to go. I had to locate my shaving equipment, which has not been used in many years, and attempt to remove the lovely facial hair to which I have become so attached, without slicing my face apart in the process:
 
-{{< bundleimg "beard_removal" "WHAT HAVE I DONE?" "WHAT HAVE I DONE?" >}}
+{% insertBlogImage "img/2014-11-01-beards-taches-and-testicles/beard_removal-1024x910.png" "WHAT HAVE I DONE?" %}
 
 So that's it. The beard is off and I am clean-shaven for the first time in I don't know how long. This, I think, is quite the sacrifice. But there is more to come. The 'tache is on its way - slowly working its way out of my upper lip. I am going to look terrible. If you in any way feel inclined, please make it worth it. Donate to [me](http://mobro.co/martinjc) or the [team](http://moteam.co/cardiff-university). Don't let my beard have fallen in vain.  After all (I came up with this last night while very drunk and I LOVE IT):  beards grow back. Balls don't.

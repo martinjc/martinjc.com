@@ -8,7 +8,7 @@ slug: wjec-paris
 title: WJEC Paris
 ---
 
-![Me in Paris for WJEC](/img/2019-07-12-wjec-paris/martin-wjec.jpg)
+{% insertBlogImage "img/2019-07-12-wjec-paris/martin-wjec" "Me in Paris for WJEC" %}
 
 Just a few days after [a very successful datajconf](https://martinjc.com/2019/07/05/datajconf-iii/) I hit the road again, this time to head to Paris for the World Journalism Education Congress. An entirely different sort of conference, this aims to bring together educators from all over the world to discuss the past, present and future directions of Journalism education. The conference is big, with over 500 attendees, and has been running for over fifteen years (although it actually only takes place once every three years, so is on its fifth edition).
 

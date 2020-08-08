@@ -19,8 +19,7 @@ I'm working on some notes for a beginners LaTeX course that I'm giving for the U
 
 I was attempting to make handouts for the students using the great [handoutWithNotes](http://www.guidodiepen.nl/2009/07/creating-latex-beamer-handouts-with-notes/) package. However, as my slides are white, they looked a bit odd on a page without a frame around them:
 
-
-![Slides without border](/img/{{ page.date | date: "%Y-%m-%d"}}-{{page.slug}}/Screen-Shot-2013-01-29-at-09.40.18.png)
+{% insertBlogImage "img/2013-01-20-latex-beamer-handouts-with-frames-and-borders/Screen-Shot-2013-01-29-at-09.40.18.png" "" %}
 
 I wanted to add a border to make the handouts look better, but there were no suggestions at the [site I got the package from](http://www.guidodiepen.nl/2009/07/creating-latex-beamer-handouts-with-notes/) as to how to add a frame, and I'm too lazy to go digging in CTAN to see if there's any documentation.
 
@@ -34,5 +33,6 @@ Instead, a little bit of googling (thank you[ tex.stackexchange](http://tex.stac
 
 You'll need one command for each slide on a page, and you get simple frames around the slides:
 
+{% insertBlogImage "img/2013-01-20-latex-beamer-handouts-with-frames-and-borders/Screen-Shot-2013-01-29-at-09.43.19.png" "" %}
 
-![Handouts with Frames](/img/{{ page.date | date: "%Y-%m-%d"}}-{{page.slug}}/Screen-Shot-2013-01-29-at-09.43.19.png) Easy!
+Easy!

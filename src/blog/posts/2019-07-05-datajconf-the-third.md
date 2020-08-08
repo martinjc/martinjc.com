@@ -8,7 +8,7 @@ slug: datajconf-iii
 title: DataJConf III
 ---
 
-![Martin in Malaga for DataJConf](/img/2019-07-05-datajconf-the-third/martin.jpg)
+{% insertBlogImage "img/2019-07-05-datajconf-the-third/martin" "Martin in Malaga for DataJConf" %}
 
 Last week we held the third edition of the European Data and Computational Journalism Conference in Malaga, Spain. This is the conference that [Glyn](https://www.glynmottershead.com), [Bahareh](https://people.ucd.ie/bahareh.heravi) and I run, which started in [Dublin in 2017](https://martinjc.com/2017/08/05/datajconf-debrief/), had [a second edition in Cardiff last year](http://datajconf.com/2018/), and has now embarked upon a journey around the European mainland. It was a fantastic event, with around 100 attendees representing different organisations from across industry and academia, and from 14 different countries. As with last year we had a first day presenting a mix of industry and academic talks, and a second day with a focus on more practical workshops and tutorials.
 

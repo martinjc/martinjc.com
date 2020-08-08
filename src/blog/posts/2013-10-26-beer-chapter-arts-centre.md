@@ -8,7 +8,7 @@ slug: beer-chapter-arts-centre
 title: Beer! Chapter Arts Centre
 ---
 
-{{< bundleimg "790204_l2FbupK-CFia0N92MZ17JtnHwz6X8PkYC8wNV2pmB7" "" "" >}}
+{% insertBlogImage "img/2013-10-26-beer-chapter-arts-centre/790204_l2FbupK-CFia0N92MZ17JtnHwz6X8PkYC8wNV2pmB70.jpg" "" %}
 
 
 [Chapter Arts Centre](http://foursquare.com/v/4b57213ef964a520862728e3)

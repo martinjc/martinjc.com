@@ -21,7 +21,7 @@ I found a python library called [pyTagCloud](https://github.com/atizo/PyTagCloud
 
 For instance, here's the display running with one of today's trending topics: 'Alan Titchmarsh':
 
-{{< bundleimg "tweets12" "" "" >}}
+{% insertBlogImage "img/2011-04-04-twitter-wordle/tweets12-300x182.png" "" %}
 
 It's not entirely perfect, I need to do some more filtering on the text to remove some words that aren't removed by the stop word filtering that pyTagCloud does such as 'rt', 'http', 'bit', 'ly' and so on. It would also be good to remove things that aren't words, like 'xxxxxx'. I've been looking at the [Natural Language Toolkit](http://www.nltk.org/) for a couple of days for the other project, so I'll probably re-use some of that code here too.
 

@@ -19,17 +19,17 @@ In the previous post, I used python and BeautifulSoup to grab the list of artist
 
 However, there are more places to find music online than just those listed on the festival site, and some of those extra sources include additional data that I want to collect, so now we need to search these other sources for the artists. Firstly, we need to load the artist data we previously extracted from the festival website, and iterate through the list of artists one by one:
 
-{{< highlight python >}}
+``` python
 artists = {}
 with open("bands.json") as infile:
     artists = json.load(infile)
 
 for artist, artist_data in artists.iteritems():
-{{< /highlight >}}
+```
 
 The first thing I want to do for each artist it to search Spotify to see if they have any music available there. Spotify has a simple web [API](https://developer.spotify.com/technologies/web-api/) for searching which is pretty straightforward to use:
 
-{{< highlight python >}}
+``` python
 params = {
     "q" : "artist:" + artist.encode("utf-8")
 }
@@ -44,11 +44,11 @@ if data.get("artists", None) is not None:
         artist_id = data["artists"][0]["href"].lstrip("spotify:artist:")
         artist_data["spotify_id"] = data["artists"][0]["href"]
         artist_data["spotify_url"] = "http://open.spotify.com/artist/" + artist_id
-{{< /highlight >}}
+```
 
 The 'retrieve_json_data' function is just a wrapper to call a URL and parse the returned JSON data:
 
-{{< highlight python >}}
+``` python
 def retrieve_json_data(url):
 
     try:
@@ -62,11 +62,11 @@ def retrieve_json_data(url):
     data = json.loads(raw_data)
 
     return data
-{{< /highlight >}}
+```
 
 Once I've searched Spotify, I then want to see if the artist has a page on Last.FM. If they do, I also want to extract and store their top-tags from the site. Again, the Last.FM API makes this straightforward. Firstly, searching for the artist page:
 
-{{< highlight python >}}
+``` python
 params = {
     "artist": artist.encode("utf-8"),
     "api_key": last_fm_api_key,
@@ -81,11 +81,11 @@ data = retrieve_json_data(last_fm_url)
 if data.get("artist", None) is not None:
     if data["artist"].get("url", None) is not None:
         artist_data["last_fm_url"] = data["artist"]["url"]
-{{< /highlight >}}
+```
 
 Then, searching for the artist's top tags:
 
-{{< highlight python >}}
+``` python
 params = {
     "artist": artist.encode("utf-8"),
     "api_key": last_fm_api_key,
@@ -112,13 +112,13 @@ if data.get("toptags", None) is not None:
                 name = tags["name"].encode('utf-8')
                 count = 1 if int(tags["count"]) == 0 else int(tags["count"])
                 artist_data["tags"][name] = count
-{{< /highlight >}}
+```
 
 Again, once we've retrieved all the extra artist data, we can dump it to file:
 
-{{< highlight python >}}
+``` python
 with open("bands.json", "w") as outfile:
     json.dump(artists, outfile)
-{{< /highlight >}}
+```
 
 So, I now have 2 scripts that I can run regularly to capture any updates to the festival website (including lineup additions) and to search for artist data on Spotify and Last.FM. Now I've got all this data captured and stored, it's time to start doing something interesting with it...

@@ -23,7 +23,7 @@ First up - extracting the text from the thesis. Like all good scienticians, my t
 
 Once I had the plain text contents of my thesis in a text file it was just a simple few lines of python (using the excellent [NLTK](http://nltk.org/)) to get a frequency distribution of the words in my thesis:
 
-{{< highlight python >}}
+``` python
 from nltk.probability import FreqDist
 from nltk.tokenize import word_tokenize, sent_tokenize
 
@@ -36,10 +36,10 @@ with open("2012chorleymjphd.txt", "r") as inputfile:
     for word, count in fdist.iteritems():
         if count > 10:
             print "%s: %d" % (word, count)
-{{< /highlight >}}
+```
 
 Then it was just a matter of copying and pasting the word frequency distribution into [wordle](http://www.wordle.net/):
 
-![Thesis Wordle](/img/{{ page.date | date: "%Y-%m-%d"}}-{{page.slug}}/thesis-wordle-2.png)
+{% insertBlogImage "img/2013-08-20-not-another-bloody-wordle/thesis-wordle-2.png" "" %}
 
 And there we have it. A not particularly informative but quite nice looking representation of my thesis. As you can guess from the cloud, it's not the most exciting thesis in the world. Interestingly, the word error doesn't seem to be there ;-).

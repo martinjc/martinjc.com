@@ -33,12 +33,12 @@ If you're using a *nix based operating system (Linux, Mac OS X etc) you can then
 If you've enabled 2-factor authentication on your google account you'll need to add an [app-specific](https://www.google.com/accounts/IssuedAuthSubTokens) password for wget so it can access your account - the password in the example above should be this app-specific password, not your main account password. If you haven't enabled 2 factor authentication then you might be able to use your normal account password, but I haven't tested this.
 
 A simple bash script will then allow you to download the entire search history:
-{{< highlight bash >}}
+``` bash 
 for START in 0 1000 2000 3000 ... 50000  
 do   
  wget --user=GOOGLE_USERNAME \
   --password=WGET_APP_SPECIFIC_PASSWORD --no-check-certificate \
   "https://www.google.com/history/?output=rss&amp;num=1000&amp;start=$START"
 done
-{{< /highlight >}}
+```
 You may need to adjust the numbers in the first line - I had to go up to 50000 to get my entire search history back to 2005, you may need to make fewer calls if your history is shorter, or more if its longer.

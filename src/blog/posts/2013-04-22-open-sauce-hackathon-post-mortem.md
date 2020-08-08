@@ -18,7 +18,7 @@ This weekend saw the second '[Open Sauce Hackathon](http://www.cs.cf.ac.uk/hacka
 
 Unlike last year, when I turned up having already decided with Jon Quinn what we were doing, I went along this year with no real ideas. I had a desire to do something with a map, as I'm pretty sure building stuff connected to maps is going to play a big part in work over the next couple of months. Other than that though, I was at a bit of a loss. After playing around with some ideas and APIs I finally came up with my app: [dionysus](/dionysus/).
 
-![Dionysus Screenshot](/img/{{ page.date | date: "%Y-%m-%d"}}-{{page.slug}}/Screen-Shot-2013-04-22-at-11.37.57.png)
+{% insertBlogImage "img/2012-04-22-open-source-hacakathon-post-mortem/Screen-Shot-2013-04-22-at-11.37.57.png" "" %}
 
 It's a mobile friendly mapping app that shows you two important things: Where the pubs are (using venue data from [Foursquare](http://www.foursquare.com)) and where the gigs are at (using event data from [last.fm](http://www.last.fm)). If you sign in to either last.fm or Foursquare it will also pull in recommended bars and recommended gigs and highlight these for you.
 

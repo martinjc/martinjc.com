@@ -22,10 +22,10 @@ Of course, being a massive data geek I have been recording everything, making a 
 
 The first shows the number of movies seen in total for each day of the year against the number of movies I would need to see in order to hit the target of 100 by December 31st. As you can see, the late start in January did me no favours, but by the end of February I've almost caught up to be where I need to be.
 
-{{< bundleimg "rate" "Movies Seen against Target Number" "Movies Seen against Target Number" >}}
+{% insertBlogImage "img/2012-03-04-100-movies-in-the-cinema-in-1-year/rate-300x211.png" "Movies Seen against Target Number" %}
 
 The second crappy excel graph shows the movie viewing rate (the number of movies seen divided by the number of weeks elapsed) against the target rate, along with the actual number of movies watched that week. It's clear to see that January was a wash out, but that February was excellent and helped to bring the target rate down below 2 movies a week.
 
-{{< bundleimg "ratetodate1" "Movie viewing rate against target, presented with actual number of films seen in a week" "Movie viewing rate against target, presented with actual number of films seen in a week" >}}
+{% insertBlogImage "img/2012-03-04-100-movies-in-the-cinema-in-1-year/ratetodate1-300x211.png" "Movie viewing rate against target, presented with actual number of films seen in a week" %}
 
 So, that's where we're at. It's March and I've seen 16 films at the cinema, at an average cost of £3.18 per movie. I'm well on the way to 100 and I'll keep you updated with more crappy excel graphs and rubbish averages along the way...

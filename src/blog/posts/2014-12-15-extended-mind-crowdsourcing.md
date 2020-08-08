@@ -52,17 +52,13 @@ The traditional [definition of crowdsourcing](http://ieeexplore.ieee.org/xpls/ab
 The combination of all these things allows us to complete a large set of simple tasks in a short time and often for a reduced cost. It also provides access to global labour markets for users who may not previously have been able to access these resources.
 
 
-
-### ![Participatory Computing](/img/{{ page.date | date: "%Y-%m-%d"}}-{{page.slug}}/crowdsourcing_img-1024x428.png)
+{% insertBlogImage "img/2014-12-15-extended-mind-crowdsourcing/crowdsourcing_img-1024x428.png" "Participatory Computing" %}
 
 
 
 Participatory computing is a related concept to crowdsourcing, based around the idea that the resources and data of computing devices can be shared and used to complete tasks. As with crowdsourcing, these tasks are often large, complex and data-driven, but capable of being broken down into smaller chunks that can be distributed to separate computing devices in order to complete the larger task. [BOINC](http://boinc.berkeley.edu/) is a clear example of this class of participatory computing.
 
-
-
-![participatory_img](/img/{{ page.date | date: "%Y-%m-%d"}}-{{page.slug}}/participatory_img-1024x585.png)
-
+{% insertBlogImage "img/2014-12-15-extended-mind-crowdsourcing/participatory_img-1024x585.png" "Participatory Computing"%}
 
 
 ### Extended Mind Crowdsourcing
@@ -74,8 +70,7 @@ The [extended mind hypothesis](http://www.jstor.org/stable/3328150) describes th
 Extended mind crowdsourcing takes crowdsourcing and participatory computing a step further by including the extended mind hypothesis, to allow us to describe systems that use the extended mind of participants, as represented by their devices and objects, in order to add implicit as well as explicit human computation for collective discovery.
 
 
-
-![emc_img](/img/{{ page.date | date: "%Y-%m-%d"}}-{{page.slug}}/emc_img-1024x626.png)
+{% insertBlogImage "img/2014-12-15-extended-mind-crowdsourcing/emc_img-1024x626.png" "Extended Mind Crowdsourcing"%}
 
 
 What this means is that we can crowdsource the collection of data and completion of tasks using both individual users, their devices, and the extended mind that the two items together represent. Thus by accessing the information stored within a smartphone or similar personal device, and the wider internet services that the device can connect to, we can access the extended mind of a participant and thus learn more about his or her behaviour and individual characteristics. In essence, extended mind crowdsourcing captures the way in which humans undertake and respond to daily activity. In this sense it supports observation of human life and our interpretation of and response to the environment. By including social networks and social media communication within the extended mind, it is clear that while an individual extended mind may represent a single individual human, it is also possible to represent a group, such as a network or a collective using extended mind crowdsourcing.

@@ -8,9 +8,7 @@ slug: hard-at-work-with-matt-cardiff-university-school-of-computer-science-infor
 title: Hard at work! — Cardiff University School of Computer Science & Informatics
 ---
 
-{{< bundleimg "790204_mq2Ule3P_1JDGWFuUZcBKq-Rkp8cLknDZ4WD7MEKqEI" "" "" >}}
-
-
+{% insertBlogImage "img/2013-10-25-hard-at-work-with-matt-cardiff-university-school-of-computer-science-informatics/790204_mq2Ule3P_1JDGWFuUZcBKq-Rkp8cLknDZ4WD7MEKqEI.jpg" "" %}
 
 
 [Cardiff University School of Computer Science & Informatics](http://foursquare.com/v/4b978a27f964a520f20735e3)

@@ -9,7 +9,7 @@ title: Writing Computational Journalism manifesto v1.0 for the new course. Smash
   it, as always. Urban Tap House
 ---
 
-{{< bundleimg "790204_M0pRenCyIxJ6tpn0siq04_KJ7-nziV09gSe2X8JpvMo" "" "" >}}
+{% insertBlogImage "img/2014-04-15-writing-computational-journalism-manifesto-v1-0-for-the-new-course-smashing-it-as-always-urban-tap-house/790204_M0pRenCyIxJ6tpn0siq04_KJ7-nziV09gSe2X8JpvMo.jpg" "" %}
 
 
 [Urban Tap House](http://4sq.com/1554Hwk)

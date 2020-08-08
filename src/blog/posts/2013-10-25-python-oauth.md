@@ -21,7 +21,7 @@ Fortunately after some digging around, I was able to find a nice, well maintaine
 
 Firstly, we create an OAuth1Service:
 
-{{< highlight python >}}
+``` python
 import rauth
 from _credentials import consumer_key, consumer_secret
 
@@ -38,22 +38,22 @@ fitbit = rauth.OAuth1Service(
  access_token_url=access_token_url,
  authorize_url=authorize_url,
  base_url=base_url)
-{{< /highlight >}}
+```
 
 Then we get the temporary request token credentials:
 
 
-{{< highlight python >}}
+``` python
 request_token, request_token_secret = fitbit.get_request_token()
 
 print " request_token = %s" % request_token
 print " request_token_secret = %s" % request_token_secret
 print
-{{< /highlight >}}
+```
 
 We then ask the user to authorise our application, and give us the PIN so we can prove to the service that they authorised us:
 
-{{< highlight python >}}
+``` python
 authorize_url = fitbit.get_authorize_url(request_token)
 
 print "Go to the following page in your browser: " + authorize_url
@@ -63,11 +63,11 @@ accepted = 'n'
 while accepted.lower() == 'n':
  accepted = raw_input('Have you authorized me? (y/n) ')
 pin = raw_input('Enter PIN from browser ')
-{{< /highlight >}}
+```
 
 Finally, we can create an authenticated session and access user data from the service:
 
-{{< highlight python >}}
+``` python
 session = fitbit.get_auth_session(request_token,
  request_token_secret,
  method="POST",
@@ -82,11 +82,11 @@ url = base_url + "/1/" + "user/-/profile.json"
 
 r = session.get(url, params={}, header_auth=True)
 print r.json()
-{{< /highlight >}}
+```
 
 It really is that easy to perform a 3-legged OAuth authentication on the command line. If you're only interested in data from 1 user, and you want to run the app multiple times, once you have the access token and secret, there's nothing to stop you just storing those and re-creating your session each time without having to re-authenticate (assuming the service does not expire access tokens):
 
-{{< highlight python >}}
+``` python
 base_url = "https://api.fitbit.com/"
 api_version = "1/"
 token = (fitbit_oauth_token, fitbit_oauth_secret)
@@ -96,6 +96,6 @@ session = rauth.OAuth1Session(consumer[0], consumer[1], token[0], token[1])
 url = base_url + api_version + "user/-/profile.json"
 r = session.get(url, params={}, header_auth=True)
 print r.json()
-{{< /highlight >}}
+```
 
 So there we have it. Simple OAuth authentication on the command line, in Python. As always, the code is available on [github](https://github.com/martinjc/rauth---fitbit-example) if you're interested.

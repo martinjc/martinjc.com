@@ -27,7 +27,7 @@ The first step is to get some access credentials from Twitter. Head over to [ht
 First, we define a Twitter API object that will carry out our API requests. We need to store the API url, and some details to allow us to throttle our requests to Twitter to fit inside their rate limiting.
 
 
-{{< highlight python >}}
+``` python
 class Twitter_API:
 
  def __init__(self):
@@ -50,11 +50,11 @@ class Twitter_API:
    self.__monitor = {'wait':query_interval,
      'earliest':None,
      'timer':None}
-{{< /highlight >}}
+```
 
 We add a rate limiting method that will make our API sleep if we are requesting things from Twitter too fast:
 
-{{< highlight python >}}
+``` python
 #
 # rate_controller puts the thread to sleep
 # if we're hitting the API too fast
@@ -75,12 +75,12 @@ def __rate_controller(self, monitor_dict):
  monitor_dict['earliest'] = earliest
  monitor_dict['timer'] = timer
  monitor_dict['timer'].start()
-{{< /highlight >}}
+```
 
 The Twitter API requires us to supply authentication headers in the request. One of these headers is a signature, created by encoding details of the request. We can write a function that will take in all the details of the request (method, url, parameters) and create the signature:
 
 
-{{< highlight python >}}
+``` python
 #
 # make the signature for the API request
 def get_signature(self, method, url, params):
@@ -121,13 +121,13 @@ def get_signature(self, method, url, params):
  hashed = hmac.new(signing_key.encode(), base_string.encode(), sha1)
  signature = base64.b64encode(hashed.digest())
  return signature.decode("utf-8")
-{{< /highlight >}}
+```
 
 
 Finally, we can write a method to actually _make_ the API request:
 
 
-{{< highlight python >}}
+``` python
 def query_get(self, endpoint, aspect, get_params={}):
 
  #
@@ -195,12 +195,12 @@ def query_get(self, endpoint, aspect, get_params={}):
  # read the response and return the json
  raw_data = response.read().decode("utf-8")
  return json.loads(raw_data)
-{{< /highlight >}}
+```
 
 Putting this all together, we have a simple Python class that acts as an API wrapper for GET requests to the Twitter REST API, including the signing and authentication of those requests. Using it is as simple as:
 
 
-{{< highlight python >}}
+``` python
  ta = Twitter_API()
 
  # retrieve tweets for a user
@@ -209,7 +209,7 @@ Putting this all together, we have a simple Python class that acts as an API wra
  }
 
  user_tweets = ta.query_get("statuses", "user_timeline", params)
-{{< /highlight >}}
+```
 
 
 As always, the full code is online on Github, in both my [personal account](https://github.com/CompJCDF/Simple-Python-Twitter-API) and the [account for](https://github.com/CompJCDF) the [MSc Computational Journalism](http://compj.cs.cf.ac.uk/).
