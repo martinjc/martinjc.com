@@ -6,12 +6,36 @@ data: pubs
 
 A list of my publications is given below, it's usually fairly up to date. Alternatively, you can take a look at my [Google Scholar](http://scholar.google.com/citations?user=t3R1ZLgAAAAJ) profile, or my profile on any number of useless "academic profile" websites (listed at the end of the page).
 
-
+## Journal Papers
 <ul>
-{%- for pub in pubs.references -%}
+{%- for pub in pubs reversed -%}
+    {% if pub.entryType == "ARTICLE" %}
   <li>
-    <p>{{ pub.title }}</p>
+    <p><strong>{{ pub.entryTags.TITLE }}</strong>, {{ pub.entryTags.YEAR }}, {{ pub.entryTags.AUTHOR }} </p>
   </li>
+  {%- endif -%}
+{%- endfor -%}
+</ul>
+
+## Conference Papers
+<ul>
+{%- for pub in pubs reversed -%}
+    {% if pub.entryType == "INPROCEEDINGS" %}
+  <li>
+    <p><strong>{{ pub.entryTags.TITLE }}</strong>, {{ pub.entryTags.YEAR }}, {{ pub.entryTags.AUTHOR }} </p>
+  </li>
+  {%- endif -%}
+{%- endfor -%}
+</ul>
+
+## Other outputs
+<ul>
+{%- for pub in pubs reversed -%}
+    {% if pub.entryType != "INPROCEEDINGS" and pub.entryType != "ARTICLE" %}
+  <li>
+    <p><strong>{{ pub.entryTags.TITLE }}</strong>, {{ pub.entryTags.YEAR }}, {{ pub.entryTags.AUTHOR }} </p>
+  </li>
+  {%- endif -%}
 {%- endfor -%}
 </ul>
 
