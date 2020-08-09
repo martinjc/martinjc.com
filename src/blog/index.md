@@ -1,4 +1,4 @@
 ---
 layout: bloglist
-title: posts
+title: Ramblings
 ---
