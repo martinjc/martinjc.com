@@ -1,11 +1,20 @@
 ---
 layout: page
 title: publications
+data: pubs
 ---
 
 A list of my publications is given below, it's usually fairly up to date. Alternatively, you can take a look at my [Google Scholar](http://scholar.google.com/citations?user=t3R1ZLgAAAAJ) profile, or my profile on any number of useless "academic profile" websites (listed at the end of the page).
 
-{{< bibliography >}}
+
+<ul>
+{%- for pub in pubs.references -%}
+  <li>
+    <p>{{ pub.title }}</p>
+  </li>
+{%- endfor -%}
+</ul>
+
 
 ## Other "Academic Profile" Pages:
 
