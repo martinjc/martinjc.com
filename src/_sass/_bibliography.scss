@@ -10,3 +10,10 @@ p {
 .ref-journal {
     font-style: italic;
 }
+
+.reference {
+    list-style: none;
+    small {
+        font-size: $very-small-font-size;
+    }
+}
