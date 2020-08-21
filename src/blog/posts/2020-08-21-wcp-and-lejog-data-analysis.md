@@ -8,7 +8,7 @@ slug: wcp-and-lejog-data-analysis
 title: WCP and LEJOG data analysis
 ---
 
-Since this whole lockdown thing happened, I've hit the running hard. Since the start of March I've run about 600km, which, to add some context is about 200km more than I ran in the whole of 2019. I'm using running as stress relief, and there's a lot of stress around, so there's a lot of running to be done.
+Since this whole lockdown thing happened, I've hit the running hard. Since the start of March I've run about 600km, which is about 200km more than I ran in the whole of 2019. I'm using running as stress relief, and there's a lot of stress around, so there's a lot of running to be done.
 
 While I'm running so much, and partly as a motivator to ensure I don't slack off and stop running I thought I should enter some virtual events. I found the events I needed in the Wales Coast Path (WCP) and Lands End to John 'O Groats (LEJOG) virtual runs being put on by [EndToEnd running](https://endtoend.run/). In these events you have a year to 'virtually' run the length of the Wales Coast Path (870 miles) or from Lands End to John 'O Groats (874 miles).
 
