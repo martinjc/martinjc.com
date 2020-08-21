@@ -49,6 +49,16 @@
         }
     }
 
+    table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    td, th {
+        padding: 0.5rem;
+        text-align: left;
+    }
+
     blockquote {
         margin-top: $spacing-unit;
         margin-bottom: $spacing-unit;
@@ -102,6 +112,10 @@ figure {
             :after {
                 clear: both;
             }
+        }
+
+        table {
+            width: 50%;
         }
     }
 
