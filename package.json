@@ -20,7 +20,7 @@
     "prebuild:prod": "npm run clean && npm run mkdirs",
     "build:prod": "npm run build:css:prod && npm run build:eleventy:prod && npm run build:images && npm run build:critical:prod",
     "kill": "lsof -n -i:8080 | grep LISTEN | awk '{print $2}' | xargs kill -9",
-    "preserve": "npm run build:dev && npm run kill",
+    "preserve": "npm run build:dev",
     "serve": "browser-sync start -s --files 'public/**/*.(js|css|html)' --ss 'public' --port 8080 --reload-debounce 500",
     "watch": "npm-run-all --parallel watch:*",
     "watch:css": "onchange --await-write-finish 4000 'src/_sass/**/*.scss' -- npm run build:css:dev && npm run build:eleventy:dev",
