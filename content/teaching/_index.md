@@ -2,7 +2,6 @@
 author: "martin"
 comments:  "false"
 date: "2011-03-25 20:22:40+00:00"
-layout: "page"
 title: "Teaching"
 link: "https://martinjc.com/teaching/"
 ---

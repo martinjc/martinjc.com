@@ -1,7 +1,6 @@
 ---
 author: martin
 comments: false
-layout: page
 link: https://martinjc.com/publications/
 title: publications
 ---

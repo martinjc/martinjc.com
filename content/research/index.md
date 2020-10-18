@@ -2,7 +2,6 @@
 author: martin
 comments: false
 date: 2011-03-25 11:46:38+00:00
-layout: page
 title: "Research"
 link: https://martinjc.com/research/
 ---
@@ -13,9 +12,27 @@ I like doing research wherever computer science, IT systems and devices brush up
 
 ## Current Research
 
+I am currently working on the [Co-Growth project](https://cogrowthproject.net/), looking at analysing, enabling and facilitating greater cooperation between breweries within Wales.
+
 My recent research has looked at issues of communication within and outside of the Journalism community. I have also been examining what social media can tell us about alcohol consumption.
 
 Before I began work as a Lecturer I was working on a 12 month EPSRC Fellowship (2013 Doctoral Award Prize) examining the relationship between an individual's personality (in terms of the OCEAN five-factor personality model) and the places they visit or check in to. This work has been [published](/publications/)
+
+## PhD Supervision
+
+I am available to supervise PhD projects. At the current time I am most interested in supervising projects related to Computer Science education itself or that focus on the use of Computer Science within education. For more information on PhD projects within the School, including applying and funding, please see the [School of Computer Science and Informatics Postgraduate research page](https://www.cardiff.ac.uk/computer-science/courses/postgraduate-research).
+
+### Current PhD Students
+
+#### Matthew Moloughney
+
+Matthew is looking at the application of Automated Assessment Tools within Computer Science education, focusing on the use of such tools for providing feedback to and soliciting feedback from novice programmers at the early stages of their studies.
+
+### Past PhD Students
+
+#### Nyala Noë
+
+I was co-supervisor for Nyala Noë (mostly during the early stages of her PhD). She completed her thesis "Personality homophily and social-spatial characteristics in online social networks" in 2018.
 
 ## Reviewing and Committees
 
@@ -58,6 +75,7 @@ I have served on various committees for conferences and workshops:
 #### Internal examining
 
 -   Lowri Williams - "Pushing the Envelope of Sentiment Analysis Beyond Words and Polarities" (2017). Supervised by Professor Irena Spasi ́c
+-   Ibrahim Al Kharusi - "Locality Data Properties of 3D Data Orderings with Application toParallel Molecular Dynamics Simulations" (2019). Supervised by Professor David Walker
 
 ## Past Research
 
