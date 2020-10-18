@@ -1,11 +1,5 @@
 ---
-<<<<<<< HEAD:content/research/index.md
-author: martin
-comments: false
-date: 2011-03-25 11:46:38+00:00
-=======
 layout: page
->>>>>>> e46d4a786624e552a9052015cc7ac0e42f045e2c:src/research/index.md
 title: "Research"
 ---
 

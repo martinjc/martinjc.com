@@ -39,23 +39,6 @@
   },
   "homepage": "https://github.com/martinjc/martinjc.com#readme",
   "devDependencies": {
-<<<<<<< HEAD
-    "autoprefixer": "^9.5.1",
-    "babel-cli": "^6.26.0",
-    "browser-sync": "^2.26.4",
-    "critical": "^2.0.1",
-    "cssnano": "^4.1.10",
-    "eslint": "^5.16.0",
-    "gh-pages": "^2.0.1",
-    "imagemin-cli": "^6.0.0",
-    "node-sass": "^4.11.0",
-    "onchange": "^5.2.0",
-    "parallelshell": "3.0.1",
-    "postcss-cli": "^7.1.1",
-    "rimraf": "^2.6.3",
-    "uglify-es": "^3.3.9"
-  }
-=======
     "@11ty/eleventy": "^0.11.0",
     "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.1",
     "autoprefixer": "^9.8.6",
@@ -73,5 +56,4 @@
     "sharp": "^0.25.4"
   },
   "dependencies": {}
->>>>>>> e46d4a786624e552a9052015cc7ac0e42f045e2c
 }
