@@ -9,7 +9,7 @@ slug: embedding-in-blackboard
 title: Embedding an external website in Blackboard
 ---
 
-Imagine that [you've written a set of course notes using your favourite static site generator]({{ 'posts/2020-10-19-course-notes-with-eleventy/' | url }}), and that you're using a modern development process to automatically check, compile, and publish that site to the web. Wouldn't it be great if that automatic build process could also automatically update the course notes in your University's VLE?
+Imagine that [you've written a set of course notes using your favourite static site generator]({{ '/posts/2020-10-19-course-notes-with-eleventy/' | url }}), and that you're using a modern development process to automatically check, compile, and publish that site to the web. Wouldn't it be great if that automatic build process could also automatically update the course notes in your University's VLE?
 
 It sure would!
 
