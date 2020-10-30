@@ -21,4 +21,12 @@ layout: base.njk
     {%- set previousPost = collections.post | getPreviousCollectionItem(page) %}
     {%- if previousPost %}<p class="previous">Previous: <a href="{{ previousPost.url | url }}">{{ previousPost.data.title }}</a></p>{% endif %}
     </div>
+    <hr>
+    <script src="https://utteranc.es/client.js"
+        repo="martinjc/martinjc.com"
+        issue-term="title"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>
 </article>
