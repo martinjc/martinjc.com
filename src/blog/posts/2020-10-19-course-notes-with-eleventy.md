@@ -4,7 +4,6 @@ comments: true
 date: 2020-10-19
 layout: post
 tags: post
-draft: true
 slug: course-notes-with-eleventy
 title: Using eleventy to create a short-course website in Markdown
 ---
