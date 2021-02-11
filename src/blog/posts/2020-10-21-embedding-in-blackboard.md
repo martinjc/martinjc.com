@@ -21,7 +21,7 @@ But wait! All is not lost. If we're using our super duper modern dev process to 
 
 Embedding an external website in Blackboard is actually surprisingly easy. First, we need to find the place in our module where we want to put the notes, click 'Build Content' and then 'Item' under the 'Create' section:
 
-![create a content item]({{ "/img/2020-10-21-embedding-in-blackboard/new_item.png" | url }})
+{% insertImage "img/2020-10-21-embedding-in-blackboard/new_item.png" "" "" url %}
 
 Then we want to click the 'HTML' button on the content editor:
 
