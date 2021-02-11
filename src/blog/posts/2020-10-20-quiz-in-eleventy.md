@@ -4,9 +4,8 @@ comments: true
 date: 2020-10-20
 layout: post
 tags: post
-draft: true
 slug: quiz-in-eleventy
-title: Adding basic quiz questions in Eleventy
+title: Adding quiz questions in Eleventy
 ---
 
 So, lets say that hypothetically you have [written a set of course notes in an 11ty site]({{ '/blog/posts/2020-10-19-course-notes-with-eleventy/' | url }}) and you want to add some quizzing to the pages so that students can quickly check their grasp of the material they've just read. How would you do that? Here's a possible solution...

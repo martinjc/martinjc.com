@@ -5,7 +5,8 @@ body {
     background-color: $background-color;
 }
 
-h1, p {
+h1,
+p {
     margin-bottom: $spacing-unit;
 }
 
@@ -13,7 +14,8 @@ h2 {
     margin-bottom: $spacing-unit / 2;
 }
 
-h1, h2 {
+h1,
+h2 {
     margin-left: -$gap-size;
     padding-top: $spacing-unit/4;
     padding-bottom: $spacing-unit/8;
@@ -59,7 +61,6 @@ nav {
 }
 
 .social {
-
     ul {
         margin-left: 0;
         margin-bottom: 0;
@@ -70,7 +71,8 @@ nav {
         display: inline-block;
     }
 
-    a, svg {
+    a,
+    svg {
         display: block;
     }
 
@@ -91,7 +93,7 @@ nav {
     color: $brand-color;
     fill: $brand-color;
     transform: scale(2);
-    transition: background-color .5s, transform .5s ease-out
+    transition: background-color 0.5s, transform 0.5s ease-out;
 }
 
 @include media-query($small-break) {
@@ -116,11 +118,11 @@ nav {
 }
 
 .twitter-tweet {
-    margin:auto;
+    margin: auto;
 }
 
 .youtube-vid {
-    margin:auto;
+    margin: auto;
 }
 
 @include media-query($medium-break) {
@@ -128,7 +130,9 @@ nav {
         max-width: $max-content-size;
     }
 
-    h1, h2, h3 {
+    h1,
+    h2,
+    h3 {
         padding-top: $spacing-unit/4;
         padding-bottom: $spacing-unit/8;
         padding-left: $spacing-unit/8;

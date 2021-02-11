@@ -4,7 +4,6 @@ comments: true
 date: 2020-10-21
 layout: post
 tags: post
-draft: true
 slug: embedding-in-blackboard
 title: Embedding an external website in Blackboard
 ---
