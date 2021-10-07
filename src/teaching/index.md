@@ -3,9 +3,9 @@ layout: page
 title: "Teaching and Scholarship"
 ---
 
-I am the Director of Learning and Teaching (DLT) for the School of Computer Science and Informatics, which means I am responsible for the student experience and academic quality and standards across all of our taught programmes and work with the Head of School to determine and implement our teaching strategy. I sit on the School Board and the Senior Management Team, chair the Board of Studies, liaise with our External Advisory Board, and sit on our Teaching, Learning and Academic Quality Committee. 
+I am the Director of Learning and Teaching (DLT) for the School of Computer Science and Informatics, which means I am responsible for the student experience and academic quality and standards across all of our taught programmes and work with the Head of School to determine and implement our teaching strategy. I sit on the School Board and the School Management Team, chair the Student Experience Committee, liaise with our External Advisory Board, and work with everyone in our teaching operations and education support teams. 
 
-I had significant input into the project that created the [Data Science Academy](https://www.cardiff.ac.uk/data-science-academy), and I am a member of the Data Science Academy steering group. I also serve on the DSA service design board.
+I had significant input into the project that created the [Data Science Academy](https://www.cardiff.ac.uk/data-science-academy), and I am a member of the Data Science Academy operations group.
 
 Outside of the School I work with colleagues across the college and beyond through the Education and Students, DLT and DPGT forums. I also represent the College of Physical Sciences and Engineering (PSE) on the steering group for the Digital Education Programme.
 
