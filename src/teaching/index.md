@@ -19,6 +19,8 @@ I'm the MSc Programme Leader for the [MSc in Computational and Data Journalism](
 
 I am currently an external examiner for Exeter University, for their MSc Computer Science, MSc Computer Science with Business, MSc Data Science, and MSc Data Science with Business.
 
+I am a member of the Governing body of two local primary schools. For one of these Schools I serve as the Curriculum Development Governor, working with pupils and staff on the implementation of the Curriculum for Wales 2022.
+
 
 ## Autumn Semester
 
