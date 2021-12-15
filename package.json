@@ -8,8 +8,8 @@
     "start": "npm-run-all --parallel serve watch",
     "clean": "rimraf public tmp",
     "mkdirs": "mkdir -p public; mkdir -p tmp/css",
-    "build:css:dev": "node-sass src/_sass/main.scss > tmp/css/main.css",
-    "build:css:prod": "node-sass src/_sass/main.scss -x --output-style compressed | postcss -u autoprefixer -b 'last 2 versions' -u cssnano --no-map > tmp/css/main.css",
+    "build:css:dev": "sass src/_sass/main.scss > tmp/css/main.css",
+    "build:css:prod": "sass src/_sass/main.scss -x --output-style compressed | postcss -u autoprefixer -b 'last 2 versions' -u cssnano --no-map > tmp/css/main.css",
     "build:eleventy:dev": "eleventy",
     "build:eleventy:prod": "eleventy",
     "build:bibtex": "node build/bibtex.js",
@@ -51,12 +51,11 @@
     "markdown-it": "^12.2.0",
     "markdown-it-emoji": "^2.0.0",
     "markdown-it-footnote": "^3.0.3",
-    "node-sass": "^4.14.1",
     "npm-run-all": "^4.1.5",
     "onchange": "^7.0.2",
     "postcss-cli": "^7.1.1",
     "rimraf": "^3.0.2",
+    "sass": "^1.45.0",
     "sharp": "^0.25.4"
-  },
-  "dependencies": {}
+  }
 }
