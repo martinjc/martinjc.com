@@ -9,7 +9,7 @@ title: "Martin Chorley"
 
 {% insertImage "img/headshot.jpg", "me" "headshot"%}
 
-I am Dr Martin Chorley. This is an in class update to see if things work.
+I am Dr Martin Chorley.
 
 I'm a Reader at the [School of Computer Science &amp; Informatics](http://www.cardiff.ac.uk/computer-science/), Cardiff University. I am the Director of Learning and Teaching for the school, which means I look after our Undergraduate and Taught Postgraduate programmes and students.
 
