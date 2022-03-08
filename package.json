@@ -9,7 +9,7 @@
     "clean": "rimraf public tmp",
     "mkdirs": "mkdir -p public; mkdir -p tmp/css",
     "build:css:dev": "sass src/_sass/main.scss > tmp/css/main.css",
-    "build:css:prod": "sass src/_sass/main.scss > tmp/css/main.css",
+    "build:css:prod": "sass src/_sass/main.scss | postcss -u autoprefixer -b 'last 2 versions' -u cssnano --no-map > tmp/css/main.css",
     "build:eleventy:dev": "eleventy",
     "build:eleventy:prod": "eleventy",
     "build:bibtex": "node build/bibtex.js",
