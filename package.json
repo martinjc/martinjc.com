@@ -14,7 +14,7 @@
     "build:eleventy:prod": "eleventy",
     "build:bibtex": "node build/bibtex.js",
     "build:images": "node build/images.js",
-    "build:critical:prod": "critical public/index.html --inline --minify --base public > tmp/index.html && cp tmp/index.html public/index.html",
+    "build:critical:prod": "critical public/index.html --inline --base public > tmp/index.html && cp tmp/index.html public/index.html",
     "build:dev": "npm run build:css:dev && npm run build:eleventy:dev && npm run build:images ",
     "prebuild:dev": "npm run clean && npm run mkdirs",
     "prebuild:prod": "npm run clean && npm run mkdirs",
