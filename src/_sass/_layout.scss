@@ -11,21 +11,21 @@ p {
 }
 
 h2 {
-    margin-bottom: $spacing-unit / 2;
+    margin-bottom: calc($spacing-unit / 2);
 }
 
 h1,
 h2 {
     margin-left: -$gap-size;
-    padding-top: $spacing-unit/4;
-    padding-bottom: $spacing-unit/8;
-    padding-left: $spacing-unit/8;
+    padding-top: calc($spacing-unit/4);
+    padding-bottom: calc($spacing-unit/8);
+    padding-left: calc($spacing-unit/8);
     //padding: $spacing-unit/4 $spacing-unit/4 $spacing-unit/8 $spacing-unit/4;
 }
 
 ul {
     margin-left: $spacing-unit;
-    margin-bottom: $spacing-unit/2;
+    margin-bottom: calc($spacing-unit/2);
 }
 
 ul ul {
@@ -34,15 +34,15 @@ ul ul {
 
 pre {
     background-color: $grey-color-light;
-    margin-bottom: $spacing-unit / 2;
-    padding: $spacing-unit/4;
+    margin-bottom: calc($spacing-unit / 2);
+    padding: calc($spacing-unit/4);
     overflow-x: scroll;
 }
 
 .headshot {
     width: 50%;
     float: right;
-    margin-left: $spacing-unit/2;
+    margin-left: calc($spacing-unit/2);
     margin-right: 5px;
 }
 
@@ -133,9 +133,9 @@ nav {
     h1,
     h2,
     h3 {
-        padding-top: $spacing-unit/4;
-        padding-bottom: $spacing-unit/8;
-        padding-left: $spacing-unit/8;
+        padding-top: calc($spacing-unit/4);
+        padding-bottom: calc($spacing-unit/8);
+        padding-left: calc($spacing-unit/8);
         //padding: $spacing-unit/4 0 $spacing-unit/8 $spacing-unit/4;
     }
 
@@ -143,6 +143,6 @@ nav {
         width: 30%;
         float: left;
         margin-left: 0;
-        margin-right: $spacing-unit/4;
+        margin-right: calc($spacing-unit/4);
     }
 }

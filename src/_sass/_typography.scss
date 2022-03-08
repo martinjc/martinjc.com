@@ -39,3 +39,8 @@ code {
     font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
     font-size: $very-small-font-size;
 }
+
+sup {
+    vertical-align: super;
+    font-size: smaller;
+  }
