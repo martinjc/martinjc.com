@@ -8,7 +8,7 @@ Below is a rough timeline of all the programme and module development I've been 
 
 ## 2020/21
 
-1. MBA with AI - programme development
+1. MBA with AI - programme development
 2. MSc Cyber Security with Technology - programme development
 
 I did very little for these ones! Oversaw the MSc CyberTech development and sheperded the paperwork through to approval, and contributed a module design to the MBA with AI programme development, which was led by the Business School. A nice simple year.
@@ -46,13 +46,13 @@ I either had a year off programme development/redevelopment or I did some stuff 
 
 ## 2014/15
 
-### MSc Computational and Data Journalism - major changes
+1. MSc Computational and Data Journalism - major changes
 
 Key member of the development team, revising the programme to add additional data journalism elements.
 
 
 ## 2013/2014
 
-### MSc Computational Journalism - programme development
+1. MSc Computational Journalism - programme development
 
 Key member of development team as representative from the School of Computer Science and Informatics, designing the programme and computer science elements, including designing new modules in 'Web Application Development' and 'Visual Communication and Information Design', alongside the co-design of the joint 'Digital Investigation' module
