@@ -34,6 +34,14 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addShortcode("insertImage", insertImage.insertImage);
     eleventyConfig.addShortcode("insertBlogImage", insertImage.insertBlogImage);
 
+
+    eleventyConfig.addCollection('posts', collections => {
+      // get all posts by tag 'post'
+      return collections.getFilteredByTag('post')
+        // exclude all drafts
+        .filter(post => !Boolean(post.data.draft))
+    });
+    
     return {
       dir: {
         input: "./src",      
