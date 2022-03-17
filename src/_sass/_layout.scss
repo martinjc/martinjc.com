@@ -23,7 +23,7 @@ h2 {
     //padding: $spacing-unit/4 $spacing-unit/4 $spacing-unit/8 $spacing-unit/4;
 }
 
-ul {
+ul, ol{
     margin-left: $spacing-unit;
     margin-bottom: calc($spacing-unit/2);
 }
