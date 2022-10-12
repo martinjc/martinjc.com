@@ -39,11 +39,11 @@
   },
   "homepage": "https://github.com/martinjc/martinjc.com#readme",
   "devDependencies": {
-    "@11ty/eleventy": "^1.0.0",
+    "@11ty/eleventy": "^1.0.1",
     "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.1",
     "autoprefixer": "^9.8.6",
     "bibtex-parser-js": "0.0.2",
-    "browser-sync": "^2.27.7",
+    "browser-sync": "^2.27.9",
     "critical": "^4.0.1",
     "cssnano": "^5.1.0",
     "eleventy-plugin-date": "^1.0.0",
@@ -56,6 +56,6 @@
     "postcss-cli": "^9.1.0",
     "rimraf": "^3.0.2",
     "sass": "^1.45.0",
-    "sharp": "^0.25.4"
+    "sharp": "^0.29.3"
   }
 }
