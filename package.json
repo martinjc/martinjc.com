@@ -44,7 +44,7 @@
     "autoprefixer": "^9.8.6",
     "bibtex-parser-js": "0.0.2",
     "browser-sync": "^2.27.9",
-    "critical": "^4.0.1",
+    "critical": "^5.0.3",
     "cssnano": "^5.1.0",
     "eleventy-plugin-date": "^1.0.0",
     "gh-pages": "^3.1.0",
