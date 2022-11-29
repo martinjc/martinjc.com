@@ -3,17 +3,10 @@ layout: page
 title: "Research"
 ---
 
-I'm currently very interested in the understanding of educational methods (including the use of innovative teaching and assessment) particularly within STEM subjects, but also at the cross-disciplinary boundary. A large focus of my current research is in the area of Computational and Data Journalism, including studying Data Journalism and Computer Science education.
+I'm currently very interested in the understanding of educational methods (including the use of innovative teaching and assessment) particularly within STEM subjects, but also at the cross-disciplinary boundary. A focus of my current research is in the area of Computational and Data Journalism, including studying Data Journalism and Computer Science education.
 
 I like doing research wherever computer science, IT systems and devices brush up against the real world, as things are far more interesting when people are involved. My research is therefore cross-disciplinary, mainly in the area of human behaviour, looking at social, mobile and pervasive computing and information dissemination - if there's a scenario where people and computers mix and interact, that's where I get involved. I'm very keen on investigating the use of computer science, social media, and data science within Journalism, as both a tool for improving communication and storytelling, and as an input and tool for data gathering, story creation and newsroom workflows. I have a background in high performance computing.
 
-## Current Research
-
-I am currently working on the [Co-Growth project](https://cogrowthproject.net/), looking at analysing, enabling and facilitating greater cooperation between breweries within Wales.
-
-My recent research has looked at issues of communication within and outside of the Journalism community. I have also been examining what social media can tell us about alcohol consumption.
-
-Before I began work as a Lecturer I was working on a 12 month EPSRC Fellowship (2013 Doctoral Award Prize) examining the relationship between an individual's personality (in terms of the OCEAN five-factor personality model) and the places they visit or check in to. This work has been [published](/publications/)
 
 ## PhD Supervision
 
@@ -41,6 +34,7 @@ I'm guest editor for a special issue of the International Journal of Human-Compu
 
 I have reviewed for the following journals:
 
+-   Digital Journalism
 -   International Journal of Human-Computer Interaction
 -   ACM Transactions on Internet Technology
 -   WWW
@@ -75,6 +69,12 @@ I have served on various committees for conferences and workshops:
 -   Ibrahim Al Kharusi - "Locality Data Properties of 3D Data Orderings with Application toParallel Molecular Dynamics Simulations" (2019). Supervised by Professor David Walker
 
 ## Past Research
+
+I was recently working on the [Co-Growth project](https://cogrowthproject.net/), looking at analysing, enabling and facilitating greater cooperation between breweries within Wales.
+
+Other recent research has looked at issues of communication within and outside of the Journalism community. I have also been examining what social media can tell us about alcohol consumption.
+
+Before I began work as a Lecturer I was working on a 12 month EPSRC Fellowship (2013 Doctoral Award Prize) examining the relationship between an individual's personality (in terms of the OCEAN five-factor personality model) and the places they visit or check in to. This work has been [published](/publications/)
 
 Prior to my fellowship, I was working on the [Recognition](http://www.recognition-project.eu/) project, an EU FP7 project attempting to use relevance and human cognitive processes within IT systems to improve content dissemination and filtering. The work included areas such as how human decision making processes relate to twitter and micro-blogging, and examining the relationship between spatial places/venues and people in terms of both their personality and the expression they use towards the places they've been.
 

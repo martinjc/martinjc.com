@@ -7,7 +7,7 @@ module.exports = function(eleventyConfig) {
     const markdownItFootnote = require("markdown-it-footnote");
     const markdownItEmoji = require("markdown-it-emoji");
     const markdownIt = require("markdown-it");
-    
+
     eleventyConfig.addPassthroughCopy({"tmp/css": "css"});
     eleventyConfig.addPassthroughCopy({"src/img": "img"});
     eleventyConfig.addPassthroughCopy({"src/_root/*.*": "./"});
@@ -41,12 +41,13 @@ module.exports = function(eleventyConfig) {
         // exclude all drafts
         .filter(post => !Boolean(post.data.draft))
     });
-    
+
     return {
       dir: {
-        input: "./src",      
+        input: "./src",
         output: "./public",
-        includes: "_includes"
+        includes: "_includes",
+
       }
     };
   };
