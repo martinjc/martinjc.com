@@ -34,6 +34,7 @@ I'm guest editor for a special issue of the International Journal of Human-Compu
 
 I have reviewed for the following journals:
 
+-   Journal of Educational Computing Research
 -   Digital Journalism
 -   International Journal of Human-Computer Interaction
 -   ACM Transactions on Internet Technology
