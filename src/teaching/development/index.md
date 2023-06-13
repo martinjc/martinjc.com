@@ -6,10 +6,21 @@ title: "Programme Development"
 Below is a rough timeline of all the programme and module development I've been part of or have overseen during my teaching career to date.
 
 
+## 2022/23
+
+1. MSc Visual Computing - programme development oversight
+
+## 2021/22
+
+1. MSc Natural Language Processing - programme development oversight
+
+Again, I managed this process rather than actively taking part in the programme development, acting as mentor to the development team
+
+
 ## 2020/21
 
-1. MBA with AI - programme development
-2. MSc Cyber Security with Technology - programme development
+1. MBA with AI - programme development - oversight and contributor
+2. MSc Cyber Security with Technology - programme development oversight
 
 I did very little for these ones! Oversaw the MSc CyberTech development and sheperded the paperwork through to approval, and contributed a module design to the MBA with AI programme development, which was led by the Business School. A nice simple year.
 

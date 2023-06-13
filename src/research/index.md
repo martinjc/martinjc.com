@@ -1,11 +1,11 @@
 ---
 layout: page
-title: "Research"
+title: "Research/Scholarship"
 ---
 
 I'm currently very interested in the understanding of educational methods (including the use of innovative teaching and assessment) particularly within STEM subjects, but also at the cross-disciplinary boundary. A focus of my current research is in the area of Computational and Data Journalism, including studying Data Journalism and Computer Science education.
 
-I like doing research wherever computer science, IT systems and devices brush up against the real world, as things are far more interesting when people are involved. My research is therefore cross-disciplinary, mainly in the area of human behaviour, looking at social, mobile and pervasive computing and information dissemination - if there's a scenario where people and computers mix and interact, that's where I get involved. I'm very keen on investigating the use of computer science, social media, and data science within Journalism, as both a tool for improving communication and storytelling, and as an input and tool for data gathering, story creation and newsroom workflows. I have a background in high performance computing.
+I like doing research wherever computer science, IT systems and devices brush up against the real world, as things are far more interesting when people are involved. My research and scholarship is therefore cross-disciplinary. I'm very keen on investigating the use of computer science, social media, and data science and artificial intelligence within Journalism, as both a tool for improving communication and storytelling, and as an input and tool for data gathering, story creation and newsroom workflows. I have a background in high performance computing.
 
 
 ## PhD Supervision
@@ -50,7 +50,7 @@ I have reviewed for the following journals:
 
 I have served on various committees for conferences and workshops:
 
--   I'm co-organiser of the [European Data and Computational Journalism Conference](http://datajconf.com/), held in Dublin in 2017, Cardiff in 2018, and Malaga in 2019.
+-   I'm co-organiser of the [European Data and Computational Journalism Conference](http://datajconf.com/), held in Dublin in 2017, Cardiff in 2018, Malaga in 2019 and Zurich in 2023.
 -   I was a member of the Organising Committee for the "[Following User Pathways: Cross Platform and Mixed Methods Analysis in Social Media Studies](http://www.ksri.kit.edu/1516.php)" workshop, held at [CHI 2016](http://chi2016.acm.org/wp/)
 -   I've reviewed for [WJEC 2019](https://www.wjec.paris/)
 -   I've reviewed for [CSCW 2016](http://cscw.acm.org/2016/index.php)

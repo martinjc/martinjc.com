@@ -11,7 +11,7 @@ title: "Martin Chorley"
 
 I am Dr Martin Chorley.
 
-I'm a Reader at the [School of Computer Science &amp; Informatics](http://www.cardiff.ac.uk/computer-science/), Cardiff University. I am the Director of Learning and Teaching for the school, which means I look after our Undergraduate and Taught Postgraduate programmes and students.
+I'm a Reader at the [School of Computer Science &amp; Informatics](http://www.cardiff.ac.uk/computer-science/), Cardiff University. I am the Dean of Undergraduate Studies for the [College of Physical Sciences and Engineering](https://www.cardiff.ac.uk/colleges/physical-sciences-engineering), which means I look after our Undergraduate programmes and students within the College, and work with our seven academic schools on matters of academic quality, teaching and learning, and student experience.
 
 I’m programme leader for the [MSc in Computational and Data Journalism](http://www.cardiff.ac.uk/study/postgraduate/taught/courses/course/computational-and-data-journalism-msc), our innovative joint-honours degree with the [School of Journalism, Media and Culture (JOMEC)](http://www.cardiff.ac.uk/journalism-media-and-culture). I helped design the course with colleagues from JOMEC and teach on many of the modules.
 
@@ -19,7 +19,7 @@ I'm co-organiser of the [European Data and Computational Journalism Conference](
 
 I lead the Computer Science Scholarship group in the School, which is aiming to improve knowledge transfer of innovative and best-practice Computer Science teaching both inside and outside the School, and to carry out more research around Computer Science and Software Engineering education. Our group has recently presented papers at a number of educational conferences in the UK.
 
-I'm interested in people and computers, so that is where most of my research is focused. A lot of my recent [research](research/) is looking at modern journalism and computer science education, with work in the area of Computational and Data Journalism. I am also interested in analysis of human behaviour as exposed through social network data, and interactions between people, systems and places.
+I'm interested in people and computers, so that is where most of my scholarship is focused. A lot of my recent [research](research/) is looking at modern journalism and computer science education, with work in the area of Computational and Data Journalism. 
 
 This site has details of my [research](research/), [publications](research/), [teaching](teaching/) and the semi-occasional rambling [blog](blog/) post.
 

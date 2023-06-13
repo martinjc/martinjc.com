@@ -6,6 +6,46 @@ title: "Past Teaching"
 
 This page exists mostly as a record for myself so I can remember the teaching work I've done
 
+
+### 2022/2023
+
+
+#### Autumn Semester
+
+* CMT119 - Computational Thinking - Module Contributor (Programming)
+* CMT120 - Fundamentals of Programming - Module Contributor (Web programming)
+* 'The Lab' - MSc Computational and Data Journalism Sessions - Module Leader (COMSC)
+
+#### Spring Semester
+
+* CMT221/CMT222 - Topics and Research in Computing/Computing and IT Management - Module Leader
+* CMT218 - Data Visualisation - Module Leader
+* MCT542 - Digital Investigation - Module Leader (COMSC)
+* MCT543 - MSc Computational and Data Journalism Dissertation - Supervisor
+
+#### Double Semester
+
+* CM4301 - Team Project - Module Leader
+
+
+### 2021/2022
+
+
+#### Autumn Semester
+
+* CMT119 - Computational Thinking - Module Contributor (Programming)
+* CMT120 - Fundamentals of Programming - Module Contributor (Web programming)
+* 'The Lab' - MSc Computational and Data Journalism Sessions - Module Leader (COMSC)
+
+#### Spring Semester
+
+* CMT221/CMT222 - Topics and Research in Computing/Computing and IT Management - Module Leader
+* CMT218 - Data Visualisation - Module Leader
+* MCT542 - Digital Investigation - Module Leader (COMSC)
+* MCT543 - MSc Computational and Data Journalism Dissertation - Supervisor
+
+
+
 ### 2020/2021
 
 
