@@ -8,7 +8,7 @@ const widths = sizes.widths;
 const sizes_16_9 = sizes.sizes_16_9;
 const sizes_3_4 = sizes.sizes_3_4;
 
-let image_files = glob.sync('src/img/**/*.{png,PNG,jpg,JPG}');
+let image_files = glob.sync('src/img/**/*.{png,PNG,jpg,JPG,jpeg,JPEG}');
 
 image_files.forEach(f => {
     const output_directory = path.dirname(f).replace('src', 'public');
