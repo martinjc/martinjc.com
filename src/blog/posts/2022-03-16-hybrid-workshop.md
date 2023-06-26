@@ -15,7 +15,7 @@ __as I've [mentioned previously](https://www.martinjc.com/blog/posts/2022-03-08-
 
 That's from the invite to our latest teaching workshop, which we ran yesterday with several participants physically present in one of our seminar rooms, and more participants joining in from a Teams meeting online. It was our first hybrid teaching workshop with staff (though not our first hybrid teaching session by some distance[^ref-hybrid]). I was a bit concerned whether anyone would actually turn up in person, especially as the weather was a typically rainy Cardiff day, but in the end we had a bunch of 'real' people in the room, and a bunch of equally 'real' but less physically present people online. It worked well, and I think it's worth getting some thoughts down about the process. 
 
-![](../../img/2022-03-16-hybrid-workshop/hybrid.jpeg)
+{% insertBlogImage "img/2022-03-16-hybrid-workshop/hybrid.jpeg" "" "" url %}
 
 
 ## The structure
@@ -30,7 +30,7 @@ The first thing that helped was that the session was structured very much as an 
 
 Each activity was run as a group discussion session, with groups of 6-8 people talking about the topic in question for 15-20 minutes, with a feedback session after each discussion. In order to capture the discussions the group present in the room had access to flipcharts and pens, but being a bunch of academics naturally gravitated to the whiteboard. Online the groups were in breakout rooms within the Teams meeting, and they all had access to a shared powerpoint file, with an individual slide for each room on which they could capture their discussion points.
 
-![](../../img/2022-03-16-hybrid-workshop/slides.png)
+{% insertBlogImage "img/2022-03-16-hybrid-workshop/slides.png" "" "" url %}
 
 ## The setup
 
@@ -57,7 +57,7 @@ Really though, the only thing I'd change in future is try to have more of a bala
 
 Other people also seemed to think it worked:
 
-![](../../img/2022-03-16-hybrid-workshop/feedback.png)
+{% insertBlogImage "img/2022-03-16-hybrid-workshop/feedback.png" "" "" url %}
 
 
 ## The outro
