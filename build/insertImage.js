@@ -8,10 +8,10 @@ const image_sizes_16_9 = image_sizes.sizes_16_9;
 
 module.exports = {
 
-    insertBlogImage: function(filename, alttext, classname) {
-      if(!classname) {
-        classname = "";
-      }
+  insertBlogImage: function (filename, alttext, classname) {
+    if (!classname) {
+      classname = "";
+    }
     let template_text = `
 <picture class="${classname}">
 <source
@@ -44,7 +44,7 @@ alt="${alttext}">
     return template_text;
   },
 
-  insertImage: function(filename, alttext, classname) {
+  insertImage: function (filename, alttext, classname) {
     let template_text = `
 <img class="${classname}"
 srcset="`;
@@ -52,6 +52,18 @@ srcset="`;
       template_text += `${path.sep}${path.dirname(filename)}${path.sep}${path.basename(filename, path.extname(filename))}_${w}${path.extname(filename)} ${w}w,`;
     });
     template_text += `"
+src="${path.sep}${path.dirname(filename)}${path.sep}${path.basename(filename, path.extname(filename))}${path.extname(filename)}"
+alt="${alttext}">`;
+
+    return template_text;
+  },
+
+  insertGif: function (filename, alttext, classname) {
+    if (!classname) {
+      classname = "";
+    }
+    let template_text = `
+<img class="${classname}"
 src="${path.sep}${path.dirname(filename)}${path.sep}${path.basename(filename, path.extname(filename))}${path.extname(filename)}"
 alt="${alttext}">`;
 

@@ -1,53 +1,54 @@
 const pluginDate = require("eleventy-plugin-date");
 
-module.exports = function(eleventyConfig) {
+module.exports = function (eleventyConfig) {
 
-    const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
-    const insertImage = require("./build/insertImage.js");
-    const markdownItFootnote = require("markdown-it-footnote");
-    const markdownItEmoji = require("markdown-it-emoji");
-    const markdownIt = require("markdown-it");
+  const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
+  const insertImage = require("./build/insertImage.js");
+  const markdownItFootnote = require("markdown-it-footnote");
+  const markdownItEmoji = require("markdown-it-emoji");
+  const markdownIt = require("markdown-it");
 
-    eleventyConfig.addPassthroughCopy({"tmp/css": "css"});
-    eleventyConfig.addPassthroughCopy({"src/img": "img"});
-    eleventyConfig.addPassthroughCopy({"src/_root/*.*": "./"});
+  eleventyConfig.addPassthroughCopy({ "tmp/css": "css" });
+  eleventyConfig.addPassthroughCopy({ "src/img": "img" });
+  eleventyConfig.addPassthroughCopy({ "src/_root/*.*": "./" });
 
-    eleventyConfig.setDataDeepMerge(true);
+  eleventyConfig.setDataDeepMerge(true);
 
-    // syntax highlighting
-    eleventyConfig.addPlugin(syntaxHighlight);
-    // readable dates
-    eleventyConfig.addPlugin(pluginDate);
+  // syntax highlighting
+  eleventyConfig.addPlugin(syntaxHighlight);
+  // readable dates
+  eleventyConfig.addPlugin(pluginDate);
 
-      // add footnotes and emoji to the markdown parser
-    let markdownLib = markdownIt({
-        html: true,
-        breaks: true,
-        linkify: true,
-        typographer: true,
-    })
+  // add footnotes and emoji to the markdown parser
+  let markdownLib = markdownIt({
+    html: true,
+    breaks: true,
+    linkify: true,
+    typographer: true,
+  })
     .use(markdownItFootnote)
     .use(markdownItEmoji);
 
-    eleventyConfig.setLibrary('md', markdownLib);
+  eleventyConfig.setLibrary('md', markdownLib);
 
-    eleventyConfig.addShortcode("insertImage", insertImage.insertImage);
-    eleventyConfig.addShortcode("insertBlogImage", insertImage.insertBlogImage);
+  eleventyConfig.addShortcode("insertImage", insertImage.insertImage);
+  eleventyConfig.addShortcode("insertGif", insertImage.insertGif);
+  eleventyConfig.addShortcode("insertBlogImage", insertImage.insertBlogImage);
 
 
-    eleventyConfig.addCollection('posts', collections => {
-      // get all posts by tag 'post'
-      return collections.getFilteredByTag('post')
-        // exclude all drafts
-        .filter(post => !Boolean(post.data.draft))
-    });
+  eleventyConfig.addCollection('posts', collections => {
+    // get all posts by tag 'post'
+    return collections.getFilteredByTag('post')
+      // exclude all drafts
+      .filter(post => !Boolean(post.data.draft))
+  });
 
-    return {
-      dir: {
-        input: "./src",
-        output: "./public",
-        includes: "_includes",
+  return {
+    dir: {
+      input: "./src",
+      output: "./public",
+      includes: "_includes",
 
-      }
-    };
+    }
   };
+};
