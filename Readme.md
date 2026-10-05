@@ -18,7 +18,3 @@ Personal website built with [Eleventy](https://www.11ty.dev/).
   ```bash
   npm run build:images
   ```
-- **Deploy to GitHub Pages** (if applicable):
-  ```bash
-  npm run deploy
-  ```
