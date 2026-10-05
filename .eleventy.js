@@ -1,6 +1,5 @@
 const path = require("path");
 const fs = require("fs");
-const sass = require("sass");
 const { DateTime } = require("luxon");
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const markdownIt = require("markdown-it");
@@ -9,25 +8,8 @@ const markdownItEmoji = require("markdown-it-emoji");
 const insertImage = require("./build/insertImage.js");
 
 module.exports = function (eleventyConfig) {
-  // Watch Sass folder for changes
-  eleventyConfig.addWatchTarget("src/_sass/");
-
-  // Compile Sass before Eleventy build
-  eleventyConfig.on("eleventy.before", async () => {
-    const scssPath = path.join(__dirname, "src/_sass/main.scss");
-    if (fs.existsSync(scssPath)) {
-      const result = sass.compile(scssPath, {
-        loadPaths: [path.join(__dirname, "src/_sass")],
-        style: process.env.NODE_ENV === "production" ? "compressed" : "expanded",
-        silenceDeprecations: ["import"],
-      });
-      const outDir = path.join(__dirname, "public/css");
-      fs.mkdirSync(outDir, { recursive: true });
-      fs.writeFileSync(path.join(outDir, "main.css"), result.css);
-    }
-  });
-
   // Passthrough copies
+  eleventyConfig.addPassthroughCopy({ "src/css": "css" });
   eleventyConfig.addPassthroughCopy({ "src/img": "img" });
   eleventyConfig.addPassthroughCopy({ "src/_root": "." });
 
