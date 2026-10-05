@@ -51,6 +51,7 @@ I have reviewed for the following journals:
 I have served on various committees for conferences and workshops:
 
 -   I'm co-organiser of the [European Data and Computational Journalism Conference](http://datajconf.com/), held in Dublin in 2017, Cardiff in 2018, Malaga in 2019 and Zurich in 2023.
+-   I've reviewed for [SIGCSE TS 2027](https://2027.sigcse-ts.acm.org/)
 -   I was a member of the Organising Committee for the "[Following User Pathways: Cross Platform and Mixed Methods Analysis in Social Media Studies](http://www.ksri.kit.edu/1516.php)" workshop, held at [CHI 2016](http://chi2016.acm.org/wp/)
 -   I've reviewed for [WJEC 2019](https://www.wjec.paris/)
 -   I've reviewed for [CSCW 2016](http://cscw.acm.org/2016/index.php)
@@ -64,9 +65,13 @@ I have served on various committees for conferences and workshops:
 
 ### PhD Examining
 
+#### External examining
+
+-   Sara Tandon - "Effects and Interactions of Individual Differences on Data Visualization Task Performance" (Kings College, London. 2024)
+
 #### Internal examining
 
--   Lowri Williams - "Pushing the Envelope of Sentiment Analysis Beyond Words and Polarities" (2017). Supervised by Professor Irena Spasi ́c
+-   Lowri Williams - "Pushing the Envelope of Sentiment Analysis Beyond Words and Polarities" (2017). Supervised by Professor Irena Spasić
 -   Ibrahim Al Kharusi - "Locality Data Properties of 3D Data Orderings with Application toParallel Molecular Dynamics Simulations" (2019). Supervised by Professor David Walker
 
 ## Past Research
