@@ -9,9 +9,9 @@ title: "Martin Chorley"
 
 {% insertImage "img/headshot.jpg", "me" "headshot"%}
 
-I am Dr Martin Chorley.
+I am Professor Martin Chorley.
 
-I'm a Professor at the [School of Computational and Mathematical Sciences](https://www.cardiff.ac.uk/about/organisation/colleges-schools/school-of-computational-and-mathematical-sciences), Cardiff University. I am the Dean of Education and Student Experience for the [College of Physical Sciences and Engineering](https://www.cardiff.ac.uk/about/organisation/colleges-schools/physical-sciences-engineering), which means I look after our taught programmes and students within the College, and work with our four academic schools on matters of academic quality, teaching and learning, and student experience.
+I work at the [School of Computational and Mathematical Sciences](https://www.cardiff.ac.uk/about/organisation/colleges-schools/school-of-computational-and-mathematical-sciences), Cardiff University. I am the Dean of Education and Student Experience for the [College of Physical Sciences and Engineering](https://www.cardiff.ac.uk/about/organisation/colleges-schools/physical-sciences-engineering), which means I look after our taught programmes and students within the College, and work with our four academic schools on matters of academic quality, teaching and learning, and student experience.
 
 I’m programme leader for the [MSc in Computational and Data Journalism](http://www.cardiff.ac.uk/study/postgraduate/taught/courses/course/computational-and-data-journalism-msc), our innovative joint-honours degree with the [School of Journalism, Media and Culture (JOMEC)](http://www.cardiff.ac.uk/journalism-media-and-culture). I helped design the course with colleagues from JOMEC and teach on many of the modules.
 
@@ -21,4 +21,4 @@ I'm interested in people and computers, so that is where most of my scholarship 
 
 This site has details of my [research](research/), [publications](research/), [teaching](teaching/) and the semi-occasional rambling [blog](blog/) post.
 
-You can contact me at [chorleymj@cardiff.ac.uk](mailto:chorleymj@cardiff.ac.uk), or you can find me on many social networks, links up top.
+You can contact me at [chorleymj@cardiff.ac.uk](mailto:chorleymj@cardiff.ac.uk), or you can find me on many social networks, links up top.git 
