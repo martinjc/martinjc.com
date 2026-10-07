@@ -6,6 +6,7 @@
   "scripts": {
     "start": "eleventy --serve",
     "build": "cross-env NODE_ENV=production eleventy && npm run build:images",
+    "build:prod": "cross-env NODE_ENV=production eleventy && npm run build:images",
     "build:images": "node build/images.js",
     "clean": "node -e \"fs.rmSync('public', {recursive: true, force: true})\"",
     "deploy": "npm run build && gh-pages -d public"
